@@ -61,15 +61,14 @@
     }
 
     .crest-watermark {
-      background-image: url('./image_a45465.jpg'), url('./image_a43275.jpg');
+      background-image: url('image_a45465.jpg'), url('image_a43275.jpg');
       background-position: center;
       background-repeat: no-repeat;
-      background-size: 280px;
+      background-size: 260px;
     }
 
-    /* DPS Style Smooth Transitions */
     .slide-item {
-      transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1), transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+      transition: opacity 0.6s ease-in-out;
     }
     
     /* Professional RBS Face-Safe Gallery Card Styling */
@@ -84,8 +83,8 @@
       height: 100%;
     }
     .rbs-gallery-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 14px 28px rgba(0,0,0,0.12);
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.12);
       border-color: #c59a3f;
     }
     .rbs-img-container {
@@ -105,9 +104,27 @@
       transition: transform 0.3s ease;
     }
     .rbs-gallery-card:hover .rbs-gallery-img {
-      transform: scale(1.03);
+      transform: scale(1.02);
     }
   </style>
+
+  <!-- GitHub Pages Safe Image Resolver: Prevents infinite loading and fixes 404 hangs -->
+  <script>
+    function handleRbsImgError(img, altName, label) {
+      // 1. Try alternative name if not yet tried
+      if (altName && !img.dataset.altTried) {
+        img.dataset.altTried = "true";
+        img.src = altName;
+        return;
+      }
+      // 2. Prevent infinite retry loop (fixes browser infinite loading)
+      img.onerror = null;
+
+      // 3. Instant clean offline SVG placeholder so browser stops loading immediately
+      const text = encodeURIComponent(label || 'R.B.S. Inter College');
+      img.src = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400" height="280" viewBox="0 0 400 280"><rect width="100%" height="100%" fill="%231a1a1a"/><rect x="10" y="10" width="380" height="260" rx="8" fill="none" stroke="%23c59a3f" stroke-width="2" stroke-dasharray="6,4"/><text x="50%" y="45%" font-family="sans-serif" font-size="28" fill="%23c59a3f" font-weight="bold" text-anchor="middle">R.B.S.</text><text x="50%" y="62%" font-family="sans-serif" font-size="13" fill="%23ffffff" text-anchor="middle">${text}</text><text x="50%" y="78%" font-family="sans-serif" font-size="11" fill="%2394a3b8" text-anchor="middle">Bithara, Aliganj (Etah)</text></svg>`;
+    }
+  </script>
 </head>
 <body class="bg-dps-surface text-slate-800 font-body antialiased selection:bg-dps-gold selection:text-white">
 
@@ -146,7 +163,7 @@
       <!-- Brand Crest & Title -->
       <a href="#" class="flex items-center gap-3.5 md:gap-5 group">
         <div class="relative">
-          <img src="image_a45465.jpg" alt="RBS College Official Seal" class="w-16 h-16 sm:w-20 sm:h-20 rounded-full border-2 border-dps-gold shadow-md object-contain bg-white group-hover:scale-105 transition" onerror="autoFixImg(this, ['image_a43275.jpg', 'https://ui-avatars.com/api/?name=RBS+College&background=00482b&color=c59a3f&size=128&bold=true'])" />
+          <img src="image_a45465.jpg" alt="RBS College Official Seal" class="w-16 h-16 sm:w-20 sm:h-20 rounded-full border-2 border-dps-gold shadow-md object-contain bg-white group-hover:scale-105 transition" onerror="handleRbsImgError(this, 'image_a43275.jpg', 'RBS Seal')" />
           <span class="absolute -bottom-1 -right-1 bg-dps-green text-dps-goldLight text-[9px] font-bold px-1.5 py-0.5 rounded-full border border-white">ESTD</span>
         </div>
         <div>
@@ -227,7 +244,7 @@
 
       <!-- Slide 1 -->
       <div class="slide-item absolute inset-0 opacity-100 z-20 flex items-center justify-center bg-[#1a1a1a]">
-        <img src="rbs12_2.jpeg" alt="Student Activity & Award Distribution" class="w-full h-full object-contain" onerror="autoFixImg(this, ['rbs12.jpeg', 'https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=80'])" />
+        <img src="rbs12_2.jpeg" alt="Student Activity & Award Distribution" class="w-full h-full object-contain" onerror="handleRbsImgError(this, 'rbs12.jpeg', 'Student Activity & Award Distribution')" />
         <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/95 via-black/50 to-transparent p-6 sm:p-10 text-white pointer-events-none">
           <div class="max-w-7xl mx-auto">
             <span class="bg-dps-gold text-dps-navy font-bold text-xs uppercase px-2.5 py-0.5 rounded shadow">1 / 10 Activity</span>
@@ -239,7 +256,7 @@
 
       <!-- Slide 2 -->
       <div class="slide-item absolute inset-0 opacity-0 z-10 flex items-center justify-center bg-[#1a1a1a]">
-        <img src="rbs11_2.jpeg" alt="Cultural Dress Competition" class="w-full h-full object-contain" onerror="autoFixImg(this, ['rbs11.jpeg', 'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=80'])" />
+        <img src="rbs11_2.jpeg" alt="Cultural Dress Competition" class="w-full h-full object-contain" onerror="handleRbsImgError(this, 'rbs11.jpeg', 'Cultural Dress Competition')" />
         <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/95 via-black/50 to-transparent p-6 sm:p-10 text-white pointer-events-none">
           <div class="max-w-7xl mx-auto">
             <span class="bg-purple-600 text-white font-bold text-xs uppercase px-2.5 py-0.5 rounded shadow">2 / 10 Cultural</span>
@@ -251,7 +268,7 @@
 
       <!-- Slide 3 -->
       <div class="slide-item absolute inset-0 opacity-0 z-10 flex items-center justify-center bg-[#1a1a1a]">
-        <img src="rbs10_2.jpeg" alt="Group Photo of Students" class="w-full h-full object-contain" onerror="autoFixImg(this, ['rbs10.jpeg', 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=80'])" />
+        <img src="rbs10_2.jpeg" alt="Group Photo of Students" class="w-full h-full object-contain" onerror="handleRbsImgError(this, 'rbs10.jpeg', 'Group Photo of Students')" />
         <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/95 via-black/50 to-transparent p-6 sm:p-10 text-white pointer-events-none">
           <div class="max-w-7xl mx-auto">
             <span class="bg-blue-600 text-white font-bold text-xs uppercase px-2.5 py-0.5 rounded shadow">3 / 10 Students</span>
@@ -263,7 +280,7 @@
 
       <!-- Slide 4 -->
       <div class="slide-item absolute inset-0 opacity-0 z-10 flex items-center justify-center bg-[#1a1a1a]">
-        <img src="rsb9_2.jpeg" alt="Staff & Management Celebration" class="w-full h-full object-contain" onerror="autoFixImg(this, ['rsb9.jpeg', 'rbs9.jpeg', 'rbs9_2.jpeg', 'https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1200&q=80'])" />
+        <img src="rsb9_2.jpeg" alt="Staff & Management Celebration" class="w-full h-full object-contain" onerror="handleRbsImgError(this, 'rsb9.jpeg', 'Staff & Management Celebration')" />
         <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/95 via-black/50 to-transparent p-6 sm:p-10 text-white pointer-events-none">
           <div class="max-w-7xl mx-auto">
             <span class="bg-emerald-600 text-white font-bold text-xs uppercase px-2.5 py-0.5 rounded shadow">4 / 10 Celebration</span>
@@ -275,7 +292,7 @@
 
       <!-- Slide 5 -->
       <div class="slide-item absolute inset-0 opacity-0 z-10 flex items-center justify-center bg-[#1a1a1a]">
-        <img src="rbs8_2.jpeg" alt="Republic Day Award Ceremony" class="w-full h-full object-contain" onerror="autoFixImg(this, ['rbs8.jpeg', 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80'])" />
+        <img src="rbs8_2.jpeg" alt="Republic Day Award Ceremony" class="w-full h-full object-contain" onerror="handleRbsImgError(this, 'rbs8.jpeg', 'Republic Day Award Ceremony')" />
         <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/95 via-black/50 to-transparent p-6 sm:p-10 text-white pointer-events-none">
           <div class="max-w-7xl mx-auto">
             <span class="bg-red-600 text-white font-bold text-xs uppercase px-2.5 py-0.5 rounded shadow">5 / 10 Republic Day</span>
@@ -287,7 +304,7 @@
 
       <!-- Slide 6 -->
       <div class="slide-item absolute inset-0 opacity-0 z-10 flex items-center justify-center bg-[#1a1a1a]">
-        <img src="rbs7_2.jpeg" alt="Classroom Teaching Session" class="w-full h-full object-contain" onerror="autoFixImg(this, ['rbs7.jpeg', 'https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=1200&q=80'])" />
+        <img src="rbs7_2.jpeg" alt="Classroom Teaching Session" class="w-full h-full object-contain" onerror="handleRbsImgError(this, 'rbs7.jpeg', 'Classroom Teaching Session')" />
         <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/95 via-black/50 to-transparent p-6 sm:p-10 text-white pointer-events-none">
           <div class="max-w-7xl mx-auto">
             <span class="bg-cyan-700 text-white font-bold text-xs uppercase px-2.5 py-0.5 rounded shadow">6 / 10 Classroom</span>
@@ -299,7 +316,7 @@
 
       <!-- Slide 7 -->
       <div class="slide-item absolute inset-0 opacity-0 z-10 flex items-center justify-center bg-[#1a1a1a]">
-        <img src="rbs6_2.jpeg" alt="Medal & Certificate Distribution" class="w-full h-full object-contain" onerror="autoFixImg(this, ['rbs6.jpeg', 'https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=1200&q=80'])" />
+        <img src="rbs6_2.jpeg" alt="Medal & Certificate Distribution" class="w-full h-full object-contain" onerror="handleRbsImgError(this, 'rbs6.jpeg', 'Medal & Certificate Distribution')" />
         <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/95 via-black/50 to-transparent p-6 sm:p-10 text-white pointer-events-none">
           <div class="max-w-7xl mx-auto">
             <span class="bg-amber-600 text-white font-bold text-xs uppercase px-2.5 py-0.5 rounded shadow">7 / 10 Honors</span>
@@ -311,7 +328,7 @@
 
       <!-- Slide 8 -->
       <div class="slide-item absolute inset-0 opacity-0 z-10 flex items-center justify-center bg-[#1a1a1a]">
-        <img src="rbs5_2.jpeg" alt="School Campus & Building View" class="w-full h-full object-contain" onerror="autoFixImg(this, ['rbs5.jpeg', 'https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1200&q=80'])" />
+        <img src="rbs5_2.jpeg" alt="School Campus & Building View" class="w-full h-full object-contain" onerror="handleRbsImgError(this, 'rbs5.jpeg', 'School Campus & Building View')" />
         <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/95 via-black/50 to-transparent p-6 sm:p-10 text-white pointer-events-none">
           <div class="max-w-7xl mx-auto">
             <span class="bg-emerald-700 text-white font-bold text-xs uppercase px-2.5 py-0.5 rounded shadow">8 / 10 Campus</span>
@@ -323,7 +340,7 @@
 
       <!-- Slide 9 -->
       <div class="slide-item absolute inset-0 opacity-0 z-10 flex items-center justify-center bg-[#1a1a1a]">
-        <img src="rbs4_2.jpeg" alt="School Function & Parade" class="w-full h-full object-contain" onerror="autoFixImg(this, ['rbs4.jpeg', 'https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1200&q=80'])" />
+        <img src="rbs4_2.jpeg" alt="School Function & Parade" class="w-full h-full object-contain" onerror="handleRbsImgError(this, 'rbs4.jpeg', 'School Function & Parade')" />
         <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/95 via-black/50 to-transparent p-6 sm:p-10 text-white pointer-events-none">
           <div class="max-w-7xl mx-auto">
             <span class="bg-rose-600 text-white font-bold text-xs uppercase px-2.5 py-0.5 rounded shadow">9 / 10 Parade</span>
@@ -335,7 +352,7 @@
 
       <!-- Slide 10 -->
       <div class="slide-item absolute inset-0 opacity-0 z-10 flex items-center justify-center bg-[#1a1a1a]">
-        <img src="rbs2_2.jpeg" alt="Stage Program & Performances" class="w-full h-full object-contain" onerror="autoFixImg(this, ['rbs2.jpeg', 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1200&q=80'])" />
+        <img src="rbs2_2.jpeg" alt="Stage Program & Performances" class="w-full h-full object-contain" onerror="handleRbsImgError(this, 'rbs2.jpeg', 'Stage Program & Performances')" />
         <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/95 via-black/50 to-transparent p-6 sm:p-10 text-white pointer-events-none">
           <div class="max-w-7xl mx-auto">
             <span class="bg-indigo-600 text-white font-bold text-xs uppercase px-2.5 py-0.5 rounded shadow">10 / 10 Stage Show</span>
@@ -438,7 +455,7 @@
           <div>
             <div class="flex items-center gap-4 mb-4">
               <div class="relative w-24 h-24 shrink-0 bg-dps-surface rounded-full overflow-hidden border-2 border-dps-gold shadow">
-                <img src="vishnu kant_2.jpg" alt="Manager Vishnu Kant" class="w-full h-full object-cover object-top" onerror="autoFixImg(this, ['vishnu kant.jpg', 'vishnukant.jpg', 'https://ui-avatars.com/api/?name=Vishnu+Kant&background=00482b&color=c59a3f&size=200&bold=true'])" />
+                <img src="vishnu kant_2.jpg" alt="Manager Vishnu Kant" class="w-full h-full object-cover object-top" onerror="handleRbsImgError(this, 'vishnu kant.jpg', 'Shri Vishnu Kant (Manager)')" />
                 <span class="absolute bottom-0 right-1 bg-emerald-500 w-4 h-4 rounded-full border-2 border-white" title="Active"></span>
               </div>
               <div>
@@ -557,7 +574,7 @@
               Advanced preparation for competitive exams (IIT-JEE, NEET, CUET) alongside Board examinations.
             </p>
           </div>
-          <div class="mt-4 pt-3 border-t border-slate-200 text-[11px] text-slate-500 font-medium">
+          <div class="mt-4 pt-3 border-slate-200 text-[11px] text-slate-500 font-medium">
             Streams: Physics, Chemistry, Maths, Bio & Humanities
           </div>
         </div>
@@ -646,7 +663,7 @@
         <div>
           <div class="rbs-gallery-card shadow-sm cursor-pointer" onclick="openLightbox(this.querySelector('img').src, 'Student Activity & Award Distribution')">
             <div class="rbs-img-container">
-              <img src="rbs12_2.jpeg" class="rbs-gallery-img" alt="Student Activity & Award Distribution" onerror="autoFixImg(this, ['rbs12.jpeg', 'https://via.placeholder.com/400x280?text=RBS+College'])">
+              <img src="rbs12_2.jpeg" class="rbs-gallery-img" alt="Student Activity & Award Distribution" onerror="handleRbsImgError(this, 'rbs12.jpeg', 'Student Activity & Award Distribution')">
             </div>
             <div class="card-body bg-white p-3.5 text-center flex-1 flex items-center justify-center">
               <p class="card-text text-slate-700 mb-0 text-xs font-bold">Student Activity & Award Distribution</p>
@@ -658,7 +675,7 @@
         <div>
           <div class="rbs-gallery-card shadow-sm cursor-pointer" onclick="openLightbox(this.querySelector('img').src, 'Cultural Dress Competition')">
             <div class="rbs-img-container">
-              <img src="rbs11_2.jpeg" class="rbs-gallery-img" alt="Cultural Dress Competition" onerror="autoFixImg(this, ['rbs11.jpeg', 'https://via.placeholder.com/400x280?text=RBS+College'])">
+              <img src="rbs11_2.jpeg" class="rbs-gallery-img" alt="Cultural Dress Competition" onerror="handleRbsImgError(this, 'rbs11.jpeg', 'Cultural Dress Competition')">
             </div>
             <div class="card-body bg-white p-3.5 text-center flex-1 flex items-center justify-center">
               <p class="card-text text-slate-700 mb-0 text-xs font-bold">Cultural Dress Competition</p>
@@ -670,7 +687,7 @@
         <div>
           <div class="rbs-gallery-card shadow-sm cursor-pointer" onclick="openLightbox(this.querySelector('img').src, 'Group Photo of Students')">
             <div class="rbs-img-container">
-              <img src="rbs10_2.jpeg" class="rbs-gallery-img" alt="Group Photo of Students" onerror="autoFixImg(this, ['rbs10.jpeg', 'https://via.placeholder.com/400x280?text=RBS+College'])">
+              <img src="rbs10_2.jpeg" class="rbs-gallery-img" alt="Group Photo of Students" onerror="handleRbsImgError(this, 'rbs10.jpeg', 'Group Photo of Students')">
             </div>
             <div class="card-body bg-white p-3.5 text-center flex-1 flex items-center justify-center">
               <p class="card-text text-slate-700 mb-0 text-xs font-bold">Group Photo of Students</p>
@@ -682,7 +699,7 @@
         <div>
           <div class="rbs-gallery-card shadow-sm cursor-pointer" onclick="openLightbox(this.querySelector('img').src, 'Staff & Management Celebration')">
             <div class="rbs-img-container">
-              <img src="rsb9_2.jpeg" class="rbs-gallery-img" alt="Staff & Management Celebration" onerror="autoFixImg(this, ['rsb9.jpeg', 'rbs9.jpeg', 'rbs9_2.jpeg', 'https://via.placeholder.com/400x280?text=RBS+College'])">
+              <img src="rsb9_2.jpeg" class="rbs-gallery-img" alt="Staff & Management Celebration" onerror="handleRbsImgError(this, 'rsb9.jpeg', 'Staff & Management Celebration')">
             </div>
             <div class="card-body bg-white p-3.5 text-center flex-1 flex items-center justify-center">
               <p class="card-text text-slate-700 mb-0 text-xs font-bold">Staff & Management Celebration</p>
@@ -694,7 +711,7 @@
         <div>
           <div class="rbs-gallery-card shadow-sm cursor-pointer" onclick="openLightbox(this.querySelector('img').src, 'Republic Day Award Ceremony')">
             <div class="rbs-img-container">
-              <img src="rbs8_2.jpeg" class="rbs-gallery-img" alt="Republic Day Award Ceremony" onerror="autoFixImg(this, ['rbs8.jpeg', 'https://via.placeholder.com/400x280?text=RBS+College'])">
+              <img src="rbs8_2.jpeg" class="rbs-gallery-img" alt="Republic Day Award Ceremony" onerror="handleRbsImgError(this, 'rbs8.jpeg', 'Republic Day Award Ceremony')">
             </div>
             <div class="card-body bg-white p-3.5 text-center flex-1 flex items-center justify-center">
               <p class="card-text text-slate-700 mb-0 text-xs font-bold">Republic Day Award Ceremony</p>
@@ -706,7 +723,7 @@
         <div>
           <div class="rbs-gallery-card shadow-sm cursor-pointer" onclick="openLightbox(this.querySelector('img').src, 'Classroom Teaching Session')">
             <div class="rbs-img-container">
-              <img src="rbs7_2.jpeg" class="rbs-gallery-img" alt="Classroom Teaching Session" onerror="autoFixImg(this, ['rbs7.jpeg', 'https://via.placeholder.com/400x280?text=RBS+College'])">
+              <img src="rbs7_2.jpeg" class="rbs-gallery-img" alt="Classroom Teaching Session" onerror="handleRbsImgError(this, 'rbs7.jpeg', 'Classroom Teaching Session')">
             </div>
             <div class="card-body bg-white p-3.5 text-center flex-1 flex items-center justify-center">
               <p class="card-text text-slate-700 mb-0 text-xs font-bold">Classroom Teaching Session</p>
@@ -718,7 +735,7 @@
         <div>
           <div class="rbs-gallery-card shadow-sm cursor-pointer" onclick="openLightbox(this.querySelector('img').src, 'Medal & Certificate Distribution')">
             <div class="rbs-img-container">
-              <img src="rbs6_2.jpeg" class="rbs-gallery-img" alt="Medal & Certificate Distribution" onerror="autoFixImg(this, ['rbs6.jpeg', 'https://via.placeholder.com/400x280?text=RBS+College'])">
+              <img src="rbs6_2.jpeg" class="rbs-gallery-img" alt="Medal & Certificate Distribution" onerror="handleRbsImgError(this, 'rbs6.jpeg', 'Medal & Certificate Distribution')">
             </div>
             <div class="card-body bg-white p-3.5 text-center flex-1 flex items-center justify-center">
               <p class="card-text text-slate-700 mb-0 text-xs font-bold">Medal & Certificate Distribution</p>
@@ -730,7 +747,7 @@
         <div>
           <div class="rbs-gallery-card shadow-sm cursor-pointer" onclick="openLightbox(this.querySelector('img').src, 'School Campus & Building View')">
             <div class="rbs-img-container">
-              <img src="rbs5_2.jpeg" class="rbs-gallery-img" alt="School Campus & Building View" onerror="autoFixImg(this, ['rbs5.jpeg', 'https://via.placeholder.com/400x280?text=RBS+College'])">
+              <img src="rbs5_2.jpeg" class="rbs-gallery-img" alt="School Campus & Building View" onerror="handleRbsImgError(this, 'rbs5.jpeg', 'School Campus & Building View')">
             </div>
             <div class="card-body bg-white p-3.5 text-center flex-1 flex items-center justify-center">
               <p class="card-text text-slate-700 mb-0 text-xs font-bold">School Campus & Building View</p>
@@ -742,7 +759,7 @@
         <div>
           <div class="rbs-gallery-card shadow-sm cursor-pointer" onclick="openLightbox(this.querySelector('img').src, 'School Function & Parade')">
             <div class="rbs-img-container">
-              <img src="rbs4_2.jpeg" class="rbs-gallery-img" alt="School Function & Parade" onerror="autoFixImg(this, ['rbs4.jpeg', 'https://via.placeholder.com/400x280?text=RBS+College'])">
+              <img src="rbs4_2.jpeg" class="rbs-gallery-img" alt="School Function & Parade" onerror="handleRbsImgError(this, 'rbs4.jpeg', 'School Function & Parade')">
             </div>
             <div class="card-body bg-white p-3.5 text-center flex-1 flex items-center justify-center">
               <p class="card-text text-slate-700 mb-0 text-xs font-bold">School Function & Parade</p>
@@ -754,7 +771,7 @@
         <div>
           <div class="rbs-gallery-card shadow-sm cursor-pointer" onclick="openLightbox(this.querySelector('img').src, 'Stage Program & Performances')">
             <div class="rbs-img-container">
-              <img src="rbs2_2.jpeg" class="rbs-gallery-img" alt="Stage Program & Performances" onerror="autoFixImg(this, ['rbs2.jpeg', 'https://via.placeholder.com/400x280?text=RBS+College'])">
+              <img src="rbs2_2.jpeg" class="rbs-gallery-img" alt="Stage Program & Performances" onerror="handleRbsImgError(this, 'rbs2.jpeg', 'Stage Program & Performances')">
             </div>
             <div class="card-body bg-white p-3.5 text-center flex-1 flex items-center justify-center">
               <p class="card-text text-slate-700 mb-0 text-xs font-bold">Stage Program & Performances</p>
@@ -861,7 +878,7 @@
         <!-- Dynamic Success Receipt -->
         <div id="admSuccessReceipt" class="hidden mt-6 bg-gradient-to-r from-amber-50 via-emerald-50 to-white border-2 border-emerald-500 rounded-2xl p-5 text-slate-800 shadow-md">
           <div class="flex items-start gap-4">
-            <img src="image_a45465.jpg" alt="RBS Logo" class="w-14 h-14 rounded-full border-2 border-dps-gold shadow shrink-0 bg-white" onerror="autoFixImg(this, ['image_a43275.jpg'])" />
+            <img src="image_a45465.jpg" alt="RBS Logo" class="w-14 h-14 rounded-full border-2 border-dps-gold shadow shrink-0 bg-white" onerror="handleRbsImgError(this, 'image_a43275.jpg', 'RBS Crest')" />
             <div class="flex-1">
               <div class="flex flex-wrap items-center justify-between gap-2">
                 <h4 class="font-crest text-base font-bold text-dps-greenDark">Application Registered Successfully!</h4>
@@ -891,7 +908,7 @@
       
       <div class="md:col-span-5 space-y-3">
         <div class="flex items-center gap-3.5">
-          <img src="image_a45465.jpg" alt="RBS Seal" class="w-14 h-14 rounded-full border border-dps-gold bg-white p-0.5" onerror="autoFixImg(this, ['image_a43275.jpg'])" />
+          <img src="image_a45465.jpg" alt="RBS Seal" class="w-14 h-14 rounded-full border border-dps-gold bg-white p-0.5" onerror="handleRbsImgError(this, 'image_a43275.jpg', 'RBS Logo')" />
           <div>
             <h3 class="font-crest font-extrabold text-white text-base leading-tight">RAM BAX SINGH INTER COLLEGE</h3>
             <p class="text-xs text-dps-goldLight">Residential R.B.S. Inter College &bull; Bithara (Aliganj)</p>
@@ -957,7 +974,7 @@
       </button>
 
       <div class="text-center mb-6">
-        <img src="image_a45465.jpg" alt="RBS Crest" class="w-16 h-16 rounded-full border-2 border-dps-gold mx-auto mb-2 bg-white" onerror="autoFixImg(this, ['image_a43275.jpg'])" />
+        <img src="image_a45465.jpg" alt="RBS Crest" class="w-16 h-16 rounded-full border-2 border-dps-gold mx-auto mb-2 bg-white" onerror="handleRbsImgError(this, 'image_a43275.jpg', 'RBS')" />
         <h3 class="font-crest text-xl font-bold text-dps-greenDark">R.B.S. Admin Portal</h3>
         <p class="text-xs text-slate-500">Director & Manager Control Suite</p>
       </div>
@@ -996,7 +1013,7 @@
       
       <header class="bg-dps-greenDark text-white px-6 py-4 flex flex-wrap justify-between items-center border-b-2 border-dps-gold">
         <div class="flex items-center gap-3">
-          <img src="image_a45465.jpg" alt="RBS Crest" class="w-10 h-10 rounded-full border border-dps-gold bg-white p-0.5" onerror="autoFixImg(this, ['image_a43275.jpg'])" />
+          <img src="image_a45465.jpg" alt="RBS Crest" class="w-10 h-10 rounded-full border border-dps-gold bg-white p-0.5" onerror="handleRbsImgError(this, 'image_a43275.jpg', 'RBS')" />
           <div>
             <h2 class="font-crest text-base sm:text-lg font-bold">Ram Bax Singh Inter College &bull; Admin Suite</h2>
             <p class="text-[11px] text-dps-goldLight">Manager: Vishnu Kant | ID: rambaxsinghintercollege@gmail.com</p>
@@ -1162,7 +1179,7 @@
             <div id="printableMarksheet" class="bg-white border-4 border-double border-dps-greenDark p-6 rounded-2xl shadow-xl crest-watermark relative text-slate-900">
               
               <div class="flex items-center justify-between border-b-2 border-dps-gold pb-4 gap-4">
-                <img src="image_a45465.jpg" alt="RBS Logo" class="w-20 h-20 object-contain rounded-full border border-dps-gold bg-white p-0.5" onerror="autoFixImg(this, ['image_a43275.jpg'])" />
+                <img src="image_a45465.jpg" alt="RBS Logo" class="w-20 h-20 object-contain rounded-full border border-dps-gold bg-white p-0.5" onerror="handleRbsImgError(this, 'image_a43275.jpg', 'RBS Logo')" />
                 <div class="text-center flex-1">
                   <h1 class="font-crest font-black text-xl sm:text-2xl text-dps-greenDark tracking-tight">
                     RAM BAX SINGH INTER COLLEGE
@@ -1301,19 +1318,6 @@
 
   <!-- SCRIPT ENGINE -->
   <script>
-    // Universal Smart Fallback Function for GitHub Pages & Local environment
-    function autoFixImg(imgElement, fallbacks) {
-      if (!imgElement.dataset.step) {
-        imgElement.dataset.step = "0";
-      }
-      let step = parseInt(imgElement.dataset.step, 10);
-      if (step < fallbacks.length) {
-        const nextSrc = fallbacks[step];
-        imgElement.dataset.step = (step + 1).toString();
-        imgElement.src = nextSrc;
-      }
-    }
-
     // Official Credentials
     const ADMIN_CREDENTIALS = {
       email: 'rambaxsinghintercollege@gmail.com',
@@ -1386,7 +1390,7 @@
     const totalSlides = slides.length;
     let autoInterval = null;
     let isPlaying = true;
-    const SLIDE_DURATION = 3500; // Change every 3.5 seconds
+    const SLIDE_DURATION = 3500; // 3.5 seconds
 
     function buildDots() {
       const dotBox = document.getElementById('sliderDots');
