@@ -61,7 +61,7 @@
     }
 
     .crest-watermark {
-      background-image: url('image_a45465.jpg');
+      background-image: url('./image_a45465.jpg'), url('https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=400&q=80');
       background-position: center;
       background-repeat: no-repeat;
       background-size: 280px;
@@ -83,6 +83,11 @@
     ::-webkit-scrollbar-thumb {
       background: #00482b;
       border-radius: 4px;
+    }
+
+    /* Image container background to prevent black boxes */
+    .img-frame-bg {
+      background: linear-gradient(135deg, #091e3a 0%, #00482b 100%);
     }
   </style>
 </head>
@@ -123,7 +128,7 @@
       <!-- Brand Crest & Title -->
       <a href="#" class="flex items-center gap-3.5 md:gap-5 group">
         <div class="relative">
-          <img src="image_a45465.jpg" alt="RBS College Official Seal" class="w-16 h-16 sm:w-20 sm:h-20 rounded-full border-2 border-dps-gold shadow-md object-contain bg-white group-hover:scale-105 transition" />
+          <img src="./image_a45465.jpg" alt="RBS College Official Seal" class="w-16 h-16 sm:w-20 sm:h-20 rounded-full border-2 border-dps-gold shadow-md object-contain bg-white group-hover:scale-105 transition" onerror="handleFallback(this, './image_a43275.jpg', 'https://ui-avatars.com/api/?name=RBS+College&background=00482b&color=c59a3f&size=128&bold=true');" />
           <span class="absolute -bottom-1 -right-1 bg-dps-green text-dps-goldLight text-[9px] font-bold px-1.5 py-0.5 rounded-full border border-white">ESTD</span>
         </div>
         <div>
@@ -182,15 +187,15 @@
   </div>
 
   <!-- HERO SLIDER SECTION (DPS Mathura Road Auto-Running Carousel) -->
-  <section id="hero-section" class="relative bg-slate-950 overflow-hidden">
+  <section id="hero-section" class="relative bg-dps-greenDark overflow-hidden">
     <div class="relative w-full h-[380px] sm:h-[480px] md:h-[560px] select-none">
       
       <!-- Slides Container (object-contain with ambient framing: NO FACES CROPPED) -->
       <div id="dpsCarousel" class="relative w-full h-full flex items-center justify-center">
 
         <!-- Slide 1: Campus Courtyard (rbs5_2.jpeg) -->
-        <div class="slide absolute inset-0 slider-fade opacity-100 z-20 flex items-center justify-center bg-slate-950">
-          <img src="rbs5_2.jpeg" alt="RBS Campus Courtyard" class="w-full h-full object-contain mx-auto" onerror="this.src='rbs5.jpeg';" />
+        <div class="slide absolute inset-0 slider-fade opacity-100 z-20 flex items-center justify-center img-frame-bg">
+          <img src="./rbs5_2.jpeg" alt="RBS Campus Courtyard" class="w-full h-full object-contain mx-auto" onerror="handleFallback(this, './rbs5.jpeg', 'https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1400&q=80');" />
           <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-5 sm:p-10 text-white pointer-events-none">
             <div class="max-w-7xl mx-auto">
               <span class="bg-dps-gold text-dps-navy font-bold text-xs uppercase px-2.5 py-1 rounded shadow">Campus Overview</span>
@@ -201,8 +206,8 @@
         </div>
 
         <!-- Slide 2: Assembly & Parade (rbs4_2.jpeg) -->
-        <div class="slide absolute inset-0 slider-fade opacity-0 z-10 flex items-center justify-center bg-slate-950">
-          <img src="rbs4_2.jpeg" alt="Morning Assembly & National Flags" class="w-full h-full object-contain mx-auto" onerror="this.src='rbs4.jpeg';" />
+        <div class="slide absolute inset-0 slider-fade opacity-0 z-10 flex items-center justify-center img-frame-bg">
+          <img src="./rbs4_2.jpeg" alt="Morning Assembly & National Flags" class="w-full h-full object-contain mx-auto" onerror="handleFallback(this, './rbs4.jpeg', 'https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1400&q=80');" />
           <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-5 sm:p-10 text-white pointer-events-none">
             <div class="max-w-7xl mx-auto">
               <span class="bg-emerald-600 text-white font-bold text-xs uppercase px-2.5 py-1 rounded shadow">Morning Assembly</span>
@@ -213,8 +218,8 @@
         </div>
 
         <!-- Slide 3: Classroom Mentorship (rbs12_2.jpeg) -->
-        <div class="slide absolute inset-0 slider-fade opacity-0 z-10 flex items-center justify-center bg-slate-950">
-          <img src="rbs12_2.jpeg" alt="Manager Vishnu Kant In Classroom" class="w-full h-full object-contain mx-auto" onerror="this.src='rbs12.jpeg';" />
+        <div class="slide absolute inset-0 slider-fade opacity-0 z-10 flex items-center justify-center img-frame-bg">
+          <img src="./rbs12_2.jpeg" alt="Manager Vishnu Kant In Classroom" class="w-full h-full object-contain mx-auto" onerror="handleFallback(this, './rbs12.jpeg', 'https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1400&q=80');" />
           <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-5 sm:p-10 text-white pointer-events-none">
             <div class="max-w-7xl mx-auto">
               <span class="bg-amber-500 text-dps-navy font-bold text-xs uppercase px-2.5 py-1 rounded shadow">Student Guidance</span>
@@ -225,8 +230,8 @@
         </div>
 
         <!-- Slide 4: Cultural Fest Drama (rbs10_2.jpeg) -->
-        <div class="slide absolute inset-0 slider-fade opacity-0 z-10 flex items-center justify-center bg-slate-950">
-          <img src="rbs10_2.jpeg" alt="Cultural Dance & Drama Costumes" class="w-full h-full object-contain mx-auto" onerror="this.src='rbs10.jpeg';" />
+        <div class="slide absolute inset-0 slider-fade opacity-0 z-10 flex items-center justify-center img-frame-bg">
+          <img src="./rbs10_2.jpeg" alt="Cultural Dance & Drama Costumes" class="w-full h-full object-contain mx-auto" onerror="handleFallback(this, './rbs10.jpeg', 'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1400&q=80');" />
           <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-5 sm:p-10 text-white pointer-events-none">
             <div class="max-w-7xl mx-auto">
               <span class="bg-purple-600 text-white font-bold text-xs uppercase px-2.5 py-1 rounded shadow">Cultural Spectrum</span>
@@ -237,8 +242,8 @@
         </div>
 
         <!-- Slide 5: Honors & Certificates (rbs8_2.jpeg) -->
-        <div class="slide absolute inset-0 slider-fade opacity-0 z-10 flex items-center justify-center bg-slate-950">
-          <img src="rbs8_2.jpeg" alt="Republic Day Merit Certificates" class="w-full h-full object-contain mx-auto" onerror="this.src='rbs8.jpeg';" />
+        <div class="slide absolute inset-0 slider-fade opacity-0 z-10 flex items-center justify-center img-frame-bg">
+          <img src="./rbs8_2.jpeg" alt="Republic Day Merit Certificates" class="w-full h-full object-contain mx-auto" onerror="handleFallback(this, './rbs8.jpeg', 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1400&q=80');" />
           <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-5 sm:p-10 text-white pointer-events-none">
             <div class="max-w-7xl mx-auto">
               <span class="bg-dps-gold text-dps-navy font-bold text-xs uppercase px-2.5 py-1 rounded shadow">Pratibha Samman</span>
@@ -249,8 +254,8 @@
         </div>
 
         <!-- Slide 6: Senior Teaching Session (rbs7_2.jpeg) -->
-        <div class="slide absolute inset-0 slider-fade opacity-0 z-10 flex items-center justify-center bg-slate-950">
-          <img src="rbs7_2.jpeg" alt="Senior Teaching Lecture" class="w-full h-full object-contain mx-auto" onerror="this.src='rbs7.jpeg';" />
+        <div class="slide absolute inset-0 slider-fade opacity-0 z-10 flex items-center justify-center img-frame-bg">
+          <img src="./rbs7_2.jpeg" alt="Senior Teaching Lecture" class="w-full h-full object-contain mx-auto" onerror="handleFallback(this, './rbs7.jpeg', 'https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=1400&q=80');" />
           <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-5 sm:p-10 text-white pointer-events-none">
             <div class="max-w-7xl mx-auto">
               <span class="bg-blue-600 text-white font-bold text-xs uppercase px-2.5 py-1 rounded shadow">Academic Excellence</span>
@@ -355,8 +360,8 @@
         <div class="bg-white rounded-2xl border-2 border-slate-200 hover:border-dps-gold p-6 shadow-md transition flex flex-col justify-between group">
           <div>
             <div class="flex items-center gap-4 mb-4">
-              <div class="relative w-24 h-24 shrink-0">
-                <img src="vishnu kant_2.jpg" alt="Manager Vishnu Kant" class="w-full h-full object-cover rounded-full border-2 border-dps-gold shadow" onerror="this.src='https://placehold.co/200x200/00482b/ffffff?text=Vishnu+Kant';" />
+              <div class="relative w-24 h-24 shrink-0 bg-dps-surface rounded-full overflow-hidden border-2 border-dps-gold shadow">
+                <img src="./vishnu%20kant_2.jpg" alt="Manager Vishnu Kant" class="w-full h-full object-cover object-top" onerror="handleFallback(this, './vishnu kant.jpg', 'https://ui-avatars.com/api/?name=Vishnu+Kant&background=00482b&color=c59a3f&size=200&bold=true');" />
                 <span class="absolute bottom-0 right-1 bg-emerald-500 w-4 h-4 rounded-full border-2 border-white" title="Active"></span>
               </div>
               <div>
@@ -567,9 +572,9 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
 
         <!-- Image 1 -->
-        <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition border border-slate-200 flex flex-col cursor-pointer group" onclick="openLightbox('rbs12_2.jpeg', 'Student Activity & Award Distribution')">
-          <div class="h-64 sm:h-72 bg-slate-950 flex items-center justify-center p-1.5 relative overflow-hidden">
-            <img src="rbs12_2.jpeg" alt="Student Activity & Award Distribution" class="max-h-full max-w-full object-contain mx-auto group-hover:scale-105 transition duration-300" onerror="this.src='rbs12.jpeg';" />
+        <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition border border-slate-200 flex flex-col cursor-pointer group" onclick="openLightbox(this.querySelector('img').src, 'Student Activity & Award Distribution')">
+          <div class="h-64 sm:h-72 img-frame-bg flex items-center justify-center p-1.5 relative overflow-hidden">
+            <img src="./rbs12_2.jpeg" alt="Student Activity & Award Distribution" class="max-h-full max-w-full object-contain mx-auto group-hover:scale-105 transition duration-300" onerror="handleFallback(this, './rbs12.jpeg', 'https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80');" />
             <span class="absolute top-2 left-2 bg-dps-gold text-dps-navy text-[10px] font-bold px-2 py-0.5 rounded shadow">Academics</span>
           </div>
           <div class="p-3 bg-white border-t border-slate-100 flex-1 flex items-center justify-between">
@@ -579,9 +584,9 @@
         </div>
 
         <!-- Image 2 -->
-        <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition border border-slate-200 flex flex-col cursor-pointer group" onclick="openLightbox('rbs11_2.jpeg', 'Cultural Dress Competition')">
-          <div class="h-64 sm:h-72 bg-slate-950 flex items-center justify-center p-1.5 relative overflow-hidden">
-            <img src="rbs11_2.jpeg" alt="Cultural Dress Competition" class="max-h-full max-w-full object-contain mx-auto group-hover:scale-105 transition duration-300" onerror="this.src='rbs11.jpeg';" />
+        <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition border border-slate-200 flex flex-col cursor-pointer group" onclick="openLightbox(this.querySelector('img').src, 'Cultural Dress Competition')">
+          <div class="h-64 sm:h-72 img-frame-bg flex items-center justify-center p-1.5 relative overflow-hidden">
+            <img src="./rbs11_2.jpeg" alt="Cultural Dress Competition" class="max-h-full max-w-full object-contain mx-auto group-hover:scale-105 transition duration-300" onerror="handleFallback(this, './rbs11.jpeg', 'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80');" />
             <span class="absolute top-2 left-2 bg-purple-600 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">Cultural</span>
           </div>
           <div class="p-3 bg-white border-t border-slate-100 flex-1 flex items-center justify-between">
@@ -591,9 +596,9 @@
         </div>
 
         <!-- Image 3 -->
-        <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition border border-slate-200 flex flex-col cursor-pointer group" onclick="openLightbox('rbs10_2.jpeg', 'Group Photo of Students in Drama Attire')">
-          <div class="h-64 sm:h-72 bg-slate-950 flex items-center justify-center p-1.5 relative overflow-hidden">
-            <img src="rbs10_2.jpeg" alt="Group Photo of Students" class="max-h-full max-w-full object-contain mx-auto group-hover:scale-105 transition duration-300" onerror="this.src='rbs10.jpeg';" />
+        <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition border border-slate-200 flex flex-col cursor-pointer group" onclick="openLightbox(this.querySelector('img').src, 'Group Photo of Students in Drama Attire')">
+          <div class="h-64 sm:h-72 img-frame-bg flex items-center justify-center p-1.5 relative overflow-hidden">
+            <img src="./rbs10_2.jpeg" alt="Group Photo of Students" class="max-h-full max-w-full object-contain mx-auto group-hover:scale-105 transition duration-300" onerror="handleFallback(this, './rbs10.jpeg', 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=800&q=80');" />
             <span class="absolute top-2 left-2 bg-blue-600 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">Drama</span>
           </div>
           <div class="p-3 bg-white border-t border-slate-100 flex-1 flex items-center justify-between">
@@ -603,9 +608,9 @@
         </div>
 
         <!-- Image 4 -->
-        <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition border border-slate-200 flex flex-col cursor-pointer group" onclick="openLightbox('rsb9_2.jpeg', 'Staff & Management Celebration')">
-          <div class="h-64 sm:h-72 bg-slate-950 flex items-center justify-center p-1.5 relative overflow-hidden">
-            <img src="rsb9_2.jpeg" alt="Staff & Management Celebration" class="max-h-full max-w-full object-contain mx-auto group-hover:scale-105 transition duration-300" onerror="this.src='rsb9.jpeg';" />
+        <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition border border-slate-200 flex flex-col cursor-pointer group" onclick="openLightbox(this.querySelector('img').src, 'Staff & Management Celebration')">
+          <div class="h-64 sm:h-72 img-frame-bg flex items-center justify-center p-1.5 relative overflow-hidden">
+            <img src="./rsb9_2.jpeg" alt="Staff & Management Celebration" class="max-h-full max-w-full object-contain mx-auto group-hover:scale-105 transition duration-300" onerror="handleFallback(this, './rsb9.jpeg', 'https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=800&q=80');" />
             <span class="absolute top-2 left-2 bg-emerald-600 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">Staff Meet</span>
           </div>
           <div class="p-3 bg-white border-t border-slate-100 flex-1 flex items-center justify-between">
@@ -615,9 +620,9 @@
         </div>
 
         <!-- Image 5 -->
-        <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition border border-slate-200 flex flex-col cursor-pointer group" onclick="openLightbox('rbs8_2.jpeg', 'Republic Day Award Ceremony')">
-          <div class="h-64 sm:h-72 bg-slate-950 flex items-center justify-center p-1.5 relative overflow-hidden">
-            <img src="rbs8_2.jpeg" alt="Republic Day Award Ceremony" class="max-h-full max-w-full object-contain mx-auto group-hover:scale-105 transition duration-300" onerror="this.src='rbs8.jpeg';" />
+        <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition border border-slate-200 flex flex-col cursor-pointer group" onclick="openLightbox(this.querySelector('img').src, 'Republic Day Award Ceremony')">
+          <div class="h-64 sm:h-72 img-frame-bg flex items-center justify-center p-1.5 relative overflow-hidden">
+            <img src="./rbs8_2.jpeg" alt="Republic Day Award Ceremony" class="max-h-full max-w-full object-contain mx-auto group-hover:scale-105 transition duration-300" onerror="handleFallback(this, './rbs8.jpeg', 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80');" />
             <span class="absolute top-2 left-2 bg-red-600 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">26th Jan</span>
           </div>
           <div class="p-3 bg-white border-t border-slate-100 flex-1 flex items-center justify-between">
@@ -627,9 +632,9 @@
         </div>
 
         <!-- Image 6 -->
-        <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition border border-slate-200 flex flex-col cursor-pointer group" onclick="openLightbox('rbs7_2.jpeg', 'Classroom Teaching Session')">
-          <div class="h-64 sm:h-72 bg-slate-950 flex items-center justify-center p-1.5 relative overflow-hidden">
-            <img src="rbs7_2.jpeg" alt="Classroom Teaching Session" class="max-h-full max-w-full object-contain mx-auto group-hover:scale-105 transition duration-300" onerror="this.src='rbs7.jpeg';" />
+        <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition border border-slate-200 flex flex-col cursor-pointer group" onclick="openLightbox(this.querySelector('img').src, 'Classroom Teaching Session')">
+          <div class="h-64 sm:h-72 img-frame-bg flex items-center justify-center p-1.5 relative overflow-hidden">
+            <img src="./rbs7_2.jpeg" alt="Classroom Teaching Session" class="max-h-full max-w-full object-contain mx-auto group-hover:scale-105 transition duration-300" onerror="handleFallback(this, './rbs7.jpeg', 'https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=800&q=80');" />
             <span class="absolute top-2 left-2 bg-cyan-700 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">Lecture</span>
           </div>
           <div class="p-3 bg-white border-t border-slate-100 flex-1 flex items-center justify-between">
@@ -639,9 +644,9 @@
         </div>
 
         <!-- Image 7 -->
-        <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition border border-slate-200 flex flex-col cursor-pointer group" onclick="openLightbox('rbs6_2.jpeg', 'Medal & Certificate Distribution')">
-          <div class="h-64 sm:h-72 bg-slate-950 flex items-center justify-center p-1.5 relative overflow-hidden">
-            <img src="rbs6_2.jpeg" alt="Medal & Certificate Distribution" class="max-h-full max-w-full object-contain mx-auto group-hover:scale-105 transition duration-300" onerror="this.src='rbs6.jpeg';" />
+        <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition border border-slate-200 flex flex-col cursor-pointer group" onclick="openLightbox(this.querySelector('img').src, 'Medal & Certificate Distribution')">
+          <div class="h-64 sm:h-72 img-frame-bg flex items-center justify-center p-1.5 relative overflow-hidden">
+            <img src="./rbs6_2.jpeg" alt="Medal & Certificate Distribution" class="max-h-full max-w-full object-contain mx-auto group-hover:scale-105 transition duration-300" onerror="handleFallback(this, './rbs6.jpeg', 'https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=800&q=80');" />
             <span class="absolute top-2 left-2 bg-amber-600 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">Samman</span>
           </div>
           <div class="p-3 bg-white border-t border-slate-100 flex-1 flex items-center justify-between">
@@ -651,9 +656,9 @@
         </div>
 
         <!-- Image 8 -->
-        <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition border border-slate-200 flex flex-col cursor-pointer group" onclick="openLightbox('rbs5_2.jpeg', 'School Campus & Building View')">
-          <div class="h-64 sm:h-72 bg-slate-950 flex items-center justify-center p-1.5 relative overflow-hidden">
-            <img src="rbs5_2.jpeg" alt="School Campus & Building View" class="max-h-full max-w-full object-contain mx-auto group-hover:scale-105 transition duration-300" onerror="this.src='rbs5.jpeg';" />
+        <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition border border-slate-200 flex flex-col cursor-pointer group" onclick="openLightbox(this.querySelector('img').src, 'School Campus & Building View')">
+          <div class="h-64 sm:h-72 img-frame-bg flex items-center justify-center p-1.5 relative overflow-hidden">
+            <img src="./rbs5_2.jpeg" alt="School Campus & Building View" class="max-h-full max-w-full object-contain mx-auto group-hover:scale-105 transition duration-300" onerror="handleFallback(this, './rbs5.jpeg', 'https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=800&q=80');" />
             <span class="absolute top-2 left-2 bg-emerald-700 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">Campus</span>
           </div>
           <div class="p-3 bg-white border-t border-slate-100 flex-1 flex items-center justify-between">
@@ -663,9 +668,9 @@
         </div>
 
         <!-- Image 9 -->
-        <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition border border-slate-200 flex flex-col cursor-pointer group" onclick="openLightbox('rbs4_2.jpeg', 'School Function & Parade')">
-          <div class="h-64 sm:h-72 bg-slate-950 flex items-center justify-center p-1.5 relative overflow-hidden">
-            <img src="rbs4_2.jpeg" alt="School Function & Parade" class="max-h-full max-w-full object-contain mx-auto group-hover:scale-105 transition duration-300" onerror="this.src='rbs4.jpeg';" />
+        <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition border border-slate-200 flex flex-col cursor-pointer group" onclick="openLightbox(this.querySelector('img').src, 'School Function & Parade')">
+          <div class="h-64 sm:h-72 img-frame-bg flex items-center justify-center p-1.5 relative overflow-hidden">
+            <img src="./rbs4_2.jpeg" alt="School Function & Parade" class="max-h-full max-w-full object-contain mx-auto group-hover:scale-105 transition duration-300" onerror="handleFallback(this, './rbs4.jpeg', 'https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=800&q=80');" />
             <span class="absolute top-2 left-2 bg-rose-600 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">Parade</span>
           </div>
           <div class="p-3 bg-white border-t border-slate-100 flex-1 flex items-center justify-between">
@@ -675,9 +680,9 @@
         </div>
 
         <!-- Image 10 -->
-        <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition border border-slate-200 flex flex-col cursor-pointer group" onclick="openLightbox('rbs2_2.jpeg', 'Stage Program & Performances')">
-          <div class="h-64 sm:h-72 bg-slate-950 flex items-center justify-center p-1.5 relative overflow-hidden">
-            <img src="rbs2_2.jpeg" alt="Stage Program & Performances" class="max-h-full max-w-full object-contain mx-auto group-hover:scale-105 transition duration-300" onerror="this.src='rbs2.jpeg';" />
+        <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition border border-slate-200 flex flex-col cursor-pointer group" onclick="openLightbox(this.querySelector('img').src, 'Stage Program & Performances')">
+          <div class="h-64 sm:h-72 img-frame-bg flex items-center justify-center p-1.5 relative overflow-hidden">
+            <img src="./rbs2_2.jpeg" alt="Stage Program & Performances" class="max-h-full max-w-full object-contain mx-auto group-hover:scale-105 transition duration-300" onerror="handleFallback(this, './rbs2.jpeg', 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=800&q=80');" />
             <span class="absolute top-2 left-2 bg-indigo-600 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">Stage</span>
           </div>
           <div class="p-3 bg-white border-t border-slate-100 flex-1 flex items-center justify-between">
@@ -1283,6 +1288,21 @@
 
   <!-- JAVASCRIPT CONTROLLERS -->
   <script>
+    // Universal 3-tier image fallback controller for GitHub Pages
+    function handleFallback(img, localAlt, cdnFallback) {
+      if (!img.dataset.attempt) {
+        img.dataset.attempt = '1';
+        if (localAlt) {
+          img.src = localAlt;
+          return;
+        }
+      }
+      if (img.dataset.attempt === '1') {
+        img.dataset.attempt = '2';
+        img.src = cdnFallback;
+      }
+    }
+
     // Official Credentials
     const ADMIN_CREDENTIALS = {
       email: 'rambaxsinghintercollege@gmail.com',
