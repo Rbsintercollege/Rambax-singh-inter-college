@@ -52,7 +52,7 @@
 
         /* Hero Banner */
         .hero-banner {
-            background: linear-gradient(rgba(11, 29, 58, 0.85), rgba(11, 29, 58, 0.85)), url('rbs8.jpeg') center/cover;
+            background: linear-gradient(rgba(11, 29, 58, 0.85), rgba(11, 29, 58, 0.85)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1200&auto=format&fit=crop') center/cover;
             color: #fff; padding: 90px 0; text-align: center;
         }
 
@@ -88,6 +88,7 @@
         <div class="container d-flex justify-content-between align-items-center flex-wrap">
             <div>
                 <i class="fa-solid fa-location-dot text-warning me-2"></i> Bithara, Aliganj, Etah (207247)
+                <span class="ms-3 d-none d-md-inline"><i class="fa-solid fa-envelope text-warning me-2"></i> rambaxsinghintercollege@gmail.com</span>
                 <span class="ms-3 d-none d-md-inline"><i class="fa-solid fa-phone text-warning me-2"></i> +91 6395052394</span>
             </div>
             <div>
@@ -189,27 +190,27 @@
                 </div>
                 <div class="row g-4">
                     <div class="col-md-4 col-sm-6">
-                        <img src="rbs3.jpeg" alt="Teachers Day Celebration" class="gallery-img shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=600&auto=format&fit=crop" alt="Teachers Day Celebration" class="gallery-img shadow-sm">
                         <p class="text-center mt-2 fw-semibold text-secondary">Teachers' Day Celebration</p>
                     </div>
                     <div class="col-md-4 col-sm-6">
-                        <img src="rbs7.jpeg" alt="Republic Day Award" class="gallery-img shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=600&auto=format&fit=crop" alt="Republic Day Award" class="gallery-img shadow-sm">
                         <p class="text-center mt-2 fw-semibold text-secondary">26th January Student Award</p>
                     </div>
                     <div class="col-md-4 col-sm-6">
-                        <img src="rbs10.jpeg" alt="Cultural Event" class="gallery-img shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=600&auto=format&fit=crop" alt="Cultural Event" class="gallery-img shadow-sm">
                         <p class="text-center mt-2 fw-semibold text-secondary">Cultural & Traditional Event</p>
                     </div>
                     <div class="col-md-4 col-sm-6">
-                        <img src="rbs12.jpeg" alt="Student Recognition" class="gallery-img shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?q=80&w=600&auto=format&fit=crop" alt="Student Recognition" class="gallery-img shadow-sm">
                         <p class="text-center mt-2 fw-semibold text-secondary">Academic Appreciation</p>
                     </div>
                     <div class="col-md-4 col-sm-6">
-                        <img src="rbs11.jpeg" alt="Student Program" class="gallery-img shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=600&auto=format&fit=crop" alt="Student Program" class="gallery-img shadow-sm">
                         <p class="text-center mt-2 fw-semibold text-secondary">Student Program</p>
                     </div>
                     <div class="col-md-4 col-sm-6">
-                        <img src="rbs8.jpeg" alt="Staff Gathering" class="gallery-img shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?q=80&w=600&auto=format&fit=crop" alt="Staff Gathering" class="gallery-img shadow-sm">
                         <p class="text-center mt-2 fw-semibold text-secondary">School Management & Staff</p>
                     </div>
                 </div>
@@ -270,7 +271,7 @@
                 <div class="row align-items-center">
                     <div class="col-md-4 text-center mb-4 mb-md-0">
                         <div class="p-4 bg-white shadow-sm rounded border">
-                            <img src="rbs12.jpeg" alt="Manager Vishnu Kant" class="manager-img mb-3">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=300&auto=format&fit=crop" alt="Manager Vishnu Kant" class="manager-img mb-3">
                             <h4 class="fw-bold mb-0" style="color: var(--primary-navy);">Vishnu Kant</h4>
                             <p class="text-warning fw-bold mb-0">Manager, RBS Inter College</p>
                         </div>
@@ -289,7 +290,7 @@
         <div id="adminPanel" class="admin-section">
             <div class="admin-header d-flex justify-content-between align-items-center flex-wrap mb-4">
                 <div class="d-flex align-items-center">
-                    <img src="rbs12.jpeg" alt="Manager" class="rounded-circle border border-2 border-warning me-3" style="width: 55px; height: 55px; object-fit: cover;">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=100&auto=format&fit=crop" alt="Manager" class="rounded-circle border border-2 border-warning me-3" style="width: 55px; height: 55px; object-fit: cover;">
                     <div>
                         <h4 class="mb-0 text-warning fw-bold">RBS ADMIN PORTAL</h4>
                         <small>Logged in as: <strong>Vishnu Kant (Manager)</strong></small>
@@ -448,7 +449,7 @@
                     <form id="adminLoginForm">
                         <div class="mb-3">
                             <label class="form-label fw-bold">Admin Email ID</label>
-                            <input type="email" id="loginEmail" class="form-control" placeholder="rbsintercollege@123" required>
+                            <input type="email" id="loginEmail" class="form-control" placeholder="rambaxsinghintercollege@gmail.com" required>
                         </div>
                         <div class="mb-3">
                             <label class="form-label fw-bold">Password</label>
@@ -468,6 +469,7 @@
                 <div class="col-md-5">
                     <h4 class="fw-bold text-warning mb-3">RBS INTER COLLEGE</h4>
                     <p><i class="fa-solid fa-location-dot me-2 text-warning"></i> Bithara, Aliganj, Etah, Uttar Pradesh - 207247</p>
+                    <p><i class="fa-solid fa-envelope me-2 text-warning"></i> rambaxsinghintercollege@gmail.com</p>
                     <p><i class="fa-solid fa-phone me-2 text-warning"></i> Manager (Vishnu Kant): +91 6395052394</p>
                     <p><i class="fa-solid fa-graduation-cap me-2 text-warning"></i> Class 1st to Class 12th</p>
                 </div>
@@ -482,7 +484,8 @@
                 </div>
                 <div class="col-md-4">
                     <h5 class="fw-bold text-warning mb-3">Contact Helpline</h5>
-                    <a href="tel:6395052394" class="btn btn-warning fw-bold w-100 py-2"><i class="fa-solid fa-phone me-2"></i> Call: 6395052394</a>
+                    <a href="tel:6395052394" class="btn btn-warning fw-bold w-100 py-2 mb-2"><i class="fa-solid fa-phone me-2"></i> Call: 6395052394</a>
+                    <a href="mailto:rambaxsinghintercollege@gmail.com" class="btn btn-outline-light fw-bold w-100 py-2"><i class="fa-solid fa-envelope me-2"></i> Send Email</a>
                 </div>
             </div>
         </div>
@@ -534,7 +537,7 @@
             let email = document.getElementById('loginEmail').value;
             let pass = document.getElementById('loginPass').value;
 
-            if(email === "rbsintercollege@123" && pass === "vishnukant@207247") {
+            if(email === "rambaxsinghintercollege@gmail.com" && pass === "vishnukant@207247") {
                 let loginModal = bootstrap.Modal.getInstance(document.getElementById('loginModal'));
                 loginModal.hide();
                 
