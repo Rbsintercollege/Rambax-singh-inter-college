@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ram Bax Singh Inter College | Bithara, Aliganj (Etah)</title>
   
-  <!-- Google Fonts: Cinzel for Crest, Montserrat & Outfit for DPS Institutional Look -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Montserrat:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   
-  <!-- Font Awesome 6 -->
+  <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   
   <!-- Tailwind CSS CDN -->
@@ -21,10 +21,10 @@
         extend: {
           colors: {
             dps: {
-              green: '#00482b',       /* DPS Classic Forest Green */
+              green: '#00482b',
               greenDark: '#00331e',
               greenLight: '#08633e',
-              gold: '#c59a3f',        /* Royal Institutional Gold */
+              gold: '#c59a3f',
               goldLight: '#e5be68',
               goldDark: '#9c7320',
               navy: '#091e3a',
@@ -43,7 +43,7 @@
   </script>
 
   <style>
-    /* Print Styling for Marksheet */
+    /* Marksheet print styling */
     @media print {
       body * { visibility: hidden !important; }
       #printableMarksheet, #printableMarksheet * { visibility: visible !important; }
@@ -61,33 +61,51 @@
     }
 
     .crest-watermark {
-      background-image: url('./image_a45465.jpg'), url('https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=400&q=80');
+      background-image: url('./image_a45465.jpg'), url('./image_a43275.jpg');
       background-position: center;
       background-repeat: no-repeat;
       background-size: 280px;
     }
 
     /* DPS Style Smooth Transitions */
-    .slider-fade {
-      transition: opacity 0.8s ease-in-out;
+    .slide-item {
+      transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1), transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
     }
     
-    /* Custom scrollbar */
-    ::-webkit-scrollbar {
-      width: 8px;
-      height: 8px;
+    /* Professional RBS Face-Safe Gallery Card Styling */
+    .rbs-gallery-card {
+      background-color: #f8f9fa;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid #e2e8f0;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
     }
-    ::-webkit-scrollbar-track {
-      background: #f1f1f1;
+    .rbs-gallery-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 14px 28px rgba(0,0,0,0.12);
+      border-color: #c59a3f;
     }
-    ::-webkit-scrollbar-thumb {
-      background: #00482b;
-      border-radius: 4px;
+    .rbs-img-container {
+      width: 100%;
+      height: 280px;
+      background-color: #1a1a1a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
     }
-
-    /* Image container background to prevent black boxes */
-    .img-frame-bg {
-      background: linear-gradient(135deg, #091e3a 0%, #00482b 100%);
+    .rbs-gallery-img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      transition: transform 0.3s ease;
+    }
+    .rbs-gallery-card:hover .rbs-gallery-img {
+      transform: scale(1.03);
     }
   </style>
 </head>
@@ -121,14 +139,14 @@
     </div>
   </div>
 
-  <!-- MAIN INSTITUTIONAL HEADER (DPS Mathura Road Layout) -->
+  <!-- MAIN INSTITUTIONAL HEADER -->
   <header class="bg-white border-b-2 border-dps-gold shadow-sm sticky top-0 z-40">
     <div class="max-w-7xl mx-auto px-4 py-3 flex flex-wrap justify-between items-center gap-4">
       
       <!-- Brand Crest & Title -->
       <a href="#" class="flex items-center gap-3.5 md:gap-5 group">
         <div class="relative">
-          <img src="./image_a45465.jpg" alt="RBS College Official Seal" class="w-16 h-16 sm:w-20 sm:h-20 rounded-full border-2 border-dps-gold shadow-md object-contain bg-white group-hover:scale-105 transition" onerror="handleFallback(this, './image_a43275.jpg', 'https://ui-avatars.com/api/?name=RBS+College&background=00482b&color=c59a3f&size=128&bold=true');" />
+          <img src="image_a45465.jpg" alt="RBS College Official Seal" class="w-16 h-16 sm:w-20 sm:h-20 rounded-full border-2 border-dps-gold shadow-md object-contain bg-white group-hover:scale-105 transition" onerror="autoFixImg(this, ['image_a43275.jpg', 'https://ui-avatars.com/api/?name=RBS+College&background=00482b&color=c59a3f&size=128&bold=true'])" />
           <span class="absolute -bottom-1 -right-1 bg-dps-green text-dps-goldLight text-[9px] font-bold px-1.5 py-0.5 rounded-full border border-white">ESTD</span>
         </div>
         <div>
@@ -140,7 +158,7 @@
             <span class="text-slate-300">•</span>
             <span class="text-slate-600 font-medium">Bithara-Sarai Road, Aliganj (Etah) 207247</span>
           </div>
-          <p class="text-[11px] text-slate-500 font-medium hidden sm:block">A Premier Residential & Day-Boarding Institution for Holistic Learning</p>
+          <p class="text-[11px] text-slate-500 font-medium hidden sm:block">Class 1st to 12th &bull; Science & Arts &bull; Residential Hostel Parisar</p>
         </div>
       </a>
 
@@ -161,12 +179,10 @@
         <a href="#hero-section" class="px-3.5 py-2 hover:bg-dps-greenDark text-white transition flex items-center gap-1.5 border-b-2 border-dps-gold">
           <i class="fa-solid fa-house"></i> Home
         </a>
-        <a href="#about-section" class="px-3.5 py-2 hover:bg-dps-greenDark text-slate-100 hover:text-white transition">About R.B.S.</a>
         <a href="#dignitaries" class="px-3.5 py-2 hover:bg-dps-greenDark text-slate-100 hover:text-white transition">Our Dignitaries</a>
-        <a href="#wings-section" class="px-3.5 py-2 hover:bg-dps-greenDark text-slate-100 hover:text-white transition">Our Wings (1 to 12)</a>
+        <a href="#wings-section" class="px-3.5 py-2 hover:bg-dps-greenDark text-slate-100 hover:text-white transition">Class 1 to 12th Wings</a>
         <a href="#hostel-section" class="px-3.5 py-2 hover:bg-dps-greenDark text-slate-100 hover:text-white transition">Residential Hostel</a>
-        <a href="#gallery-section" class="px-3.5 py-2 hover:bg-dps-greenDark text-slate-100 hover:text-white transition">Campus Gallery</a>
-        <a href="#toppers-section" class="px-3.5 py-2 hover:bg-dps-greenDark text-slate-100 hover:text-white transition">Top Achievers</a>
+        <a href="#gallery-section" class="px-3.5 py-2 hover:bg-dps-greenDark text-slate-100 hover:text-white transition">Campus Gallery (10 Photos)</a>
         <a href="#admission-desk" class="px-3.5 py-2 bg-dps-gold text-dps-navy font-bold hover:bg-dps-goldLight transition ml-auto rounded">
           <i class="fa-solid fa-pen-nib mr-1"></i> Online Admission Form
         </a>
@@ -174,117 +190,178 @@
     </nav>
   </header>
 
-  <!-- BREAKING NEWS / MARQUEE TICKER (DPS Mathura Road Component) -->
-  <div class="bg-amber-100/90 border-b border-amber-300 py-1.5 px-4 text-xs">
+  <!-- BREAKING NEWS / MARQUEE TICKER -->
+  <div class="bg-amber-100 border-b border-amber-300 py-1.5 px-4 text-xs">
     <div class="max-w-7xl mx-auto flex items-center gap-3">
       <span class="bg-red-700 text-white font-bold uppercase text-[10px] px-2 py-0.5 rounded tracking-wide shrink-0 animate-pulse">
         Notice
       </span>
       <marquee behavior="scroll" direction="left" class="text-slate-800 font-medium">
-        🔔 Admissions Open for Academic Session 2026-2027 from Class 1st to 12th (Science & Arts Stream) &bull; Boarding & Day Scholar Seats Available &bull; Special Night Supervised Study for Hostel Students &bull; Contact Director Avadhesh Singh & Manager Vishnu Kant at 6395052394 for Registration.
+        🔔 Admissions Open for Academic Session 2026-2027 from Class 1st to 12th (Science & Arts Stream) &bull; 24x7 Residential Hostel Seats Available &bull; Special Night Supervised Study for Hostel Students &bull; Contact Director Avadhesh Singh & Manager Vishnu Kant at 6395052394.
       </marquee>
     </div>
   </div>
 
-  <!-- HERO SLIDER SECTION (DPS Mathura Road Auto-Running Carousel) -->
-  <section id="hero-section" class="relative bg-dps-greenDark overflow-hidden">
-    <div class="relative w-full h-[380px] sm:h-[480px] md:h-[560px] select-none">
-      
-      <!-- Slides Container (object-contain with ambient framing: NO FACES CROPPED) -->
-      <div id="dpsCarousel" class="relative w-full h-full flex items-center justify-center">
+  <!-- HERO SLIDER SECTION (DPS MATHURA ROAD STYLE AUTO CHANGING CAROUSEL) -->
+  <section id="hero-section" class="relative bg-[#111111] overflow-hidden select-none border-b-4 border-dps-gold">
+    
+    <!-- Top Slider Indicator Bar -->
+    <div class="absolute top-0 inset-x-0 z-30 flex items-center justify-between px-4 py-2 bg-black/40 text-white text-xs backdrop-blur-sm">
+      <div class="flex items-center gap-2">
+        <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+        <span class="font-bold text-dps-goldLight text-[11px] uppercase tracking-wider">Campus Life in Motion</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <span id="slideCounterText" class="font-mono text-xs font-bold text-dps-gold">Slide 1 of 10</span>
+        <button id="togglePlayBtn" onclick="toggleAutoPlay()" class="bg-white/20 hover:bg-white/30 text-white text-[10px] font-bold px-2 py-0.5 rounded transition">
+          <i class="fa-solid fa-pause mr-1"></i> Auto-Playing
+        </button>
+      </div>
+    </div>
 
-        <!-- Slide 1: Campus Courtyard (rbs5_2.jpeg) -->
-        <div class="slide absolute inset-0 slider-fade opacity-100 z-20 flex items-center justify-center img-frame-bg">
-          <img src="./rbs5_2.jpeg" alt="RBS Campus Courtyard" class="w-full h-full object-contain mx-auto" onerror="handleFallback(this, './rbs5.jpeg', 'https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1400&q=80');" />
-          <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-5 sm:p-10 text-white pointer-events-none">
-            <div class="max-w-7xl mx-auto">
-              <span class="bg-dps-gold text-dps-navy font-bold text-xs uppercase px-2.5 py-1 rounded shadow">Campus Overview</span>
-              <h2 class="font-crest text-xl sm:text-3xl md:text-4xl font-extrabold mt-1.5 text-white">Ram Bax Singh Inter College, Bithara</h2>
-              <p class="text-xs sm:text-sm text-slate-200 mt-1 max-w-2xl">A serene, green campus fostering discipline, academic brilliance, and character building.</p>
-            </div>
+    <!-- Active Progress Bar -->
+    <div class="absolute top-0 left-0 h-1 bg-dps-gold z-40 transition-all duration-300" id="slideProgressBar" style="width: 10%;"></div>
+
+    <!-- Slide Carousel Wrapper -->
+    <div class="relative w-full h-[360px] sm:h-[480px] md:h-[560px]" id="carouselViewport">
+
+      <!-- Slide 1 -->
+      <div class="slide-item absolute inset-0 opacity-100 z-20 flex items-center justify-center bg-[#1a1a1a]">
+        <img src="rbs12_2.jpeg" alt="Student Activity & Award Distribution" class="w-full h-full object-contain" onerror="autoFixImg(this, ['rbs12.jpeg', 'https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=80'])" />
+        <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/95 via-black/50 to-transparent p-6 sm:p-10 text-white pointer-events-none">
+          <div class="max-w-7xl mx-auto">
+            <span class="bg-dps-gold text-dps-navy font-bold text-xs uppercase px-2.5 py-0.5 rounded shadow">1 / 10 Activity</span>
+            <h2 class="font-crest text-xl sm:text-3xl md:text-4xl font-extrabold mt-1 text-white">Student Activity & Award Distribution</h2>
+            <p class="text-xs sm:text-sm text-slate-200 mt-0.5">Residential R.B.S. Inter College, Bithara, Aliganj (Etah)</p>
           </div>
         </div>
-
-        <!-- Slide 2: Assembly & Parade (rbs4_2.jpeg) -->
-        <div class="slide absolute inset-0 slider-fade opacity-0 z-10 flex items-center justify-center img-frame-bg">
-          <img src="./rbs4_2.jpeg" alt="Morning Assembly & National Flags" class="w-full h-full object-contain mx-auto" onerror="handleFallback(this, './rbs4.jpeg', 'https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1400&q=80');" />
-          <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-5 sm:p-10 text-white pointer-events-none">
-            <div class="max-w-7xl mx-auto">
-              <span class="bg-emerald-600 text-white font-bold text-xs uppercase px-2.5 py-1 rounded shadow">Morning Assembly</span>
-              <h2 class="font-crest text-xl sm:text-3xl md:text-4xl font-extrabold mt-1.5 text-white">Tiranga Yatra & Cultural Discipline</h2>
-              <p class="text-xs sm:text-sm text-slate-200 mt-1 max-w-2xl">Instilling patriotic values and leadership through daily morning prayers and assembly.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 3: Classroom Mentorship (rbs12_2.jpeg) -->
-        <div class="slide absolute inset-0 slider-fade opacity-0 z-10 flex items-center justify-center img-frame-bg">
-          <img src="./rbs12_2.jpeg" alt="Manager Vishnu Kant In Classroom" class="w-full h-full object-contain mx-auto" onerror="handleFallback(this, './rbs12.jpeg', 'https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1400&q=80');" />
-          <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-5 sm:p-10 text-white pointer-events-none">
-            <div class="max-w-7xl mx-auto">
-              <span class="bg-amber-500 text-dps-navy font-bold text-xs uppercase px-2.5 py-1 rounded shadow">Student Guidance</span>
-              <h2 class="font-crest text-xl sm:text-3xl md:text-4xl font-extrabold mt-1.5 text-white">Personal Attention & Class Mentorship</h2>
-              <p class="text-xs sm:text-sm text-slate-200 mt-1 max-w-2xl">Manager Shri Vishnu Kant personally interacting and encouraging student excellence.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 4: Cultural Fest Drama (rbs10_2.jpeg) -->
-        <div class="slide absolute inset-0 slider-fade opacity-0 z-10 flex items-center justify-center img-frame-bg">
-          <img src="./rbs10_2.jpeg" alt="Cultural Dance & Drama Costumes" class="w-full h-full object-contain mx-auto" onerror="handleFallback(this, './rbs10.jpeg', 'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1400&q=80');" />
-          <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-5 sm:p-10 text-white pointer-events-none">
-            <div class="max-w-7xl mx-auto">
-              <span class="bg-purple-600 text-white font-bold text-xs uppercase px-2.5 py-1 rounded shadow">Cultural Spectrum</span>
-              <h2 class="font-crest text-xl sm:text-3xl md:text-4xl font-extrabold mt-1.5 text-white">Sanskriti & Dramatic Arts Presentation</h2>
-              <p class="text-xs sm:text-sm text-slate-200 mt-1 max-w-2xl">Nurturing creative expression and Indian heritage through stage celebrations.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 5: Honors & Certificates (rbs8_2.jpeg) -->
-        <div class="slide absolute inset-0 slider-fade opacity-0 z-10 flex items-center justify-center img-frame-bg">
-          <img src="./rbs8_2.jpeg" alt="Republic Day Merit Certificates" class="w-full h-full object-contain mx-auto" onerror="handleFallback(this, './rbs8.jpeg', 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1400&q=80');" />
-          <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-5 sm:p-10 text-white pointer-events-none">
-            <div class="max-w-7xl mx-auto">
-              <span class="bg-dps-gold text-dps-navy font-bold text-xs uppercase px-2.5 py-1 rounded shadow">Pratibha Samman</span>
-              <h2 class="font-crest text-xl sm:text-3xl md:text-4xl font-extrabold mt-1.5 text-white">Republic Day Medal & Merit Awards</h2>
-              <p class="text-xs sm:text-sm text-slate-200 mt-1 max-w-2xl">Recognizing academic achievers and co-curricular champions every academic year.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 6: Senior Teaching Session (rbs7_2.jpeg) -->
-        <div class="slide absolute inset-0 slider-fade opacity-0 z-10 flex items-center justify-center img-frame-bg">
-          <img src="./rbs7_2.jpeg" alt="Senior Teaching Lecture" class="w-full h-full object-contain mx-auto" onerror="handleFallback(this, './rbs7.jpeg', 'https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=1400&q=80');" />
-          <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-5 sm:p-10 text-white pointer-events-none">
-            <div class="max-w-7xl mx-auto">
-              <span class="bg-blue-600 text-white font-bold text-xs uppercase px-2.5 py-1 rounded shadow">Academic Excellence</span>
-              <h2 class="font-crest text-xl sm:text-3xl md:text-4xl font-extrabold mt-1.5 text-white">Board Exam Preparation & Lectures</h2>
-              <p class="text-xs sm:text-sm text-slate-200 mt-1 max-w-2xl">Concept-driven teaching by experienced faculty for Class 10th and 12th.</p>
-            </div>
-          </div>
-        </div>
-
       </div>
 
-      <!-- Left / Right Slider Controls -->
-      <button onclick="prevSlide()" class="absolute left-3 top-1/2 -translate-y-1/2 z-30 w-10 h-10 rounded-full bg-black/50 hover:bg-dps-gold text-white hover:text-dps-navy flex items-center justify-center transition shadow-lg">
-        <i class="fa-solid fa-chevron-left text-sm"></i>
-      </button>
-      <button onclick="nextSlide()" class="absolute right-3 top-1/2 -translate-y-1/2 z-30 w-10 h-10 rounded-full bg-black/50 hover:bg-dps-gold text-white hover:text-dps-navy flex items-center justify-center transition shadow-lg">
-        <i class="fa-solid fa-chevron-right text-sm"></i>
-      </button>
-
-      <!-- Carousel Progress Bar & Dots -->
-      <div class="absolute bottom-3 left-0 right-0 z-30 flex flex-col items-center gap-2">
-        <div class="flex items-center gap-2" id="sliderDots">
-          <!-- Populated by JS -->
+      <!-- Slide 2 -->
+      <div class="slide-item absolute inset-0 opacity-0 z-10 flex items-center justify-center bg-[#1a1a1a]">
+        <img src="rbs11_2.jpeg" alt="Cultural Dress Competition" class="w-full h-full object-contain" onerror="autoFixImg(this, ['rbs11.jpeg', 'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=80'])" />
+        <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/95 via-black/50 to-transparent p-6 sm:p-10 text-white pointer-events-none">
+          <div class="max-w-7xl mx-auto">
+            <span class="bg-purple-600 text-white font-bold text-xs uppercase px-2.5 py-0.5 rounded shadow">2 / 10 Cultural</span>
+            <h2 class="font-crest text-xl sm:text-3xl md:text-4xl font-extrabold mt-1 text-white">Cultural Dress Competition</h2>
+            <p class="text-xs sm:text-sm text-slate-200 mt-0.5">Residential R.B.S. Inter College, Bithara, Aliganj (Etah)</p>
+          </div>
         </div>
       </div>
+
+      <!-- Slide 3 -->
+      <div class="slide-item absolute inset-0 opacity-0 z-10 flex items-center justify-center bg-[#1a1a1a]">
+        <img src="rbs10_2.jpeg" alt="Group Photo of Students" class="w-full h-full object-contain" onerror="autoFixImg(this, ['rbs10.jpeg', 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=80'])" />
+        <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/95 via-black/50 to-transparent p-6 sm:p-10 text-white pointer-events-none">
+          <div class="max-w-7xl mx-auto">
+            <span class="bg-blue-600 text-white font-bold text-xs uppercase px-2.5 py-0.5 rounded shadow">3 / 10 Students</span>
+            <h2 class="font-crest text-xl sm:text-3xl md:text-4xl font-extrabold mt-1 text-white">Group Photo of Students</h2>
+            <p class="text-xs sm:text-sm text-slate-200 mt-0.5">Residential R.B.S. Inter College, Bithara, Aliganj (Etah)</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="slide-item absolute inset-0 opacity-0 z-10 flex items-center justify-center bg-[#1a1a1a]">
+        <img src="rsb9_2.jpeg" alt="Staff & Management Celebration" class="w-full h-full object-contain" onerror="autoFixImg(this, ['rsb9.jpeg', 'rbs9.jpeg', 'rbs9_2.jpeg', 'https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1200&q=80'])" />
+        <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/95 via-black/50 to-transparent p-6 sm:p-10 text-white pointer-events-none">
+          <div class="max-w-7xl mx-auto">
+            <span class="bg-emerald-600 text-white font-bold text-xs uppercase px-2.5 py-0.5 rounded shadow">4 / 10 Celebration</span>
+            <h2 class="font-crest text-xl sm:text-3xl md:text-4xl font-extrabold mt-1 text-white">Staff & Management Celebration</h2>
+            <p class="text-xs sm:text-sm text-slate-200 mt-0.5">Residential R.B.S. Inter College, Bithara, Aliganj (Etah)</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 5 -->
+      <div class="slide-item absolute inset-0 opacity-0 z-10 flex items-center justify-center bg-[#1a1a1a]">
+        <img src="rbs8_2.jpeg" alt="Republic Day Award Ceremony" class="w-full h-full object-contain" onerror="autoFixImg(this, ['rbs8.jpeg', 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80'])" />
+        <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/95 via-black/50 to-transparent p-6 sm:p-10 text-white pointer-events-none">
+          <div class="max-w-7xl mx-auto">
+            <span class="bg-red-600 text-white font-bold text-xs uppercase px-2.5 py-0.5 rounded shadow">5 / 10 Republic Day</span>
+            <h2 class="font-crest text-xl sm:text-3xl md:text-4xl font-extrabold mt-1 text-white">Republic Day Award Ceremony</h2>
+            <p class="text-xs sm:text-sm text-slate-200 mt-0.5">Residential R.B.S. Inter College, Bithara, Aliganj (Etah)</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 6 -->
+      <div class="slide-item absolute inset-0 opacity-0 z-10 flex items-center justify-center bg-[#1a1a1a]">
+        <img src="rbs7_2.jpeg" alt="Classroom Teaching Session" class="w-full h-full object-contain" onerror="autoFixImg(this, ['rbs7.jpeg', 'https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=1200&q=80'])" />
+        <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/95 via-black/50 to-transparent p-6 sm:p-10 text-white pointer-events-none">
+          <div class="max-w-7xl mx-auto">
+            <span class="bg-cyan-700 text-white font-bold text-xs uppercase px-2.5 py-0.5 rounded shadow">6 / 10 Classroom</span>
+            <h2 class="font-crest text-xl sm:text-3xl md:text-4xl font-extrabold mt-1 text-white">Classroom Teaching Session</h2>
+            <p class="text-xs sm:text-sm text-slate-200 mt-0.5">Residential R.B.S. Inter College, Bithara, Aliganj (Etah)</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 7 -->
+      <div class="slide-item absolute inset-0 opacity-0 z-10 flex items-center justify-center bg-[#1a1a1a]">
+        <img src="rbs6_2.jpeg" alt="Medal & Certificate Distribution" class="w-full h-full object-contain" onerror="autoFixImg(this, ['rbs6.jpeg', 'https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=1200&q=80'])" />
+        <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/95 via-black/50 to-transparent p-6 sm:p-10 text-white pointer-events-none">
+          <div class="max-w-7xl mx-auto">
+            <span class="bg-amber-600 text-white font-bold text-xs uppercase px-2.5 py-0.5 rounded shadow">7 / 10 Honors</span>
+            <h2 class="font-crest text-xl sm:text-3xl md:text-4xl font-extrabold mt-1 text-white">Medal & Certificate Distribution</h2>
+            <p class="text-xs sm:text-sm text-slate-200 mt-0.5">Residential R.B.S. Inter College, Bithara, Aliganj (Etah)</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 8 -->
+      <div class="slide-item absolute inset-0 opacity-0 z-10 flex items-center justify-center bg-[#1a1a1a]">
+        <img src="rbs5_2.jpeg" alt="School Campus & Building View" class="w-full h-full object-contain" onerror="autoFixImg(this, ['rbs5.jpeg', 'https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1200&q=80'])" />
+        <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/95 via-black/50 to-transparent p-6 sm:p-10 text-white pointer-events-none">
+          <div class="max-w-7xl mx-auto">
+            <span class="bg-emerald-700 text-white font-bold text-xs uppercase px-2.5 py-0.5 rounded shadow">8 / 10 Campus</span>
+            <h2 class="font-crest text-xl sm:text-3xl md:text-4xl font-extrabold mt-1 text-white">School Campus & Building View</h2>
+            <p class="text-xs sm:text-sm text-slate-200 mt-0.5">Residential R.B.S. Inter College, Bithara, Aliganj (Etah)</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 9 -->
+      <div class="slide-item absolute inset-0 opacity-0 z-10 flex items-center justify-center bg-[#1a1a1a]">
+        <img src="rbs4_2.jpeg" alt="School Function & Parade" class="w-full h-full object-contain" onerror="autoFixImg(this, ['rbs4.jpeg', 'https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1200&q=80'])" />
+        <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/95 via-black/50 to-transparent p-6 sm:p-10 text-white pointer-events-none">
+          <div class="max-w-7xl mx-auto">
+            <span class="bg-rose-600 text-white font-bold text-xs uppercase px-2.5 py-0.5 rounded shadow">9 / 10 Parade</span>
+            <h2 class="font-crest text-xl sm:text-3xl md:text-4xl font-extrabold mt-1 text-white">School Function & Parade</h2>
+            <p class="text-xs sm:text-sm text-slate-200 mt-0.5">Residential R.B.S. Inter College, Bithara, Aliganj (Etah)</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 10 -->
+      <div class="slide-item absolute inset-0 opacity-0 z-10 flex items-center justify-center bg-[#1a1a1a]">
+        <img src="rbs2_2.jpeg" alt="Stage Program & Performances" class="w-full h-full object-contain" onerror="autoFixImg(this, ['rbs2.jpeg', 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1200&q=80'])" />
+        <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/95 via-black/50 to-transparent p-6 sm:p-10 text-white pointer-events-none">
+          <div class="max-w-7xl mx-auto">
+            <span class="bg-indigo-600 text-white font-bold text-xs uppercase px-2.5 py-0.5 rounded shadow">10 / 10 Stage Show</span>
+            <h2 class="font-crest text-xl sm:text-3xl md:text-4xl font-extrabold mt-1 text-white">Stage Program & Performances</h2>
+            <p class="text-xs sm:text-sm text-slate-200 mt-0.5">Residential R.B.S. Inter College, Bithara, Aliganj (Etah)</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Navigation Arrows -->
+    <button onclick="prevSlideManual()" class="absolute left-3 top-1/2 -translate-y-1/2 z-30 w-11 h-11 rounded-full bg-black/60 hover:bg-dps-gold text-white hover:text-dps-navy flex items-center justify-center transition shadow-xl border border-white/20">
+      <i class="fa-solid fa-chevron-left text-base"></i>
+    </button>
+    <button onclick="nextSlideManual()" class="absolute right-3 top-1/2 -translate-y-1/2 z-30 w-11 h-11 rounded-full bg-black/60 hover:bg-dps-gold text-white hover:text-dps-navy flex items-center justify-center transition shadow-xl border border-white/20">
+      <i class="fa-solid fa-chevron-right text-base"></i>
+    </button>
+
+    <!-- Bottom Indicator Dots -->
+    <div class="absolute bottom-4 left-0 right-0 z-30 flex justify-center items-center gap-2" id="sliderDots">
+      <!-- Generated via JS -->
     </div>
   </section>
 
-  <!-- DPS STYLE FLOATING METRIC CARDS -->
+  <!-- DPS STYLE FLOATING METRICS -->
   <section class="bg-white border-b shadow-sm relative z-20">
     <div class="max-w-7xl mx-auto px-4 py-6 grid grid-cols-2 md:grid-cols-4 gap-4 text-center divide-x divide-slate-100">
       <div class="p-2">
@@ -306,7 +383,7 @@
     </div>
   </section>
 
-  <!-- OUR DIGNITARIES SECTION (DPS Mathura Road "Guiding Lights of Excellence") -->
+  <!-- OUR DIGNITARIES SECTION (DPS Mathura Road Layout) -->
   <section id="dignitaries" class="py-14 bg-dps-surface border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4">
       
@@ -361,7 +438,7 @@
           <div>
             <div class="flex items-center gap-4 mb-4">
               <div class="relative w-24 h-24 shrink-0 bg-dps-surface rounded-full overflow-hidden border-2 border-dps-gold shadow">
-                <img src="./vishnu%20kant_2.jpg" alt="Manager Vishnu Kant" class="w-full h-full object-cover object-top" onerror="handleFallback(this, './vishnu kant.jpg', 'https://ui-avatars.com/api/?name=Vishnu+Kant&background=00482b&color=c59a3f&size=200&bold=true');" />
+                <img src="vishnu kant_2.jpg" alt="Manager Vishnu Kant" class="w-full h-full object-cover object-top" onerror="autoFixImg(this, ['vishnu kant.jpg', 'vishnukant.jpg', 'https://ui-avatars.com/api/?name=Vishnu+Kant&background=00482b&color=c59a3f&size=200&bold=true'])" />
                 <span class="absolute bottom-0 right-1 bg-emerald-500 w-4 h-4 rounded-full border-2 border-white" title="Active"></span>
               </div>
               <div>
@@ -399,12 +476,12 @@
     </div>
   </section>
 
-  <!-- OUR CURRICULUM & ACADEMIC WINGS (DPS Mathura Road "Our Curriculum" Layout) -->
+  <!-- OUR WINGS (CLASS 1 TO 12TH) -->
   <section id="wings-section" class="py-14 bg-white border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4">
       
       <div class="text-center max-w-2xl mx-auto mb-12">
-        <span class="text-xs font-bold text-dps-goldDark tracking-widest uppercase">Shaping Future Leaders</span>
+        <span class="text-xs font-bold text-dps-goldDark tracking-widest uppercase">Academic Excellence</span>
         <h2 class="font-crest text-2xl sm:text-3xl md:text-4xl font-extrabold text-dps-greenDark mt-2">
           Academic Wings & Curriculum (Class 1 to 12)
         </h2>
@@ -416,7 +493,7 @@
 
       <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
         
-        <!-- Wing 1: Primary Wing -->
+        <!-- Primary Wing -->
         <div class="bg-dps-surface rounded-2xl border border-slate-200 p-5 hover:shadow-lg transition flex flex-col justify-between">
           <div>
             <div class="w-12 h-12 rounded-xl bg-dps-green/10 text-dps-green flex items-center justify-center text-xl mb-4">
@@ -433,7 +510,7 @@
           </div>
         </div>
 
-        <!-- Wing 2: Middle Wing -->
+        <!-- Middle Wing -->
         <div class="bg-dps-surface rounded-2xl border border-slate-200 p-5 hover:shadow-lg transition flex flex-col justify-between">
           <div>
             <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center text-xl mb-4">
@@ -450,7 +527,7 @@
           </div>
         </div>
 
-        <!-- Wing 3: High School -->
+        <!-- Secondary Wing -->
         <div class="bg-dps-surface rounded-2xl border border-slate-200 p-5 hover:shadow-lg transition flex flex-col justify-between">
           <div>
             <div class="w-12 h-12 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center text-xl mb-4">
@@ -467,7 +544,7 @@
           </div>
         </div>
 
-        <!-- Wing 4: Senior Secondary Intermediate -->
+        <!-- Senior Secondary Wing -->
         <div class="bg-dps-surface rounded-2xl border-2 border-dps-gold/60 p-5 hover:shadow-lg transition flex flex-col justify-between relative bg-amber-50/30">
           <span class="absolute -top-2.5 right-4 bg-dps-gold text-dps-navy font-bold text-[10px] uppercase px-2 py-0.5 rounded shadow">Premier</span>
           <div>
@@ -489,7 +566,7 @@
     </div>
   </section>
 
-  <!-- RESIDENTIAL HOSTEL FACILITY SECTION (DPS Style Full Feature Box) -->
+  <!-- RESIDENTIAL HOSTEL FACILITY SECTION -->
   <section id="hostel-section" class="py-14 bg-dps-greenDark text-white relative overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 relative z-10">
       
@@ -550,144 +627,138 @@
     </div>
   </section>
 
-  <!-- DPS MATHURA ROAD STYLE CAMPUS PHOTO GALLERY & EVENTS SECTION -->
-  <section id="gallery-section" class="py-14 bg-dps-surface border-b border-slate-200">
+  <!-- Residential R.B.S. Inter College Gallery Section (GitHub Friendly & Face Safe) -->
+  <section id="gallery-section" class="gallery-section py-14 bg-slate-50 border-y border-slate-200">
     <div class="max-w-7xl mx-auto px-4">
-      
-      <!-- Section Title Header -->
-      <div class="text-center max-w-2xl mx-auto mb-10">
+      <div class="text-center mb-10">
         <span class="text-xs font-bold text-dps-goldDark tracking-widest uppercase bg-amber-50 px-3 py-1 rounded border border-amber-200">
-          Campus Chronicle & Events
+          Campus Life & Highlights
         </span>
-        <h2 class="font-crest text-2xl sm:text-3xl md:text-4xl font-extrabold text-dps-greenDark mt-2">
-          School Gallery & Events
-        </h2>
-        <p class="text-xs sm:text-sm text-slate-500 mt-1">
-          Residential R.B.S. Inter College, Bithara, Aliganj (Etah)
-        </p>
+        <h2 class="font-crest text-2xl sm:text-3xl md:text-4xl font-extrabold text-dps-greenDark mt-2">School Gallery & Events</h2>
+        <p class="text-xs sm:text-sm text-slate-500 mt-1">Residential R.B.S. Inter College, Bithara, Aliganj (Etah)</p>
         <div class="w-20 h-1 bg-dps-gold mx-auto mt-2.5 rounded-full"></div>
       </div>
 
-      <!-- Gallery Grid (100% Uncropped Faces with Ambient Framing & Lightbox) -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+      <!-- Gallery Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
 
         <!-- Image 1 -->
-        <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition border border-slate-200 flex flex-col cursor-pointer group" onclick="openLightbox(this.querySelector('img').src, 'Student Activity & Award Distribution')">
-          <div class="h-64 sm:h-72 img-frame-bg flex items-center justify-center p-1.5 relative overflow-hidden">
-            <img src="./rbs12_2.jpeg" alt="Student Activity & Award Distribution" class="max-h-full max-w-full object-contain mx-auto group-hover:scale-105 transition duration-300" onerror="handleFallback(this, './rbs12.jpeg', 'https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80');" />
-            <span class="absolute top-2 left-2 bg-dps-gold text-dps-navy text-[10px] font-bold px-2 py-0.5 rounded shadow">Academics</span>
-          </div>
-          <div class="p-3 bg-white border-t border-slate-100 flex-1 flex items-center justify-between">
-            <p class="text-xs font-semibold text-slate-800">Student Activity & Award Distribution</p>
-            <i class="fa-solid fa-expand text-[11px] text-slate-400 group-hover:text-dps-green"></i>
+        <div>
+          <div class="rbs-gallery-card shadow-sm cursor-pointer" onclick="openLightbox(this.querySelector('img').src, 'Student Activity & Award Distribution')">
+            <div class="rbs-img-container">
+              <img src="rbs12_2.jpeg" class="rbs-gallery-img" alt="Student Activity & Award Distribution" onerror="autoFixImg(this, ['rbs12.jpeg', 'https://via.placeholder.com/400x280?text=RBS+College'])">
+            </div>
+            <div class="card-body bg-white p-3.5 text-center flex-1 flex items-center justify-center">
+              <p class="card-text text-slate-700 mb-0 text-xs font-bold">Student Activity & Award Distribution</p>
+            </div>
           </div>
         </div>
 
         <!-- Image 2 -->
-        <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition border border-slate-200 flex flex-col cursor-pointer group" onclick="openLightbox(this.querySelector('img').src, 'Cultural Dress Competition')">
-          <div class="h-64 sm:h-72 img-frame-bg flex items-center justify-center p-1.5 relative overflow-hidden">
-            <img src="./rbs11_2.jpeg" alt="Cultural Dress Competition" class="max-h-full max-w-full object-contain mx-auto group-hover:scale-105 transition duration-300" onerror="handleFallback(this, './rbs11.jpeg', 'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80');" />
-            <span class="absolute top-2 left-2 bg-purple-600 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">Cultural</span>
-          </div>
-          <div class="p-3 bg-white border-t border-slate-100 flex-1 flex items-center justify-between">
-            <p class="text-xs font-semibold text-slate-800">Cultural Dress Competition</p>
-            <i class="fa-solid fa-expand text-[11px] text-slate-400 group-hover:text-dps-green"></i>
+        <div>
+          <div class="rbs-gallery-card shadow-sm cursor-pointer" onclick="openLightbox(this.querySelector('img').src, 'Cultural Dress Competition')">
+            <div class="rbs-img-container">
+              <img src="rbs11_2.jpeg" class="rbs-gallery-img" alt="Cultural Dress Competition" onerror="autoFixImg(this, ['rbs11.jpeg', 'https://via.placeholder.com/400x280?text=RBS+College'])">
+            </div>
+            <div class="card-body bg-white p-3.5 text-center flex-1 flex items-center justify-center">
+              <p class="card-text text-slate-700 mb-0 text-xs font-bold">Cultural Dress Competition</p>
+            </div>
           </div>
         </div>
 
         <!-- Image 3 -->
-        <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition border border-slate-200 flex flex-col cursor-pointer group" onclick="openLightbox(this.querySelector('img').src, 'Group Photo of Students in Drama Attire')">
-          <div class="h-64 sm:h-72 img-frame-bg flex items-center justify-center p-1.5 relative overflow-hidden">
-            <img src="./rbs10_2.jpeg" alt="Group Photo of Students" class="max-h-full max-w-full object-contain mx-auto group-hover:scale-105 transition duration-300" onerror="handleFallback(this, './rbs10.jpeg', 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=800&q=80');" />
-            <span class="absolute top-2 left-2 bg-blue-600 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">Drama</span>
-          </div>
-          <div class="p-3 bg-white border-t border-slate-100 flex-1 flex items-center justify-between">
-            <p class="text-xs font-semibold text-slate-800">Group Photo of Students</p>
-            <i class="fa-solid fa-expand text-[11px] text-slate-400 group-hover:text-dps-green"></i>
+        <div>
+          <div class="rbs-gallery-card shadow-sm cursor-pointer" onclick="openLightbox(this.querySelector('img').src, 'Group Photo of Students')">
+            <div class="rbs-img-container">
+              <img src="rbs10_2.jpeg" class="rbs-gallery-img" alt="Group Photo of Students" onerror="autoFixImg(this, ['rbs10.jpeg', 'https://via.placeholder.com/400x280?text=RBS+College'])">
+            </div>
+            <div class="card-body bg-white p-3.5 text-center flex-1 flex items-center justify-center">
+              <p class="card-text text-slate-700 mb-0 text-xs font-bold">Group Photo of Students</p>
+            </div>
           </div>
         </div>
 
         <!-- Image 4 -->
-        <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition border border-slate-200 flex flex-col cursor-pointer group" onclick="openLightbox(this.querySelector('img').src, 'Staff & Management Celebration')">
-          <div class="h-64 sm:h-72 img-frame-bg flex items-center justify-center p-1.5 relative overflow-hidden">
-            <img src="./rsb9_2.jpeg" alt="Staff & Management Celebration" class="max-h-full max-w-full object-contain mx-auto group-hover:scale-105 transition duration-300" onerror="handleFallback(this, './rsb9.jpeg', 'https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=800&q=80');" />
-            <span class="absolute top-2 left-2 bg-emerald-600 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">Staff Meet</span>
-          </div>
-          <div class="p-3 bg-white border-t border-slate-100 flex-1 flex items-center justify-between">
-            <p class="text-xs font-semibold text-slate-800">Staff & Management Celebration</p>
-            <i class="fa-solid fa-expand text-[11px] text-slate-400 group-hover:text-dps-green"></i>
+        <div>
+          <div class="rbs-gallery-card shadow-sm cursor-pointer" onclick="openLightbox(this.querySelector('img').src, 'Staff & Management Celebration')">
+            <div class="rbs-img-container">
+              <img src="rsb9_2.jpeg" class="rbs-gallery-img" alt="Staff & Management Celebration" onerror="autoFixImg(this, ['rsb9.jpeg', 'rbs9.jpeg', 'rbs9_2.jpeg', 'https://via.placeholder.com/400x280?text=RBS+College'])">
+            </div>
+            <div class="card-body bg-white p-3.5 text-center flex-1 flex items-center justify-center">
+              <p class="card-text text-slate-700 mb-0 text-xs font-bold">Staff & Management Celebration</p>
+            </div>
           </div>
         </div>
 
         <!-- Image 5 -->
-        <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition border border-slate-200 flex flex-col cursor-pointer group" onclick="openLightbox(this.querySelector('img').src, 'Republic Day Award Ceremony')">
-          <div class="h-64 sm:h-72 img-frame-bg flex items-center justify-center p-1.5 relative overflow-hidden">
-            <img src="./rbs8_2.jpeg" alt="Republic Day Award Ceremony" class="max-h-full max-w-full object-contain mx-auto group-hover:scale-105 transition duration-300" onerror="handleFallback(this, './rbs8.jpeg', 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80');" />
-            <span class="absolute top-2 left-2 bg-red-600 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">26th Jan</span>
-          </div>
-          <div class="p-3 bg-white border-t border-slate-100 flex-1 flex items-center justify-between">
-            <p class="text-xs font-semibold text-slate-800">Republic Day Award Ceremony</p>
-            <i class="fa-solid fa-expand text-[11px] text-slate-400 group-hover:text-dps-green"></i>
+        <div>
+          <div class="rbs-gallery-card shadow-sm cursor-pointer" onclick="openLightbox(this.querySelector('img').src, 'Republic Day Award Ceremony')">
+            <div class="rbs-img-container">
+              <img src="rbs8_2.jpeg" class="rbs-gallery-img" alt="Republic Day Award Ceremony" onerror="autoFixImg(this, ['rbs8.jpeg', 'https://via.placeholder.com/400x280?text=RBS+College'])">
+            </div>
+            <div class="card-body bg-white p-3.5 text-center flex-1 flex items-center justify-center">
+              <p class="card-text text-slate-700 mb-0 text-xs font-bold">Republic Day Award Ceremony</p>
+            </div>
           </div>
         </div>
 
         <!-- Image 6 -->
-        <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition border border-slate-200 flex flex-col cursor-pointer group" onclick="openLightbox(this.querySelector('img').src, 'Classroom Teaching Session')">
-          <div class="h-64 sm:h-72 img-frame-bg flex items-center justify-center p-1.5 relative overflow-hidden">
-            <img src="./rbs7_2.jpeg" alt="Classroom Teaching Session" class="max-h-full max-w-full object-contain mx-auto group-hover:scale-105 transition duration-300" onerror="handleFallback(this, './rbs7.jpeg', 'https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=800&q=80');" />
-            <span class="absolute top-2 left-2 bg-cyan-700 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">Lecture</span>
-          </div>
-          <div class="p-3 bg-white border-t border-slate-100 flex-1 flex items-center justify-between">
-            <p class="text-xs font-semibold text-slate-800">Classroom Teaching Session</p>
-            <i class="fa-solid fa-expand text-[11px] text-slate-400 group-hover:text-dps-green"></i>
+        <div>
+          <div class="rbs-gallery-card shadow-sm cursor-pointer" onclick="openLightbox(this.querySelector('img').src, 'Classroom Teaching Session')">
+            <div class="rbs-img-container">
+              <img src="rbs7_2.jpeg" class="rbs-gallery-img" alt="Classroom Teaching Session" onerror="autoFixImg(this, ['rbs7.jpeg', 'https://via.placeholder.com/400x280?text=RBS+College'])">
+            </div>
+            <div class="card-body bg-white p-3.5 text-center flex-1 flex items-center justify-center">
+              <p class="card-text text-slate-700 mb-0 text-xs font-bold">Classroom Teaching Session</p>
+            </div>
           </div>
         </div>
 
         <!-- Image 7 -->
-        <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition border border-slate-200 flex flex-col cursor-pointer group" onclick="openLightbox(this.querySelector('img').src, 'Medal & Certificate Distribution')">
-          <div class="h-64 sm:h-72 img-frame-bg flex items-center justify-center p-1.5 relative overflow-hidden">
-            <img src="./rbs6_2.jpeg" alt="Medal & Certificate Distribution" class="max-h-full max-w-full object-contain mx-auto group-hover:scale-105 transition duration-300" onerror="handleFallback(this, './rbs6.jpeg', 'https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=800&q=80');" />
-            <span class="absolute top-2 left-2 bg-amber-600 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">Samman</span>
-          </div>
-          <div class="p-3 bg-white border-t border-slate-100 flex-1 flex items-center justify-between">
-            <p class="text-xs font-semibold text-slate-800">Medal & Certificate Distribution</p>
-            <i class="fa-solid fa-expand text-[11px] text-slate-400 group-hover:text-dps-green"></i>
+        <div>
+          <div class="rbs-gallery-card shadow-sm cursor-pointer" onclick="openLightbox(this.querySelector('img').src, 'Medal & Certificate Distribution')">
+            <div class="rbs-img-container">
+              <img src="rbs6_2.jpeg" class="rbs-gallery-img" alt="Medal & Certificate Distribution" onerror="autoFixImg(this, ['rbs6.jpeg', 'https://via.placeholder.com/400x280?text=RBS+College'])">
+            </div>
+            <div class="card-body bg-white p-3.5 text-center flex-1 flex items-center justify-center">
+              <p class="card-text text-slate-700 mb-0 text-xs font-bold">Medal & Certificate Distribution</p>
+            </div>
           </div>
         </div>
 
         <!-- Image 8 -->
-        <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition border border-slate-200 flex flex-col cursor-pointer group" onclick="openLightbox(this.querySelector('img').src, 'School Campus & Building View')">
-          <div class="h-64 sm:h-72 img-frame-bg flex items-center justify-center p-1.5 relative overflow-hidden">
-            <img src="./rbs5_2.jpeg" alt="School Campus & Building View" class="max-h-full max-w-full object-contain mx-auto group-hover:scale-105 transition duration-300" onerror="handleFallback(this, './rbs5.jpeg', 'https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=800&q=80');" />
-            <span class="absolute top-2 left-2 bg-emerald-700 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">Campus</span>
-          </div>
-          <div class="p-3 bg-white border-t border-slate-100 flex-1 flex items-center justify-between">
-            <p class="text-xs font-semibold text-slate-800">School Campus & Building View</p>
-            <i class="fa-solid fa-expand text-[11px] text-slate-400 group-hover:text-dps-green"></i>
+        <div>
+          <div class="rbs-gallery-card shadow-sm cursor-pointer" onclick="openLightbox(this.querySelector('img').src, 'School Campus & Building View')">
+            <div class="rbs-img-container">
+              <img src="rbs5_2.jpeg" class="rbs-gallery-img" alt="School Campus & Building View" onerror="autoFixImg(this, ['rbs5.jpeg', 'https://via.placeholder.com/400x280?text=RBS+College'])">
+            </div>
+            <div class="card-body bg-white p-3.5 text-center flex-1 flex items-center justify-center">
+              <p class="card-text text-slate-700 mb-0 text-xs font-bold">School Campus & Building View</p>
+            </div>
           </div>
         </div>
 
         <!-- Image 9 -->
-        <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition border border-slate-200 flex flex-col cursor-pointer group" onclick="openLightbox(this.querySelector('img').src, 'School Function & Parade')">
-          <div class="h-64 sm:h-72 img-frame-bg flex items-center justify-center p-1.5 relative overflow-hidden">
-            <img src="./rbs4_2.jpeg" alt="School Function & Parade" class="max-h-full max-w-full object-contain mx-auto group-hover:scale-105 transition duration-300" onerror="handleFallback(this, './rbs4.jpeg', 'https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=800&q=80');" />
-            <span class="absolute top-2 left-2 bg-rose-600 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">Parade</span>
-          </div>
-          <div class="p-3 bg-white border-t border-slate-100 flex-1 flex items-center justify-between">
-            <p class="text-xs font-semibold text-slate-800">School Function & Parade</p>
-            <i class="fa-solid fa-expand text-[11px] text-slate-400 group-hover:text-dps-green"></i>
+        <div>
+          <div class="rbs-gallery-card shadow-sm cursor-pointer" onclick="openLightbox(this.querySelector('img').src, 'School Function & Parade')">
+            <div class="rbs-img-container">
+              <img src="rbs4_2.jpeg" class="rbs-gallery-img" alt="School Function & Parade" onerror="autoFixImg(this, ['rbs4.jpeg', 'https://via.placeholder.com/400x280?text=RBS+College'])">
+            </div>
+            <div class="card-body bg-white p-3.5 text-center flex-1 flex items-center justify-center">
+              <p class="card-text text-slate-700 mb-0 text-xs font-bold">School Function & Parade</p>
+            </div>
           </div>
         </div>
 
         <!-- Image 10 -->
-        <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition border border-slate-200 flex flex-col cursor-pointer group" onclick="openLightbox(this.querySelector('img').src, 'Stage Program & Performances')">
-          <div class="h-64 sm:h-72 img-frame-bg flex items-center justify-center p-1.5 relative overflow-hidden">
-            <img src="./rbs2_2.jpeg" alt="Stage Program & Performances" class="max-h-full max-w-full object-contain mx-auto group-hover:scale-105 transition duration-300" onerror="handleFallback(this, './rbs2.jpeg', 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=800&q=80');" />
-            <span class="absolute top-2 left-2 bg-indigo-600 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">Stage</span>
-          </div>
-          <div class="p-3 bg-white border-t border-slate-100 flex-1 flex items-center justify-between">
-            <p class="text-xs font-semibold text-slate-800">Stage Program & Performances</p>
-            <i class="fa-solid fa-expand text-[11px] text-slate-400 group-hover:text-dps-green"></i>
+        <div>
+          <div class="rbs-gallery-card shadow-sm cursor-pointer" onclick="openLightbox(this.querySelector('img').src, 'Stage Program & Performances')">
+            <div class="rbs-img-container">
+              <img src="rbs2_2.jpeg" class="rbs-gallery-img" alt="Stage Program & Performances" onerror="autoFixImg(this, ['rbs2.jpeg', 'https://via.placeholder.com/400x280?text=RBS+College'])">
+            </div>
+            <div class="card-body bg-white p-3.5 text-center flex-1 flex items-center justify-center">
+              <p class="card-text text-slate-700 mb-0 text-xs font-bold">Stage Program & Performances</p>
+            </div>
           </div>
         </div>
 
@@ -695,8 +766,8 @@
     </div>
   </section>
 
-  <!-- LIGHTBOX MODAL (Full Screen Photo Inspector) -->
-  <div id="galleryLightbox" class="fixed inset-0 bg-black/90 backdrop-blur-md z-50 flex flex-col items-center justify-center p-4 hidden" onclick="closeLightbox()">
+  <!-- LIGHTBOX MODAL -->
+  <div id="galleryLightbox" class="fixed inset-0 bg-black/95 backdrop-blur-md z-50 flex flex-col items-center justify-center p-4 hidden" onclick="closeLightbox()">
     <button onclick="closeLightbox()" class="absolute top-4 right-5 text-white/80 hover:text-white text-3xl">
       <i class="fa-solid fa-xmark"></i>
     </button>
@@ -706,51 +777,7 @@
     </div>
   </div>
 
-  <!-- INFRASTRUCTURE SECTION (DPS Mathura Road "Built for Excellence") -->
-  <section class="py-14 bg-white border-b border-slate-200">
-    <div class="max-w-7xl mx-auto px-4">
-      <div class="text-center max-w-2xl mx-auto mb-10">
-        <span class="text-xs font-bold text-dps-goldDark tracking-widest uppercase">Infrastructure</span>
-        <h2 class="font-crest text-2xl sm:text-3xl font-extrabold text-dps-greenDark mt-1">Built for Academic Excellence</h2>
-        <p class="text-xs text-slate-500 mt-1">A vibrant campus with amenities designed to foster enriching learning experiences.</p>
-      </div>
-
-      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 text-center">
-        <div class="bg-dps-surface p-4 rounded-xl border border-slate-200 hover:border-dps-gold transition">
-          <i class="fa-solid fa-flask-vial text-2xl text-dps-green mb-2"></i>
-          <h4 class="text-xs font-bold text-slate-800">Science Labs</h4>
-          <span class="text-[10px] text-slate-500">Physics & Chem</span>
-        </div>
-        <div class="bg-dps-surface p-4 rounded-xl border border-slate-200 hover:border-dps-gold transition">
-          <i class="fa-solid fa-laptop-code text-2xl text-blue-600 mb-2"></i>
-          <h4 class="text-xs font-bold text-slate-800">Computer Lab</h4>
-          <span class="text-[10px] text-slate-500">Digital Education</span>
-        </div>
-        <div class="bg-dps-surface p-4 rounded-xl border border-slate-200 hover:border-dps-gold transition">
-          <i class="fa-solid fa-book text-2xl text-purple-600 mb-2"></i>
-          <h4 class="text-xs font-bold text-slate-800">Library</h4>
-          <span class="text-[10px] text-slate-500">Curated Books</span>
-        </div>
-        <div class="bg-dps-surface p-4 rounded-xl border border-slate-200 hover:border-dps-gold transition">
-          <i class="fa-solid fa-futbol text-2xl text-emerald-600 mb-2"></i>
-          <h4 class="text-xs font-bold text-slate-800">Sports Ground</h4>
-          <span class="text-[10px] text-slate-500">Cricket & Athletics</span>
-        </div>
-        <div class="bg-dps-surface p-4 rounded-xl border border-slate-200 hover:border-dps-gold transition">
-          <i class="fa-solid fa-shield-virus text-2xl text-amber-600 mb-2"></i>
-          <h4 class="text-xs font-bold text-slate-800">RO Water</h4>
-          <span class="text-[10px] text-slate-500">Purified Drinking</span>
-        </div>
-        <div class="bg-dps-surface p-4 rounded-xl border border-slate-200 hover:border-dps-gold transition">
-          <i class="fa-solid fa-video text-2xl text-rose-600 mb-2"></i>
-          <h4 class="text-xs font-bold text-slate-800">CCTV Safety</h4>
-          <span class="text-[10px] text-slate-500">24x7 Monitored</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ONLINE ADMISSION DESK (Session 2026 - 2027) -->
+  <!-- ONLINE ADMISSION DESK -->
   <section id="admission-desk" class="py-14 bg-dps-surface">
     <div class="max-w-4xl mx-auto px-4">
       <div class="text-center mb-8">
@@ -834,7 +861,7 @@
         <!-- Dynamic Success Receipt -->
         <div id="admSuccessReceipt" class="hidden mt-6 bg-gradient-to-r from-amber-50 via-emerald-50 to-white border-2 border-emerald-500 rounded-2xl p-5 text-slate-800 shadow-md">
           <div class="flex items-start gap-4">
-            <img src="image_a45465.jpg" alt="RBS Logo" class="w-14 h-14 rounded-full border-2 border-dps-gold shadow shrink-0 bg-white" />
+            <img src="image_a45465.jpg" alt="RBS Logo" class="w-14 h-14 rounded-full border-2 border-dps-gold shadow shrink-0 bg-white" onerror="autoFixImg(this, ['image_a43275.jpg'])" />
             <div class="flex-1">
               <div class="flex flex-wrap items-center justify-between gap-2">
                 <h4 class="font-crest text-base font-bold text-dps-greenDark">Application Registered Successfully!</h4>
@@ -858,14 +885,13 @@
     </div>
   </section>
 
-  <!-- FOOTER SECTION (DPS Mathura Road Layout) -->
+  <!-- FOOTER SECTION -->
   <footer class="bg-dps-greenDark text-slate-300 pt-14 pb-8 border-t-4 border-dps-gold">
     <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-12 gap-8 mb-10">
       
-      <!-- Column 1: School Identity -->
       <div class="md:col-span-5 space-y-3">
         <div class="flex items-center gap-3.5">
-          <img src="image_a45465.jpg" alt="RBS Seal" class="w-14 h-14 rounded-full border border-dps-gold bg-white p-0.5" />
+          <img src="image_a45465.jpg" alt="RBS Seal" class="w-14 h-14 rounded-full border border-dps-gold bg-white p-0.5" onerror="autoFixImg(this, ['image_a43275.jpg'])" />
           <div>
             <h3 class="font-crest font-extrabold text-white text-base leading-tight">RAM BAX SINGH INTER COLLEGE</h3>
             <p class="text-xs text-dps-goldLight">Residential R.B.S. Inter College &bull; Bithara (Aliganj)</p>
@@ -874,18 +900,11 @@
         <p class="text-xs text-slate-300 leading-relaxed">
           Affiliated to the Board of High School and Intermediate Education U.P. Dedicated to nurturing disciplined, virtuous, and academically brilliant scholars from Class 1st to 12th.
         </p>
-        <div class="pt-1 flex gap-2">
-          <span class="bg-white/10 text-white text-[11px] px-2.5 py-1 rounded border border-white/20">Class 1 to 12</span>
-          <span class="bg-white/10 text-white text-[11px] px-2.5 py-1 rounded border border-white/20">Residential Hostel</span>
-          <span class="bg-white/10 text-white text-[11px] px-2.5 py-1 rounded border border-white/20">Aliganj (Etah)</span>
-        </div>
       </div>
 
-      <!-- Column 2: Navigation Links -->
       <div class="md:col-span-3 space-y-2">
         <h4 class="font-crest text-xs font-bold text-dps-goldLight uppercase tracking-wider">Quick Navigation</h4>
         <ul class="text-xs space-y-2 text-slate-300">
-          <li><a href="#about-section" class="hover:text-white transition">About R.B.S. College</a></li>
           <li><a href="#dignitaries" class="hover:text-white transition">Our Dignitaries (Director & Manager)</a></li>
           <li><a href="#wings-section" class="hover:text-white transition">Academics (Class 1st to 12th)</a></li>
           <li><a href="#hostel-section" class="hover:text-white transition">Residential Hostel Facility</a></li>
@@ -894,7 +913,6 @@
         </ul>
       </div>
 
-      <!-- Column 3: Contact & Leadership Info -->
       <div class="md:col-span-4 space-y-2.5 text-xs text-slate-300">
         <h4 class="font-crest text-xs font-bold text-dps-goldLight uppercase tracking-wider">Contact & Campus Office</h4>
         <p class="flex items-start gap-2">
@@ -921,10 +939,9 @@
 
     </div>
 
-    <!-- Bottom Copyright & Developer Row -->
     <div class="max-w-7xl mx-auto px-4 pt-6 border-t border-white/10 text-xs text-slate-400 flex flex-wrap justify-between items-center gap-2">
       <div>© 2026 Ram Bax Singh Inter College, Bithara (Aliganj). All rights reserved.</div>
-      <div class="flex items-center gap-3">
+      <div>
         <button onclick="openAdminModal()" class="text-dps-gold hover:underline font-semibold">
           <i class="fa-solid fa-lock text-[10px]"></i> Staff & Admin Login
         </button>
@@ -940,7 +957,7 @@
       </button>
 
       <div class="text-center mb-6">
-        <img src="image_a45465.jpg" alt="RBS Crest" class="w-16 h-16 rounded-full border-2 border-dps-gold mx-auto mb-2 bg-white" />
+        <img src="image_a45465.jpg" alt="RBS Crest" class="w-16 h-16 rounded-full border-2 border-dps-gold mx-auto mb-2 bg-white" onerror="autoFixImg(this, ['image_a43275.jpg'])" />
         <h3 class="font-crest text-xl font-bold text-dps-greenDark">R.B.S. Admin Portal</h3>
         <p class="text-xs text-slate-500">Director & Manager Control Suite</p>
       </div>
@@ -977,10 +994,9 @@
   <div id="adminDashboard" class="fixed inset-0 bg-slate-900/90 backdrop-blur-md z-50 flex overflow-y-auto hidden">
     <div class="bg-white min-h-screen w-full flex flex-col">
       
-      <!-- Admin Top Nav -->
       <header class="bg-dps-greenDark text-white px-6 py-4 flex flex-wrap justify-between items-center border-b-2 border-dps-gold">
         <div class="flex items-center gap-3">
-          <img src="image_a45465.jpg" alt="RBS Crest" class="w-10 h-10 rounded-full border border-dps-gold bg-white p-0.5" />
+          <img src="image_a45465.jpg" alt="RBS Crest" class="w-10 h-10 rounded-full border border-dps-gold bg-white p-0.5" onerror="autoFixImg(this, ['image_a43275.jpg'])" />
           <div>
             <h2 class="font-crest text-base sm:text-lg font-bold">Ram Bax Singh Inter College &bull; Admin Suite</h2>
             <p class="text-[11px] text-dps-goldLight">Manager: Vishnu Kant | ID: rambaxsinghintercollege@gmail.com</p>
@@ -1034,7 +1050,6 @@
                 </tr>
               </thead>
               <tbody id="admissionsTableBody" class="divide-y divide-slate-100 text-slate-700">
-                <!-- Dynamically populated -->
               </tbody>
             </table>
           </div>
@@ -1045,7 +1060,7 @@
         </div>
       </div>
 
-      <!-- TAB 2: MARKSHEET GENERATOR WITH AUTOCALCULATION -->
+      <!-- TAB 2: MARKSHEET GENERATOR -->
       <div id="tabMarksheet" class="p-6 max-w-7xl mx-auto w-full flex-1 hidden">
         <div class="grid lg:grid-cols-12 gap-6">
           
@@ -1103,7 +1118,7 @@
                 <input type="text" id="msAddress" oninput="updateMarksheetPreview()" value="Bithara, Aliganj (Etah)" class="w-full px-2.5 py-1.5 border rounded-lg focus:ring-1 focus:ring-dps-gold outline-none" />
               </div>
 
-              <!-- Subject Marks Entry -->
+              <!-- Subject Marks -->
               <div class="border-t pt-3">
                 <label class="block font-bold text-dps-greenDark mb-2">Subject Marks (Total 100 Each)</label>
                 <div class="space-y-1.5 max-h-56 overflow-y-auto pr-1">
@@ -1146,9 +1161,8 @@
           <div class="lg:col-span-7">
             <div id="printableMarksheet" class="bg-white border-4 border-double border-dps-greenDark p-6 rounded-2xl shadow-xl crest-watermark relative text-slate-900">
               
-              <!-- Certificate Top Header -->
               <div class="flex items-center justify-between border-b-2 border-dps-gold pb-4 gap-4">
-                <img src="image_a45465.jpg" alt="RBS Logo" class="w-20 h-20 object-contain rounded-full border border-dps-gold bg-white p-0.5" />
+                <img src="image_a45465.jpg" alt="RBS Logo" class="w-20 h-20 object-contain rounded-full border border-dps-gold bg-white p-0.5" onerror="autoFixImg(this, ['image_a43275.jpg'])" />
                 <div class="text-center flex-1">
                   <h1 class="font-crest font-black text-xl sm:text-2xl text-dps-greenDark tracking-tight">
                     RAM BAX SINGH INTER COLLEGE
@@ -1165,7 +1179,6 @@
                 </div>
               </div>
 
-              <!-- Student Details Grid -->
               <div class="my-4 bg-slate-50/90 p-3 rounded-lg border border-slate-200 text-xs grid grid-cols-2 gap-2">
                 <div><span class="text-slate-500">Student Name:</span> <strong id="pvName" class="text-dps-greenDark font-bold uppercase">Amit Kumar</strong></div>
                 <div><span class="text-slate-500">Roll Number:</span> <strong id="pvRoll" class="text-slate-900 font-mono font-bold">2026101</strong></div>
@@ -1241,7 +1254,7 @@
                 </tfoot>
               </table>
 
-              <!-- Result Metrics Row -->
+              <!-- Metrics -->
               <div class="mt-4 p-3 bg-slate-50 border border-slate-200 rounded-lg grid grid-cols-3 gap-2 text-center text-xs">
                 <div>
                   <span class="text-slate-500 block text-[10px]">PERCENTAGE</span>
@@ -1257,7 +1270,7 @@
                 </div>
               </div>
 
-              <!-- Signatures Row (Director Avadhesh Singh & Manager Vishnu Kant) -->
+              <!-- Signatures Row -->
               <div class="mt-8 pt-6 grid grid-cols-3 text-center text-[11px] font-semibold text-slate-700">
                 <div>
                   <div class="h-8"></div>
@@ -1286,20 +1299,18 @@
     </div>
   </div>
 
-  <!-- JAVASCRIPT CONTROLLERS -->
+  <!-- SCRIPT ENGINE -->
   <script>
-    // Universal 3-tier image fallback controller for GitHub Pages
-    function handleFallback(img, localAlt, cdnFallback) {
-      if (!img.dataset.attempt) {
-        img.dataset.attempt = '1';
-        if (localAlt) {
-          img.src = localAlt;
-          return;
-        }
+    // Universal Smart Fallback Function for GitHub Pages & Local environment
+    function autoFixImg(imgElement, fallbacks) {
+      if (!imgElement.dataset.step) {
+        imgElement.dataset.step = "0";
       }
-      if (img.dataset.attempt === '1') {
-        img.dataset.attempt = '2';
-        img.src = cdnFallback;
+      let step = parseInt(imgElement.dataset.step, 10);
+      if (step < fallbacks.length) {
+        const nextSrc = fallbacks[step];
+        imgElement.dataset.step = (step + 1).toString();
+        imgElement.src = nextSrc;
       }
     }
 
@@ -1367,53 +1378,100 @@
       renderAdmissionsTable();
     }
 
-    /* DPS AUTO SLIDER LOGIC */
+    /* ========================================================
+       DPS MATHURA ROAD STYLE CONTINUOUS AUTO-CHANGING SLIDER
+       ======================================================== */
     let currentSlide = 0;
-    const slides = document.querySelectorAll('#dpsCarousel .slide');
+    const slides = document.querySelectorAll('#carouselViewport .slide-item');
     const totalSlides = slides.length;
-    let sliderTimer = null;
+    let autoInterval = null;
+    let isPlaying = true;
+    const SLIDE_DURATION = 3500; // Change every 3.5 seconds
 
-    function initSliderDots() {
-      const dotsCont = document.getElementById('sliderDots');
-      dotsCont.innerHTML = '';
+    function buildDots() {
+      const dotBox = document.getElementById('sliderDots');
+      if (!dotBox) return;
+      dotBox.innerHTML = '';
       for (let i = 0; i < totalSlides; i++) {
-        const dot = document.createElement('button');
-        dot.className = `w-2.5 h-2.5 rounded-full transition-all duration-300 ${i === 0 ? 'bg-dps-gold w-6' : 'bg-white/60 hover:bg-white'}`;
-        dot.onclick = () => goToSlide(i);
-        dotsCont.appendChild(dot);
+        const d = document.createElement('button');
+        d.className = `h-2 rounded-full transition-all duration-300 ${i === 0 ? 'w-8 bg-dps-gold' : 'w-2.5 bg-white/50 hover:bg-white'}`;
+        d.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+        d.onclick = () => showSlide(i);
+        dotBox.appendChild(d);
       }
     }
 
-    function goToSlide(n) {
+    function showSlide(index) {
+      if (index === currentSlide && slides[index].classList.contains('opacity-100')) {
+        return;
+      }
+
+      // Hide old slide
       slides[currentSlide].classList.remove('opacity-100', 'z-20');
       slides[currentSlide].classList.add('opacity-0', 'z-10');
 
-      currentSlide = (n + totalSlides) % totalSlides;
+      // Update current slide index
+      currentSlide = (index + totalSlides) % totalSlides;
 
+      // Show new slide
       slides[currentSlide].classList.remove('opacity-0', 'z-10');
       slides[currentSlide].classList.add('opacity-100', 'z-20');
+
+      // Update text counter & progress
+      const counter = document.getElementById('slideCounterText');
+      if (counter) counter.innerText = `Slide ${currentSlide + 1} of ${totalSlides}`;
+
+      const progress = document.getElementById('slideProgressBar');
+      if (progress) progress.style.width = `${((currentSlide + 1) / totalSlides) * 100}%`;
 
       // Update dots
       const dots = document.querySelectorAll('#sliderDots button');
       dots.forEach((d, idx) => {
         if (idx === currentSlide) {
-          d.className = 'w-6 h-2.5 rounded-full bg-dps-gold transition-all duration-300';
+          d.className = 'h-2 w-8 rounded-full bg-dps-gold transition-all duration-300';
         } else {
-          d.className = 'w-2.5 h-2.5 rounded-full bg-white/60 hover:bg-white transition-all duration-300';
+          d.className = 'h-2 w-2.5 rounded-full bg-white/50 hover:bg-white transition-all duration-300';
         }
       });
     }
 
-    function nextSlide() {
-      goToSlide(currentSlide + 1);
-    }
-    function prevSlide() {
-      goToSlide(currentSlide - 1);
+    function nextSlideManual() {
+      showSlide(currentSlide + 1);
+      resetAutoTimer();
     }
 
-    function startAutoSlider() {
-      if (sliderTimer) clearInterval(sliderTimer);
-      sliderTimer = setInterval(nextSlide, 4500);
+    function prevSlideManual() {
+      showSlide(currentSlide - 1);
+      resetAutoTimer();
+    }
+
+    function startAutoSlide() {
+      if (autoInterval) clearInterval(autoInterval);
+      autoInterval = setInterval(() => {
+        if (isPlaying) {
+          showSlide(currentSlide + 1);
+        }
+      }, SLIDE_DURATION);
+    }
+
+    function resetAutoTimer() {
+      if (isPlaying) {
+        startAutoSlide();
+      }
+    }
+
+    function toggleAutoPlay() {
+      isPlaying = !isPlaying;
+      const btn = document.getElementById('togglePlayBtn');
+      if (isPlaying) {
+        btn.innerHTML = '<i class="fa-solid fa-pause mr-1"></i> Auto-Playing';
+        btn.className = 'bg-white/20 hover:bg-white/30 text-white text-[10px] font-bold px-2 py-0.5 rounded transition';
+        startAutoSlide();
+      } else {
+        btn.innerHTML = '<i class="fa-solid fa-play mr-1"></i> Paused';
+        btn.className = 'bg-amber-500 text-slate-900 text-[10px] font-bold px-2 py-0.5 rounded transition';
+        if (autoInterval) clearInterval(autoInterval);
+      }
     }
 
     // Modal Handlers
@@ -1496,7 +1554,6 @@
       list.unshift(newEntry);
       saveAdmissions(list);
 
-      // Show receipt
       const receiptBox = document.getElementById('admSuccessReceipt');
       document.getElementById('receiptRegId').innerText = newEntry.id;
       document.getElementById('receiptSummaryText').innerHTML = `
@@ -1507,7 +1564,6 @@
       document.getElementById('onlineAdmissionForm').reset();
     }
 
-    // Render Admissions
     function renderAdmissionsTable() {
       const list = getAdmissions();
       document.getElementById('admissionCount').innerText = list.length;
@@ -1611,7 +1667,6 @@
       const total = m1 + m2 + m3 + m4 + m5 + m6;
       const percentage = (total / 6).toFixed(2);
 
-      // Fill Certificate values
       document.getElementById('pvName').innerText = name;
       document.getElementById('pvFather').innerText = father;
       document.getElementById('pvRoll').innerText = roll;
@@ -1664,19 +1719,12 @@
       }
     }
 
-    // Initialization on DOM Ready
+    // Start everything on DOM Ready
     window.addEventListener('DOMContentLoaded', () => {
-      initSliderDots();
-      startAutoSlider();
+      buildDots();
+      startAutoSlide();
       renderAdmissionsTable();
       updateMarksheetPreview();
-
-      // Pause slider on hover
-      const carousel = document.getElementById('dpsCarousel');
-      if (carousel) {
-        carousel.addEventListener('mouseenter', () => clearInterval(sliderTimer));
-        carousel.addEventListener('mouseleave', () => startAutoSlider());
-      }
     });
   </script>
 </body>
