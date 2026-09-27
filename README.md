@@ -8,7 +8,2715 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-            theme: {
+            theme: {<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rambax Singh Inter College & Residential Hostel | Bithara, Aliganj, Etah</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Google Fonts: Cinzel for Heritage, Inter for UI, Libre Barcode for Marksheet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&family=Libre+Barcode+39+Text&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#07172c',
+              dark: '#040d1a',
+              lightnavy: '#0e2648',
+              gold: '#d4af37',
+              golddark: '#b38f24',
+              goldlight: '#f7f0d8',
+              goldborder: '#e8c868',
+              crimson: '#8a151b'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Cinzel', 'Georgia', 'serif'],
+            heading: ['Playfair Display', 'serif'],
+            barcode: ['"Libre Barcode 39 Text"', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    @media print {
+      body * {
+        visibility: hidden !important;
+      }
+      #printableMarksheet, #printableMarksheet * {
+        visibility: visible !important;
+      }
+      #printableMarksheet {
+        position: absolute !important;
+        left: 0 !important;
+        top: 0 !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 18px !important;
+        border: 4px double #07172c !important;
+        box-shadow: none !important;
+        background: #ffffff !important;
+      }
+      .no-print {
+        display: none !important;
+      }
+    }
+
+    .gold-gradient {
+      background: linear-gradient(135deg, #f3d478 0%, #d4af37 50%, #9e7d17 100%);
+    }
+    .navy-gradient {
+      background: linear-gradient(135deg, #040d1a 0%, #07172c 55%, #112d54 100%);
+    }
+    .badge-gradient {
+      background: linear-gradient(135deg, #8a151b 0%, #07172c 100%);
+    }
+
+    /* Academic Marks Grid Border Stylings */
+    .table-academic th, .table-academic td {
+      border: 1px solid #1e293b;
+      padding: 6px 8px;
+    }
+
+    /* Custom scrollbars */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f5f9;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #94a3b8;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-gold selection:text-brand-navy min-h-screen flex flex-col">
+
+  <!-- Floating Toast Message Container -->
+  <div id="toastContainer" class="fixed top-5 right-5 z-[9999] flex flex-col space-y-2 pointer-events-none"></div>
+
+  <div class="bg-brand-dark text-white text-xs md:text-sm py-2 px-4 border-b border-brand-gold/30">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+      <div class="flex items-center space-x-6 flex-wrap justify-center sm:justify-start">
+        <a href="tel:6395052394" class="flex items-center space-x-1.5 hover:text-brand-gold transition">
+          <i class="fa-solid fa-phone-volume text-brand-gold"></i>
+          <span class="font-semibold">+91 6395052394</span>
+        </a>
+        <a href="mailto:rambaxsinghintercollege@gmail.com" class="flex items-center space-x-1.5 hover:text-brand-gold transition">
+          <i class="fa-solid fa-envelope text-brand-gold"></i>
+          <span>rambaxsinghintercollege@gmail.com</span>
+        </a>
+        <span class="hidden md:inline-flex items-center text-slate-300">
+          <i class="fa-solid fa-hotel text-brand-gold mr-1.5"></i>
+          Boys & Girls Residential Hostel Available
+        </span>
+      </div>
+      <div class="flex items-center space-x-3 text-xs">
+        <span class="bg-brand-gold/20 text-brand-gold px-2.5 py-0.5 rounded-full font-bold border border-brand-gold/30 uppercase tracking-wider">
+          <i class="fa-solid fa-shield-halved mr-1"></i> UP Board Recognised
+        </span>
+        <button onclick="openLoginModal('admin')" class="hover:text-brand-gold transition underline font-semibold">Admin</button>
+        <span class="text-slate-500">|</span>
+        <button onclick="openLoginModal('staff')" class="hover:text-brand-gold transition underline font-semibold">Staff</button>
+        <span class="text-slate-500">|</span>
+        <button onclick="openLoginModal('student')" class="hover:text-brand-gold transition underline font-semibold">Student</button>
+      </div>
+    </div>
+  </div>
+
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-md border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 flex items-center justify-between">
+      
+      <!-- College Logo & Title -->
+      <a href="#" onclick="showSection('public-home')" class="flex items-center space-x-3 group">
+        <!-- SVG Crest Replica -->
+        <div class="w-14 h-14 sm:w-16 sm:h-16 flex-shrink-0 transition-transform group-hover:scale-105 duration-200">
+          <img src="rbslogo.jpeg" alt="RBS Inter College Emblem" class="w-full h-full object-contain rounded-full shadow-md border-2 border-brand-gold" onerror="this.outerHTML='<div class=\'w-full h-full rounded-full bg-brand-navy border-2 border-brand-gold flex items-center justify-center text-brand-gold font-bold font-serif\'>RBS</div>'">
+        </div>
+        <div>
+          <div class="flex items-center space-x-2">
+            <h1 class="text-base sm:text-xl font-black font-serif text-brand-navy tracking-tight uppercase leading-none">
+              Rambax Singh Inter College
+            </h1>
+          </div>
+          <p class="text-[11px] sm:text-xs font-bold text-amber-700 tracking-wider flex items-center gap-1 mt-0.5">
+            <i class="fa-solid fa-bed text-brand-gold"></i> &amp; Residential Hostel Facility &bull; Bithara - Sarai Road, Aliganj, Etah
+          </p>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden lg:flex items-center space-x-6 text-sm font-semibold text-slate-700">
+        <a href="#home" onclick="showSection('public-home')" class="hover:text-brand-navy transition py-1">Home</a>
+        <a href="#gallery" onclick="scrollToElement('gallery-section')" class="hover:text-brand-navy transition py-1 flex items-center text-brand-navy font-bold">
+          <i class="fa-solid fa-images text-brand-gold mr-1.5"></i> Campus Gallery
+        </a>
+        <a href="#hostel" onclick="scrollToElement('hostel-section')" class="hover:text-brand-navy transition py-1 flex items-center text-amber-900 font-bold">
+          <i class="fa-solid fa-hotel text-brand-gold mr-1.5"></i> Hostel Life
+        </a>
+        <a href="#leadership" onclick="scrollToElement('leadership-section')" class="hover:text-brand-navy transition py-1">Leadership</a>
+        <a href="#admissions" onclick="scrollToElement('admission-form-section')" class="hover:text-brand-navy transition py-1">Admissions</a>
+        <a href="#contact" onclick="scrollToElement('contact-section')" class="hover:text-brand-navy transition py-1">Contact</a>
+      </nav>
+
+      <!-- Portals CTA -->
+      <div class="hidden sm:flex items-center space-x-2">
+        <button onclick="openLoginModal('student')" class="px-3.5 py-2 text-xs font-bold rounded-xl border border-brand-navy text-brand-navy hover:bg-brand-navy hover:text-white transition flex items-center space-x-1.5">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <span>Student Portal</span>
+        </button>
+        <button onclick="openLoginModal('admin')" class="px-3.5 py-2 text-xs font-bold rounded-xl bg-brand-navy text-brand-gold hover:bg-brand-lightnavy shadow-sm transition border border-brand-gold/40 flex items-center space-x-1.5">
+          <i class="fa-solid fa-shield-halved"></i>
+          <span>Admin / Staff</span>
+        </button>
+      </div>
+
+      <button onclick="toggleMobileNav()" class="lg:hidden p-2 rounded-lg text-slate-700 hover:bg-slate-100">
+        <i class="fa-solid fa-bars text-xl"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-4 space-y-2 text-sm font-medium">
+      <a href="#home" onclick="showSection('public-home'); toggleMobileNav()" class="block py-2 px-3 rounded hover:bg-slate-100">Home</a>
+      <a href="#gallery" onclick="scrollToElement('gallery-section'); toggleMobileNav()" class="block py-2 px-3 rounded hover:bg-slate-100 font-bold text-brand-navy">
+        <i class="fa-solid fa-images mr-1 text-brand-gold"></i> School Photo Gallery
+      </a>
+      <a href="#hostel" onclick="scrollToElement('hostel-section'); toggleMobileNav()" class="block py-2 px-3 rounded hover:bg-slate-100 font-bold text-amber-800">
+        <i class="fa-solid fa-hotel mr-1 text-brand-gold"></i> Residential Hostel Facilities
+      </a>
+      <a href="#leadership" onclick="scrollToElement('leadership-section'); toggleMobileNav()" class="block py-2 px-3 rounded hover:bg-slate-100">College Leadership</a>
+      <a href="#admissions" onclick="scrollToElement('admission-form-section'); toggleMobileNav()" class="block py-2 px-3 rounded hover:bg-slate-100">Online Admission</a>
+      <div class="pt-2 grid grid-cols-2 gap-2">
+        <button onclick="openLoginModal('admin'); toggleMobileNav()" class="py-2 text-xs bg-brand-navy text-brand-gold rounded-lg font-bold">Admin Login</button>
+        <button onclick="openLoginModal('student'); toggleMobileNav()" class="py-2 text-xs border border-brand-navy text-brand-navy rounded-lg font-bold">Student Portal</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="mainPublicView" class="flex-grow">
+    
+    <!-- Hero Section with Real Campus Background Accent -->
+    <section class="relative text-white overflow-hidden py-14 lg:py-20 border-b-4 border-brand-gold">
+      <div class="absolute inset-0 z-0">
+        <img src="rbs9.jpg" alt="RBS Campus Courtyard" class="w-full h-full object-cover object-center brightness-[0.22] contrast-[1.1]">
+        <div class="absolute inset-0 bg-gradient-to-r from-brand-dark/95 via-brand-navy/90 to-brand-dark/95"></div>
+      </div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <div class="lg:col-span-7 space-y-5 text-center lg:text-left">
+            <div class="inline-flex items-center space-x-2 bg-brand-gold/20 border border-brand-gold/40 text-brand-gold text-xs uppercase tracking-widest px-3.5 py-1.5 rounded-full font-bold">
+              <i class="fa-solid fa-hotel"></i>
+              <span>UP Board Recognized &bull; Campus Residential Hostel</span>
+            </div>
+            
+            <h1 class="text-3xl sm:text-5xl font-black font-serif leading-tight">
+              Rambax Singh Inter College &amp; Residential Hostel
+            </h1>
+            
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+              Fostering excellence in academics, moral values, and personality development at <strong>Bithara - Sarai Road, Aliganj, Etah</strong>. Complete boarding environment with 24x7 power backup, hygienic dining, regular exams, and active personal care under <strong>Director Avadhesh Singh</strong> and <strong>Manager Vishnu Kant</strong>.
+            </p>
+
+            <div class="flex flex-wrap gap-3 justify-center lg:justify-start pt-2">
+              <button onclick="scrollToElement('admission-form-section')" class="px-6 py-3.5 gold-gradient text-brand-navy rounded-xl font-black text-sm tracking-wide shadow-lg hover:scale-105 transition transform flex items-center space-x-2">
+                <i class="fa-solid fa-file-signature"></i>
+                <span>College &amp; Hostel Admission 2025-26</span>
+              </button>
+              
+              <button onclick="scrollToElement('gallery-section')" class="px-5 py-3.5 bg-white/10 hover:bg-white/20 border border-white/30 text-white rounded-xl font-bold text-sm transition flex items-center space-x-2 backdrop-blur">
+                <i class="fa-solid fa-images text-brand-gold"></i>
+                <span>Explore Campus Photos</span>
+              </button>
+            </div>
+
+            <!-- Stats Bar -->
+            <div class="grid grid-cols-3 gap-3 pt-5 border-t border-slate-700/60 max-w-lg mx-auto lg:mx-0 text-left">
+              <div>
+                <p class="text-2xl sm:text-3xl font-extrabold text-brand-gold">200+</p>
+                <p class="text-xs text-slate-300 font-medium">Hostel Boarders</p>
+              </div>
+              <div>
+                <p class="text-2xl sm:text-3xl font-extrabold text-brand-gold">100%</p>
+                <p class="text-xs text-slate-300 font-medium">Board Exam Pass</p>
+              </div>
+              <div>
+                <p class="text-2xl sm:text-3xl font-extrabold text-brand-gold">24x7</p>
+                <p class="text-xs text-slate-300 font-medium">Power &amp; Supervision</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Right Emblem & Real Campus Quick Glimpse -->
+          <div class="lg:col-span-5 flex justify-center">
+            <div class="w-full max-w-md bg-white/10 backdrop-blur-md border border-brand-gold/40 p-5 sm:p-6 rounded-3xl text-center shadow-2xl relative">
+              <div class="relative mb-4 group cursor-pointer" onclick="openLightbox('rbs9.jpg', 'RBS Inter College Paved Campus & Greenery')">
+                <img src="rbs9.jpg" alt="RBS Campus Courtyard" class="w-full h-48 object-cover rounded-2xl border-2 border-brand-gold/60 shadow-lg">
+                <div class="absolute inset-0 bg-brand-navy/30 rounded-2xl flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                  <span class="bg-brand-navy/90 text-brand-gold text-xs px-3 py-1.5 rounded-full font-bold flex items-center gap-1.5 shadow">
+                    <i class="fa-solid fa-magnifying-glass-plus"></i> View Courtyard
+                  </span>
+                </div>
+                <div class="absolute top-2 left-2 w-12 h-12 rounded-full overflow-hidden border-2 border-brand-gold shadow-md">
+                  <img src="rbslogo.jpeg" alt="Logo" class="w-full h-full object-cover">
+                </div>
+              </div>
+
+              <h2 class="text-lg font-bold font-serif text-white">RAMBAX SINGH INTER COLLEGE</h2>
+              <p class="text-xs text-brand-gold font-bold">&amp; RESIDENTIAL HOSTEL CAMPUS</p>
+              <p class="text-[11px] text-slate-300 mt-1">Bithara - Sarai Road, Post Aliganj, Dist. Etah (U.P.)</p>
+
+              <div class="mt-4 pt-3 border-t border-white/20 grid grid-cols-2 gap-3 text-left">
+                <div class="bg-white/5 p-3 rounded-xl border border-white/10">
+                  <p class="text-[10px] text-brand-gold uppercase font-bold">Director</p>
+                  <p class="text-sm font-bold text-white mt-0.5">Avadhesh Singh</p>
+                </div>
+                <div class="bg-white/5 p-3 rounded-xl border border-white/10">
+                  <p class="text-[10px] text-brand-gold uppercase font-bold">Manager</p>
+                  <p class="text-sm font-bold text-white mt-0.5">Vishnu Kant</p>
+                  <p class="text-[10px] text-slate-300">📞 6395052394</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Photo Gallery Showcase Section -->
+    <section id="gallery-section" class="py-16 bg-slate-100 border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-10">
+          <span class="text-xs uppercase font-extrabold tracking-widest text-brand-gold bg-brand-navy px-3.5 py-1 rounded-full border border-brand-gold/30">
+            <i class="fa-solid fa-camera-retro mr-1 text-brand-gold"></i> Live Moments &amp; Activities
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-serif font-black text-brand-navy mt-3">
+            Life At Rambax Singh Inter College &amp; Hostel
+          </h2>
+          <div class="w-20 h-1 bg-brand-gold mx-auto mt-3 rounded-full"></div>
+          <p class="text-slate-600 text-xs sm:text-sm mt-2">
+            Capturing classroom learning, national Republic Day celebrations, prize awards, cultural plays, and serene campus grounds.
+          </p>
+
+          <!-- Gallery Filter Buttons -->
+          <div class="flex flex-wrap justify-center gap-2 mt-6">
+            <button onclick="filterGallery('all')" class="gallery-filter-btn active-filter px-4 py-1.5 rounded-full text-xs font-bold transition bg-brand-navy text-white shadow">All Photos (10)</button>
+            <button onclick="filterGallery('events')" class="gallery-filter-btn px-4 py-1.5 rounded-full text-xs font-bold transition bg-white text-slate-700 hover:bg-slate-200 border">Republic Day &amp; Celebrations</button>
+            <button onclick="filterGallery('academics')" class="gallery-filter-btn px-4 py-1.5 rounded-full text-xs font-bold transition bg-white text-slate-700 hover:bg-slate-200 border">Classrooms &amp; Faculty</button>
+            <button onclick="filterGallery('culture')" class="gallery-filter-btn px-4 py-1.5 rounded-full text-xs font-bold transition bg-white text-slate-700 hover:bg-slate-200 border">Cultural &amp; Krishna Leela</button>
+            <button onclick="filterGallery('campus')" class="gallery-filter-btn px-4 py-1.5 rounded-full text-xs font-bold transition bg-white text-slate-700 hover:bg-slate-200 border">Campus &amp; Grounds</button>
+          </div>
+        </div>
+
+        <!-- Dynamic Grid of 10 Real Images -->
+        <div id="schoolGalleryGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+
+          <!-- 1. Campus Courtyard -->
+          <div class="gallery-card bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200 group flex flex-col" data-category="campus">
+            <div class="relative overflow-hidden h-52 cursor-pointer" onclick="openLightbox('rbs9.jpg', 'School Campus & Paved Green Courtyard')">
+              <img src="rbs9.jpg" alt="RBS Campus Courtyard" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <span class="absolute top-2.5 right-2.5 bg-brand-navy/85 text-brand-gold text-[10px] font-bold px-2 py-0.5 rounded-md backdrop-blur">
+                Campus View
+              </span>
+              <div class="absolute inset-0 bg-brand-navy/30 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                <i class="fa-solid fa-expand text-white text-xl bg-brand-navy/70 p-3 rounded-full"></i>
+              </div>
+            </div>
+            <div class="p-3.5 flex-grow flex flex-col justify-between">
+              <div>
+                <h4 class="text-sm font-bold text-brand-navy font-serif">Paved Campus &amp; School Building</h4>
+                <p class="text-[11px] text-slate-500 mt-0.5">Clean, airy and green school corridors in Bithara, Aliganj.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Republic Day Certificate Ceremony with Manager Vishnu Kant & Director -->
+          <div class="gallery-card bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200 group flex flex-col" data-category="events">
+            <div class="relative overflow-hidden h-52 cursor-pointer" onclick="openLightbox('rbs6.jpg', '26th January Republic Day Merit Award & Certificate Ceremony')">
+              <img src="rbs6.jpg" alt="Republic Day Award Ceremony" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <span class="absolute top-2.5 right-2.5 bg-emerald-700 text-white text-[10px] font-bold px-2 py-0.5 rounded-md">
+                Award Function
+              </span>
+              <div class="absolute inset-0 bg-brand-navy/30 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                <i class="fa-solid fa-expand text-white text-xl bg-brand-navy/70 p-3 rounded-full"></i>
+              </div>
+            </div>
+            <div class="p-3.5 flex-grow flex flex-col justify-between">
+              <div>
+                <h4 class="text-sm font-bold text-brand-navy font-serif">Merit Certificate Presentation</h4>
+                <p class="text-[11px] text-slate-500 mt-0.5">Director Avadhesh Singh &amp; Manager Vishnu Kant honoring meritorious students.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Morning Republic Day Rally with Flag and Balloons -->
+          <div class="gallery-card bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200 group flex flex-col" data-category="events">
+            <div class="relative overflow-hidden h-52 cursor-pointer" onclick="openLightbox('rbs8.jpg', 'Morning Republic Day Rally & Tricolor Celebration')">
+              <img src="rbs8.jpg" alt="Republic Day Rally" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <span class="absolute top-2.5 right-2.5 bg-amber-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-md">
+                Republic Day
+              </span>
+              <div class="absolute inset-0 bg-brand-navy/30 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                <i class="fa-solid fa-expand text-white text-xl bg-brand-navy/70 p-3 rounded-full"></i>
+              </div>
+            </div>
+            <div class="p-3.5 flex-grow flex flex-col justify-between">
+              <div>
+                <h4 class="text-sm font-bold text-brand-navy font-serif">Grand Tricolor Parade &amp; Rally</h4>
+                <p class="text-[11px] text-slate-500 mt-0.5">Students marching with national flags and balloons in the courtyard.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Classroom Lecture & Teaching -->
+          <div class="gallery-card bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200 group flex flex-col" data-category="academics">
+            <div class="relative overflow-hidden h-52 cursor-pointer" onclick="openLightbox('rbs10.jpg', 'Interactive Classroom Session & Board Guidance')">
+              <img src="rbs10.jpg" alt="Classroom Session" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <span class="absolute top-2.5 right-2.5 bg-blue-700 text-white text-[10px] font-bold px-2 py-0.5 rounded-md">
+                Classroom Study
+              </span>
+              <div class="absolute inset-0 bg-brand-navy/30 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                <i class="fa-solid fa-expand text-white text-xl bg-brand-navy/70 p-3 rounded-full"></i>
+              </div>
+            </div>
+            <div class="p-3.5 flex-grow flex flex-col justify-between">
+              <div>
+                <h4 class="text-sm font-bold text-brand-navy font-serif">Daily Supervised Classroom Lecture</h4>
+                <p class="text-[11px] text-slate-500 mt-0.5">Dedicated faculty conducting rigorous UP Board exam preparation.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Republic Day Stage Skit / Patriotic Presentation -->
+          <div class="gallery-card bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200 group flex flex-col" data-category="culture">
+            <div class="relative overflow-hidden h-52 cursor-pointer" onclick="openLightbox('rbs7.jpg', 'Republic Day Stage Performance by Students')">
+              <img src="rbs7.jpg" alt="Republic Day Stage Show" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <span class="absolute top-2.5 right-2.5 bg-rose-700 text-white text-[10px] font-bold px-2 py-0.5 rounded-md">
+                Stage Drama
+              </span>
+              <div class="absolute inset-0 bg-brand-navy/30 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                <i class="fa-solid fa-expand text-white text-xl bg-brand-navy/70 p-3 rounded-full"></i>
+              </div>
+            </div>
+            <div class="p-3.5 flex-grow flex flex-col justify-between">
+              <div>
+                <h4 class="text-sm font-bold text-brand-navy font-serif">Patriotic Stage Presentation</h4>
+                <p class="text-[11px] text-slate-500 mt-0.5">Girls performing under the official Residential R.B.S. Inter College banner.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Krishna Leela Cultural Attire -->
+          <div class="gallery-card bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200 group flex flex-col" data-category="culture">
+            <div class="relative overflow-hidden h-52 cursor-pointer" onclick="openLightbox('rbs2.jpg', 'Krishna & Balram Fancy Dress Presentation')">
+              <img src="rbs2.jpg" alt="Krishna Leela Attire" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <span class="absolute top-2.5 right-2.5 bg-amber-500 text-brand-navy text-[10px] font-bold px-2 py-0.5 rounded-md">
+                Krishna Leela
+              </span>
+              <div class="absolute inset-0 bg-brand-navy/30 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                <i class="fa-solid fa-expand text-white text-xl bg-brand-navy/70 p-3 rounded-full"></i>
+              </div>
+            </div>
+            <div class="p-3.5 flex-grow flex flex-col justify-between">
+              <div>
+                <h4 class="text-sm font-bold text-brand-navy font-serif">Krishna &amp; Balram Fancy Dress</h4>
+                <p class="text-[11px] text-slate-500 mt-0.5">Students in traditional yellow attire, mor-pankh crowns and flute.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7. Group Cultural Presentation -->
+          <div class="gallery-card bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200 group flex flex-col" data-category="culture">
+            <div class="relative overflow-hidden h-52 cursor-pointer" onclick="openLightbox('rbs3.jpg', 'Group Cultural Performance & Traditional Dress')">
+              <img src="rbs3.jpg" alt="Cultural Group Dance" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <span class="absolute top-2.5 right-2.5 bg-pink-700 text-white text-[10px] font-bold px-2 py-0.5 rounded-md">
+                Folk Attire
+              </span>
+              <div class="absolute inset-0 bg-brand-navy/30 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                <i class="fa-solid fa-expand text-white text-xl bg-brand-navy/70 p-3 rounded-full"></i>
+              </div>
+            </div>
+            <div class="p-3.5 flex-grow flex flex-col justify-between">
+              <div>
+                <h4 class="text-sm font-bold text-brand-navy font-serif">Janmashtami &amp; Folk Dance Group</h4>
+                <p class="text-[11px] text-slate-500 mt-0.5">Children dressed in bright traditional lehengas and crowns for celebration.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 8. Teachers Day Celebration & Cake Cutting -->
+          <div class="gallery-card bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200 group flex flex-col" data-category="events">
+            <div class="relative overflow-hidden h-52 cursor-pointer" onclick="openLightbox('rbs4.jpg', 'Teachers Day Classroom Cake Cutting Ceremony')">
+              <img src="rbs4.jpg" alt="Teachers Day Cake Cutting" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <span class="absolute top-2.5 right-2.5 bg-purple-700 text-white text-[10px] font-bold px-2 py-0.5 rounded-md">
+                Teachers' Day
+              </span>
+              <div class="absolute inset-0 bg-brand-navy/30 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                <i class="fa-solid fa-expand text-white text-xl bg-brand-navy/70 p-3 rounded-full"></i>
+              </div>
+            </div>
+            <div class="p-3.5 flex-grow flex flex-col justify-between">
+              <div>
+                <h4 class="text-sm font-bold text-brand-navy font-serif">Teachers' Day Joyous Celebration</h4>
+                <p class="text-[11px] text-slate-500 mt-0.5">Faculty, elders and students gathering for the traditional cake cutting.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 9. Management Room Celebration & Portraits -->
+          <div class="gallery-card bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200 group flex flex-col" data-category="academics">
+            <div class="relative overflow-hidden h-52 cursor-pointer" onclick="openLightbox('rbs5.jpg', 'Staff & Management Office Celebration')">
+              <img src="rbs5.jpg" alt="Staff Management Office" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <span class="absolute top-2.5 right-2.5 bg-brand-navy text-brand-gold text-[10px] font-bold px-2 py-0.5 rounded-md">
+                Staff Office
+              </span>
+              <div class="absolute inset-0 bg-brand-navy/30 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                <i class="fa-solid fa-expand text-white text-xl bg-brand-navy/70 p-3 rounded-full"></i>
+              </div>
+            </div>
+            <div class="p-3.5 flex-grow flex flex-col justify-between">
+              <div>
+                <h4 class="text-sm font-bold text-brand-navy font-serif">College Administrative Office</h4>
+                <p class="text-[11px] text-slate-500 mt-0.5">Manager Vishnu Kant, Director, teachers and elders at the college chamber.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 10. Student Academic Prize / Appreciation -->
+          <div class="gallery-card bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200 group flex flex-col" data-category="academics">
+            <div class="relative overflow-hidden h-52 cursor-pointer" onclick="openLightbox('rbs1.jpg', 'Faculty Awarding Meritorious Students in Class')">
+              <img src="rbs1.jpg" alt="Prize Distribution" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <span class="absolute top-2.5 right-2.5 bg-emerald-700 text-white text-[10px] font-bold px-2 py-0.5 rounded-md">
+                Student Prize
+              </span>
+              <div class="absolute inset-0 bg-brand-navy/30 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                <i class="fa-solid fa-expand text-white text-xl bg-brand-navy/70 p-3 rounded-full"></i>
+              </div>
+            </div>
+            <div class="p-3.5 flex-grow flex flex-col justify-between">
+              <div>
+                <h4 class="text-sm font-bold text-brand-navy font-serif">Student Encouragement Award</h4>
+                <p class="text-[11px] text-slate-500 mt-0.5">Academic recognition and pen distribution for sincere class attendance.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Global Photo Lightbox Modal -->
+    <div id="photoLightboxModal" class="fixed inset-0 z-[99999] bg-black/90 backdrop-blur-md hidden flex flex-col items-center justify-center p-4">
+      <div class="relative max-w-4xl w-full max-h-[90vh] flex flex-col items-center">
+        <button onclick="closeLightbox()" class="absolute -top-12 right-0 text-white hover:text-brand-gold text-2xl px-3 py-1">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <img id="lightboxImage" src="" alt="Zoomed View" class="max-h-[75vh] w-auto max-w-full rounded-2xl border-2 border-brand-gold shadow-2xl object-contain">
+        <p id="lightboxCaption" class="text-white text-center text-sm font-semibold mt-3 bg-brand-navy/80 px-4 py-2 rounded-xl border border-brand-gold/40"></p>
+      </div>
+    </div>
+
+    <section id="hostel-section" class="py-16 bg-white border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <span class="text-xs uppercase font-extrabold tracking-widest text-brand-gold bg-brand-goldlight px-3 py-1 rounded-full border border-brand-gold/30">
+            <i class="fa-solid fa-hotel mr-1"></i> Campus Boarding Facility
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-serif font-black text-brand-navy mt-3">
+            Residential Hostel at Rambax Singh Inter College
+          </h2>
+          <div class="w-20 h-1 bg-brand-gold mx-auto mt-3 rounded-full"></div>
+          <p class="text-slate-600 text-sm sm:text-base mt-3">
+            A safe, home-like environment fostering academic excellence, physical fitness, personal discipline, and focused preparation for competitive examinations.
+          </p>
+        </div>
+
+        <!-- Hostel Key Feature Pillars -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-slate-50 border-2 border-slate-200 rounded-3xl p-6 hover:border-brand-gold transition shadow-sm">
+            <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-800 flex items-center justify-center text-xl mb-4 font-bold">
+              <i class="fa-solid fa-utensils"></i>
+            </div>
+            <h3 class="text-lg font-bold font-serif text-brand-navy">Nutritious Mess &amp; Pure Water</h3>
+            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+              Four times fresh, hot vegetarian meals prepared under hygienic supervision. 100% RO purified drinking water and special wholesome diet for growing students.
+            </p>
+            <ul class="mt-4 space-y-1.5 text-xs text-slate-700 font-medium">
+              <li><i class="fa-solid fa-check text-emerald-600 mr-1.5"></i> Daily Morning Milk &amp; Breakfast</li>
+              <li><i class="fa-solid fa-check text-emerald-600 mr-1.5"></i> Wholesome Lunch &amp; Dinner Menu</li>
+              <li><i class="fa-solid fa-check text-emerald-600 mr-1.5"></i> Clean Dining Hall Environment</li>
+            </ul>
+          </div>
+
+          <div class="bg-slate-50 border-2 border-slate-200 rounded-3xl p-6 hover:border-brand-gold transition shadow-sm">
+            <div class="w-12 h-12 rounded-2xl bg-blue-100 text-blue-800 flex items-center justify-center text-xl mb-4 font-bold">
+              <i class="fa-solid fa-book-reader"></i>
+            </div>
+            <h3 class="text-lg font-bold font-serif text-brand-navy">Mandatory Supervised Self-Study</h3>
+            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+              Fixed morning and evening study sessions under the active supervision of resident teachers and wardens to clear student doubts daily.
+            </p>
+            <ul class="mt-4 space-y-1.5 text-xs text-slate-700 font-medium">
+              <li><i class="fa-solid fa-check text-emerald-600 mr-1.5"></i> 2 Hours Morning Revision Routine</li>
+              <li><i class="fa-solid fa-check text-emerald-600 mr-1.5"></i> Evening Faculty Doubt Clearance</li>
+              <li><i class="fa-solid fa-check text-emerald-600 mr-1.5"></i> Strict No-Distraction Study Hall</li>
+            </ul>
+          </div>
+
+          <div class="bg-slate-50 border-2 border-slate-200 rounded-3xl p-6 hover:border-brand-gold transition shadow-sm">
+            <div class="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-800 flex items-center justify-center text-xl mb-4 font-bold">
+              <i class="fa-solid fa-shield-virus"></i>
+            </div>
+            <h3 class="text-lg font-bold font-serif text-brand-navy">24x7 Security &amp; Medical Care</h3>
+            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+              Complete CCTV surveillance throughout corridors and entry gates. Full-time resident warden on premises and on-call medical doctors.
+            </p>
+            <ul class="mt-4 space-y-1.5 text-xs text-slate-700 font-medium">
+              <li><i class="fa-solid fa-check text-emerald-600 mr-1.5"></i> 24-Hour Electricity with Generator Backup</li>
+              <li><i class="fa-solid fa-check text-emerald-600 mr-1.5"></i> Dedicated Emergency Medical First-Aid</li>
+              <li><i class="fa-solid fa-check text-emerald-600 mr-1.5"></i> Separate Safe Dormitories</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Hostel Daily Routine Banner -->
+        <div class="mt-10 bg-brand-navy text-white rounded-3xl p-6 sm:p-8 border border-brand-gold/40">
+          <div class="flex flex-col lg:flex-row items-center justify-between gap-6">
+            <div class="space-y-2 text-center lg:text-left">
+              <span class="text-xs uppercase text-brand-gold font-bold tracking-wider">A Day in RBS Hostel</span>
+              <h4 class="text-2xl font-serif font-black">Disciplined Routine for Outstanding Results</h4>
+              <p class="text-xs sm:text-sm text-slate-300 max-w-2xl">
+                5:30 AM Wake Up &amp; PT Yoga &bull; 7:30 AM Breakfast &bull; 8:30 AM to 2:00 PM Academic Classes &bull; 2:30 PM Lunch &bull; 4:30 PM Sports &bull; 6:30 PM to 9:30 PM Supervised Evening Study &bull; 10:00 PM Lights Out.
+              </p>
+            </div>
+            <div class="flex-shrink-0">
+              <button onclick="scrollToElement('admission-form-section')" class="px-6 py-3.5 gold-gradient text-brand-navy font-black text-xs uppercase tracking-wider rounded-xl shadow-lg hover:scale-105 transition">
+                Book Hostel Seat Today
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="leadership-section" class="py-16 bg-slate-50 border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <span class="text-xs uppercase font-extrabold tracking-widest text-brand-gold">Administrative Pillars</span>
+          <h2 class="text-3xl sm:text-4xl font-serif font-black text-brand-navy mt-1">Our College &amp; Hostel Leadership</h2>
+          <div class="w-20 h-1 bg-brand-gold mx-auto mt-2 rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          
+          <!-- Director Card -->
+          <div class="bg-white border-2 border-slate-200 rounded-3xl p-6 sm:p-8 hover:border-brand-gold transition duration-300 relative shadow-sm">
+            <div class="flex items-start space-x-4">
+              <div class="w-16 h-16 rounded-2xl bg-brand-navy text-brand-gold flex items-center justify-center text-2xl font-serif font-black shadow flex-shrink-0 border-2 border-brand-gold">
+                AS
+              </div>
+              <div>
+                <span class="bg-brand-navy/10 text-brand-navy text-[11px] font-extrabold uppercase px-2.5 py-0.5 rounded-full">
+                  Director
+                </span>
+                <h3 class="text-2xl font-bold font-serif text-brand-navy mt-1">Avadhesh Singh</h3>
+                <p class="text-xs text-brand-gold font-bold uppercase tracking-wider">Director, Rambax Singh Inter College</p>
+              </div>
+            </div>
+
+            <div class="mt-4 text-slate-600 text-xs sm:text-sm leading-relaxed border-t border-slate-200 pt-3 space-y-2">
+              <p>
+                "At Rambax Singh Inter College &amp; Hostel, we emphasize total personal character. Rural students need not travel to distant cities to receive world-class education and disciplined boarding amenities."
+              </p>
+              <p>
+                "Our hostel and teaching faculties work hand-in-hand to guarantee exceptional academic outcomes in every board examination."
+              </p>
+            </div>
+
+            <div class="mt-4 pt-3 border-t border-slate-200 flex justify-between text-xs font-semibold text-slate-500">
+              <span>Bithara, Aliganj, Etah</span>
+              <span class="text-brand-navy font-bold">Office of the Director</span>
+            </div>
+          </div>
+
+          <!-- Manager Card -->
+          <div class="bg-white border-2 border-slate-200 rounded-3xl p-6 sm:p-8 hover:border-brand-gold transition duration-300 relative shadow-sm">
+            <div class="flex items-start space-x-4">
+              <div class="w-16 h-16 rounded-2xl bg-brand-gold text-brand-navy flex items-center justify-center text-2xl font-serif font-black shadow flex-shrink-0 border-2 border-brand-navy">
+                VK
+              </div>
+              <div>
+                <span class="bg-amber-100 text-amber-900 text-[11px] font-extrabold uppercase px-2.5 py-0.5 rounded-full">
+                  Manager &amp; Administrator
+                </span>
+                <h3 class="text-2xl font-bold font-serif text-brand-navy mt-1">Vishnu Kant</h3>
+                <p class="text-xs text-brand-gold font-bold uppercase tracking-wider">Manager, Rambax Singh Inter College</p>
+              </div>
+            </div>
+
+            <div class="mt-4 text-slate-600 text-xs sm:text-sm leading-relaxed border-t border-slate-200 pt-3 space-y-2">
+              <p>
+                "As Manager, my primary commitment is the daily safety, healthy nutrition, and academic progress of every child entrusted to our hostel and college."
+              </p>
+              <p>
+                "Parents are welcome to call my personal contact anytime regarding admissions, marksheet verification, or hostel accommodation."
+              </p>
+            </div>
+
+            <div class="mt-4 pt-3 border-t border-slate-200 flex flex-wrap items-center justify-between gap-2 text-xs font-semibold">
+              <a href="tel:6395052394" class="text-brand-navy bg-slate-100 px-3 py-1 rounded-lg border border-slate-300 hover:text-brand-gold transition flex items-center space-x-1.5 font-bold">
+                <i class="fa-solid fa-phone text-brand-gold"></i>
+                <span>+91 6395052394</span>
+              </a>
+              <a href="mailto:rambaxsinghintercollege@gmail.com" class="text-slate-600 hover:text-brand-navy transition flex items-center space-x-1">
+                <i class="fa-solid fa-envelope text-brand-gold"></i>
+                <span>rambaxsinghintercollege@gmail.com</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="py-14 bg-white border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <span class="text-xs uppercase font-extrabold tracking-widest text-amber-800">Holistic Growth</span>
+          <h3 class="text-2xl sm:text-3xl font-serif font-black text-brand-navy mt-1">Academics &bull; Hostel &bull; Culture</h3>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="rounded-2xl border border-slate-200 overflow-hidden bg-slate-50 shadow-sm flex flex-col">
+            <img src="rbs10.jpg" alt="Classroom" class="h-44 w-full object-cover">
+            <div class="p-4 flex-grow">
+              <h4 class="font-serif font-bold text-brand-navy text-base">UP Board Curriculum</h4>
+              <p class="text-xs text-slate-600 mt-1">Science &amp; Arts streams with continuous evaluations, tests, and individual doubt-clearing sessions.</p>
+            </div>
+          </div>
+
+          <div class="rounded-2xl border border-slate-200 overflow-hidden bg-slate-50 shadow-sm flex flex-col">
+            <img src="rbs7.jpg" alt="Cultural Events" class="h-44 w-full object-cover">
+            <div class="p-4 flex-grow">
+              <h4 class="font-serif font-bold text-brand-navy text-base">Patriotic &amp; Cultural Values</h4>
+              <p class="text-xs text-slate-600 mt-1">Grand Republic Day ceremonies, Independence Day, Janmashtami, and ethical moral character building.</p>
+            </div>
+          </div>
+
+          <div class="rounded-2xl border border-slate-200 overflow-hidden bg-slate-50 shadow-sm flex flex-col">
+            <img src="rbs9.jpg" alt="Campus Courtyard" class="h-44 w-full object-cover">
+            <div class="p-4 flex-grow">
+              <h4 class="font-serif font-bold text-brand-navy text-base">Discipline &amp; Boarding Life</h4>
+              <p class="text-xs text-slate-600 mt-1">Clean paved campus, open sports grounds, nutritious mess, and 24x7 residential hostel care.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Admission Application Form Section -->
+    <section id="admission-form-section" class="py-16 bg-slate-50 border-b border-slate-200">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-8">
+          <span class="text-xs uppercase font-extrabold tracking-widest text-brand-gold bg-brand-navy px-3 py-1 rounded-full">Admission Open 2025-26</span>
+          <h3 class="text-2xl sm:text-3xl font-serif font-black text-brand-navy mt-2">Online Admission &amp; Hostel Registration</h3>
+          <p class="text-xs sm:text-sm text-slate-600 mt-1">Fill out the official registration form. Applications directly sync with Manager Vishnu Kant's terminal.</p>
+        </div>
+
+        <form id="publicAdmissionForm" onsubmit="handlePublicAdmissionSubmit(event)" class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-md space-y-4 text-xs">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block font-bold text-slate-700 uppercase mb-1">Student Full Name *</label>
+              <input type="text" id="admFullName" required placeholder="Full Name" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 font-medium">
+            </div>
+            <div>
+              <label class="block font-bold text-slate-700 uppercase mb-1">Father's Name *</label>
+              <input type="text" id="admFatherName" required placeholder="Father Name" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 font-medium">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div>
+              <label class="block font-bold text-slate-700 uppercase mb-1">Mother's Name</label>
+              <input type="text" id="admMotherName" placeholder="Mother Name" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 font-medium">
+            </div>
+            <div>
+              <label class="block font-bold text-slate-700 uppercase mb-1">Date of Birth *</label>
+              <input type="date" id="admDob" required class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 font-medium">
+            </div>
+            <div>
+              <label class="block font-bold text-slate-700 uppercase mb-1">Applying For Class *</label>
+              <select id="admClass" required class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 font-medium bg-white">
+                <option value="Class 10th">Class 10th (High School)</option>
+                <option value="Class 12th Science">Class 12th (Science Stream)</option>
+                <option value="Class 12th Arts">Class 12th (Arts Stream)</option>
+                <option value="Class 9th">Class 9th</option>
+                <option value="Class 11th Science">Class 11th (Science)</option>
+                <option value="Class 11th Arts">Class 11th (Arts)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block font-bold text-slate-700 uppercase mb-1">Hostel Accommodation Needed? *</label>
+              <select id="admHostelReq" required class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 font-medium bg-white">
+                <option value="Yes - Hostel Required">Yes - Residential Hostel Required</option>
+                <option value="No - Day Scholar">No - Day Scholar (Local Student)</option>
+              </select>
+            </div>
+            <div>
+              <label class="block font-bold text-slate-700 uppercase mb-1">Parent Mobile / WhatsApp *</label>
+              <input type="tel" id="admPhone" required placeholder="10-digit mobile number" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 font-medium">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block font-bold text-slate-700 uppercase mb-1">Previous School &amp; Marks %</label>
+              <input type="text" id="admPrevSchool" placeholder="e.g. Previous School (80%)" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 font-medium">
+            </div>
+            <div>
+              <label class="block font-bold text-slate-700 uppercase mb-1">Village / Town Address *</label>
+              <input type="text" id="admAddress" required placeholder="Bithara, Aliganj, Etah" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 font-medium">
+            </div>
+          </div>
+
+          <div class="pt-2 text-right">
+            <button type="submit" class="px-6 py-3 gold-gradient text-brand-navy font-black text-xs uppercase tracking-wider rounded-xl shadow hover:scale-105 transition">
+              Submit Application
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer id="contact-section" class="bg-brand-dark text-white py-12 border-t border-brand-gold/30">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 border-b border-slate-800">
+          <div>
+            <h4 class="font-serif font-black text-lg text-white">Rambax Singh Inter College</h4>
+            <p class="text-xs text-brand-gold font-bold mt-1">&amp; Residential Hostel Facility</p>
+            <p class="text-xs text-slate-400 mt-2">Affiliated with UP Board. Quality education and disciplined residential boarding in Bithara, Aliganj, Etah.</p>
+          </div>
+          <div>
+            <h5 class="text-xs font-bold uppercase tracking-wider text-brand-gold mb-3">College Leadership</h5>
+            <ul class="space-y-1.5 text-xs text-slate-300">
+              <li><strong>Director:</strong> Avadhesh Singh</li>
+              <li><strong>Manager:</strong> Vishnu Kant</li>
+              <li><strong>Phone:</strong> +91 6395052394</li>
+              <li><strong>Email:</strong> rambaxsinghintercollege@gmail.com</li>
+            </ul>
+          </div>
+          <div>
+            <h5 class="text-xs font-bold uppercase tracking-wider text-brand-gold mb-3">Campus Address</h5>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Bithara - Sarai Road, Post Aliganj,<br>
+              District Etah, Uttar Pradesh - 207247<br>
+              Helpline: 6395052394
+            </p>
+          </div>
+        </div>
+        <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-2">
+          <p>&copy; 2025 Rambax Singh Inter College &amp; Residential Hostel. All Rights Reserved.</p>
+          <div class="flex space-x-4">
+            <button onclick="openLoginModal('admin')" class="hover:text-brand-gold">Admin Portal</button>
+            <button onclick="openLoginModal('staff')" class="hover:text-brand-gold">Staff Portal</button>
+            <button onclick="openLoginModal('student')" class="hover:text-brand-gold">Student Portal</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <div id="loginModal" class="fixed inset-0 z-50 bg-black/75 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-md w-full overflow-hidden shadow-2xl border-2 border-brand-gold/50">
+      
+      <div class="navy-gradient p-5 text-white text-center relative">
+        <button onclick="closeLoginModal()" class="absolute right-4 top-4 text-slate-300 hover:text-white text-lg">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="w-12 h-12 mx-auto mb-2">
+          <svg viewBox="0 0 400 400" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="200" cy="200" r="192" fill="#07172c" stroke="#d4af37" stroke-width="8" />
+            <text x="200" y="210" font-family="'Cinzel', serif" font-size="95" font-weight="900" fill="#d4af37" text-anchor="middle">RBS</text>
+          </svg>
+        </div>
+        <h3 class="text-lg font-bold font-serif text-white">Campus Portal Authentication</h3>
+        <p class="text-xs text-brand-gold">Rambax Singh Inter College &amp; Hostel</p>
+      </div>
+
+      <!-- Role Tabs -->
+      <div class="grid grid-cols-3 bg-slate-100 p-1.5 border-b border-slate-200 text-xs font-bold">
+        <button id="roleTabAdmin" onclick="switchLoginRole('admin')" class="py-2 rounded-xl transition bg-white text-brand-navy shadow-sm">
+          <i class="fa-solid fa-shield-halved block text-sm mb-1 text-brand-gold"></i> Admin
+        </button>
+        <button id="roleTabStaff" onclick="switchLoginRole('staff')" class="py-2 rounded-xl transition text-slate-600 hover:text-brand-navy">
+          <i class="fa-solid fa-chalkboard-user block text-sm mb-1"></i> Staff
+        </button>
+        <button id="roleTabStudent" onclick="switchLoginRole('student')" class="py-2 rounded-xl transition text-slate-600 hover:text-brand-navy">
+          <i class="fa-solid fa-user-graduate block text-sm mb-1"></i> Student
+        </button>
+      </div>
+
+      <!-- Clean Login Form WITHOUT any suggestion buttons or demo fill shortcuts -->
+      <form id="portalLoginForm" onsubmit="handlePortalLogin(event)" class="p-6 space-y-4">
+        
+        <div>
+          <label id="loginIdentifierLabel" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">
+            Admin Email Address
+          </label>
+          <div class="relative">
+            <i id="loginIdentifierIcon" class="fa-solid fa-envelope absolute left-3.5 top-3.5 text-slate-400 text-sm"></i>
+            <input type="text" id="loginIdentifier" required placeholder="Enter Email / Username" class="w-full pl-10 pr-3.5 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-gold text-sm font-medium">
+          </div>
+        </div>
+
+        <div>
+          <div class="flex items-center justify-between mb-1">
+            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider">
+              Password
+            </label>
+          </div>
+          <div class="relative">
+            <i class="fa-solid fa-lock absolute left-3.5 top-3.5 text-slate-400 text-sm"></i>
+            <input type="password" id="loginPassword" required placeholder="Enter password" class="w-full pl-10 pr-10 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-gold text-sm font-medium">
+            <!-- Show/Hide Password Eye Toggle -->
+            <button type="button" onclick="togglePasswordVisibility('loginPassword', 'loginPassToggleIcon')" class="absolute right-3.5 top-3 text-slate-400 hover:text-brand-navy focus:outline-none">
+              <i id="loginPassToggleIcon" class="fa-regular fa-eye"></i>
+            </button>
+          </div>
+        </div>
+
+        <div id="loginFeedback" class="text-xs text-red-600 font-semibold hidden"></div>
+
+        <button type="submit" class="w-full py-3 gold-gradient text-brand-navy rounded-xl font-black text-xs uppercase tracking-wider shadow-md hover:scale-[1.01] transition transform flex items-center justify-center space-x-2">
+          <i class="fa-solid fa-arrow-right-to-bracket"></i>
+          <span id="loginSubmitBtnText">Authenticate &amp; Enter</span>
+        </button>
+
+        <p class="text-[11px] text-center text-slate-500 pt-2 border-t border-slate-100">
+          Strict Access Control: Staff and Students must be granted access by Admin to log in.
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <section id="adminDashboardView" class="hidden flex-grow bg-slate-100 min-h-screen">
+    
+    <header class="bg-brand-navy text-white px-4 sm:px-6 py-3 border-b-2 border-brand-gold flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <div class="w-10 h-10">
+          <svg viewBox="0 0 400 400" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="200" cy="200" r="192" fill="#07172c" stroke="#d4af37" stroke-width="10" />
+            <text x="200" y="215" font-family="'Cinzel', serif" font-size="90" font-weight="900" fill="#d4af37" text-anchor="middle">RBS</text>
+          </svg>
+        </div>
+        <div>
+          <h2 class="text-sm sm:text-base font-bold font-serif leading-tight">RBS Admin Control Panel</h2>
+          <p class="text-xs text-brand-gold">Manager: Vishnu Kant &bull; Director: Avadhesh Singh &bull; Hostel Warden Unit</p>
+        </div>
+      </div>
+
+      <div class="flex items-center space-x-3">
+        <button onclick="logoutPortal()" class="px-3 py-1.5 bg-red-600 hover:bg-red-700 text-white rounded-lg text-xs font-bold transition flex items-center space-x-1.5">
+          <i class="fa-solid fa-power-off"></i>
+          <span>Logout</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Admin Navigation Tabs -->
+    <div class="bg-white border-b border-slate-200 shadow-sm sticky top-0 z-20">
+      <div class="max-w-7xl mx-auto px-4 flex space-x-2 sm:space-x-4 overflow-x-auto py-2 text-xs sm:text-sm font-bold">
+        <button onclick="switchAdminTab('inquiries')" id="adminTabBtnInquiries" class="admin-tab-btn px-4 py-2 rounded-xl bg-brand-navy text-white transition flex items-center space-x-2 flex-shrink-0">
+          <i class="fa-solid fa-inbox text-brand-gold"></i>
+          <span>Online Inquiries</span>
+          <span id="badgeInquiryCount" class="bg-brand-gold text-brand-navy text-[10px] font-black px-1.5 py-0.5 rounded-full">0</span>
+        </button>
+        <button onclick="switchAdminTab('students')" id="adminTabBtnStudents" class="admin-tab-btn px-4 py-2 rounded-xl text-slate-600 hover:text-brand-navy hover:bg-slate-100 transition flex items-center space-x-2 flex-shrink-0">
+          <i class="fa-solid fa-user-graduate"></i>
+          <span>Students &amp; Hostellers</span>
+        </button>
+        <button onclick="switchAdminTab('staff')" id="adminTabBtnStaff" class="admin-tab-btn px-4 py-2 rounded-xl text-slate-600 hover:text-brand-navy hover:bg-slate-100 transition flex items-center space-x-2 flex-shrink-0">
+          <i class="fa-solid fa-chalkboard-user"></i>
+          <span>Staff Accounts &amp; Passwords</span>
+        </button>
+        <button onclick="switchAdminTab('marksheets')" id="adminTabBtnMarksheets" class="admin-tab-btn px-4 py-2 rounded-xl text-slate-600 hover:text-brand-navy hover:bg-slate-100 transition flex items-center space-x-2 flex-shrink-0">
+          <i class="fa-solid fa-certificate text-brand-gold"></i>
+          <span>Professional Marksheet Hub</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto p-4 sm:p-6">
+      
+      <!-- Inquiries Tab -->
+      <div id="adminTabInquiries" class="space-y-4">
+        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 bg-white p-4 rounded-2xl border border-slate-200 shadow-sm">
+          <div>
+            <h3 class="text-lg font-bold font-serif text-brand-navy">Admissions &amp; Hostel Inquiries</h3>
+            <p class="text-xs text-slate-500">Live applications received from the public website.</p>
+          </div>
+          <div class="flex items-center space-x-2 w-full sm:w-auto">
+            <input type="text" id="searchInquiryInput" oninput="filterInquiries()" placeholder="Search by name, phone, class..." class="px-3.5 py-2 rounded-xl border border-slate-300 text-xs w-full sm:w-64 focus:outline-none focus:ring-2 focus:ring-brand-gold">
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+          <div class="overflow-x-auto">
+            <table class="w-full text-left text-xs sm:text-sm">
+              <thead class="bg-slate-50 text-slate-600 uppercase text-[11px] border-b">
+                <tr>
+                  <th class="py-3 px-3">Date</th>
+                  <th class="py-3 px-3">Student Name</th>
+                  <th class="py-3 px-3">Father Name</th>
+                  <th class="py-3 px-3">Class</th>
+                  <th class="py-3 px-3">Hostel Option</th>
+                  <th class="py-3 px-3">Phone</th>
+                  <th class="py-3 px-3">Status</th>
+                  <th class="py-3 px-3 text-right">Actions</th>
+                </tr>
+              </thead>
+              <tbody id="inquiriesTableBody" class="divide-y divide-slate-100 font-medium"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Students Tab with Password Reset and Hostel Tag -->
+      <div id="adminTabStudents" class="hidden space-y-4">
+        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 bg-white p-4 rounded-2xl border border-slate-200 shadow-sm">
+          <div>
+            <h3 class="text-lg font-bold font-serif text-brand-navy">Students &amp; Hostellers Master Terminal</h3>
+            <p class="text-xs text-slate-500">Manage credentials, change passwords, and toggle Day Scholar / Hosteller status.</p>
+          </div>
+          <button onclick="openAddStudentModal()" class="px-4 py-2 gold-gradient text-brand-navy rounded-xl font-bold text-xs shadow hover:scale-105 transition flex items-center space-x-1.5">
+            <i class="fa-solid fa-user-plus"></i>
+            <span>Register New Student</span>
+          </button>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+          <div class="overflow-x-auto">
+            <table class="w-full text-left text-xs sm:text-sm">
+              <thead class="bg-slate-50 text-slate-600 uppercase text-[11px] border-b">
+                <tr>
+                  <th class="py-3 px-3">Roll No</th>
+                  <th class="py-3 px-3">Student Name</th>
+                  <th class="py-3 px-3">Class</th>
+                  <th class="py-3 px-3">Hostel Status</th>
+                  <th class="py-3 px-3">Password</th>
+                  <th class="py-3 px-3">Login Access</th>
+                  <th class="py-3 px-3 text-right">Actions</th>
+                </tr>
+              </thead>
+              <tbody id="studentsTableBody" class="divide-y divide-slate-100 font-medium"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Staff Tab with Password Reset Functionality -->
+      <div id="adminTabStaff" class="hidden space-y-4">
+        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 bg-white p-4 rounded-2xl border border-slate-200 shadow-sm">
+          <div>
+            <h3 class="text-lg font-bold font-serif text-brand-navy">Staff &amp; Faculty Accounts Management</h3>
+            <p class="text-xs text-slate-500">Add instructors, grant terminal permissions, and update teacher passwords.</p>
+          </div>
+          <button onclick="openAddStaffModal()" class="px-4 py-2 bg-brand-navy text-brand-gold rounded-xl font-bold text-xs shadow hover:bg-brand-lightnavy transition flex items-center space-x-1.5">
+            <i class="fa-solid fa-chalkboard-user"></i>
+            <span>Add New Staff</span>
+          </button>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+          <div class="overflow-x-auto">
+            <table class="w-full text-left text-xs sm:text-sm">
+              <thead class="bg-slate-50 text-slate-600 uppercase text-[11px] border-b">
+                <tr>
+                  <th class="py-3 px-3">Staff Name</th>
+                  <th class="py-3 px-3">Role / Subject</th>
+                  <th class="py-3 px-3">Email (Login ID)</th>
+                  <th class="py-3 px-3">Current Password</th>
+                  <th class="py-3 px-3">Access Status</th>
+                  <th class="py-3 px-3 text-right">Actions</th>
+                </tr>
+              </thead>
+              <tbody id="staffTableBody" class="divide-y divide-slate-100 font-medium"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Marksheet Tab -->
+      <div id="adminTabMarksheets" class="hidden space-y-4">
+        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 bg-white p-4 rounded-2xl border border-slate-200 shadow-sm">
+          <div>
+            <h3 class="text-lg font-bold font-serif text-brand-navy">State Board Official Marksheets Registry</h3>
+            <p class="text-xs text-slate-500">Generate high-grade official marksheets with Theory &amp; Practical breakdowns.</p>
+          </div>
+          <button onclick="openCreateMarksheetModal()" class="px-4 py-2 gold-gradient text-brand-navy rounded-xl font-black text-xs shadow hover:scale-105 transition flex items-center space-x-1.5">
+            <i class="fa-solid fa-file-circle-plus"></i>
+            <span>Generate Official Marksheet</span>
+          </button>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+          <div class="overflow-x-auto">
+            <table class="w-full text-left text-xs sm:text-sm">
+              <thead class="bg-slate-50 text-slate-600 uppercase text-[11px] border-b">
+                <tr>
+                  <th class="py-3 px-3">Roll No</th>
+                  <th class="py-3 px-3">Candidate Name</th>
+                  <th class="py-3 px-3">Class &amp; Stream</th>
+                  <th class="py-3 px-3">Hosteller?</th>
+                  <th class="py-3 px-3">Exam Type</th>
+                  <th class="py-3 px-3">Total Marks</th>
+                  <th class="py-3 px-3">Result / Division</th>
+                  <th class="py-3 px-3 text-right">Actions</th>
+                </tr>
+              </thead>
+              <tbody id="marksheetsTableBody" class="divide-y divide-slate-100 font-medium"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="staffDashboardView" class="hidden flex-grow bg-slate-100 min-h-screen">
+    <header class="bg-brand-lightnavy text-white px-4 sm:px-6 py-3 border-b-2 border-brand-gold flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <div class="w-10 h-10 bg-brand-gold rounded-xl flex items-center justify-center text-brand-navy font-bold text-lg">
+          <i class="fa-solid fa-chalkboard-user"></i>
+        </div>
+        <div>
+          <h2 class="text-sm sm:text-base font-bold font-serif leading-tight" id="staffGreetingName">Staff Faculty Dashboard</h2>
+          <p class="text-xs text-brand-gold">RBS Inter College &amp; Residential Hostel &bull; Academic Staff Desk</p>
+        </div>
+      </div>
+      <button onclick="logoutPortal()" class="px-3 py-1.5 bg-red-600 hover:bg-red-700 text-white rounded-lg text-xs font-bold transition">
+        Logout
+      </button>
+    </header>
+
+    <div class="max-w-7xl mx-auto p-4 sm:p-6 space-y-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm flex items-center space-x-3">
+          <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center text-lg">
+            <i class="fa-solid fa-users"></i>
+          </div>
+          <div>
+            <p class="text-xs text-slate-500 font-bold uppercase">Total Students</p>
+            <p class="text-xl font-black text-brand-navy" id="staffTotalStudentsCount">0</p>
+          </div>
+        </div>
+        <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm flex items-center space-x-3">
+          <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-lg">
+            <i class="fa-solid fa-bed"></i>
+          </div>
+          <div>
+            <p class="text-xs text-slate-500 font-bold uppercase">Hostel Boarders</p>
+            <p class="text-xl font-black text-brand-navy" id="staffHostellerCount">0</p>
+          </div>
+        </div>
+        <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm flex items-center justify-between">
+          <div>
+            <p class="text-xs text-slate-500 font-bold uppercase">Official Marksheet</p>
+            <p class="text-xs text-slate-600">Draft or finalize student scores</p>
+          </div>
+          <button onclick="openCreateMarksheetModal()" class="px-3 py-2 gold-gradient text-brand-navy font-black rounded-xl text-xs shadow">
+            + Generate
+          </button>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-4">
+        <div class="flex justify-between items-center mb-3">
+          <h3 class="text-base font-bold font-serif text-brand-navy">Assigned Students &amp; Hostel Boarders</h3>
+          <span class="text-xs text-slate-500">Roll Registry</span>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs sm:text-sm">
+            <thead class="bg-slate-50 text-slate-600 uppercase text-[11px] border-b">
+              <tr>
+                <th class="py-2.5 px-3">Roll No</th>
+                <th class="py-2.5 px-3">Student Name</th>
+                <th class="py-2.5 px-3">Class</th>
+                <th class="py-2.5 px-3">Hosteller / Day Scholar</th>
+                <th class="py-2.5 px-3">Guardian Contact</th>
+                <th class="py-2.5 px-3 text-right">Marksheet Status</th>
+              </tr>
+            </thead>
+            <tbody id="staffStudentsTableBody" class="divide-y divide-slate-100 font-medium"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="studentDashboardView" class="hidden flex-grow bg-slate-100 min-h-screen">
+    <header class="bg-brand-navy text-white px-4 sm:px-6 py-3 border-b-2 border-brand-gold flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <div class="w-10 h-10 bg-brand-gold rounded-full flex items-center justify-center text-brand-navy font-black text-lg">
+          <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+        <div>
+          <h2 class="text-sm sm:text-base font-bold font-serif leading-tight">Student Academic &amp; Hostel Portal</h2>
+          <p class="text-xs text-brand-gold">Rambax Singh Inter College &amp; Residential Hostel</p>
+        </div>
+      </div>
+      <button onclick="logoutPortal()" class="px-3 py-1.5 bg-red-600 hover:bg-red-700 text-white rounded-lg text-xs font-bold transition">
+        Logout
+      </button>
+    </header>
+
+    <div class="max-w-5xl mx-auto p-4 sm:p-6 space-y-6">
+      
+      <!-- Student Profile Card Banner -->
+      <div class="bg-white rounded-3xl border border-slate-200 p-6 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="flex items-center space-x-4">
+          <div class="w-20 h-20 rounded-2xl bg-brand-navy text-brand-gold border-2 border-brand-gold flex items-center justify-center text-3xl font-serif font-black flex-shrink-0">
+            <span id="studentAvatarInitials">ST</span>
+          </div>
+          <div>
+            <div class="flex items-center space-x-2">
+              <h3 class="text-2xl font-bold font-serif text-brand-navy" id="studentProfileName">Student Name</h3>
+              <span id="studentHostelBadge" class="bg-amber-100 text-amber-800 text-[10px] font-black px-2 py-0.5 rounded-full uppercase">
+                Hostel Resident
+              </span>
+            </div>
+            <p class="text-sm font-semibold text-slate-600 mt-0.5">
+              Roll No: <span id="studentProfileRoll" class="text-brand-navy font-bold">--</span> &bull; 
+              Class: <span id="studentProfileClass" class="text-brand-gold font-bold">--</span>
+            </p>
+            <p class="text-xs text-slate-500 mt-1">
+              <i class="fa-solid fa-location-dot text-brand-gold mr-1"></i> Bithara, Aliganj, Etah (U.P.)
+            </p>
+          </div>
+        </div>
+
+        <button onclick="downloadStudentMarksheet()" id="downloadMarksheetBtn" class="px-5 py-2.5 gold-gradient text-brand-navy rounded-xl font-black text-xs shadow hover:scale-105 transition flex items-center space-x-2">
+          <i class="fa-solid fa-print"></i>
+          <span>Print Official Marksheet</span>
+        </button>
+      </div>
+
+      <!-- Marksheet Container -->
+      <div id="studentMarksheetContainer" class="bg-white rounded-3xl border border-slate-200 p-6 shadow-sm"></div>
+
+    </div>
+  </section>
+
+  <div id="passwordResetModal" class="fixed inset-0 z-50 bg-black/75 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-sm w-full overflow-hidden shadow-2xl border-2 border-brand-gold/50">
+      <div class="navy-gradient p-4 text-white flex justify-between items-center">
+        <div>
+          <h3 class="text-sm font-bold font-serif">Change Login Password</h3>
+          <p class="text-[11px] text-brand-gold" id="pwdResetTargetName">Updating Credentials</p>
+        </div>
+        <button onclick="closePasswordResetModal()" class="text-slate-300 hover:text-white"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <form id="pwdResetForm" onsubmit="handleConfirmPasswordReset(event)" class="p-5 space-y-3 text-xs">
+        <input type="hidden" id="pwdResetType" value="">
+        <input type="hidden" id="pwdResetId" value="">
+        <div>
+          <label class="block font-bold text-slate-700 uppercase mb-1">Set New Password *</label>
+          <div class="relative">
+            <input type="password" id="newResetPasswordVal" required minlength="4" placeholder="Enter new strong password" class="w-full pl-3 pr-9 py-2 border rounded-xl font-medium focus:ring-2 focus:ring-brand-gold">
+            <button type="button" onclick="togglePasswordVisibility('newResetPasswordVal', 'resetPassIcon')" class="absolute right-3 top-2.5 text-slate-400">
+              <i id="resetPassIcon" class="fa-regular fa-eye"></i>
+            </button>
+          </div>
+        </div>
+        <div class="pt-2 flex justify-end space-x-2">
+          <button type="button" onclick="closePasswordResetModal()" class="px-3.5 py-1.5 border rounded-xl font-semibold">Cancel</button>
+          <button type="submit" class="px-4 py-1.5 gold-gradient text-brand-navy font-black rounded-xl shadow">Update Password</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="addStudentModal" class="fixed inset-0 z-50 bg-black/75 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-md w-full overflow-hidden shadow-2xl border-2 border-brand-gold/50">
+      <div class="navy-gradient p-4 text-white flex justify-between items-center">
+        <h3 class="text-sm font-bold font-serif">Register Student / Hosteller</h3>
+        <button onclick="closeAddStudentModal()" class="text-slate-300 hover:text-white"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <form id="addStudentForm" onsubmit="handleSaveNewStudent(event)" class="p-5 space-y-3 text-xs">
+        <div>
+          <label class="block font-bold text-slate-700 uppercase mb-1">Full Name *</label>
+          <input type="text" id="newStdName" required placeholder="e.g. Rahul Sharma" class="w-full px-3 py-2 border rounded-xl font-medium">
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block font-bold text-slate-700 uppercase mb-1">Roll / Student ID *</label>
+            <input type="text" id="newStdRoll" required placeholder="RBS-2025-01" class="w-full px-3 py-2 border rounded-xl font-medium">
+          </div>
+          <div>
+            <label class="block font-bold text-slate-700 uppercase mb-1">Class *</label>
+            <select id="newStdClass" required class="w-full px-3 py-2 border rounded-xl font-medium bg-white">
+              <option value="Class 10th">Class 10th (High School)</option>
+              <option value="Class 12th Science">Class 12th (Science)</option>
+              <option value="Class 12th Arts">Class 12th (Arts)</option>
+              <option value="Class 9th">Class 9th</option>
+              <option value="Class 11th Science">Class 11th (Science)</option>
+              <option value="Class 11th Arts">Class 11th (Arts)</option>
+            </select>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block font-bold text-slate-700 uppercase mb-1">Hostel Status *</label>
+            <select id="newStdHostel" required class="w-full px-3 py-2 border rounded-xl font-medium bg-white">
+              <option value="Hosteller">Hosteller (Resident)</option>
+              <option value="Day Scholar">Day Scholar</option>
+            </select>
+          </div>
+          <div>
+            <label class="block font-bold text-slate-700 uppercase mb-1">Guardian Mobile</label>
+            <input type="tel" id="newStdPhone" placeholder="Mobile" class="w-full px-3 py-2 border rounded-xl font-medium">
+          </div>
+        </div>
+        <div>
+          <label class="block font-bold text-slate-700 uppercase mb-1">Father's Name</label>
+          <input type="text" id="newStdFather" placeholder="Father name" class="w-full px-3 py-2 border rounded-xl font-medium">
+        </div>
+        <div>
+          <label class="block font-bold text-slate-700 uppercase mb-1">Portal Password *</label>
+          <div class="relative">
+            <input type="password" id="newStdPass" required placeholder="Create student password" class="w-full pl-3 pr-9 py-2 border rounded-xl font-medium">
+            <button type="button" onclick="togglePasswordVisibility('newStdPass', 'newStdPassIcon')" class="absolute right-3 top-2.5 text-slate-400">
+              <i id="newStdPassIcon" class="fa-regular fa-eye"></i>
+            </button>
+          </div>
+        </div>
+        <div>
+          <label class="block font-bold text-slate-700 uppercase mb-1">Portal Access</label>
+          <select id="newStdStatus" class="w-full px-3 py-2 border rounded-xl font-medium bg-white">
+            <option value="Active">Active (Permitted Login)</option>
+            <option value="Disabled">Disabled</option>
+          </select>
+        </div>
+        <div class="pt-2 flex justify-end space-x-2">
+          <button type="button" onclick="closeAddStudentModal()" class="px-3.5 py-1.5 border rounded-xl">Cancel</button>
+          <button type="submit" class="px-4 py-1.5 gold-gradient text-brand-navy font-bold rounded-xl shadow">Save Student</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="addStaffModal" class="fixed inset-0 z-50 bg-black/75 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-md w-full overflow-hidden shadow-2xl border-2 border-brand-gold/50">
+      <div class="navy-gradient p-4 text-white flex justify-between items-center">
+        <h3 class="text-sm font-bold font-serif">Add Staff Member &amp; Terminal Login</h3>
+        <button onclick="closeAddStaffModal()" class="text-slate-300 hover:text-white"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <form id="addStaffForm" onsubmit="handleSaveNewStaff(event)" class="p-5 space-y-3 text-xs">
+        <div>
+          <label class="block font-bold text-slate-700 uppercase mb-1">Teacher / Staff Full Name *</label>
+          <input type="text" id="newStaffName" required placeholder="e.g. Ramesh Chandra" class="w-full px-3 py-2 border rounded-xl font-medium">
+        </div>
+        <div>
+          <label class="block font-bold text-slate-700 uppercase mb-1">Designation &amp; Subject *</label>
+          <input type="text" id="newStaffRole" required placeholder="e.g. Senior Lecturer - Physics / Hostel Warden" class="w-full px-3 py-2 border rounded-xl font-medium">
+        </div>
+        <div>
+          <label class="block font-bold text-slate-700 uppercase mb-1">Staff Login Email *</label>
+          <input type="email" id="newStaffEmail" required placeholder="staff.ramesh@rbs.edu" class="w-full px-3 py-2 border rounded-xl font-medium">
+        </div>
+        <div>
+          <label class="block font-bold text-slate-700 uppercase mb-1">Staff Password *</label>
+          <div class="relative">
+            <input type="password" id="newStaffPass" required placeholder="Create password" class="w-full pl-3 pr-9 py-2 border rounded-xl font-medium">
+            <button type="button" onclick="togglePasswordVisibility('newStaffPass', 'newStaffPassIcon')" class="absolute right-3 top-2.5 text-slate-400">
+              <i id="newStaffPassIcon" class="fa-regular fa-eye"></i>
+            </button>
+          </div>
+        </div>
+        <div>
+          <label class="block font-bold text-slate-700 uppercase mb-1">Account Permission</label>
+          <select id="newStaffStatus" class="w-full px-3 py-2 border rounded-xl font-medium bg-white">
+            <option value="Active">Active (Permitted Login)</option>
+            <option value="Suspended">Suspended</option>
+          </select>
+        </div>
+        <div class="pt-2 flex justify-end space-x-2">
+          <button type="button" onclick="closeAddStaffModal()" class="px-3.5 py-1.5 border rounded-xl">Cancel</button>
+          <button type="submit" class="px-4 py-1.5 bg-brand-navy text-brand-gold font-bold rounded-xl shadow">Create Account</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="marksheetModal" class="fixed inset-0 z-50 bg-black/75 backdrop-blur-sm hidden flex items-center justify-center p-4 overflow-y-auto">
+    <div class="bg-white rounded-3xl max-w-2xl w-full my-6 overflow-hidden shadow-2xl border-2 border-brand-gold/50">
+      
+      <div class="navy-gradient p-4 text-white flex justify-between items-center">
+        <div>
+          <h3 class="text-base font-bold font-serif">State-Board Official Marksheet Generator</h3>
+          <p class="text-xs text-brand-gold">RBS Inter College Examination &amp; Evaluation Branch</p>
+        </div>
+        <button onclick="closeMarksheetModal()" class="text-slate-300 hover:text-white text-lg">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <form id="marksheetForm" onsubmit="handleSaveMarksheet(event)" class="p-5 space-y-3.5 text-xs">
+        
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <div class="sm:col-span-2">
+            <label class="block font-bold text-slate-700 uppercase mb-1">Select Registered Student *</label>
+            <select id="mkStudentSelect" onchange="autoFillMarksheetStudentDetails()" required class="w-full px-3 py-2 border rounded-xl font-medium bg-white focus:ring-2 focus:ring-brand-gold">
+              <option value="">-- Choose Registered Student --</option>
+            </select>
+          </div>
+          <div>
+            <label class="block font-bold text-slate-700 uppercase mb-1">Academic Session</label>
+            <input type="text" id="mkSession" value="2024-2025" required class="w-full px-3 py-2 border rounded-xl font-medium">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-3 gap-3">
+          <div>
+            <label class="block font-bold text-slate-700 uppercase mb-1">Roll Number</label>
+            <input type="text" id="mkRollNo" readonly class="w-full px-3 py-2 bg-slate-100 border rounded-xl font-bold">
+          </div>
+          <div>
+            <label class="block font-bold text-slate-700 uppercase mb-1">Class / Section</label>
+            <input type="text" id="mkClass" readonly class="w-full px-3 py-2 bg-slate-100 border rounded-xl font-bold">
+          </div>
+          <div>
+            <label class="block font-bold text-slate-700 uppercase mb-1">Examination Term</label>
+            <select id="mkExamType" class="w-full px-3 py-2 border rounded-xl font-medium bg-white">
+              <option value="ANNUAL BOARD EVALUATION">Annual Board Examination</option>
+              <option value="PRE-BOARD EXAMINATION">Pre-Board Examination</option>
+              <option value="HALF YEARLY EVALUATION">Half Yearly Examination</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Subject Rows: Theory + Practical -->
+        <div class="border border-slate-300 rounded-xl p-3 bg-slate-50 space-y-2">
+          <div class="grid grid-cols-12 gap-2 font-bold text-slate-600 uppercase text-[10px] pb-1 border-b">
+            <div class="col-span-4">Subject</div>
+            <div class="col-span-4 text-center">Theory (Max 70 / 100)</div>
+            <div class="col-span-4 text-center">Practical (Max 30)</div>
+          </div>
+
+          <div class="grid grid-cols-12 gap-2 items-center">
+            <div class="col-span-4 font-bold text-brand-navy">General Hindi</div>
+            <div class="col-span-4"><input type="number" id="th_hindi" min="0" max="100" value="88" oninput="calculateAdvancedMarks()" class="w-full px-2 py-1 border rounded text-center"></div>
+            <div class="col-span-4"><input type="number" id="pr_hindi" min="0" max="0" value="0" readonly class="w-full px-2 py-1 bg-slate-200 border rounded text-center text-slate-400"></div>
+          </div>
+
+          <div class="grid grid-cols-12 gap-2 items-center">
+            <div class="col-span-4 font-bold text-brand-navy">General English</div>
+            <div class="col-span-4"><input type="number" id="th_english" min="0" max="100" value="82" oninput="calculateAdvancedMarks()" class="w-full px-2 py-1 border rounded text-center"></div>
+            <div class="col-span-4"><input type="number" id="pr_english" min="0" max="0" value="0" readonly class="w-full px-2 py-1 bg-slate-200 border rounded text-center text-slate-400"></div>
+          </div>
+
+          <div class="grid grid-cols-12 gap-2 items-center">
+            <div class="col-span-4 font-bold text-brand-navy">Physics / Science</div>
+            <div class="col-span-4"><input type="number" id="th_physics" min="0" max="70" value="62" oninput="calculateAdvancedMarks()" class="w-full px-2 py-1 border rounded text-center"></div>
+            <div class="col-span-4"><input type="number" id="pr_physics" min="0" max="30" value="28" oninput="calculateAdvancedMarks()" class="w-full px-2 py-1 border rounded text-center"></div>
+          </div>
+
+          <div class="grid grid-cols-12 gap-2 items-center">
+            <div class="col-span-4 font-bold text-brand-navy">Chemistry / Social Sci</div>
+            <div class="col-span-4"><input type="number" id="th_chem" min="0" max="70" value="58" oninput="calculateAdvancedMarks()" class="w-full px-2 py-1 border rounded text-center"></div>
+            <div class="col-span-4"><input type="number" id="pr_chem" min="0" max="30" value="29" oninput="calculateAdvancedMarks()" class="w-full px-2 py-1 border rounded text-center"></div>
+          </div>
+
+          <div class="grid grid-cols-12 gap-2 items-center">
+            <div class="col-span-4 font-bold text-brand-navy">Mathematics / Biology</div>
+            <div class="col-span-4"><input type="number" id="th_math" min="0" max="100" value="92" oninput="calculateAdvancedMarks()" class="w-full px-2 py-1 border rounded text-center"></div>
+            <div class="col-span-4"><input type="number" id="pr_math" min="0" max="0" value="0" readonly class="w-full px-2 py-1 bg-slate-200 border rounded text-center text-slate-400"></div>
+          </div>
+        </div>
+
+        <!-- Calculated Summary Strip -->
+        <div class="bg-brand-goldlight p-3 rounded-xl border border-brand-gold flex justify-between items-center text-xs">
+          <div>
+            <p class="text-slate-600 font-medium">Total Obtained:</p>
+            <p class="text-base font-black text-brand-navy"><span id="advTotalObtained">439</span> / 500</p>
+          </div>
+          <div>
+            <p class="text-slate-600 font-medium">Percentage:</p>
+            <p class="text-base font-black text-brand-navy"><span id="advPercentage">87.80</span>%</p>
+          </div>
+          <div>
+            <p class="text-slate-600 font-medium">Result &amp; Division:</p>
+            <p class="text-sm font-black text-emerald-700" id="advDivision">1st Div with Honors</p>
+          </div>
+        </div>
+
+        <div class="flex justify-end space-x-2 pt-1">
+          <button type="button" onclick="closeMarksheetModal()" class="px-4 py-2 border rounded-xl font-semibold">Cancel</button>
+          <button type="submit" class="px-5 py-2 gold-gradient text-brand-navy font-black rounded-xl shadow">Save &amp; Generate Transcript</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="marksheetPreviewModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-2 sm:p-4 overflow-y-auto">
+    <div class="bg-white rounded-2xl max-w-4xl w-full my-6 p-4 sm:p-6 shadow-2xl relative border-4 border-brand-navy">
+      
+      <!-- Top Action Bar (hidden on print) -->
+      <div class="no-print flex justify-between items-center mb-3 pb-2 border-b border-slate-200">
+        <span class="text-xs font-bold uppercase text-brand-navy flex items-center">
+          <i class="fa-solid fa-stamp text-brand-gold mr-1.5"></i> UP Board Standard High School &amp; Intermediate Marksheet
+        </span>
+        <div class="flex items-center space-x-2">
+          <button onclick="window.print()" class="px-4 py-2 bg-brand-navy text-brand-gold rounded-lg font-bold text-xs flex items-center space-x-1.5 shadow">
+            <i class="fa-solid fa-print"></i>
+            <span>Print Official Marksheet</span>
+          </button>
+          <button onclick="closeMarksheetPreviewModal()" class="p-2 text-slate-400 hover:text-slate-700 text-lg">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Printable Marksheet Body -->
+      <div id="printableMarksheet" class="p-5 sm:p-8 bg-[#fffefb] border-4 border-brand-navy relative text-brand-navy shadow-inner">
+        
+        <!-- Watermark Background -->
+        <div class="absolute inset-0 flex items-center justify-center opacity-[0.04] pointer-events-none">
+          <svg viewBox="0 0 400 400" class="w-96 h-96" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="200" cy="200" r="190" fill="#07172c" />
+          </svg>
+        </div>
+
+        <!-- Academic Header -->
+        <div class="text-center border-b-2 border-brand-navy pb-3 relative z-10">
+          <div class="flex items-center justify-between mb-1">
+            <!-- Left Barcode -->
+            <div class="text-left font-mono text-[9px] text-slate-600 hidden sm:block">
+              <span class="font-barcode text-2xl leading-none">RBS-2025-UPBOARD</span><br>
+              SERIAL NO: <strong id="pvSerialNo">RBS/2025/8921</strong>
+            </div>
+
+            <!-- College Emblem -->
+            <div class="w-16 h-16 mx-auto">
+              <svg viewBox="0 0 400 400" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="200" cy="200" r="192" fill="#07172c" stroke="#d4af37" stroke-width="8" />
+                <text x="200" y="80" font-family="'Cinzel', serif" font-size="28" font-weight="900" fill="#d4af37" text-anchor="middle">RBS INTER COLLEGE</text>
+                <text x="200" y="340" font-family="'Cinzel', serif" font-size="24" font-weight="800" fill="#d4af37" text-anchor="middle">BITHARA ALIGANJ ETAH</text>
+                <text x="200" y="200" font-family="'Cinzel', serif" font-size="82" font-weight="900" fill="#d4af37" text-anchor="middle">RBS</text>
+              </svg>
+            </div>
+
+            <!-- Right Affiliation Code -->
+            <div class="text-right text-[10px] text-slate-600 hidden sm:block">
+              U-DISE CODE: <strong>09190104802</strong><br>
+              COLLEGE CODE: <strong>ETAH-2072</strong>
+            </div>
+          </div>
+
+          <h2 class="text-2xl sm:text-3xl font-black font-serif tracking-wide text-brand-navy uppercase leading-tight">
+            RAMBAX SINGH INTER COLLEGE
+          </h2>
+          <p class="text-xs font-bold text-amber-900 tracking-wider">
+            &amp; RESIDENTIAL HOSTEL CAMPUS &bull; BITHARA, ALIGANJ, ETAH (U.P.) - 207247
+          </p>
+          <p class="text-[10px] text-slate-600 mt-0.5">
+            Recognised by the Board of High School &amp; Intermediate Education, Uttar Pradesh
+          </p>
+
+          <div class="mt-2 inline-block bg-brand-navy text-brand-gold px-5 py-1 rounded text-xs font-black uppercase tracking-widest border border-brand-gold">
+            STATEMENT OF MARKS &bull; <span id="pvExamHeader">ANNUAL BOARD EVALUATION</span> (SESSION: <span id="pvSession">2024-2025</span>)
+          </div>
+        </div>
+
+        <!-- Candidate Information Grid -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 py-3 text-xs border-b border-slate-400 relative z-10">
+          <div>
+            <p class="text-[10px] text-slate-500 uppercase font-bold">Candidate Name</p>
+            <p class="font-black text-brand-navy uppercase text-sm" id="pvStudentName">--</p>
+          </div>
+          <div>
+            <p class="text-[10px] text-slate-500 uppercase font-bold">Roll Number</p>
+            <p class="font-mono font-black text-brand-navy text-sm" id="pvRollNo">--</p>
+          </div>
+          <div>
+            <p class="text-[10px] text-slate-500 uppercase font-bold">Father's Name</p>
+            <p class="font-bold text-slate-800 uppercase" id="pvFatherName">--</p>
+          </div>
+          <div>
+            <p class="text-[10px] text-slate-500 uppercase font-bold">Hostel / Day Scholar</p>
+            <p class="font-bold text-amber-800 uppercase" id="pvHostelStatus">Hosteller</p>
+          </div>
+          <div>
+            <p class="text-[10px] text-slate-500 uppercase font-bold">Class &amp; Stream</p>
+            <p class="font-bold text-brand-navy" id="pvClass">--</p>
+          </div>
+          <div>
+            <p class="text-[10px] text-slate-500 uppercase font-bold">Registration / SR No</p>
+            <p class="font-bold font-mono text-slate-700" id="pvSrNo">RBS-REG-9421</p>
+          </div>
+          <div>
+            <p class="text-[10px] text-slate-500 uppercase font-bold">Date of Birth</p>
+            <p class="font-bold text-slate-700" id="pvDob">15/07/2008</p>
+          </div>
+          <div>
+            <p class="text-[10px] text-slate-500 uppercase font-bold">Enrollment Status</p>
+            <p class="font-bold text-emerald-700">REGULAR / VERIFIED</p>
+          </div>
+        </div>
+
+        <!-- Academic Subjects Table -->
+        <div class="py-3 relative z-10">
+          <table class="w-full text-xs table-academic border-collapse border border-brand-navy text-left">
+            <thead class="bg-brand-navy text-white uppercase text-[10px] tracking-wider text-center">
+              <tr>
+                <th rowspan="2" class="p-1 border border-brand-navy w-10">S.N.</th>
+                <th rowspan="2" class="p-1 border border-brand-navy text-left">Subject Description</th>
+                <th colspan="3" class="p-1 border border-brand-navy">Marks Scheme</th>
+                <th colspan="3" class="p-1 border border-brand-navy">Marks Obtained</th>
+                <th rowspan="2" class="p-1 border border-brand-navy w-16">Grade</th>
+              </tr>
+              <tr>
+                <th class="p-1 border border-brand-navy text-[9px]">Max Th</th>
+                <th class="p-1 border border-brand-navy text-[9px]">Max Pr</th>
+                <th class="p-1 border border-brand-navy text-[9px]">Total</th>
+                <th class="p-1 border border-brand-navy text-[9px]">Theory</th>
+                <th class="p-1 border border-brand-navy text-[9px]">Practical</th>
+                <th class="p-1 border border-brand-navy text-[9px] font-bold">Obt Total</th>
+              </tr>
+            </thead>
+            <tbody id="pvMarksTableBody" class="font-medium divide-y divide-slate-300"></tbody>
+            <tfoot class="bg-slate-100 font-bold border-t-2 border-brand-navy">
+              <tr>
+                <td colspan="4" class="p-1.5 border border-brand-navy text-right uppercase text-[11px]">Grand Total:</td>
+                <td class="p-1.5 border border-brand-navy text-center" id="pvMaxTotal">500</td>
+                <td colspan="2" class="p-1.5 border border-brand-navy text-right uppercase text-[10px]">Obtained:</td>
+                <td class="p-1.5 border border-brand-navy text-center text-sm font-black text-brand-navy" id="pvObtainedTotal">--</td>
+                <td class="p-1.5 border border-brand-navy text-center font-black" id="pvFinalGrade">--</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+
+        <!-- Result Box -->
+        <div class="grid grid-cols-3 gap-2 py-2.5 bg-brand-goldlight border border-brand-gold text-xs font-bold text-center rounded relative z-10 mb-6">
+          <div>PERCENTAGE: <span id="pvPercentage" class="text-brand-navy text-sm font-black">--%</span></div>
+          <div>RESULT: <span id="pvResultStatus" class="text-emerald-800 text-sm font-black">PASSED</span></div>
+          <div>DIVISION: <span id="pvDivision" class="text-brand-navy text-sm font-black">1st Division</span></div>
+        </div>
+
+        <!-- Signatures & Authority -->
+        <div class="pt-6 flex justify-between items-end relative z-10 text-center text-xs">
+          <div>
+            <div class="w-28 border-b border-dashed border-slate-700 mb-1 mx-auto"></div>
+            <p class="font-bold text-slate-800">Class Incharge</p>
+            <p class="text-[9px] text-slate-500">Evaluation Officer</p>
+          </div>
+          <div>
+            <!-- College Stamp Graphic -->
+            <div class="w-24 h-24 mx-auto mb-1 rounded-full border-2 border-dashed border-brand-gold flex flex-col items-center justify-center text-[8px] text-brand-gold font-bold rotate-[-6deg] bg-amber-50/50">
+              <span>* OFFICIAL SEAL *</span>
+              <strong class="text-[9px] text-brand-navy">RBS INTER COLLEGE</strong>
+              <span>BITHARA (ETAH)</span>
+            </div>
+            <p class="font-black text-brand-navy">Vishnu Kant</p>
+            <p class="text-[10px] text-slate-600 font-semibold">Manager (6395052394)</p>
+          </div>
+          <div>
+            <div class="w-28 border-b border-dashed border-slate-700 mb-1 mx-auto"></div>
+            <p class="font-black text-brand-navy">Avadhesh Singh</p>
+            <p class="text-[10px] text-slate-600 font-semibold">Director &bull; Administration</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    const ADMIN_CREDENTIALS = {
+      email: "rambaxsinghintercollege@gmail.com",
+      password: "vishnukant@207247"
+    };
+
+    function filterGallery(category) {
+      const cards = document.querySelectorAll('.gallery-card');
+      const buttons = document.querySelectorAll('.gallery-filter-btn');
+
+      buttons.forEach(b => {
+        b.classList.remove('bg-brand-navy', 'text-white', 'shadow');
+        b.classList.add('bg-white', 'text-slate-700');
+      });
+
+      if (event && event.currentTarget) {
+        event.currentTarget.classList.add('bg-brand-navy', 'text-white', 'shadow');
+        event.currentTarget.classList.remove('bg-white', 'text-slate-700');
+      }
+
+      cards.forEach(card => {
+        if (category === 'all' || card.getAttribute('data-category') === category) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    function openLightbox(imgSrc, caption) {
+      const modal = document.getElementById('photoLightboxModal');
+      const img = document.getElementById('lightboxImage');
+      const cap = document.getElementById('lightboxCaption');
+      if (modal && img) {
+        img.src = imgSrc;
+        cap.textContent = caption || 'RBS Inter College & Hostel';
+        modal.classList.remove('hidden');
+      }
+    }
+
+    function closeLightbox() {
+      const modal = document.getElementById('photoLightboxModal');
+      if (modal) modal.classList.add('hidden');
+    }
+
+    const SEED_STAFF = [
+      {
+        id: "STF-101",
+        name: "Shyam Sundar Sharma",
+        role: "Senior Lecturer - Physics & Hostel Warden",
+        email: "shyam.rbs@gmail.com",
+        password: "staff@101",
+        status: "Active"
+      },
+      {
+        id: "STF-102",
+        name: "Dharmveer Sisodiya",
+        role: "Lecturer - Mathematics & Cultural Incharge",
+        email: "dharmveer.rbs@gmail.com",
+        password: "staff@102",
+        status: "Active"
+      }
+    ];
+
+    const SEED_STUDENTS = [
+      {
+        roll: "RBS-1001",
+        name: "Aditya Verma",
+        father: "Rajendra Verma",
+        mother: "Sunita Verma",
+        dob: "2008-04-12",
+        class: "Class 12th Science",
+        hostel: "Hosteller",
+        phone: "9876543210",
+        password: "student@1001",
+        status: "Active"
+      },
+      {
+        roll: "RBS-1002",
+        name: "Pooja Shakya",
+        father: "Mahesh Shakya",
+        mother: "Kamlesh Shakya",
+        dob: "2009-08-20",
+        class: "Class 10th",
+        hostel: "Day Scholar",
+        phone: "9411223344",
+        password: "student@1002",
+        status: "Active"
+      },
+      {
+        roll: "RBS-1003",
+        name: "Shivam Rajput",
+        father: "Gopal Rajput",
+        mother: "Rekha Devi",
+        dob: "2008-01-10",
+        class: "Class 12th Arts",
+        hostel: "Hosteller",
+        phone: "9123456780",
+        password: "student@1003",
+        status: "Active"
+      }
+    ];
+
+    const SEED_INQUIRIES = [
+      {
+        id: "INQ-901",
+        date: "2025-05-10",
+        fullName: "Rahul Kumar",
+        fatherName: "Sunil Kumar",
+        motherName: "Kamlesh Devi",
+        dob: "2008-07-15",
+        className: "Class 11th Science",
+        hostelReq: "Yes - Hostel Required",
+        phone: "9837123456",
+        prevSchool: "UP Board (82%)",
+        address: "Village Bithara, Post Aliganj, Etah",
+        status: "Approved"
+      },
+      {
+        id: "INQ-902",
+        date: "2025-05-12",
+        fullName: "Anjali Chauhan",
+        fatherName: "Virendra Chauhan",
+        motherName: "Suman Chauhan",
+        dob: "2009-03-22",
+        className: "Class 10th",
+        hostelReq: "No - Day Scholar",
+        phone: "9456789123",
+        prevSchool: "RBS Junior Wing (79%)",
+        address: "Aliganj Road, Etah",
+        status: "Pending"
+      }
+    ];
+
+    const SEED_MARKSHEETS = [
+      {
+        id: "MK-1001",
+        roll: "RBS-1001",
+        name: "Aditya Verma",
+        father: "Rajendra Verma",
+        class: "Class 12th Science",
+        hostel: "Hosteller",
+        session: "2024-2025",
+        examType: "ANNUAL BOARD EVALUATION",
+        subjects: [
+          { name: "General Hindi", maxTh: 100, maxPr: 0, obtTh: 88, obtPr: 0, total: 88, grade: "A+" },
+          { name: "General English", maxTh: 100, maxPr: 0, obtTh: 82, obtPr: 0, total: 82, grade: "A" },
+          { name: "Physics", maxTh: 70, maxPr: 30, obtTh: 62, obtPr: 28, total: 90, grade: "A+" },
+          { name: "Chemistry", maxTh: 70, maxPr: 30, obtTh: 58, obtPr: 29, total: 87, grade: "A+" },
+          { name: "Mathematics", maxTh: 100, maxPr: 0, obtTh: 92, obtPr: 0, total: 92, grade: "A+" }
+        ],
+        totalMax: 500,
+        totalObtained: 439,
+        percentage: "87.80",
+        division: "1st Division with Honors",
+        result: "PASSED"
+      }
+    ];
+
+    function getStoredData(key, fallback) {
+      try {
+        const val = localStorage.getItem('rbs_v2_' + key);
+        return val ? JSON.parse(val) : fallback;
+      } catch (e) {
+        return fallback;
+      }
+    }
+
+    function saveStoredData(key, value) {
+      try {
+        localStorage.setItem('rbs_v2_' + key, JSON.stringify(value));
+      } catch (e) {
+        console.error(e);
+      }
+    }
+
+    let state = {
+      currentUser: null,
+      currentLoginRole: 'admin',
+      inquiries: getStoredData('inquiries', SEED_INQUIRIES),
+      students: getStoredData('students', SEED_STUDENTS),
+      staff: getStoredData('staff', SEED_STAFF),
+      marksheets: getStoredData('marksheets', SEED_MARKSHEETS)
+    };
+
+    function showToast(message, type = 'success') {
+      const container = document.getElementById('toastContainer');
+      const toast = document.createElement('div');
+      
+      const bgColors = {
+        success: 'bg-emerald-800 border-emerald-600 text-white',
+        error: 'bg-red-800 border-red-600 text-white',
+        info: 'bg-brand-navy border-brand-gold text-white'
+      };
+
+      const icon = type === 'success' ? 'fa-circle-check' : (type === 'error' ? 'fa-circle-exclamation' : 'fa-bell');
+
+      toast.className = `pointer-events-auto flex items-center space-x-2.5 px-4 py-3 rounded-xl border shadow-xl text-xs font-semibold transform transition-all duration-300 translate-y-2 opacity-0 ${bgColors[type] || bgColors.info}`;
+      toast.innerHTML = `<i class="fa-solid ${icon} text-brand-gold"></i> <span>${message}</span>`;
+      
+      container.appendChild(toast);
+
+      requestAnimationFrame(() => {
+        toast.classList.remove('translate-y-2', 'opacity-0');
+      });
+
+      setTimeout(() => {
+        toast.classList.add('opacity-0', 'translate-y-2');
+        setTimeout(() => toast.remove(), 300);
+      }, 3500);
+    }
+
+    function togglePasswordVisibility(inputId, iconId) {
+      const input = document.getElementById(inputId);
+      const icon = document.getElementById(iconId);
+      if (!input) return;
+      if (input.type === 'password') {
+        input.type = 'text';
+        if (icon) {
+          icon.classList.remove('fa-eye');
+          icon.classList.add('fa-eye-slash');
+        }
+      } else {
+        input.type = 'password';
+        if (icon) {
+          icon.classList.remove('fa-eye-slash');
+          icon.classList.add('fa-eye');
+        }
+      }
+    }
+
+    function scrollToElement(id) {
+      const el = document.getElementById(id);
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function toggleMobileNav() {
+      const menu = document.getElementById('mobileMenu');
+      if (menu) menu.classList.toggle('hidden');
+    }
+
+    function showSection(section) {
+      const views = ['mainPublicView', 'adminDashboardView', 'staffDashboardView', 'studentDashboardView'];
+      views.forEach(v => {
+        const el = document.getElementById(v);
+        if (el) el.classList.add('hidden');
+      });
+
+      if (section === 'public-home') {
+        document.getElementById('mainPublicView').classList.remove('hidden');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (section === 'admin') {
+        document.getElementById('adminDashboardView').classList.remove('hidden');
+        renderAdminDashboard();
+      } else if (section === 'staff') {
+        document.getElementById('staffDashboardView').classList.remove('hidden');
+        renderStaffDashboard();
+      } else if (section === 'student') {
+        document.getElementById('studentDashboardView').classList.remove('hidden');
+        renderStudentDashboard();
+      }
+    }
+
+    function openLoginModal(role = 'admin') {
+      document.getElementById('loginModal').classList.remove('hidden');
+      switchLoginRole(role);
+    }
+
+    function closeLoginModal() {
+      document.getElementById('loginModal').classList.add('hidden');
+      document.getElementById('loginFeedback').classList.add('hidden');
+      document.getElementById('portalLoginForm').reset();
+    }
+
+    function switchLoginRole(role) {
+      state.currentLoginRole = role;
+      
+      const tabAdmin = document.getElementById('roleTabAdmin');
+      const tabStaff = document.getElementById('roleTabStaff');
+      const tabStudent = document.getElementById('roleTabStudent');
+      const label = document.getElementById('loginIdentifierLabel');
+      const icon = document.getElementById('loginIdentifierIcon');
+      const input = document.getElementById('loginIdentifier');
+      const pass = document.getElementById('loginPassword');
+      const submitText = document.getElementById('loginSubmitBtnText');
+
+      // Clear any previous values - strictly NO suggested demo logins
+      input.value = "";
+      pass.value = "";
+
+      [tabAdmin, tabStaff, tabStudent].forEach(t => {
+        if (t) t.className = "py-2 rounded-xl transition text-slate-600 hover:text-brand-navy";
+      });
+
+      if (role === 'admin') {
+        tabAdmin.className = "py-2 rounded-xl transition bg-white text-brand-navy shadow-sm font-bold";
+        label.textContent = "Admin Email Address";
+        icon.className = "fa-solid fa-envelope absolute left-3.5 top-3.5 text-slate-400 text-sm";
+        input.placeholder = "rambaxsinghintercollege@gmail.com";
+        submitText.textContent = "Login to Admin Terminal";
+      } else if (role === 'staff') {
+        tabStaff.className = "py-2 rounded-xl transition bg-white text-brand-navy shadow-sm font-bold";
+        label.textContent = "Staff Email / Username";
+        icon.className = "fa-solid fa-chalkboard-user absolute left-3.5 top-3.5 text-slate-400 text-sm";
+        input.placeholder = "Enter staff email";
+        submitText.textContent = "Login to Staff Terminal";
+      } else if (role === 'student') {
+        tabStudent.className = "py-2 rounded-xl transition bg-white text-brand-navy shadow-sm font-bold";
+        label.textContent = "Student Roll No / ID";
+        icon.className = "fa-solid fa-id-card absolute left-3.5 top-3.5 text-slate-400 text-sm";
+        input.placeholder = "e.g. RBS-1001";
+        submitText.textContent = "Login to Student Portal";
+      }
+    }
+
+    function handlePortalLogin(e) {
+      e.preventDefault();
+      const identifier = document.getElementById('loginIdentifier').value.trim();
+      const password = document.getElementById('loginPassword').value;
+      const feedback = document.getElementById('loginFeedback');
+      feedback.classList.add('hidden');
+
+      if (state.currentLoginRole === 'admin') {
+        if (identifier.toLowerCase() === ADMIN_CREDENTIALS.email.toLowerCase() && password === ADMIN_CREDENTIALS.password) {
+          state.currentUser = { role: 'admin', name: 'Vishnu Kant (Manager)' };
+          closeLoginModal();
+          showToast('Welcome Manager Vishnu Kant! Terminal unlocked.', 'success');
+          showSection('admin');
+          return;
+        } else {
+          feedback.textContent = "Invalid Admin credentials.";
+          feedback.classList.remove('hidden');
+          return;
+        }
+      }
+
+      if (state.currentLoginRole === 'staff') {
+        const staffMember = state.staff.find(s => s.email.toLowerCase() === identifier.toLowerCase() && s.password === password);
+        if (!staffMember) {
+          feedback.textContent = "Staff account not found or password incorrect.";
+          feedback.classList.remove('hidden');
+          return;
+        }
+        if (staffMember.status !== 'Active') {
+          feedback.textContent = "Staff account has been suspended by Admin.";
+          feedback.classList.remove('hidden');
+          return;
+        }
+        state.currentUser = { role: 'staff', data: staffMember };
+        closeLoginModal();
+        showToast(`Welcome Professor ${staffMember.name}!`, 'success');
+        showSection('staff');
+        return;
+      }
+
+      if (state.currentLoginRole === 'student') {
+        const student = state.students.find(s => 
+          (s.roll.toLowerCase() === identifier.toLowerCase() || (s.phone && s.phone === identifier)) && 
+          s.password === password
+        );
+        if (!student) {
+          feedback.textContent = "Invalid Roll No / ID or incorrect password.";
+          feedback.classList.remove('hidden');
+          return;
+        }
+        if (student.status !== 'Active') {
+          feedback.textContent = "Portal access is disabled for this roll. Contact college office.";
+          feedback.classList.remove('hidden');
+          return;
+        }
+        state.currentUser = { role: 'student', data: student };
+        closeLoginModal();
+        showToast(`Welcome ${student.name}! Marksheet loaded.`, 'success');
+        showSection('student');
+        return;
+      }
+    }
+
+    function logoutPortal() {
+      state.currentUser = null;
+      showToast('Logged out securely.', 'info');
+      showSection('public-home');
+    }
+
+    function handlePublicAdmissionSubmit(e) {
+      e.preventDefault();
+      const inq = {
+        id: "INQ-" + Date.now().toString().slice(-4),
+        date: new Date().toISOString().split('T')[0],
+        fullName: document.getElementById('admFullName').value.trim(),
+        fatherName: document.getElementById('admFatherName').value.trim(),
+        motherName: document.getElementById('admMotherName').value.trim() || 'N/A',
+        dob: document.getElementById('admDob').value,
+        className: document.getElementById('admClass').value,
+        hostelReq: document.getElementById('admHostelReq').value,
+        phone: document.getElementById('admPhone').value.trim(),
+        prevSchool: document.getElementById('admPrevSchool').value.trim() || 'N/A',
+        address: document.getElementById('admAddress').value.trim(),
+        status: "Pending"
+      };
+
+      state.inquiries.unshift(inq);
+      saveStoredData('inquiries', state.inquiries);
+      document.getElementById('publicAdmissionForm').reset();
+      showToast('Application submitted! Manager Vishnu Kant has received the admission request.', 'success');
+      updateInquiryBadge();
+    }
+
+    function switchAdminTab(tabName) {
+      const tabs = ['inquiries', 'students', 'staff', 'marksheets'];
+      tabs.forEach(t => {
+        const content = document.getElementById('adminTab' + t.charAt(0).toUpperCase() + t.slice(1));
+        const btn = document.getElementById('adminTabBtn' + t.charAt(0).toUpperCase() + t.slice(1));
+        if (content) content.classList.add('hidden');
+        if (btn) btn.className = "admin-tab-btn px-4 py-2 rounded-xl text-slate-600 hover:text-brand-navy hover:bg-slate-100 transition flex items-center space-x-2 flex-shrink-0";
+      });
+
+      const activeContent = document.getElementById('adminTab' + tabName.charAt(0).toUpperCase() + tabName.slice(1));
+      const activeBtn = document.getElementById('adminTabBtn' + tabName.charAt(0).toUpperCase() + tabName.slice(1));
+      if (activeContent) activeContent.classList.remove('hidden');
+      if (activeBtn) activeBtn.className = "admin-tab-btn px-4 py-2 rounded-xl bg-brand-navy text-white transition flex items-center space-x-2 flex-shrink-0";
+
+      if (tabName === 'inquiries') renderInquiriesTable();
+      if (tabName === 'students') renderStudentsTable();
+      if (tabName === 'staff') renderStaffTable();
+      if (tabName === 'marksheets') renderMarksheetsTable();
+    }
+
+    function renderAdminDashboard() {
+      updateInquiryBadge();
+      renderInquiriesTable();
+      renderStudentsTable();
+      renderStaffTable();
+      renderMarksheetsTable();
+    }
+
+    function updateInquiryBadge() {
+      const badge = document.getElementById('badgeInquiryCount');
+      if (badge) badge.textContent = state.inquiries.length;
+    }
+
+    function renderInquiriesTable(list = state.inquiries) {
+      const tbody = document.getElementById('inquiriesTableBody');
+      if (!tbody) return;
+      tbody.innerHTML = '';
+      updateInquiryBadge();
+
+      list.forEach(inq => {
+        const tr = document.createElement('tr');
+        tr.className = "hover:bg-slate-50";
+        tr.innerHTML = `
+          <td class="py-2.5 px-3 text-slate-500 whitespace-nowrap">${inq.date}</td>
+          <td class="py-2.5 px-3 font-bold text-brand-navy">${escapeHTML(inq.fullName)}</td>
+          <td class="py-2.5 px-3">${escapeHTML(inq.fatherName)}</td>
+          <td class="py-2.5 px-3"><span class="bg-blue-50 text-blue-800 px-2 py-0.5 rounded font-bold text-xs">${inq.className}</span></td>
+          <td class="py-2.5 px-3"><span class="bg-amber-50 text-amber-900 border border-amber-200 px-2 py-0.5 rounded font-bold text-[11px]">${inq.hostelReq}</span></td>
+          <td class="py-2.5 px-3 font-mono">${inq.phone}</td>
+          <td class="py-2.5 px-3">
+            <span class="px-2 py-0.5 rounded text-[10px] font-bold ${inq.status === 'Approved' ? 'bg-emerald-100 text-emerald-800' : 'bg-amber-100 text-amber-800'}">
+              ${inq.status}
+            </span>
+          </td>
+          <td class="py-2.5 px-3 text-right space-x-1 whitespace-nowrap">
+            <button onclick="approveInquiry('${inq.id}')" class="px-2 py-1 bg-emerald-600 text-white rounded text-xs font-bold" title="Approve">
+              <i class="fa-solid fa-check"></i>
+            </button>
+            <button onclick="deleteInquiry('${inq.id}')" class="px-2 py-1 bg-red-600 text-white rounded text-xs font-bold" title="Delete">
+              <i class="fa-solid fa-trash"></i>
+            </button>
+          </td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    function filterInquiries() {
+      const q = document.getElementById('searchInquiryInput').value.toLowerCase();
+      const filtered = state.inquiries.filter(i => 
+        i.fullName.toLowerCase().includes(q) ||
+        i.fatherName.toLowerCase().includes(q) ||
+        i.phone.includes(q) ||
+        i.className.toLowerCase().includes(q)
+      );
+      renderInquiriesTable(filtered);
+    }
+
+    function approveInquiry(id) {
+      const inq = state.inquiries.find(i => i.id === id);
+      if (!inq) return;
+      inq.status = 'Approved';
+      saveStoredData('inquiries', state.inquiries);
+      renderInquiriesTable();
+      showToast(`Inquiry for ${inq.fullName} marked as Approved!`, 'success');
+    }
+
+    function deleteInquiry(id) {
+      state.inquiries = state.inquiries.filter(i => i.id !== id);
+      saveStoredData('inquiries', state.inquiries);
+      renderInquiriesTable();
+      showToast('Inquiry deleted.', 'info');
+    }
+
+    function renderStudentsTable() {
+      const tbody = document.getElementById('studentsTableBody');
+      if (!tbody) return;
+      tbody.innerHTML = '';
+
+      state.students.forEach(std => {
+        const tr = document.createElement('tr');
+        tr.className = "hover:bg-slate-50";
+        tr.innerHTML = `
+          <td class="py-2.5 px-3 font-mono font-bold text-brand-navy">${std.roll}</td>
+          <td class="py-2.5 px-3 font-bold">${escapeHTML(std.name)}</td>
+          <td class="py-2.5 px-3">${std.class}</td>
+          <td class="py-2.5 px-3">
+            <button onclick="toggleStudentHostel('${std.roll}')" class="px-2 py-0.5 rounded font-bold text-xs ${std.hostel === 'Hosteller' ? 'bg-amber-100 text-amber-900 border border-amber-300' : 'bg-slate-100 text-slate-700'}">
+              <i class="fa-solid fa-bed mr-1 text-xs"></i>${std.hostel || 'Day Scholar'}
+            </button>
+          </td>
+          <td class="py-2.5 px-3">
+            <span class="font-mono text-xs bg-slate-100 px-2 py-1 rounded text-brand-navy font-bold">${std.password}</span>
+          </td>
+          <td class="py-2.5 px-3">
+            <button onclick="toggleStudentAccess('${std.roll}')" class="px-2 py-0.5 rounded text-[10px] font-bold ${std.status === 'Active' ? 'bg-emerald-100 text-emerald-800' : 'bg-red-100 text-red-800'}">
+              ${std.status}
+            </button>
+          </td>
+          <td class="py-2.5 px-3 text-right space-x-1 whitespace-nowrap">
+            <button onclick="openPasswordReset('student', '${std.roll}', '${escapeHTML(std.name)}')" class="px-2 py-1 bg-amber-600 hover:bg-amber-700 text-white rounded text-xs font-bold" title="Change Password">
+              <i class="fa-solid fa-key mr-1"></i> Pass
+            </button>
+            <button onclick="deleteStudent('${std.roll}')" class="px-2 py-1 bg-red-100 hover:bg-red-200 text-red-700 rounded text-xs font-bold">
+              <i class="fa-solid fa-trash"></i>
+            </button>
+          </td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    function toggleStudentHostel(roll) {
+      const std = state.students.find(s => s.roll === roll);
+      if (!std) return;
+      std.hostel = (std.hostel === 'Hosteller') ? 'Day Scholar' : 'Hosteller';
+      saveStoredData('students', state.students);
+      renderStudentsTable();
+      showToast(`${std.name} hostel status updated to ${std.hostel}`, 'info');
+    }
+
+    function toggleStudentAccess(roll) {
+      const std = state.students.find(s => s.roll === roll);
+      if (!std) return;
+      std.status = (std.status === 'Active') ? 'Disabled' : 'Active';
+      saveStoredData('students', state.students);
+      renderStudentsTable();
+      showToast(`Student portal access for ${std.name} is now ${std.status}`, 'info');
+    }
+
+    function deleteStudent(roll) {
+      state.students = state.students.filter(s => s.roll !== roll);
+      saveStoredData('students', state.students);
+      renderStudentsTable();
+      showToast('Student deleted from terminal.', 'info');
+    }
+
+    function renderStaffTable() {
+      const tbody = document.getElementById('staffTableBody');
+      if (!tbody) return;
+      tbody.innerHTML = '';
+
+      state.staff.forEach(stf => {
+        const tr = document.createElement('tr');
+        tr.className = "hover:bg-slate-50";
+        tr.innerHTML = `
+          <td class="py-2.5 px-3 font-bold text-brand-navy">${escapeHTML(stf.name)}</td>
+          <td class="py-2.5 px-3"><span class="bg-amber-50 text-amber-900 border border-amber-200 px-2 py-0.5 rounded font-medium text-xs">${stf.role}</span></td>
+          <td class="py-2.5 px-3 font-mono text-xs">${stf.email}</td>
+          <td class="py-2.5 px-3">
+            <span class="font-mono text-xs bg-slate-100 px-2 py-1 rounded text-brand-navy font-bold">${stf.password}</span>
+          </td>
+          <td class="py-2.5 px-3">
+            <button onclick="toggleStaffAccess('${stf.id}')" class="px-2 py-0.5 rounded text-[10px] font-bold ${stf.status === 'Active' ? 'bg-emerald-100 text-emerald-800' : 'bg-red-100 text-red-800'}">
+              ${stf.status}
+            </button>
+          </td>
+          <td class="py-2.5 px-3 text-right space-x-1 whitespace-nowrap">
+            <button onclick="openPasswordReset('staff', '${stf.id}', '${escapeHTML(stf.name)}')" class="px-2 py-1 bg-amber-600 hover:bg-amber-700 text-white rounded text-xs font-bold" title="Change Password">
+              <i class="fa-solid fa-key mr-1"></i> Pass
+            </button>
+            <button onclick="deleteStaff('${stf.id}')" class="px-2 py-1 bg-red-100 hover:bg-red-200 text-red-700 rounded text-xs font-bold">
+              <i class="fa-solid fa-trash"></i>
+            </button>
+          </td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    function toggleStaffAccess(id) {
+      const stf = state.staff.find(s => s.id === id);
+      if (!stf) return;
+      stf.status = (stf.status === 'Active') ? 'Suspended' : 'Active';
+      saveStoredData('staff', state.staff);
+      renderStaffTable();
+      showToast(`Staff access for ${stf.name} updated to ${stf.status}`, 'info');
+    }
+
+    function deleteStaff(id) {
+      state.staff = state.staff.filter(s => s.id !== id);
+      saveStoredData('staff', state.staff);
+      renderStaffTable();
+      showToast('Staff member deleted.', 'info');
+    }
+
+    function openPasswordReset(type, id, name) {
+      document.getElementById('pwdResetType').value = type;
+      document.getElementById('pwdResetId').value = id;
+      document.getElementById('pwdResetTargetName').textContent = `Target: ${name} (${type.toUpperCase()})`;
+      document.getElementById('newResetPasswordVal').value = '';
+      document.getElementById('passwordResetModal').classList.remove('hidden');
+    }
+
+    function closePasswordResetModal() {
+      document.getElementById('passwordResetModal').classList.add('hidden');
+      document.getElementById('pwdResetForm').reset();
+    }
+
+    function handleConfirmPasswordReset(e) {
+      e.preventDefault();
+      const type = document.getElementById('pwdResetType').value;
+      const id = document.getElementById('pwdResetId').value;
+      const newPass = document.getElementById('newResetPasswordVal').value.trim();
+
+      if (type === 'staff') {
+        const member = state.staff.find(s => s.id === id);
+        if (member) {
+          member.password = newPass;
+          saveStoredData('staff', state.staff);
+          renderStaffTable();
+          showToast(`Staff password for ${member.name} updated successfully!`, 'success');
+        }
+      } else if (type === 'student') {
+        const std = state.students.find(s => s.roll === id);
+        if (std) {
+          std.password = newPass;
+          saveStoredData('students', state.students);
+          renderStudentsTable();
+          showToast(`Student password for Roll ${std.roll} (${std.name}) updated!`, 'success');
+        }
+      }
+
+      closePasswordResetModal();
+    }
+
+    function openAddStudentModal() {
+      document.getElementById('addStudentModal').classList.remove('hidden');
+    }
+    function closeAddStudentModal() {
+      document.getElementById('addStudentModal').classList.add('hidden');
+      document.getElementById('addStudentForm').reset();
+    }
+
+    function handleSaveNewStudent(e) {
+      e.preventDefault();
+      const roll = document.getElementById('newStdRoll').value.trim();
+      if (state.students.some(s => s.roll.toLowerCase() === roll.toLowerCase())) {
+        showToast('Roll number already exists!', 'error');
+        return;
+      }
+
+      const newStudent = {
+        roll: roll,
+        name: document.getElementById('newStdName').value.trim(),
+        class: document.getElementById('newStdClass').value,
+        hostel: document.getElementById('newStdHostel').value,
+        phone: document.getElementById('newStdPhone').value.trim(),
+        father: document.getElementById('newStdFather').value.trim() || 'Parent',
+        mother: 'Parent',
+        dob: '2008-01-01',
+        password: document.getElementById('newStdPass').value,
+        status: document.getElementById('newStdStatus').value
+      };
+
+      state.students.push(newStudent);
+      saveStoredData('students', state.students);
+      closeAddStudentModal();
+      renderStudentsTable();
+      showToast(`Student ${newStudent.name} registered with portal access!`, 'success');
+    }
+
+    function openAddStaffModal() {
+      document.getElementById('addStaffModal').classList.remove('hidden');
+    }
+    function closeAddStaffModal() {
+      document.getElementById('addStaffModal').classList.add('hidden');
+      document.getElementById('addStaffForm').reset();
+    }
+
+    function handleSaveNewStaff(e) {
+      e.preventDefault();
+      const email = document.getElementById('newStaffEmail').value.trim();
+      if (state.staff.some(s => s.email.toLowerCase() === email.toLowerCase())) {
+        showToast('Email address already exists!', 'error');
+        return;
+      }
+
+      const newStaff = {
+        id: "STF-" + Date.now().toString().slice(-4),
+        name: document.getElementById('newStaffName').value.trim(),
+        role: document.getElementById('newStaffRole').value.trim(),
+        email: email,
+        password: document.getElementById('newStaffPass').value,
+        status: document.getElementById('newStaffStatus').value
+      };
+
+      state.staff.push(newStaff);
+      saveStoredData('staff', state.staff);
+      closeAddStaffModal();
+      renderStaffTable();
+      showToast(`Staff member ${newStaff.name} created!`, 'success');
+    }
+
+    function renderMarksheetsTable() {
+      const tbody = document.getElementById('marksheetsTableBody');
+      if (!tbody) return;
+      tbody.innerHTML = '';
+
+      state.marksheets.forEach(mk => {
+        const tr = document.createElement('tr');
+        tr.className = "hover:bg-slate-50";
+        tr.innerHTML = `
+          <td class="py-2.5 px-3 font-mono font-bold text-brand-navy">${mk.roll}</td>
+          <td class="py-2.5 px-3 font-bold">${escapeHTML(mk.name)}</td>
+          <td class="py-2.5 px-3">${mk.class}</td>
+          <td class="py-2.5 px-3"><span class="bg-amber-100 text-amber-900 px-2 py-0.5 rounded font-bold text-xs">${mk.hostel || 'Hosteller'}</span></td>
+          <td class="py-2.5 px-3 text-xs text-slate-500">${mk.examType || 'ANNUAL'}</td>
+          <td class="py-2.5 px-3 font-bold">${mk.totalObtained} / ${mk.totalMax}</td>
+          <td class="py-2.5 px-3 font-black text-brand-navy">${mk.percentage}% (${mk.division})</td>
+          <td class="py-2.5 px-3 text-right space-x-1 whitespace-nowrap">
+            <button onclick="previewMarksheet('${mk.roll}')" class="px-2.5 py-1 bg-brand-navy hover:bg-brand-lightnavy text-brand-gold rounded text-xs font-bold">
+              <i class="fa-solid fa-stamp mr-1"></i> View / Print
+            </button>
+            <button onclick="deleteMarksheet('${mk.roll}')" class="px-2 py-1 bg-red-100 hover:bg-red-200 text-red-700 rounded text-xs font-bold">
+              <i class="fa-solid fa-trash"></i>
+            </button>
+          </td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    function openCreateMarksheetModal() {
+      const select = document.getElementById('mkStudentSelect');
+      select.innerHTML = '<option value="">-- Choose Registered Student --</option>';
+      state.students.forEach(std => {
+        select.innerHTML += `<option value="${std.roll}">${std.name} (${std.roll} - ${std.class} - ${std.hostel || 'Hosteller'})</option>`;
+      });
+
+      document.getElementById('marksheetModal').classList.remove('hidden');
+      calculateAdvancedMarks();
+    }
+
+    function closeMarksheetModal() {
+      document.getElementById('marksheetModal').classList.add('hidden');
+      document.getElementById('marksheetForm').reset();
+    }
+
+    function autoFillMarksheetStudentDetails() {
+      const roll = document.getElementById('mkStudentSelect').value;
+      const std = state.students.find(s => s.roll === roll);
+      if (std) {
+        document.getElementById('mkRollNo').value = std.roll;
+        document.getElementById('mkClass').value = std.class;
+      } else {
+        document.getElementById('mkRollNo').value = '';
+        document.getElementById('mkClass').value = '';
+      }
+    }
+
+    function calculateAdvancedMarks() {
+      const thHindi = Number(document.getElementById('th_hindi').value) || 0;
+      const thEng = Number(document.getElementById('th_english').value) || 0;
+      const thPhy = Number(document.getElementById('th_physics').value) || 0;
+      const prPhy = Number(document.getElementById('pr_physics').value) || 0;
+      const thChem = Number(document.getElementById('th_chem').value) || 0;
+      const prChem = Number(document.getElementById('pr_chem').value) || 0;
+      const thMath = Number(document.getElementById('th_math').value) || 0;
+
+      const total = thHindi + thEng + thPhy + prPhy + thChem + prChem + thMath;
+      const pct = ((total / 500) * 100).toFixed(2);
+
+      let div = "3rd Division";
+      if (pct >= 75) div = "1st Division with Honors";
+      else if (pct >= 60) div = "1st Division";
+      else if (pct >= 45) div = "2nd Division";
+
+      document.getElementById('advTotalObtained').textContent = total;
+      document.getElementById('advPercentage').textContent = pct;
+      document.getElementById('advDivision').textContent = div;
+    }
+
+    function handleSaveMarksheet(e) {
+      e.preventDefault();
+      const roll = document.getElementById('mkRollNo').value;
+      if (!roll) {
+        showToast('Please select a student first!', 'error');
+        return;
+      }
+
+      const std = state.students.find(s => s.roll === roll);
+      const thHindi = Number(document.getElementById('th_hindi').value) || 0;
+      const thEng = Number(document.getElementById('th_english').value) || 0;
+      const thPhy = Number(document.getElementById('th_physics').value) || 0;
+      const prPhy = Number(document.getElementById('pr_physics').value) || 0;
+      const thChem = Number(document.getElementById('th_chem').value) || 0;
+      const prChem = Number(document.getElementById('pr_chem').value) || 0;
+      const thMath = Number(document.getElementById('th_math').value) || 0;
+
+      const totalObtained = thHindi + thEng + thPhy + prPhy + thChem + prChem + thMath;
+      const percentage = ((totalObtained / 500) * 100).toFixed(2);
+
+      let division = "1st Division";
+      if (percentage >= 75) division = "1st Division with Honors";
+      else if (percentage < 60 && percentage >= 45) division = "2nd Division";
+      else if (percentage < 45) division = "3rd Division";
+
+      const subjects = [
+        { name: "General Hindi", maxTh: 100, maxPr: 0, obtTh: thHindi, obtPr: 0, total: thHindi, grade: getGrade(thHindi) },
+        { name: "General English", maxTh: 100, maxPr: 0, obtTh: thEng, obtPr: 0, total: thEng, grade: getGrade(thEng) },
+        { name: "Physics", maxTh: 70, maxPr: 30, obtTh: thPhy, obtPr: prPhy, total: thPhy + prPhy, grade: getGrade(thPhy + prPhy) },
+        { name: "Chemistry", maxTh: 70, maxPr: 30, obtTh: thChem, obtPr: prChem, total: thChem + prChem, grade: getGrade(thChem + prChem) },
+        { name: "Mathematics / Biology", maxTh: 100, maxPr: 0, obtTh: thMath, obtPr: 0, total: thMath, grade: getGrade(thMath) }
+      ];
+
+      const newMarksheet = {
+        id: "MK-" + roll,
+        roll: roll,
+        name: std ? std.name : "Candidate",
+        father: std ? std.father : "Parent",
+        mother: std ? std.mother : "Parent",
+        dob: std ? std.dob : "2008-01-01",
+        hostel: std ? std.hostel : "Hosteller",
+        class: std ? std.class : document.getElementById('mkClass').value,
+        session: document.getElementById('mkSession').value,
+        examType: document.getElementById('mkExamType').value,
+        subjects: subjects,
+        totalMax: 500,
+        totalObtained: totalObtained,
+        percentage: percentage,
+        division: division,
+        result: percentage >= 33 ? "PASSED" : "FAILED"
+      };
+
+      state.marksheets = state.marksheets.filter(m => m.roll !== roll);
+      state.marksheets.push(newMarksheet);
+      saveStoredData('marksheets', state.marksheets);
+
+      closeMarksheetModal();
+      renderMarksheetsTable();
+      showToast(`State Board Marksheet for ${newMarksheet.name} generated!`, 'success');
+      previewMarksheet(roll);
+    }
+
+    function getGrade(score) {
+      if (score >= 85) return 'A+';
+      if (score >= 70) return 'A';
+      if (score >= 55) return 'B+';
+      if (score >= 40) return 'B';
+      if (score >= 33) return 'C';
+      return 'D';
+    }
+
+    function deleteMarksheet(roll) {
+      state.marksheets = state.marksheets.filter(m => m.roll !== roll);
+      saveStoredData('marksheets', state.marksheets);
+      renderMarksheetsTable();
+      showToast('Marksheet record removed.', 'info');
+    }
+
+    function previewMarksheet(roll) {
+      const mk = state.marksheets.find(m => m.roll === roll);
+      if (!mk) {
+        showToast('Marksheet record not found!', 'error');
+        return;
+      }
+
+      document.getElementById('pvSession').textContent = mk.session;
+      document.getElementById('pvExamHeader').textContent = mk.examType || 'ANNUAL BOARD EVALUATION';
+      document.getElementById('pvStudentName').textContent = mk.name;
+      document.getElementById('pvFatherName').textContent = mk.father;
+      document.getElementById('pvRollNo').textContent = mk.roll;
+      document.getElementById('pvClass').textContent = mk.class;
+      document.getElementById('pvHostelStatus').textContent = mk.hostel || 'Hosteller';
+      document.getElementById('pvDob').textContent = mk.dob || '15/07/2008';
+      document.getElementById('pvSerialNo').textContent = 'RBS/' + mk.session.split('-')[0] + '/' + Math.floor(1000 + Math.random() * 9000);
+
+      document.getElementById('pvMaxTotal').textContent = mk.totalMax;
+      document.getElementById('pvObtainedTotal').textContent = mk.totalObtained;
+      document.getElementById('pvPercentage').textContent = mk.percentage + "%";
+      document.getElementById('pvResultStatus').textContent = mk.result;
+      document.getElementById('pvDivision').textContent = mk.division;
+      document.getElementById('pvFinalGrade').textContent = getGrade(Math.round(mk.percentage));
+
+      const tbody = document.getElementById('pvMarksTableBody');
+      tbody.innerHTML = '';
+
+      mk.subjects.forEach((sub, i) => {
+        const tr = document.createElement('tr');
+        tr.className = "hover:bg-slate-50";
+        tr.innerHTML = `
+          <td class="p-1 border border-brand-navy text-center">${i + 1}</td>
+          <td class="p-1 border border-brand-navy font-bold">${sub.name}</td>
+          <td class="p-1 border border-brand-navy text-center">${sub.maxTh}</td>
+          <td class="p-1 border border-brand-navy text-center">${sub.maxPr}</td>
+          <td class="p-1 border border-brand-navy text-center font-semibold">${sub.maxTh + sub.maxPr}</td>
+          <td class="p-1 border border-brand-navy text-center font-bold">${sub.obtTh}</td>
+          <td class="p-1 border border-brand-navy text-center font-bold">${sub.obtPr > 0 ? sub.obtPr : '-'}</td>
+          <td class="p-1 border border-brand-navy text-center font-black text-brand-navy">${sub.total}</td>
+          <td class="p-1 border border-brand-navy text-center font-black text-brand-navy">${sub.grade}</td>
+        `;
+        tbody.appendChild(tr);
+      });
+
+      document.getElementById('marksheetPreviewModal').classList.remove('hidden');
+    }
+
+    function closeMarksheetPreviewModal() {
+      document.getElementById('marksheetPreviewModal').classList.add('hidden');
+    }
+
+    function renderStaffDashboard() {
+      const user = state.currentUser;
+      if (!user || user.role !== 'staff') return;
+
+      document.getElementById('staffGreetingName').textContent = `Welcome, ${user.data.name}`;
+      document.getElementById('staffTotalStudentsCount').textContent = state.students.length;
+      document.getElementById('staffHostellerCount').textContent = state.students.filter(s => s.hostel === 'Hosteller').length;
+
+      const tbody = document.getElementById('staffStudentsTableBody');
+      tbody.innerHTML = '';
+
+      state.students.forEach(std => {
+        const hasMarksheet = state.marksheets.some(m => m.roll === std.roll);
+        const tr = document.createElement('tr');
+        tr.className = "hover:bg-slate-50";
+        tr.innerHTML = `
+          <td class="py-2.5 px-3 font-mono font-bold">${std.roll}</td>
+          <td class="py-2.5 px-3 font-bold">${escapeHTML(std.name)}</td>
+          <td class="py-2.5 px-3">${std.class}</td>
+          <td class="py-2.5 px-3"><span class="bg-amber-100 text-amber-900 px-2 py-0.5 rounded text-xs font-bold">${std.hostel || 'Hosteller'}</span></td>
+          <td class="py-2.5 px-3 font-mono">${std.phone || 'N/A'}</td>
+          <td class="py-2.5 px-3 text-right">
+            ${hasMarksheet 
+              ? `<button onclick="previewMarksheet('${std.roll}')" class="px-2.5 py-1 bg-emerald-100 text-emerald-800 rounded font-bold text-xs"><i class="fa-solid fa-stamp mr-1"></i> View Marksheet</button>`
+              : `<button onclick="openCreateMarksheetModal()" class="px-2.5 py-1 bg-brand-gold/20 text-brand-navy rounded font-bold text-xs">+ Input Marks</button>`}
+          </td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    function renderStudentDashboard() {
+      const user = state.currentUser;
+      if (!user || user.role !== 'student') return;
+
+      const std = user.data;
+      document.getElementById('studentProfileName').textContent = std.name;
+      document.getElementById('studentProfileRoll').textContent = std.roll;
+      document.getElementById('studentProfileClass').textContent = std.class;
+      document.getElementById('studentHostelBadge').textContent = std.hostel || 'Hostel Resident';
+
+      const initials = std.name.split(' ').map(n => n[0]).join('').toUpperCase().slice(0, 2);
+      document.getElementById('studentAvatarInitials').textContent = initials;
+
+      const marksheetContainer = document.getElementById('studentMarksheetContainer');
+      const marksheet = state.marksheets.find(m => m.roll === std.roll);
+
+      if (marksheet) {
+        marksheetContainer.innerHTML = `
+          <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border-b pb-4 mb-4">
+            <div>
+              <span class="text-[10px] bg-emerald-100 text-emerald-800 font-black px-2 py-0.5 rounded-full uppercase">Official State-Board Record</span>
+              <h3 class="text-xl font-bold font-serif text-brand-navy mt-1">${marksheet.examType || 'Annual Examination'} (${marksheet.session})</h3>
+              <p class="text-xs text-slate-500">Certified by Manager Vishnu Kant &amp; Director Avadhesh Singh</p>
+            </div>
+            <button onclick="previewMarksheet('${marksheet.roll}')" class="px-4 py-2 bg-brand-navy text-brand-gold rounded-xl font-bold text-xs shadow hover:scale-105 transition flex items-center space-x-1.5">
+              <i class="fa-solid fa-stamp"></i>
+              <span>View Full State Marksheet</span>
+            </button>
+          </div>
+
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center my-4">
+            <div class="bg-slate-50 p-3 rounded-xl border">
+              <p class="text-xs text-slate-500">Total Marks</p>
+              <p class="text-lg font-black text-brand-navy">${marksheet.totalObtained} / ${marksheet.totalMax}</p>
+            </div>
+            <div class="bg-slate-50 p-3 rounded-xl border">
+              <p class="text-xs text-slate-500">Percentage</p>
+              <p class="text-lg font-black text-emerald-700">${marksheet.percentage}%</p>
+            </div>
+            <div class="bg-slate-50 p-3 rounded-xl border">
+              <p class="text-xs text-slate-500">Division</p>
+              <p class="text-sm font-black text-brand-navy mt-1">${marksheet.division}</p>
+            </div>
+            <div class="bg-slate-50 p-3 rounded-xl border">
+              <p class="text-xs text-slate-500">Status</p>
+              <p class="text-sm font-black text-emerald-600 mt-1 uppercase">${marksheet.result}</p>
+            </div>
+          </div>
+        `;
+      } else {
+        marksheetContainer.innerHTML = `
+          <div class="text-center py-10 space-y-2">
+            <div class="w-12 h-12 mx-auto rounded-full bg-amber-50 text-amber-600 flex items-center justify-center text-xl">
+              <i class="fa-solid fa-hourglass-half"></i>
+            </div>
+            <h4 class="text-base font-bold text-slate-800">Official Marksheet in Preparation</h4>
+            <p class="text-xs text-slate-500 max-w-sm mx-auto">
+              Your examination marks are being verified by the evaluation branch. Contact Manager Vishnu Kant for updates.
+            </p>
+          </div>
+        `;
+      }
+    }
+
+    function downloadStudentMarksheet() {
+      if (!state.currentUser || state.currentUser.role !== 'student') return;
+      const roll = state.currentUser.data.roll;
+      const mk = state.marksheets.find(m => m.roll === roll);
+      if (mk) {
+        previewMarksheet(roll);
+        setTimeout(() => window.print(), 350);
+      } else {
+        showToast('Official marksheet has not been uploaded yet.', 'info');
+      }
+    }
+
+    function escapeHTML(str) {
+      if (!str) return '';
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      showSection('public-home');
+    });
+  </script>
+</body>
+</html>
                 extend: {
                     colors: {
                         rbsNavy: '#051329',
