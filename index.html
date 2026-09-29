@@ -4,14 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Residential Rambax Singh Inter College - Bithara, Aliganj, Etah</title>
+  
+  <!-- FontAwesome Icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <!-- AOS (Animate On Scroll) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <!-- Swiper.js Slider (DPS Style Auto-fading Carousel) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
   <style>
     :root {
-      --primary: #081d33;
+      --primary: #0a3321;
+      --primary-dark: #051c12;
       --secondary: #d4af37;
-      --accent: #c0392b;
-      --bg: #f8fafc;
-      --text: #1e293b;
+      --secondary-light: #fef9e7;
+      --accent-red: #c0292b;
+      --bg-slate: #f8fafc;
+      --text-dark: #1e293b;
+      --text-muted: #64748b;
     }
 
     * {
@@ -22,115 +32,115 @@
     }
 
     body {
-      background-color: var(--bg);
-      color: var(--text);
+      background-color: var(--bg-slate);
+      color: var(--text-dark);
       overflow-x: hidden;
     }
 
-    /* Top Strip */
-    .top-strip {
-      background-color: #040e1a;
-      color: #cbd5e1;
-      padding: 6px 5%;
+    /* Top Utility Ribbon */
+    .top-ribbon {
+      background: var(--primary-dark);
+      color: #e2e8f0;
+      padding: 8px 5%;
       font-size: 13px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
+      border-bottom: 2px solid var(--secondary);
     }
-    .top-strip a {
+    .top-ribbon a {
       color: #fff;
       text-decoration: none;
-      margin-left: 12px;
+      margin-left: 15px;
+      transition: color 0.2s;
     }
-    .badge-hostel {
+    .top-ribbon a:hover {
+      color: var(--secondary);
+    }
+    .tag-hostel {
       background: var(--secondary);
       color: #000;
-      padding: 2px 7px;
-      border-radius: 3px;
-      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-weight: 800;
       font-size: 11px;
-    }
-    .badge-session {
-      background: #0284c7;
-      color: #fff;
-      padding: 2px 7px;
-      border-radius: 3px;
-      font-weight: 700;
-      font-size: 11px;
-      margin-left: 8px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
     }
 
-    /* Header */
+    /* Main Header */
     header {
       background: #ffffff;
-      padding: 12px 5%;
+      padding: 14px 5%;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
       position: sticky;
       top: 0;
       z-index: 1000;
     }
-    .header-left {
+    .brand-wrap {
       display: flex;
       align-items: center;
-      gap: 15px;
+      gap: 18px;
     }
     .school-logo {
-      width: 70px;
-      height: 70px;
+      width: 75px;
+      height: 75px;
       border-radius: 50%;
-      border: 2px solid var(--secondary);
+      border: 3px solid var(--secondary);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
       object-fit: cover;
     }
-    .school-titles h1 {
-      font-size: 22px;
+    .brand-details h1 {
+      font-size: 24px;
       color: var(--primary);
       text-transform: uppercase;
       font-weight: 800;
+      letter-spacing: 0.5px;
     }
-    .school-titles p {
-      font-size: 12.5px;
-      color: #64748b;
+    .brand-details p {
+      font-size: 13px;
+      color: var(--text-muted);
       font-weight: 600;
     }
 
-    /* 3-Line Hamburger */
+    /* 3-Line Hamburger Menu */
     .menu-trigger {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      width: 32px;
-      height: 22px;
+      width: 34px;
+      height: 24px;
       cursor: pointer;
       z-index: 1100;
     }
     .menu-trigger span {
       display: block;
-      height: 3px;
+      height: 3.5px;
       width: 100%;
       background: var(--primary);
-      border-radius: 3px;
+      border-radius: 4px;
       transition: all 0.3s ease;
     }
     .menu-trigger:hover span {
       background: var(--secondary);
     }
 
-    /* Drawer Nav */
+    /* Sliding Drawer Navigation */
     .drawer-nav {
       position: fixed;
       top: 0;
-      right: -320px;
-      width: 300px;
+      right: -340px;
+      width: 320px;
       height: 100%;
-      background: var(--primary);
-      box-shadow: -5px 0 25px rgba(0,0,0,0.3);
+      background: linear-gradient(180deg, var(--primary) 0%, var(--primary-dark) 100%);
+      box-shadow: -8px 0 30px rgba(0,0,0,0.4);
       transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-      z-index: 1050;
-      padding: 60px 25px 30px;
+      z-index: 1150;
+      padding: 60px 30px;
       display: flex;
       flex-direction: column;
     }
@@ -140,229 +150,320 @@
     .drawer-close {
       position: absolute;
       top: 20px;
-      right: 20px;
+      right: 22px;
       color: #fff;
-      font-size: 24px;
+      font-size: 26px;
       cursor: pointer;
     }
     .drawer-nav ul {
       list-style: none;
       display: flex;
       flex-direction: column;
-      gap: 16px;
+      gap: 18px;
     }
     .drawer-nav ul li a {
-      color: #e2e8f0;
+      color: #f1f5f9;
       text-decoration: none;
       font-size: 16px;
       font-weight: 600;
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 14px;
+      transition: color 0.3s;
     }
     .drawer-nav ul li a:hover {
       color: var(--secondary);
     }
 
-    /* News Strip */
-    .news-strip {
-      background: #fef3c7;
-      border-bottom: 1px solid #fde68a;
-      display: flex;
-      align-items: center;
-      font-size: 13.5px;
-    }
-    .news-badge {
-      background: var(--accent);
-      color: #fff;
-      padding: 6px 16px;
-      font-weight: bold;
-      white-space: nowrap;
-    }
-    .news-marquee {
-      padding: 6px 12px;
-      white-space: nowrap;
-      overflow: hidden;
+    /* DPS Style Hero Slider */
+    .hero-slider-wrap {
+      position: relative;
       width: 100%;
+      height: 520px;
+      overflow: hidden;
+      background: #000;
     }
-
-    /* Hero Banner */
-    .hero {
-      background: linear-gradient(rgba(8,29,51,0.8), rgba(8,29,51,0.85)), url('rbs8.jpeg') center/cover no-repeat;
-      height: 380px;
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      position: relative;
+      overflow: hidden;
+    }
+    .slide-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      transform: scale(1);
+      transition: transform 6s ease-out;
+    }
+    .swiper-slide-active .slide-bg {
+      transform: scale(1.12);
+    }
+    .slide-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(10,51,33,0.7) 0%, rgba(5,28,18,0.85) 100%);
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
       color: #fff;
-      padding: 20px;
+      padding: 0 10%;
     }
-    .hero h2 {
-      font-size: 32px;
+    .slide-content h2 {
+      font-size: 40px;
       color: var(--secondary);
-      font-weight: 800;
-      margin-bottom: 10px;
+      font-weight: 900;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      text-shadow: 2px 4px 10px rgba(0,0,0,0.6);
     }
-    .hero p {
-      font-size: 16px;
-      max-width: 750px;
-      margin: 0 auto 20px;
+    .slide-content p {
+      font-size: 18px;
+      max-width: 850px;
+      margin: 0 auto 25px;
+      line-height: 1.6;
+      color: #f8fafc;
     }
+
     .btn-gold {
-      background: var(--secondary);
+      background: linear-gradient(135deg, var(--secondary) 0%, #b8972e 100%);
       color: #000;
-      padding: 10px 24px;
-      border-radius: 4px;
+      padding: 12px 28px;
+      border-radius: 6px;
       text-decoration: none;
       font-weight: 700;
-      font-size: 14px;
+      font-size: 15px;
       border: none;
       cursor: pointer;
       display: inline-block;
-      transition: 0.3s;
+      box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+      transition: all 0.3s ease;
     }
     .btn-gold:hover {
-      background: #fff;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(212, 175, 55, 0.6);
+      color: #000;
+    }
+
+    /* Live Ticker Strip */
+    .news-strip {
+      background: var(--secondary-light);
+      border-bottom: 1px solid #fceabb;
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+    }
+    .news-badge {
+      background: var(--accent-red);
+      color: #fff;
+      padding: 8px 20px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+    .news-marquee {
+      padding: 8px 15px;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 100%;
+      font-weight: 600;
       color: var(--primary);
     }
 
     /* Container */
     .container {
-      max-width: 1200px;
-      margin: 40px auto;
+      max-width: 1240px;
+      margin: 50px auto;
       padding: 0 20px;
     }
     .section-heading {
-      font-size: 22px;
+      font-size: 26px;
       color: var(--primary);
       text-transform: uppercase;
       font-weight: 800;
-      margin-bottom: 25px;
-      border-left: 5px solid var(--secondary);
-      padding-left: 12px;
+      margin-bottom: 30px;
+      border-left: 6px solid var(--secondary);
+      padding-left: 15px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
     }
 
     /* Management Cards */
-    .management-grid {
+    .mgmt-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 25px;
-      margin-bottom: 40px;
+      gap: 30px;
+      margin-bottom: 50px;
     }
-    .person-card {
+    .mgmt-card {
       background: #fff;
-      border-radius: 8px;
+      border-radius: 12px;
       overflow: hidden;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-      border-top: 4px solid var(--secondary);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+      border-top: 5px solid var(--secondary);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
     }
-    .person-img {
+    .mgmt-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+    }
+    .mgmt-img {
       width: 100%;
-      height: 320px;
+      height: 340px;
       object-fit: cover;
       object-position: top;
       background: #f1f5f9;
+      display: block;
     }
-    .person-details {
-      padding: 20px;
+    .mgmt-body {
+      padding: 22px;
     }
-    .person-details h3 {
-      font-size: 20px;
+    .mgmt-body h3 {
+      font-size: 21px;
       color: var(--primary);
+      margin-bottom: 2px;
     }
-    .person-details .role {
+    .mgmt-body .role {
       color: var(--secondary);
       font-weight: 700;
       font-size: 13px;
       text-transform: uppercase;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
 
-    /* Hostel Box */
-    .hostel-box {
+    /* Campus Pillars */
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      margin-bottom: 50px;
+    }
+    .pillar-box {
       background: #fff;
-      border-radius: 8px;
-      padding: 30px;
-      margin-bottom: 40px;
-      border-left: 6px solid var(--primary);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      border-bottom: 3px solid var(--primary);
+      transition: all 0.3s;
+    }
+    .pillar-box:hover {
+      background: var(--primary);
+      color: #fff;
+      transform: translateY(-5px);
+    }
+    .pillar-box:hover h4 {
+      color: var(--secondary);
+    }
+    .pillar-box i {
+      font-size: 32px;
+      color: var(--secondary);
+      margin-bottom: 12px;
+    }
+    .pillar-box h4 {
+      font-size: 18px;
+      color: var(--primary);
+      margin-bottom: 8px;
+      font-weight: 700;
+    }
+
+    /* Hostel Facility */
+    .hostel-feature {
+      background: #fff;
+      border-radius: 12px;
+      padding: 35px;
+      margin-bottom: 50px;
+      border-left: 8px solid var(--primary);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.06);
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 25px;
+      gap: 30px;
       align-items: center;
     }
-    .hostel-box img {
+    .hostel-feature img {
       width: 100%;
-      border-radius: 6px;
-      max-height: 260px;
+      border-radius: 10px;
+      max-height: 290px;
       object-fit: cover;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     }
 
-    /* Media Gallery */
-    .gallery-container {
+    /* Gallery Media */
+    .gallery-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 18px;
-      margin-bottom: 40px;
+      gap: 20px;
+      margin-bottom: 50px;
     }
     .media-card {
       background: #fff;
-      border-radius: 8px;
+      border-radius: 10px;
       overflow: hidden;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+      transition: transform 0.3s;
+    }
+    .media-card:hover {
+      transform: scale(1.03);
     }
     .media-card img, .media-card iframe, .media-card video {
       width: 100%;
-      height: 200px;
+      height: 210px;
       object-fit: cover;
-      border: none;
       display: block;
+      border: none;
     }
     .media-card .title {
-      padding: 10px;
-      font-size: 13px;
-      font-weight: 600;
+      padding: 12px;
+      font-size: 14px;
+      font-weight: 700;
       color: var(--primary);
-      background: #fff;
     }
 
-    /* Admission Box */
-    .admission-card {
+    /* Form Design */
+    .form-card {
       background: #fff;
-      padding: 30px;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-      margin-bottom: 40px;
-      border-top: 4px solid var(--primary);
+      padding: 35px;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+      margin-bottom: 50px;
+      border-top: 5px solid var(--primary);
     }
     .form-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 16px;
-      margin-top: 15px;
+      gap: 18px;
+      margin-top: 18px;
     }
     .form-grid label {
       display: block;
-      font-size: 13px;
+      font-size: 13.5px;
       font-weight: 700;
-      margin-bottom: 5px;
+      margin-bottom: 6px;
     }
     .form-grid input, .form-grid select, .form-grid textarea {
       width: 100%;
-      padding: 9px 12px;
+      padding: 10px 14px;
       border: 1px solid #cbd5e1;
-      border-radius: 4px;
+      border-radius: 6px;
       font-size: 14px;
+      outline: none;
     }
 
     /* =========================================================
-       4D / 3D CINEMATIC ANIMATION & FIXED LOGIN BOX
+       3D / 4D SUITCASE BOY ANIMATION & FIXED MODAL
     ========================================================= */
     .modal-backdrop {
       display: none;
       position: fixed;
       inset: 0;
-      background: radial-gradient(circle at center, rgba(14, 38, 64, 0.94) 0%, rgba(3, 10, 20, 0.98) 100%);
+      background: radial-gradient(circle at center, rgba(10, 51, 33, 0.94) 0%, rgba(3, 15, 10, 0.98) 100%);
       backdrop-filter: blur(12px);
       z-index: 9999;
       perspective: 1600px;
@@ -374,7 +475,6 @@
       display: flex !important;
     }
 
-    /* 4D Ambient Star / Hologram Light Particles */
     .ambient-particles {
       position: absolute;
       inset: 0;
@@ -388,7 +488,6 @@
       100% { transform: scale(1.15) rotate(10deg); opacity: 1; }
     }
 
-    /* 3D Boy Stage with Suitcase */
     .avatar-boy-stage {
       position: absolute;
       bottom: 12%;
@@ -403,7 +502,7 @@
       transform-style: preserve-3d;
     }
     .avatar-boy-stage.walk-in {
-      animation: boyWalkToCenter 2.4s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+      animation: boyWalkToCenter 2.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
     }
     .avatar-boy-stage.walk-out-wall {
       animation: boyWalkToWall 1.8s cubic-bezier(0.55, 0.085, 0.68, 0.53) forwards;
@@ -413,14 +512,12 @@
       0% { left: -220px; transform: scale(0.9) rotateY(20deg); }
       100% { left: calc(50% - 70px); transform: scale(1) rotateY(0deg); }
     }
-
     @keyframes boyWalkToWall {
       0% { left: calc(50% - 70px); opacity: 1; transform: scale(1) rotateY(180deg); }
       70% { left: 95%; opacity: 0.7; transform: scale(0.85) rotateY(180deg); filter: blur(0px); }
       100% { left: 105%; opacity: 0; transform: scale(0.6) rotateY(180deg); filter: blur(8px); }
     }
 
-    /* Boy Avatar */
     .boy-character {
       width: 110px;
       height: 180px;
@@ -434,7 +531,6 @@
       margin: 0 auto;
       position: relative;
       border: 2px solid #7c2d12;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
     .boy-hair {
       position: absolute;
@@ -470,7 +566,7 @@
       border-radius: 6px;
     }
     .boy-arm.left { left: -14px; transform-origin: top; animation: armSwing 0.7s infinite alternate; }
-    .boy-arm.right { right: -14px; transform-origin: top; }
+    .boy-arm.right { right: -14px; }
     .boy-legs {
       display: flex;
       justify-content: center;
@@ -494,7 +590,6 @@
       100% { transform: rotate(25deg); }
     }
 
-    /* 3D Suitcase */
     .suitcase-3d {
       width: 75px;
       height: 55px;
@@ -506,7 +601,7 @@
       bottom: 25px;
       right: -25px;
       transform-style: preserve-3d;
-      transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      transition: all 0.5s ease;
     }
     .suitcase-handle {
       width: 24px;
@@ -523,7 +618,7 @@
       bottom: calc(50% - 35px);
       left: calc(50% - 40px);
       right: auto;
-      transform: scale(1.3) rotateX(15deg);
+      transform: scale(1.3);
       box-shadow: 0 0 40px rgba(212, 175, 55, 0.7);
     }
     .suitcase-3d.opening {
@@ -531,7 +626,6 @@
       opacity: 0;
     }
 
-    /* 4D Hologram Light Flare Burst */
     .hologram-burst {
       display: none;
       position: absolute;
@@ -549,7 +643,7 @@
       100% { transform: scale(1.6); opacity: 0; }
     }
 
-    /* 3D Glassmorphic Login Box (Guaranteed Display) */
+    /* Guaranteed Display Login Box */
     .modal-3d-card {
       display: none;
       background: linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(240, 249, 255, 0.94)) !important;
@@ -561,7 +655,6 @@
       position: relative;
       box-shadow: 0 35px 75px rgba(0, 0, 0, 0.6), 0 0 35px rgba(212, 175, 55, 0.35);
       z-index: 10020;
-      transform-style: preserve-3d;
     }
     .modal-3d-card.revealed {
       display: block !important;
@@ -601,7 +694,7 @@
     .role-pill.active {
       background: var(--primary);
       color: #fff;
-      box-shadow: 0 4px 10px rgba(8, 29, 51, 0.25);
+      box-shadow: 0 4px 10px rgba(10, 51, 33, 0.3);
     }
     .pass-container {
       position: relative;
@@ -624,32 +717,32 @@
       background: #fff;
       border-radius: 12px;
       padding: 30px;
-      margin-bottom: 40px;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+      margin-bottom: 50px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
     }
     .dash-top {
       display: flex;
       justify-content: space-between;
       align-items: center;
       border-bottom: 2px solid var(--secondary);
-      padding-bottom: 12px;
-      margin-bottom: 20px;
+      padding-bottom: 15px;
+      margin-bottom: 25px;
     }
     .dash-navs {
       display: flex;
       gap: 10px;
       flex-wrap: wrap;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
     }
     .dash-btn {
-      padding: 8px 15px;
+      padding: 9px 18px;
       border: 1px solid var(--primary);
       background: #fff;
       color: var(--primary);
-      border-radius: 5px;
-      font-weight: 600;
+      border-radius: 6px;
+      font-weight: 700;
       cursor: pointer;
-      font-size: 13px;
+      font-size: 13.5px;
     }
     .dash-btn.active {
       background: var(--primary);
@@ -659,13 +752,13 @@
       width: 100%;
       border-collapse: collapse;
       margin-top: 15px;
-      font-size: 13.5px;
+      font-size: 14px;
     }
     table, th, td {
       border: 1px solid #e2e8f0;
     }
     th, td {
-      padding: 9px 12px;
+      padding: 10px 14px;
       text-align: left;
     }
     th {
@@ -673,7 +766,7 @@
       color: #fff;
     }
 
-    /* Marksheet Design */
+    /* Marksheet Printable */
     #marksheet-view {
       display: none;
       background: #fff;
@@ -721,28 +814,29 @@
     }
 
     footer {
-      background: #040e1a;
+      background: var(--primary-dark);
       color: #94a3b8;
-      padding: 40px 5% 20px;
-      border-top: 4px solid var(--secondary);
+      padding: 45px 5% 25px;
+      border-top: 5px solid var(--secondary);
     }
     .footer-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 30px;
-      max-width: 1200px;
+      gap: 35px;
+      max-width: 1240px;
       margin: auto;
     }
     .footer-grid h4 {
       color: var(--secondary);
-      margin-bottom: 12px;
+      margin-bottom: 15px;
+      font-size: 17px;
     }
     .footer-copy {
       text-align: center;
-      border-top: 1px solid #1e293b;
-      margin-top: 25px;
+      border-top: 1px solid #143526;
+      margin-top: 30px;
       padding-top: 20px;
-      font-size: 13px;
+      font-size: 13.5px;
     }
 
     @media print {
@@ -761,23 +855,23 @@
 <body>
 
   <!-- Top Strip -->
-  <div class="top-strip">
+  <div class="top-ribbon">
     <div>
       <span><i class="fas fa-map-marker-alt"></i> Bithara - Sarai Road, Aliganj, Etah - 207247 (U.P.)</span>
       <span style="margin-left: 15px;"><i class="fas fa-phone"></i> Helpline: 6395052394</span>
     </div>
     <div>
-      <span class="badge-hostel"><i class="fas fa-bed"></i> Residential / Hostel (Class 1 to 12)</span>
-      <span class="badge-session"><i class="fas fa-calendar-alt"></i> Session: <strong id="liveSessionBadge">2026-27</strong></span>
+      <span class="tag-hostel"><i class="fas fa-bed"></i> Residential / Hostel (Class 1 to 12)</span>
+      <span class="tag-hostel" style="background:#0284c7; color:#fff; margin-left: 8px;"><i class="fas fa-calendar-alt"></i> Session: <strong id="liveSessionBadge">2026-27</strong></span>
       <a href="javascript:void(0)" onclick="trigger3DLoginCinematic()"><i class="fas fa-user-lock"></i> Portal Login</a>
     </div>
   </div>
 
   <!-- Header -->
   <header>
-    <div class="header-left">
-      <img src="rbslogo.jpeg" alt="RBS Logo" class="school-logo">
-      <div class="school-titles">
+    <div class="brand-wrap">
+      <img src="rbslogo.jpeg" alt="RBS Logo" class="school-logo" onerror="this.onerror=null; this.src='rbslogo.jpg';">
+      <div class="brand-details">
         <h1>Rambax Singh Inter College</h1>
         <p>श्री रामबक्स सिंह आवासीय इण्टर कॉलेज (कक्षा 1 से 12 तक) बिथरा, अलीगंज (एटा)</p>
       </div>
@@ -801,6 +895,7 @@
     <ul>
       <li><a href="#" onclick="toggleDrawerNav()"><i class="fas fa-home"></i> Home</a></li>
       <li><a href="#leadership" onclick="toggleDrawerNav()"><i class="fas fa-user-tie"></i> Prabandhan (Management)</a></li>
+      <li><a href="#facilities" onclick="toggleDrawerNav()"><i class="fas fa-school"></i> Campus Facilities</a></li>
       <li><a href="#hostel" onclick="toggleDrawerNav()"><i class="fas fa-hotel"></i> Hostel Facility</a></li>
       <li><a href="#gallery" onclick="toggleDrawerNav()"><i class="fas fa-photo-video"></i> Photos & Videos</a></li>
       <li><a href="#admission" onclick="toggleDrawerNav()"><i class="fas fa-file-signature"></i> Online Admission</a></li>
@@ -808,9 +903,9 @@
     </ul>
   </div>
 
-  <!-- News Strip -->
+  <!-- Live Notice Strip -->
   <div class="news-strip">
-    <div class="news-badge"><i class="fas fa-bullhorn"></i> Notice</div>
+    <div class="news-badge"><i class="fas fa-bullhorn"></i> Latest Notice</div>
     <div class="news-marquee">
       <marquee scrollamount="6">
         Naye shaikshik satra ke liye Kaksha 1 se 12 tak pravesh prarambh hain • Aavasiya Hostel suvidha uplabdh • Formative (FA) aur Summative (SA) assessments portal par darj ho rahe hain • Helpline: 6395052394.
@@ -818,36 +913,97 @@
     </div>
   </div>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div>
-      <h2>Residential Rambax Singh Inter College</h2>
-      <p>Kaksha 1 se 12 tak shreshth shiksha, sanskar, anushasan aur aavasiya (hostel) vatavaran ka vishvasniya kendra.</p>
-      <button class="btn-gold" onclick="document.getElementById('admission').scrollIntoView({behavior:'smooth'})"><i class="fas fa-user-plus"></i> Online Pravesh Form Bharein</button>
+  <!-- =========================================================
+       DPS DWARKA STYLE DYNAMIC HERO SLIDER (Ken Burns Animation)
+  ========================================================= -->
+  <div class="hero-slider-wrap">
+    <div class="swiper heroSwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="slide-bg" style="background-image: url('rbs8.jpeg');"></div>
+          <div class="slide-overlay">
+            <div class="slide-content" data-aos="fade-up" data-aos-duration="1000">
+              <h2>Excellence in Education</h2>
+              <p>Rambax Singh Inter College me shreshth shaikshik vatavaran, sanskar aur chhatro ke sarvangin vikas ka kendra.</p>
+              <button class="btn-gold" onclick="document.getElementById('admission').scrollIntoView({behavior:'smooth'})"><i class="fas fa-file-signature"></i> Apply for Admission</button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide-bg" style="background-image: url('rbs9.jpeg');"></div>
+          <div class="slide-overlay">
+            <div class="slide-content">
+              <h2>Smart Classrooms & Expert Faculty</h2>
+              <p>Adhyayan ke liye anushasit dincharya evam adhyapako dwara niyamit margdarshan v digital shiksha.</p>
+              <button class="btn-gold" onclick="document.getElementById('admission').scrollIntoView({behavior:'smooth'})"><i class="fas fa-user-plus"></i> Online Registration</button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide-bg" style="background-image: url('rbs7.jpeg');"></div>
+          <div class="slide-overlay">
+            <div class="slide-content">
+              <h2>Holistic Sports & Cultural Growth</h2>
+              <p>Khel-kood, rashtriya parv evam scout-guide ke madhyam se aatmanirbhar yuvavarg ka nirman.</p>
+              <button class="btn-gold" onclick="trigger3DLoginCinematic()"><i class="fas fa-lock"></i> Student / Staff Portal</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </section>
+  </div>
 
   <!-- Container -->
   <div class="container">
 
+    <!-- Campus Facilities -->
+    <div id="facilities" data-aos="fade-up">
+      <h2 class="section-heading"><i class="fas fa-award"></i> Sanstha Ki Mukhya Visheshatayein</h2>
+      <div class="pillars-grid">
+        <div class="pillar-box" data-aos="zoom-in" data-aos-delay="100">
+          <i class="fas fa-laptop-code"></i>
+          <h4>Smart Classrooms</h4>
+          <p>Digital board aur aadhunik shikshan paddhati ke sath shaikshik gunvatta.</p>
+        </div>
+        <div class="pillar-box" data-aos="zoom-in" data-aos-delay="200">
+          <i class="fas fa-flask"></i>
+          <h4>Science & Maths Labs</h4>
+          <p>Prayogik gyan ke liye suvyavasthit Physics, Chemistry, aur Biology Prayogshala.</p>
+        </div>
+        <div class="pillar-box" data-aos="zoom-in" data-aos-delay="300">
+          <i class="fas fa-bed"></i>
+          <h4>Residential Hostel</h4>
+          <p>Door-daraj ke chhatron ke liye campus me hi surakshit aavasiya suvidha.</p>
+        </div>
+        <div class="pillar-box" data-aos="zoom-in" data-aos-delay="400">
+          <i class="fas fa-running"></i>
+          <h4>Sports & Fitness</h4>
+          <p>Vishal khel maidan, football, cricket, volleyball aur yoga prashikshan.</p>
+        </div>
+      </div>
+    </div>
+
     <!-- Leadership Section -->
-    <div id="leadership">
+    <div id="leadership" data-aos="fade-up">
       <h2 class="section-heading"><i class="fas fa-users-cog"></i> Sanstha Ka Netratva (Administration)</h2>
-      <div class="management-grid">
+      <div class="mgmt-grid">
         <!-- Director Card -->
-        <div class="person-card">
-          <img src="rbs4.jpeg" class="person-img" alt="Director Shri Avadhesh Singh">
-          <div class="person-details">
+        <div class="mgmt-card" data-aos="fade-right">
+          <img src="rbs4.jpeg" class="mgmt-img" alt="Director Shri Avadhesh Singh">
+          <div class="mgmt-body">
             <h3>Shri Avadhesh Singh</h3>
             <div class="role">Director / Nideshak</div>
             <p>Vidyalaya me uchch gunvatta, mulyaparak shiksha aur chhatron ke sarvangin margdarshan ke nirdeshak.</p>
           </div>
         </div>
 
-        <!-- Manager Card (Photo Updated: image_55551c.jpg) -->
-        <div class="person-card">
-          <img src="image_55551c.jpg" class="person-img" alt="Manager Shri Vishnu Kant">
-          <div class="person-details">
+        <!-- Manager Card with Safe Fallback -->
+        <div class="mgmt-card" data-aos="fade-left">
+          <img src="manager.jpg" 
+               class="mgmt-img" 
+               alt="Manager Shri Vishnu Kant"
+               onerror="this.onerror=null; this.src='image_55551c.jpg';">
+          <div class="mgmt-body">
             <h3>Shri Vishnu Kant</h3>
             <div class="role">Manager / Prabandhak</div>
             <p><i class="fas fa-phone"></i> +91 6395052394</p>
@@ -859,15 +1015,15 @@
     </div>
 
     <!-- Hostel Box -->
-    <div class="hostel-box" id="hostel">
+    <div class="hostel-feature" id="hostel" data-aos="fade-up">
       <div>
-        <h2 style="color: var(--primary); margin-bottom: 12px;"><i class="fas fa-hotel"></i> Aavasiya Suvidha (Residential Hostel)</h2>
-        <p style="margin-bottom: 12px;">Door-daraj ke chhatron ke liye campus me hi surakshit v su-vyavasthit hostel uplabdh hai:</p>
+        <h2 style="color: var(--primary); margin-bottom: 12px; font-size: 24px;"><i class="fas fa-hotel"></i> Aavasiya Suvidha (Residential Hostel)</h2>
+        <p style="margin-bottom: 12px; line-height: 1.8;">Door-daraj ke chhatron ke liye campus me hi surakshit v su-vyavasthit hostel uplabdh hai:</p>
         <ul style="margin-left: 20px; line-height: 2;">
-          <li>Shuddh v paushtik bhojan (Mess)</li>
-          <li>Niyamit study schedule aur evening guidance classes</li>
+          <li>Shuddh v paushtik bhojan (Mess Suvidha)</li>
+          <li>Niyamit study schedule aur evening doubt classes</li>
           <li>Class 1st se 12th ke chhatron ke liye anushasit vatavaran</li>
-          <li>CCTV v 24 ghante security vyavastha</li>
+          <li>CCTV v 24 ghante suraksha vyavastha</li>
         </ul>
       </div>
       <div>
@@ -875,16 +1031,16 @@
       </div>
     </div>
 
-    <!-- Photo & Video Gallery -->
-    <div id="gallery">
+    <!-- Dynamic Media Gallery -->
+    <div id="gallery" data-aos="fade-up">
       <h2 class="section-heading"><i class="fas fa-photo-video"></i> Campus Photos & Videos (Admin Controlled)</h2>
-      <div class="gallery-container" id="publicMediaGallery"></div>
+      <div class="gallery-grid" id="publicMediaGallery"></div>
     </div>
 
     <!-- Admission Section -->
-    <div class="admission-card" id="admission">
+    <div class="form-card" id="admission" data-aos="fade-up">
       <h2 style="color: var(--primary); margin-bottom: 6px;"><i class="fas fa-user-plus"></i> Online Pravesh Avedan (Class 1 to 12)</h2>
-      <p style="font-size: 13.5px; color: #64748b;">Form submit karne par data seedhe Admin Portal me store ho jayega.</p>
+      <p style="font-size: 13.5px; color: var(--text-muted);">Form submit karne par data seedhe Admin Portal me store ho jayega.</p>
       
       <form onsubmit="handleAdmissionSubmit(event)" id="admForm">
         <div class="form-grid">
@@ -916,7 +1072,7 @@
           </div>
           <div style="grid-column: 1 / -1;"><label>Address *</label><textarea id="adm_addr" rows="2" required placeholder="Gram, Post, Tehsil, Jila"></textarea></div>
         </div>
-        <div style="margin-top: 18px;">
+        <div style="margin-top: 20px;">
           <button type="submit" class="btn-gold"><i class="fas fa-paper-plane"></i> Form Submit Karein</button>
         </div>
       </form>
@@ -927,7 +1083,7 @@
       <div class="dash-top">
         <div>
           <h2 style="color: var(--primary);" id="dashTitle">Control Panel</h2>
-          <p style="font-size: 13px; color: #64748b;">Active User: <strong id="dashUser"></strong></p>
+          <p style="font-size: 13px; color: var(--text-muted);">Active User: <strong id="dashUser"></strong></p>
         </div>
         <button class="btn-gold" style="background: #ef4444; color: #fff;" onclick="logoutPortal()"><i class="fas fa-sign-out-alt"></i> Logout</button>
       </div>
@@ -946,7 +1102,7 @@
       <!-- Tab: Staff Accounts -->
       <div id="tab-staff-mgmt" class="dash-view-block" style="display: none;">
         <h3><i class="fas fa-chalkboard-teacher"></i> Teacher / Staff Account Control</h3>
-        <div style="background: #f8fafc; padding: 15px; margin: 15px 0; border-radius: 6px; border: 1px solid #e2e8f0;">
+        <div style="background: #f8fafc; padding: 18px; margin: 15px 0; border-radius: 8px; border: 1px solid #e2e8f0;">
           <h4>Add New Teacher / Staff (Only Admin Can Add)</h4>
           <div style="display: flex; gap: 10px; margin-top: 10px; flex-wrap: wrap;">
             <input type="text" id="add_staff_name" placeholder="Teacher Name" style="padding: 8px;">
@@ -965,7 +1121,7 @@
       <!-- Tab: Student Records & Unlock -->
       <div id="tab-student-mgmt" class="dash-view-block" style="display: none;">
         <h3><i class="fas fa-user-graduate"></i> Student Records & Marksheet Unlock Control</h3>
-        <div style="background: #f8fafc; padding: 15px; margin: 15px 0; border-radius: 6px; border: 1px solid #e2e8f0;">
+        <div style="background: #f8fafc; padding: 18px; margin: 15px 0; border-radius: 8px; border: 1px solid #e2e8f0;">
           <h4>Register Student (Only Admin Can Add)</h4>
           <div style="display: flex; gap: 10px; margin-top: 10px; flex-wrap: wrap;">
             <input type="text" id="add_st_roll" placeholder="Roll No" style="width: 100px; padding: 8px;">
@@ -1072,9 +1228,9 @@
         </div>
 
         <div id="marksheet-view">
-          <div class="watermark-center"><img src="rbslogo.jpeg" alt="Watermark"></div>
+          <div class="watermark-center"><img src="rbslogo.jpeg" alt="Watermark" onerror="this.onerror=null; this.src='rbslogo.jpg';"></div>
           <div class="marksheet-header">
-            <img src="rbslogo.jpeg" alt="Logo">
+            <img src="rbslogo.jpeg" alt="Logo" onerror="this.onerror=null; this.src='rbslogo.jpg';">
             <div style="text-align: center; flex: 1; padding: 0 10px;">
               <h2 style="font-size: 22px; color: #081d33; text-transform: uppercase;">Residential Rambax Singh Inter College</h2>
               <p style="font-size: 12px; font-weight: 700;">BITHARA - SARAI ROAD, ALIGANJ (ETAH) U.P. - 207247</p>
@@ -1130,13 +1286,11 @@
   </div>
 
   <!-- =========================================================
-       4D / 3D SUITCASE BOY ANIMATION & FIXED LOGIN MODAL
+       3D SUITCASE BOY ANIMATION & MODAL
   ========================================================= -->
   <div class="modal-backdrop" id="loginBackdrop">
-    <!-- 4D Ambient Star Particles -->
     <div class="ambient-particles"></div>
 
-    <!-- 3D Boy Stage with Suitcase -->
     <div class="avatar-boy-stage" id="boyStage">
       <div class="boy-character">
         <div class="boy-head"><div class="boy-hair"></div></div>
@@ -1155,10 +1309,8 @@
       </div>
     </div>
 
-    <!-- Holographic Energy Burst -->
     <div class="hologram-burst" id="hologramBurst"></div>
 
-    <!-- 3D Login Box (Guaranteed Display) -->
     <div class="modal-3d-card" id="modal3DCard">
       <span class="close-btn" onclick="closeLoginModal()">&times;</span>
 
@@ -1208,7 +1360,7 @@
         <p style="margin-top: 6px;">Affiliation: Madhyamik Shiksha Parishad UP Board</p>
       </div>
       <div>
-        <h4>Online Links</h4>
+        <h4>Online Portals</h4>
         <p><a href="javascript:void(0)" onclick="trigger3DLoginCinematic()" style="color: var(--secondary); text-decoration: none;">Secure Portal Login</a></p>
         <p><a href="#admission" style="color: #fff; text-decoration: none;">Admission Form</a></p>
         <p><a href="#hostel" style="color: #fff; text-decoration: none;">Hostel Information</a></p>
@@ -1220,10 +1372,29 @@
   </footer>
 
   <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
   <script>
     let activeRole = 'admin';
 
-    // 1. FIXED & GUARANTEED 3D/4D SUITCASE BOY ANIMATION
+    // Slider
+    const swiper = new Swiper('.heroSwiper', {
+      loop: true,
+      effect: 'fade',
+      fadeEffect: { crossFade: true },
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      speed: 1200
+    });
+
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+
     function trigger3DLoginCinematic() {
       const backdrop = document.getElementById('loginBackdrop');
       const boyStage = document.getElementById('boyStage');
@@ -1231,7 +1402,6 @@
       const card = document.getElementById('modal3DCard');
       const burst = document.getElementById('hologramBurst');
 
-      // Clear & Prepare
       backdrop.classList.add('active');
       card.style.display = 'none';
       card.classList.remove('revealed');
@@ -1239,31 +1409,19 @@
       suitcase.className = 'suitcase-3d';
       boyStage.className = 'avatar-boy-stage';
 
-      // Step 1: Boy walks in
-      setTimeout(() => {
-        boyStage.classList.add('walk-in');
-      }, 50);
-
-      // Step 2: Suitcase placed on floor
-      setTimeout(() => {
-        suitcase.classList.add('placed');
-      }, 1500);
-
-      // Step 3: Suitcase opens & Login Box immediately pops up
+      setTimeout(() => { boyStage.classList.add('walk-in'); }, 50);
+      setTimeout(() => { suitcase.classList.add('placed'); }, 1400);
       setTimeout(() => {
         suitcase.classList.add('opening');
         burst.style.display = 'block';
         card.style.display = 'block';
         card.classList.add('revealed');
-      }, 2000);
-
-      // Step 4: Boy walks to the wall and disappears
+      }, 1900);
       setTimeout(() => {
         boyStage.classList.remove('walk-in');
         boyStage.classList.add('walk-out-wall');
-      }, 2500);
+      }, 2400);
 
-      // Reset Inputs
       document.getElementById('userInput').value = '';
       document.getElementById('passInput').value = '';
     }
@@ -1273,19 +1431,13 @@
       document.getElementById('modal3DCard').style.display = 'none';
     }
 
-    // 2. Automatic Session Calculation
     function getCalculatedSession() {
       const saved = localStorage.getItem('rbs_active_session');
       if (saved) return saved;
-
       const now = new Date();
       const year = now.getFullYear();
       const month = now.getMonth() + 1;
-      if (month >= 4) {
-        return `${year}-${String(year + 1).slice(-2)}`;
-      } else {
-        return `${year - 1}-${String(year).slice(-2)}`;
-      }
+      return month >= 4 ? `${year}-${String(year + 1).slice(-2)}` : `${year - 1}-${String(year).slice(-2)}`;
     }
 
     function initSession() {
@@ -1313,7 +1465,6 @@
       alert('Session automatically system calendar ke anusar reset ho gaya.');
     }
 
-    // 3. Media Gallery (Photos & Videos)
     function initMediaGallery() {
       if (!localStorage.getItem('rbs_media_items')) {
         const defaultMedia = [
@@ -1350,7 +1501,7 @@
         }
 
         container.innerHTML += `
-          <div class="media-card">
+          <div class="media-card" data-aos="fade-up">
             ${contentHtml}
             <div class="title">${item.title}</div>
           </div>
@@ -1454,7 +1605,6 @@
       renderMediaAdminTable();
     }
 
-    // AI Voice Synthesis
     function speakAssistant(message) {
       if ('speechSynthesis' in window) {
         window.speechSynthesis.cancel();
