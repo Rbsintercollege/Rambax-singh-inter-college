@@ -47,12 +47,12 @@
     "description": "Recognized Inter College for Class 1 to 12 with modern residential hostel facilities in Aliganj, Etah.",
     "founder": {
       "@type": "Person",
-      "name": "Shri Avadhesh Singh",
+      "name": "Mr. Avadhesh Singh",
       "jobTitle": "Director"
     },
     "employee": {
       "@type": "Person",
-      "name": "Shri Vishnu Kant",
+      "name": "Mr. Vishnu Kant",
       "jobTitle": "Manager"
     }
   }
