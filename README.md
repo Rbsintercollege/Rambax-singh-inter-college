@@ -18,7 +18,7 @@
   <meta name="geo.position" content="27.5000;79.1800">
   <meta name="ICBM" content="27.5000, 79.1800">
 
-  <!-- Open Graph Meta Tags (WhatsApp, Facebook, Social Preview) -->
+  <!-- Open Graph Meta Tags -->
   <meta property="og:title" content="Residential Rambax Singh Inter College - Bithara, Aliganj, Etah">
   <meta property="og:description" content="Class 1 to 12 Recognized College with Hostel Facility. Admissions open for current session. Manager: Shri Vishnu Kant.">
   <meta property="og:image" content="rbslogo.jpeg">
@@ -180,7 +180,7 @@
       background: var(--secondary);
     }
 
-    /* Sliding Drawer Navigation */
+    /* Drawer Navigation */
     .drawer-nav {
       position: fixed;
       top: 0;
@@ -226,7 +226,9 @@
       color: var(--secondary);
     }
 
-    /* DPS Style Dynamic Hero Slider */
+    /* =========================================================
+       DPS DWARKA PURE TRANSPARENT & ULTRA-CLEAR SLIDER
+    ========================================================= */
     .hero-slider-wrap {
       position: relative;
       width: 100%;
@@ -241,7 +243,11 @@
     .swiper-slide {
       position: relative;
       overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
+    /* Clear and crisp full-bleed photo */
     .slide-bg {
       position: absolute;
       top: 0;
@@ -251,37 +257,33 @@
       background-size: cover;
       background-position: center;
       transform: scale(1);
-      transition: transform 6s ease-out;
+      transition: transform 7s ease-out;
+      filter: none !important; /* Koi filter ya blur nahi */
     }
     .swiper-slide-active .slide-bg {
-      transform: scale(1.12);
+      transform: scale(1.08);
     }
-    .slide-overlay {
+
+    /* DPS Dwarka Style Sleek Subtle Name Ribbon on Top of Photo (100% Transparent Center) */
+    .dps-watermark-ribbon {
       position: absolute;
-      inset: 0;
-      background: linear-gradient(180deg, rgba(10,51,33,0.7) 0%, rgba(5,28,18,0.85) 100%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 10;
+      background: rgba(0, 0, 0, 0.45);
+      backdrop-filter: blur(4px);
+      padding: 8px 30px;
+      border-radius: 30px;
+      border: 1px solid rgba(212, 175, 55, 0.5);
       color: #fff;
-      padding: 0 10%;
-    }
-    .slide-content h2 {
-      font-size: 40px;
-      color: var(--secondary);
-      font-weight: 900;
-      margin-bottom: 12px;
-      text-transform: uppercase;
+      font-size: 16px;
+      font-style: italic;
       letter-spacing: 1px;
-      text-shadow: 2px 4px 10px rgba(0,0,0,0.6);
-    }
-    .slide-content p {
-      font-size: 18px;
-      max-width: 850px;
-      margin: 0 auto 25px;
-      line-height: 1.6;
-      color: #f8fafc;
+      font-weight: 600;
+      pointer-events: none;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+      white-space: nowrap;
     }
 
     .btn-gold {
@@ -963,39 +965,32 @@
     </div>
   </div>
 
-  <!-- DPS Dwarka Style Dynamic Hero Slider (Ken Burns Animation) -->
+  <!-- =========================================================
+       DPS DWARKA STYLE PURE TRANSPARENT & CLEAN SLIDER
+  ========================================================= -->
   <div class="hero-slider-wrap">
+    <!-- DPS Dwarka Style Watermark Name Strip on Top -->
+    <div class="dps-watermark-ribbon">
+      Residential Rambax Singh Inter College, Bithara, Aliganj
+    </div>
+
     <div class="swiper heroSwiper">
       <div class="swiper-wrapper">
+        <!-- Slide 1: Campus Ground -->
         <div class="swiper-slide">
           <div class="slide-bg" style="background-image: url('rbs8.jpeg');"></div>
-          <div class="slide-overlay">
-            <div class="slide-content" data-aos="fade-up" data-aos-duration="1000">
-              <h2>Excellence in Education</h2>
-              <p>Rambax Singh Inter College me shreshth shaikshik vatavaran, sanskar aur chhatro ke sarvangin vikas ka kendra.</p>
-              <button class="btn-gold" onclick="document.getElementById('admission').scrollIntoView({behavior:'smooth'})"><i class="fas fa-file-signature"></i> Apply for Admission</button>
-            </div>
-          </div>
         </div>
+        <!-- Slide 2: Classroom -->
         <div class="swiper-slide">
           <div class="slide-bg" style="background-image: url('rbs9.jpeg');"></div>
-          <div class="slide-overlay">
-            <div class="slide-content">
-              <h2>Smart Classrooms & Expert Faculty</h2>
-              <p>Adhyayan ke liye anushasit dincharya evam adhyapako dwara niyamit margdarshan v digital shiksha.</p>
-              <button class="btn-gold" onclick="document.getElementById('admission').scrollIntoView({behavior:'smooth'})"><i class="fas fa-user-plus"></i> Online Registration</button>
-            </div>
-          </div>
         </div>
+        <!-- Slide 3: Function & Assembly -->
         <div class="swiper-slide">
           <div class="slide-bg" style="background-image: url('rbs7.jpeg');"></div>
-          <div class="slide-overlay">
-            <div class="slide-content">
-              <h2>Holistic Sports & Cultural Growth</h2>
-              <p>Khel-kood, rashtriya parv evam scout-guide ke madhyam se aatmanirbhar yuvavarg ka nirman.</p>
-              <button class="btn-gold" onclick="trigger3DLoginCinematic()"><i class="fas fa-lock"></i> Student / Staff Portal</button>
-            </div>
-          </div>
+        </div>
+        <!-- Slide 4: Cultural Stage -->
+        <div class="swiper-slide">
+          <div class="slide-bg" style="background-image: url('rbs6.jpeg');"></div>
         </div>
       </div>
     </div>
@@ -1267,7 +1262,7 @@
       <!-- Tab: Marksheet Generator -->
       <div id="tab-marksheet-gen" class="dash-view-block" style="display: none;">
         <h3><i class="fas fa-award"></i> 1-Click Official Marksheet Ready (Admin Only)</h3>
-        <div style="display: flex; gap: 10px; margin: 15px 0; flex-wrap: wrap;">
+        <div style="display: flex; gap: 10px; margin-no: 15px 0; flex-wrap: wrap;">
           <input type="text" id="admin_ms_roll" placeholder="Enter Student Roll No" style="padding: 8px; width: 220px;">
           <select id="admin_ms_exam" style="padding: 8px;">
             <option value="SA2">SA 2 (Annual)</option><option value="SA1">SA 1 (Half Yearly)</option><option value="FA1">FA 1</option><option value="FA2">FA 2</option><option value="FA3">FA 3</option><option value="FA4">FA 4</option>
