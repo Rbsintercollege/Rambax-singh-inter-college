@@ -3,13 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Residential Rambax Singh Inter College - Bithara, Aliganj, Etah</title>
-  
-  <!-- FontAwesome Icons -->
+
+  <!-- =========================================================
+       GOOGLE SEARCH ENGINE OPTIMIZATION (SEO) META TAGS
+  ========================================================= -->
+  <title>Residential Rambax Singh Inter College - Bithara, Aliganj, Etah (U.P.)</title>
+  <meta name="description" content="Residential Rambax Singh Inter College, Bithara, Sarai Road, Aliganj, Etah (207247). Recognized for Class 1 to 12 with full hostel facility, smart classes, laboratories, and sports grounds. Manager: Shri Vishnu Kant, Director: Shri Avadhesh Singh. Contact: 6395052394.">
+  <meta name="keywords" content="Rambax Singh Inter College, RBS Inter College, Rambax Singh Inter College Bithara, Rambax Singh Inter College Aliganj, Rambax Singh Inter College Etah, RBS College Aliganj, School in Aliganj Etah, Best school in Aliganj, Hostel school in Etah, Residential School Etah, UP Board school Aliganj, Vishnu Kant Manager, Avadhesh Singh Director, 207247">
+  <meta name="author" content="Residential Rambax Singh Inter College">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="geo.region" content="IN-UP">
+  <meta name="geo.placename" content="Bithara, Aliganj, Etah">
+  <meta name="geo.position" content="27.5000;79.1800">
+  <meta name="ICBM" content="27.5000, 79.1800">
+
+  <!-- Open Graph Meta Tags (WhatsApp, Facebook, Google Preview) -->
+  <meta property="og:title" content="Residential Rambax Singh Inter College - Bithara, Aliganj, Etah">
+  <meta property="og:description" content="Class 1 to 12 Recognized College with Hostel Facility. Admissions open for current session. Manager: Shri Vishnu Kant.">
+  <meta property="og:image" content="rbslogo.jpeg">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="hi_IN">
+
+  <!-- Google Structured Data (JSON-LD Schema for Instant Ranking) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Residential Rambax Singh Inter College",
+    "alternateName": "RBS Inter College",
+    "url": "https://rambaxsinghintercollege.github.io/",
+    "logo": "rbslogo.jpeg",
+    "telephone": "+91-6395052394",
+    "email": "rambaxsinghintercollege@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Bithara - Sarai Road",
+      "addressLocality": "Aliganj",
+      "addressRegion": "Uttar Pradesh",
+      "postalCode": "207247",
+      "addressCountry": "IN"
+    },
+    "description": "Recognized Inter College for Class 1 to 12 with modern residential hostel facilities in Aliganj, Etah.",
+    "founder": {
+      "@type": "Person",
+      "name": "Shri Avadhesh Singh",
+      "jobTitle": "Director"
+    },
+    "employee": {
+      "@type": "Person",
+      "name": "Shri Vishnu Kant",
+      "jobTitle": "Manager"
+    }
+  }
+  </script>
+
+  <!-- External Stylesheets: Icons, AOS Animations, Swiper Slider -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  <!-- AOS (Animate On Scroll) -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-  <!-- Swiper.js Slider (DPS Style Auto-fading Carousel) -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
   <style>
@@ -37,7 +87,7 @@
       overflow-x: hidden;
     }
 
-    /* Top Utility Ribbon */
+    /* Top Strip */
     .top-ribbon {
       background: var(--primary-dark);
       color: #e2e8f0;
@@ -107,7 +157,7 @@
       font-weight: 600;
     }
 
-    /* 3-Line Hamburger Menu */
+    /* 3-Line Hamburger */
     .menu-trigger {
       display: flex;
       flex-direction: column;
@@ -175,7 +225,7 @@
       color: var(--secondary);
     }
 
-    /* DPS Style Hero Slider */
+    /* DPS Style Dynamic Hero Slider */
     .hero-slider-wrap {
       position: relative;
       width: 100%;
@@ -253,7 +303,7 @@
       color: #000;
     }
 
-    /* Live Ticker Strip */
+    /* Live Notice Ticker */
     .news-strip {
       background: var(--secondary-light);
       border-bottom: 1px solid #fceabb;
@@ -277,7 +327,7 @@
       color: var(--primary);
     }
 
-    /* Container */
+    /* Main Container */
     .container {
       max-width: 1240px;
       margin: 50px auto;
@@ -296,7 +346,7 @@
       gap: 10px;
     }
 
-    /* Management Cards */
+    /* Management Profiles */
     .mgmt-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -426,7 +476,7 @@
       color: var(--primary);
     }
 
-    /* Form Design */
+    /* Admission Form */
     .form-card {
       background: #fff;
       padding: 35px;
@@ -457,7 +507,7 @@
     }
 
     /* =========================================================
-       3D / 4D SUITCASE BOY ANIMATION & FIXED MODAL
+       3D / 4D SUITCASE BOY ANIMATION & LOGIN MODAL
     ========================================================= */
     .modal-backdrop {
       display: none;
@@ -512,6 +562,7 @@
       0% { left: -220px; transform: scale(0.9) rotateY(20deg); }
       100% { left: calc(50% - 70px); transform: scale(1) rotateY(0deg); }
     }
+
     @keyframes boyWalkToWall {
       0% { left: calc(50% - 70px); opacity: 1; transform: scale(1) rotateY(180deg); }
       70% { left: 95%; opacity: 0.7; transform: scale(0.85) rotateY(180deg); filter: blur(0px); }
@@ -643,7 +694,7 @@
       100% { transform: scale(1.6); opacity: 0; }
     }
 
-    /* Guaranteed Display Login Box */
+    /* Modal Card */
     .modal-3d-card {
       display: none;
       background: linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(240, 249, 255, 0.94)) !important;
@@ -711,7 +762,7 @@
       color: #64748b;
     }
 
-    /* Dashboard Layout */
+    /* Dashboard Panel */
     .dashboard-panel {
       display: none;
       background: #fff;
@@ -766,7 +817,7 @@
       color: #fff;
     }
 
-    /* Marksheet Printable */
+    /* Printable Marksheet */
     #marksheet-view {
       display: none;
       background: #fff;
@@ -858,7 +909,7 @@
   <div class="top-ribbon">
     <div>
       <span><i class="fas fa-map-marker-alt"></i> Bithara - Sarai Road, Aliganj, Etah - 207247 (U.P.)</span>
-      <span style="margin-left: 15px;"><i class="fas fa-phone"></i> Helpline: 6395052394</span>
+      <span style="margin-left: 15px;"><i class="fas fa-phone"></i> Helpline: 6395052394[cite: 1]</span>
     </div>
     <div>
       <span class="tag-hostel"><i class="fas fa-bed"></i> Residential / Hostel (Class 1 to 12)</span>
@@ -877,7 +928,6 @@
       </div>
     </div>
     
-    <!-- 3 Line Hamburger Menu -->
     <div class="menu-trigger" onclick="toggleDrawerNav()" title="Menu">
       <span></span>
       <span></span>
@@ -908,14 +958,12 @@
     <div class="news-badge"><i class="fas fa-bullhorn"></i> Latest Notice</div>
     <div class="news-marquee">
       <marquee scrollamount="6">
-        Naye shaikshik satra ke liye Kaksha 1 se 12 tak pravesh prarambh hain • Aavasiya Hostel suvidha uplabdh • Formative (FA) aur Summative (SA) assessments portal par darj ho rahe hain • Helpline: 6395052394.
+        Naye shaikshik satra ke liye Kaksha 1 se 12 tak pravesh prarambh hain • Aavasiya Hostel suvidha uplabdh • Formative (FA) aur Summative (SA) assessments portal par darj ho rahe hain • Helpline: 6395052394[cite: 1].
       </marquee>
     </div>
   </div>
 
-  <!-- =========================================================
-       DPS DWARKA STYLE DYNAMIC HERO SLIDER (Ken Burns Animation)
-  ========================================================= -->
+  <!-- DPS Dwarka Style Dynamic Hero Slider (Ken Burns Animation) -->
   <div class="hero-slider-wrap">
     <div class="swiper heroSwiper">
       <div class="swiper-wrapper">
@@ -997,16 +1045,16 @@
           </div>
         </div>
 
-        <!-- Manager Card with Safe Fallback -->
+        <!-- Manager Card with Safe Auto-Fallback -->
         <div class="mgmt-card" data-aos="fade-left">
-          <img src="manager.jpg" 
+          <img src="image_55551c.jpg" 
                class="mgmt-img" 
                alt="Manager Shri Vishnu Kant"
-               onerror="this.onerror=null; this.src='image_55551c.jpg';">
+               onerror="this.onerror=null; this.src='manager.jpg';">
           <div class="mgmt-body">
             <h3>Shri Vishnu Kant</h3>
             <div class="role">Manager / Prabandhak</div>
-            <p><i class="fas fa-phone"></i> +91 6395052394</p>
+            <p><i class="fas fa-phone"></i> +91 6395052394[cite: 1]</p>
             <p><i class="fas fa-envelope"></i> rambaxsinghintercollege@gmail.com</p>
             <p style="margin-top: 8px;">"Kaksha 1 se 12 tak ke har vidyarthi ko uchit anushasan, behtar shaikshik mahol aur hostel suvidha uplabdh karana hamari prathmikta hai."</p>
           </div>
@@ -1350,7 +1398,7 @@
       <div>
         <h4>Rambax Singh Inter College</h4>
         <p>Bithara - Sarai Road, Aliganj, Etah - 207247</p>
-        <p style="margin-top: 10px;"><i class="fas fa-phone"></i> 6395052394</p>
+        <p style="margin-top: 10px;"><i class="fas fa-phone"></i> 6395052394[cite: 1]</p>
         <p><i class="fas fa-envelope"></i> rambaxsinghintercollege@gmail.com</p>
       </div>
       <div>
@@ -1378,7 +1426,6 @@
   <script>
     let activeRole = 'admin';
 
-    // Slider
     const swiper = new Swiper('.heroSwiper', {
       loop: true,
       effect: 'fade',
