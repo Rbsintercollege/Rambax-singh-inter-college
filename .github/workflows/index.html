@@ -1,0 +1,1896 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Residential Rambax Singh Inter College - Bithara, Aliganj, Etah</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #081d33;
+      --secondary: #d4af37;
+      --accent: #c0392b;
+      --bg: #f8fafc;
+      --text: #1e293b;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    /* Top Strip */
+    .top-strip {
+      background-color: #040e1a;
+      color: #cbd5e1;
+      padding: 6px 5%;
+      font-size: 13px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .top-strip a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 12px;
+    }
+    .badge-hostel {
+      background: var(--secondary);
+      color: #000;
+      padding: 2px 7px;
+      border-radius: 3px;
+      font-weight: 700;
+      font-size: 11px;
+    }
+    .badge-session {
+      background: #0284c7;
+      color: #fff;
+      padding: 2px 7px;
+      border-radius: 3px;
+      font-weight: 700;
+      font-size: 11px;
+      margin-left: 8px;
+    }
+
+    /* Header */
+    header {
+      background: #ffffff;
+      padding: 12px 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .school-logo {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      border: 2px solid var(--secondary);
+      object-fit: cover;
+    }
+    .school-titles h1 {
+      font-size: 22px;
+      color: var(--primary);
+      text-transform: uppercase;
+      font-weight: 800;
+    }
+    .school-titles p {
+      font-size: 12.5px;
+      color: #64748b;
+      font-weight: 600;
+    }
+
+    /* 3-Line Hamburger */
+    .menu-trigger {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 32px;
+      height: 22px;
+      cursor: pointer;
+      z-index: 1100;
+    }
+    .menu-trigger span {
+      display: block;
+      height: 3px;
+      width: 100%;
+      background: var(--primary);
+      border-radius: 3px;
+      transition: all 0.3s ease;
+    }
+    .menu-trigger:hover span {
+      background: var(--secondary);
+    }
+
+    /* Drawer Nav */
+    .drawer-nav {
+      position: fixed;
+      top: 0;
+      right: -320px;
+      width: 300px;
+      height: 100%;
+      background: var(--primary);
+      box-shadow: -5px 0 25px rgba(0,0,0,0.3);
+      transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 1050;
+      padding: 60px 25px 30px;
+      display: flex;
+      flex-direction: column;
+    }
+    .drawer-nav.open {
+      right: 0;
+    }
+    .drawer-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: #fff;
+      font-size: 24px;
+      cursor: pointer;
+    }
+    .drawer-nav ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .drawer-nav ul li a {
+      color: #e2e8f0;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .drawer-nav ul li a:hover {
+      color: var(--secondary);
+    }
+
+    /* News Strip */
+    .news-strip {
+      background: #fef3c7;
+      border-bottom: 1px solid #fde68a;
+      display: flex;
+      align-items: center;
+      font-size: 13.5px;
+    }
+    .news-badge {
+      background: var(--accent);
+      color: #fff;
+      padding: 6px 16px;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+    .news-marquee {
+      padding: 6px 12px;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 100%;
+    }
+
+    /* Hero Banner */
+    .hero {
+      background: linear-gradient(rgba(8,29,51,0.8), rgba(8,29,51,0.85)), url('rbs8.jpeg') center/cover no-repeat;
+      height: 380px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      padding: 20px;
+    }
+    .hero h2 {
+      font-size: 32px;
+      color: var(--secondary);
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 16px;
+      max-width: 750px;
+      margin: 0 auto 20px;
+    }
+    .btn-gold {
+      background: var(--secondary);
+      color: #000;
+      padding: 10px 24px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 14px;
+      border: none;
+      cursor: pointer;
+      display: inline-block;
+      transition: 0.3s;
+    }
+    .btn-gold:hover {
+      background: #fff;
+      color: var(--primary);
+    }
+
+    /* Container */
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .section-heading {
+      font-size: 22px;
+      color: var(--primary);
+      text-transform: uppercase;
+      font-weight: 800;
+      margin-bottom: 25px;
+      border-left: 5px solid var(--secondary);
+      padding-left: 12px;
+    }
+
+    /* Management Cards */
+    .management-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 25px;
+      margin-bottom: 40px;
+    }
+    .person-card {
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      border-top: 4px solid var(--secondary);
+    }
+    .person-img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+      object-position: top;
+      background: #f1f5f9;
+    }
+    .person-details {
+      padding: 20px;
+    }
+    .person-details h3 {
+      font-size: 20px;
+      color: var(--primary);
+    }
+    .person-details .role {
+      color: var(--secondary);
+      font-weight: 700;
+      font-size: 13px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    /* Hostel Box */
+    .hostel-box {
+      background: #fff;
+      border-radius: 8px;
+      padding: 30px;
+      margin-bottom: 40px;
+      border-left: 6px solid var(--primary);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+      align-items: center;
+    }
+    .hostel-box img {
+      width: 100%;
+      border-radius: 6px;
+      max-height: 260px;
+      object-fit: cover;
+    }
+
+    /* Media Gallery */
+    .gallery-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 18px;
+      margin-bottom: 40px;
+    }
+    .media-card {
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+    }
+    .media-card img, .media-card iframe, .media-card video {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border: none;
+      display: block;
+    }
+    .media-card .title {
+      padding: 10px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--primary);
+      background: #fff;
+    }
+
+    /* Admission Box */
+    .admission-card {
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      margin-bottom: 40px;
+      border-top: 4px solid var(--primary);
+    }
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 15px;
+    }
+    .form-grid label {
+      display: block;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+    .form-grid input, .form-grid select, .form-grid textarea {
+      width: 100%;
+      padding: 9px 12px;
+      border: 1px solid #cbd5e1;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    /* =========================================================
+       4D / 3D CINEMATIC ANIMATION & FIXED LOGIN BOX
+    ========================================================= */
+    .modal-backdrop {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: radial-gradient(circle at center, rgba(14, 38, 64, 0.94) 0%, rgba(3, 10, 20, 0.98) 100%);
+      backdrop-filter: blur(12px);
+      z-index: 9999;
+      perspective: 1600px;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .modal-backdrop.active {
+      display: flex !important;
+    }
+
+    /* 4D Ambient Star / Hologram Light Particles */
+    .ambient-particles {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background-image: radial-gradient(circle at 20% 30%, rgba(212, 175, 55, 0.25) 0, transparent 40%),
+                        radial-gradient(circle at 80% 70%, rgba(2, 132, 199, 0.25) 0, transparent 40%);
+      animation: rotate4D 18s linear infinite alternate;
+    }
+    @keyframes rotate4D {
+      0% { transform: scale(1) rotate(0deg); opacity: 0.6; }
+      100% { transform: scale(1.15) rotate(10deg); opacity: 1; }
+    }
+
+    /* 3D Boy Stage with Suitcase */
+    .avatar-boy-stage {
+      position: absolute;
+      bottom: 12%;
+      left: -220px;
+      width: 140px;
+      height: 220px;
+      z-index: 10010;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      pointer-events: none;
+      transform-style: preserve-3d;
+    }
+    .avatar-boy-stage.walk-in {
+      animation: boyWalkToCenter 2.4s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    }
+    .avatar-boy-stage.walk-out-wall {
+      animation: boyWalkToWall 1.8s cubic-bezier(0.55, 0.085, 0.68, 0.53) forwards;
+    }
+
+    @keyframes boyWalkToCenter {
+      0% { left: -220px; transform: scale(0.9) rotateY(20deg); }
+      100% { left: calc(50% - 70px); transform: scale(1) rotateY(0deg); }
+    }
+
+    @keyframes boyWalkToWall {
+      0% { left: calc(50% - 70px); opacity: 1; transform: scale(1) rotateY(180deg); }
+      70% { left: 95%; opacity: 0.7; transform: scale(0.85) rotateY(180deg); filter: blur(0px); }
+      100% { left: 105%; opacity: 0; transform: scale(0.6) rotateY(180deg); filter: blur(8px); }
+    }
+
+    /* Boy Avatar */
+    .boy-character {
+      width: 110px;
+      height: 180px;
+      position: relative;
+    }
+    .boy-head {
+      width: 48px;
+      height: 52px;
+      background: #fed7aa;
+      border-radius: 50%;
+      margin: 0 auto;
+      position: relative;
+      border: 2px solid #7c2d12;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .boy-hair {
+      position: absolute;
+      top: -3px;
+      left: 3px;
+      width: 44px;
+      height: 22px;
+      background: #1e1b4b;
+      border-radius: 18px 18px 0 0;
+    }
+    .boy-body {
+      width: 58px;
+      height: 65px;
+      background: linear-gradient(135deg, #0284c7, #0369a1);
+      margin: -2px auto 0;
+      border-radius: 8px 8px 3px 3px;
+      position: relative;
+      border: 1px solid #bae6fd;
+    }
+    .boy-tie {
+      width: 8px;
+      height: 34px;
+      background: #d4af37;
+      margin: 0 auto;
+      border-radius: 0 0 4px 4px;
+    }
+    .boy-arm {
+      width: 14px;
+      height: 55px;
+      background: #0369a1;
+      position: absolute;
+      top: 5px;
+      border-radius: 6px;
+    }
+    .boy-arm.left { left: -14px; transform-origin: top; animation: armSwing 0.7s infinite alternate; }
+    .boy-arm.right { right: -14px; transform-origin: top; }
+    .boy-legs {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+    }
+    .boy-leg {
+      width: 14px;
+      height: 55px;
+      background: #0f172a;
+      border-radius: 0 0 5px 5px;
+      animation: legWalk 0.7s infinite alternate;
+    }
+    .boy-leg.right { animation-delay: 0.35s; }
+
+    @keyframes legWalk {
+      0% { transform: translateY(0px) rotate(15deg); }
+      100% { transform: translateY(-5px) rotate(-15deg); }
+    }
+    @keyframes armSwing {
+      0% { transform: rotate(-25deg); }
+      100% { transform: rotate(25deg); }
+    }
+
+    /* 3D Suitcase */
+    .suitcase-3d {
+      width: 75px;
+      height: 55px;
+      background: linear-gradient(135deg, #854d0e, #502d04);
+      border: 3px solid #d4af37;
+      border-radius: 8px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+      position: absolute;
+      bottom: 25px;
+      right: -25px;
+      transform-style: preserve-3d;
+      transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    .suitcase-handle {
+      width: 24px;
+      height: 12px;
+      border: 3px solid #d4af37;
+      border-bottom: none;
+      position: absolute;
+      top: -12px;
+      left: calc(50% - 12px);
+      border-radius: 4px 4px 0 0;
+    }
+    .suitcase-3d.placed {
+      position: fixed;
+      bottom: calc(50% - 35px);
+      left: calc(50% - 40px);
+      right: auto;
+      transform: scale(1.3) rotateX(15deg);
+      box-shadow: 0 0 40px rgba(212, 175, 55, 0.7);
+    }
+    .suitcase-3d.opening {
+      transform: scale(1.8) rotateX(-50deg) translateY(-20px);
+      opacity: 0;
+    }
+
+    /* 4D Hologram Light Flare Burst */
+    .hologram-burst {
+      display: none;
+      position: absolute;
+      width: 450px;
+      height: 450px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(212, 175, 55, 0.9) 0%, rgba(2, 132, 199, 0.45) 45%, transparent 70%);
+      filter: blur(15px);
+      z-index: 10015;
+      animation: burstAnim 0.6s ease-out forwards;
+    }
+    @keyframes burstAnim {
+      0% { transform: scale(0.1); opacity: 0; }
+      50% { transform: scale(1.1); opacity: 1; }
+      100% { transform: scale(1.6); opacity: 0; }
+    }
+
+    /* 3D Glassmorphic Login Box (Guaranteed Display) */
+    .modal-3d-card {
+      display: none;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(240, 249, 255, 0.94)) !important;
+      border: 2px solid rgba(212, 175, 55, 0.6);
+      width: 90%;
+      max-width: 480px;
+      border-radius: 20px;
+      padding: 35px;
+      position: relative;
+      box-shadow: 0 35px 75px rgba(0, 0, 0, 0.6), 0 0 35px rgba(212, 175, 55, 0.35);
+      z-index: 10020;
+      transform-style: preserve-3d;
+    }
+    .modal-3d-card.revealed {
+      display: block !important;
+      animation: emergeFromSuitcase 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    }
+    @keyframes emergeFromSuitcase {
+      0% { opacity: 0; transform: scale(0.3) translateY(80px); }
+      70% { opacity: 1; transform: scale(1.03) translateY(-8px); }
+      100% { opacity: 1; transform: scale(1) translateY(0); }
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 15px;
+      right: 18px;
+      font-size: 24px;
+      cursor: pointer;
+      color: #64748b;
+    }
+    .role-pills {
+      display: flex;
+      background: #e2e8f0;
+      border-radius: 8px;
+      padding: 4px;
+      margin-bottom: 20px;
+    }
+    .role-pill {
+      flex: 1;
+      text-align: center;
+      padding: 9px;
+      font-size: 13.5px;
+      font-weight: 700;
+      border-radius: 6px;
+      cursor: pointer;
+      color: #475569;
+    }
+    .role-pill.active {
+      background: var(--primary);
+      color: #fff;
+      box-shadow: 0 4px 10px rgba(8, 29, 51, 0.25);
+    }
+    .pass-container {
+      position: relative;
+    }
+    .pass-container input {
+      padding-right: 40px;
+    }
+    .eye-toggle {
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      color: #64748b;
+    }
+
+    /* Dashboard Layout */
+    .dashboard-panel {
+      display: none;
+      background: #fff;
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 40px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+    }
+    .dash-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid var(--secondary);
+      padding-bottom: 12px;
+      margin-bottom: 20px;
+    }
+    .dash-navs {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+    .dash-btn {
+      padding: 8px 15px;
+      border: 1px solid var(--primary);
+      background: #fff;
+      color: var(--primary);
+      border-radius: 5px;
+      font-weight: 600;
+      cursor: pointer;
+      font-size: 13px;
+    }
+    .dash-btn.active {
+      background: var(--primary);
+      color: #fff;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+      font-size: 13.5px;
+    }
+    table, th, td {
+      border: 1px solid #e2e8f0;
+    }
+    th, td {
+      padding: 9px 12px;
+      text-align: left;
+    }
+    th {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    /* Marksheet Design */
+    #marksheet-view {
+      display: none;
+      background: #fff;
+      padding: 35px;
+      border: 6px double var(--primary);
+      position: relative;
+      max-width: 820px;
+      margin: 25px auto;
+      box-shadow: 0 0 20px rgba(0,0,0,0.12);
+    }
+    .watermark-center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 320px;
+      opacity: 0.08;
+      pointer-events: none;
+      user-select: none;
+    }
+    .marksheet-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid #000;
+      padding-bottom: 12px;
+      margin-bottom: 15px;
+    }
+    .marksheet-header img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+    }
+    .sigs {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 55px;
+      text-align: center;
+    }
+    .sig-line {
+      border-top: 1px solid #000;
+      width: 190px;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    footer {
+      background: #040e1a;
+      color: #94a3b8;
+      padding: 40px 5% 20px;
+      border-top: 4px solid var(--secondary);
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .footer-grid h4 {
+      color: var(--secondary);
+      margin-bottom: 12px;
+    }
+    .footer-copy {
+      text-align: center;
+      border-top: 1px solid #1e293b;
+      margin-top: 25px;
+      padding-top: 20px;
+      font-size: 13px;
+    }
+
+    @media print {
+      body * { visibility: hidden; }
+      #marksheet-view, #marksheet-view * { visibility: visible; }
+      #marksheet-view {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        display: block !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Strip -->
+  <div class="top-strip">
+    <div>
+      <span><i class="fas fa-map-marker-alt"></i> Bithara - Sarai Road, Aliganj, Etah - 207247 (U.P.)</span>
+      <span style="margin-left: 15px;"><i class="fas fa-phone"></i> Helpline: 6395052394</span>
+    </div>
+    <div>
+      <span class="badge-hostel"><i class="fas fa-bed"></i> Residential / Hostel (Class 1 to 12)</span>
+      <span class="badge-session"><i class="fas fa-calendar-alt"></i> Session: <strong id="liveSessionBadge">2026-27</strong></span>
+      <a href="javascript:void(0)" onclick="trigger3DLoginCinematic()"><i class="fas fa-user-lock"></i> Portal Login</a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="header-left">
+      <img src="rbslogo.jpeg" alt="RBS Logo" class="school-logo">
+      <div class="school-titles">
+        <h1>Rambax Singh Inter College</h1>
+        <p>श्री रामबक्स सिंह आवासीय इण्टर कॉलेज (कक्षा 1 से 12 तक) बिथरा, अलीगंज (एटा)</p>
+      </div>
+    </div>
+    
+    <!-- 3 Line Hamburger Menu -->
+    <div class="menu-trigger" onclick="toggleDrawerNav()" title="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <!-- Sliding Drawer Nav -->
+  <div class="drawer-nav" id="drawerNav">
+    <div class="drawer-close" onclick="toggleDrawerNav()">&times;</div>
+    <div style="margin-bottom: 25px;">
+      <h3 style="color: var(--secondary); text-transform: uppercase; font-size: 18px;">RBS College Menu</h3>
+      <p style="color: #94a3b8; font-size: 12px;">Class 1 to 12 & Residential Hostel</p>
+    </div>
+    <ul>
+      <li><a href="#" onclick="toggleDrawerNav()"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="#leadership" onclick="toggleDrawerNav()"><i class="fas fa-user-tie"></i> Prabandhan (Management)</a></li>
+      <li><a href="#hostel" onclick="toggleDrawerNav()"><i class="fas fa-hotel"></i> Hostel Facility</a></li>
+      <li><a href="#gallery" onclick="toggleDrawerNav()"><i class="fas fa-photo-video"></i> Photos & Videos</a></li>
+      <li><a href="#admission" onclick="toggleDrawerNav()"><i class="fas fa-file-signature"></i> Online Admission</a></li>
+      <li><a href="javascript:void(0)" onclick="toggleDrawerNav(); trigger3DLoginCinematic();" style="color: var(--secondary);"><i class="fas fa-sign-in-alt"></i> Portal Login</a></li>
+    </ul>
+  </div>
+
+  <!-- News Strip -->
+  <div class="news-strip">
+    <div class="news-badge"><i class="fas fa-bullhorn"></i> Notice</div>
+    <div class="news-marquee">
+      <marquee scrollamount="6">
+        Naye shaikshik satra ke liye Kaksha 1 se 12 tak pravesh prarambh hain • Aavasiya Hostel suvidha uplabdh • Formative (FA) aur Summative (SA) assessments portal par darj ho rahe hain • Helpline: 6395052394.
+      </marquee>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div>
+      <h2>Residential Rambax Singh Inter College</h2>
+      <p>Kaksha 1 se 12 tak shreshth shiksha, sanskar, anushasan aur aavasiya (hostel) vatavaran ka vishvasniya kendra.</p>
+      <button class="btn-gold" onclick="document.getElementById('admission').scrollIntoView({behavior:'smooth'})"><i class="fas fa-user-plus"></i> Online Pravesh Form Bharein</button>
+    </div>
+  </section>
+
+  <!-- Container -->
+  <div class="container">
+
+    <!-- Leadership Section -->
+    <div id="leadership">
+      <h2 class="section-heading"><i class="fas fa-users-cog"></i> Sanstha Ka Netratva (Administration)</h2>
+      <div class="management-grid">
+        <!-- Director Card -->
+        <div class="person-card">
+          <img src="rbs4.jpeg" class="person-img" alt="Director Shri Avadhesh Singh">
+          <div class="person-details">
+            <h3>Shri Avadhesh Singh</h3>
+            <div class="role">Director / Nideshak</div>
+            <p>Vidyalaya me uchch gunvatta, mulyaparak shiksha aur chhatron ke sarvangin margdarshan ke nirdeshak.</p>
+          </div>
+        </div>
+
+        <!-- Manager Card (Photo Updated: image_55551c.jpg) -->
+        <div class="person-card">
+          <img src="image_55551c.jpg" class="person-img" alt="Manager Shri Vishnu Kant">
+          <div class="person-details">
+            <h3>Shri Vishnu Kant</h3>
+            <div class="role">Manager / Prabandhak</div>
+            <p><i class="fas fa-phone"></i> +91 6395052394</p>
+            <p><i class="fas fa-envelope"></i> rambaxsinghintercollege@gmail.com</p>
+            <p style="margin-top: 8px;">"Kaksha 1 se 12 tak ke har vidyarthi ko uchit anushasan, behtar shaikshik mahol aur hostel suvidha uplabdh karana hamari prathmikta hai."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hostel Box -->
+    <div class="hostel-box" id="hostel">
+      <div>
+        <h2 style="color: var(--primary); margin-bottom: 12px;"><i class="fas fa-hotel"></i> Aavasiya Suvidha (Residential Hostel)</h2>
+        <p style="margin-bottom: 12px;">Door-daraj ke chhatron ke liye campus me hi surakshit v su-vyavasthit hostel uplabdh hai:</p>
+        <ul style="margin-left: 20px; line-height: 2;">
+          <li>Shuddh v paushtik bhojan (Mess)</li>
+          <li>Niyamit study schedule aur evening guidance classes</li>
+          <li>Class 1st se 12th ke chhatron ke liye anushasit vatavaran</li>
+          <li>CCTV v 24 ghante security vyavastha</li>
+        </ul>
+      </div>
+      <div>
+        <img src="rbs8.jpeg" alt="Hostel Building Campus">
+      </div>
+    </div>
+
+    <!-- Photo & Video Gallery -->
+    <div id="gallery">
+      <h2 class="section-heading"><i class="fas fa-photo-video"></i> Campus Photos & Videos (Admin Controlled)</h2>
+      <div class="gallery-container" id="publicMediaGallery"></div>
+    </div>
+
+    <!-- Admission Section -->
+    <div class="admission-card" id="admission">
+      <h2 style="color: var(--primary); margin-bottom: 6px;"><i class="fas fa-user-plus"></i> Online Pravesh Avedan (Class 1 to 12)</h2>
+      <p style="font-size: 13.5px; color: #64748b;">Form submit karne par data seedhe Admin Portal me store ho jayega.</p>
+      
+      <form onsubmit="handleAdmissionSubmit(event)" id="admForm">
+        <div class="form-grid">
+          <div><label>Student Name *</label><input type="text" id="adm_name" required placeholder="Student Name"></div>
+          <div><label>Father's Name *</label><input type="text" id="adm_father" required placeholder="Father's Name"></div>
+          <div><label>Class for Admission *</label>
+            <select id="adm_class" required>
+              <option value="">-- Choose Class --</option>
+              <option value="Class 1">Class 1</option>
+              <option value="Class 2">Class 2</option>
+              <option value="Class 3">Class 3</option>
+              <option value="Class 4">Class 4</option>
+              <option value="Class 5">Class 5</option>
+              <option value="Class 6">Class 6</option>
+              <option value="Class 7">Class 7</option>
+              <option value="Class 8">Class 8</option>
+              <option value="Class 9">Class 9</option>
+              <option value="Class 10">Class 10 (High School)</option>
+              <option value="Class 11">Class 11</option>
+              <option value="Class 12">Class 12 (Inter)</option>
+            </select>
+          </div>
+          <div><label>Mobile Number *</label><input type="tel" id="adm_phone" required pattern="[0-9]{10}" placeholder="10-digit number"></div>
+          <div><label>Hostel Required? *</label>
+            <select id="adm_hostel" required>
+              <option value="No">No (Day Scholar)</option>
+              <option value="Yes">Yes (Hostel Required)</option>
+            </select>
+          </div>
+          <div style="grid-column: 1 / -1;"><label>Address *</label><textarea id="adm_addr" rows="2" required placeholder="Gram, Post, Tehsil, Jila"></textarea></div>
+        </div>
+        <div style="margin-top: 18px;">
+          <button type="submit" class="btn-gold"><i class="fas fa-paper-plane"></i> Form Submit Karein</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Active Management Dashboard -->
+    <div class="dashboard-panel" id="mainDashboard">
+      <div class="dash-top">
+        <div>
+          <h2 style="color: var(--primary);" id="dashTitle">Control Panel</h2>
+          <p style="font-size: 13px; color: #64748b;">Active User: <strong id="dashUser"></strong></p>
+        </div>
+        <button class="btn-gold" style="background: #ef4444; color: #fff;" onclick="logoutPortal()"><i class="fas fa-sign-out-alt"></i> Logout</button>
+      </div>
+
+      <div class="dash-navs" id="dashNavTabs"></div>
+
+      <!-- Tab: Admissions -->
+      <div id="tab-admissions" class="dash-view-block">
+        <h3><i class="fas fa-inbox"></i> Online Admission Applications</h3>
+        <table id="admTable">
+          <thead><tr><th>ID</th><th>Student</th><th>Father</th><th>Class</th><th>Phone</th><th>Hostel</th><th>Address</th><th>Action</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <!-- Tab: Staff Accounts -->
+      <div id="tab-staff-mgmt" class="dash-view-block" style="display: none;">
+        <h3><i class="fas fa-chalkboard-teacher"></i> Teacher / Staff Account Control</h3>
+        <div style="background: #f8fafc; padding: 15px; margin: 15px 0; border-radius: 6px; border: 1px solid #e2e8f0;">
+          <h4>Add New Teacher / Staff (Only Admin Can Add)</h4>
+          <div style="display: flex; gap: 10px; margin-top: 10px; flex-wrap: wrap;">
+            <input type="text" id="add_staff_name" placeholder="Teacher Name" style="padding: 8px;">
+            <input type="text" id="add_staff_subject" placeholder="Subject / Class" style="padding: 8px;">
+            <input type="text" id="add_staff_id" placeholder="Assign Login ID" style="padding: 8px;">
+            <input type="text" id="add_staff_pass" placeholder="Assign Password" style="padding: 8px;">
+            <button class="btn-gold" onclick="adminAddStaff()"><i class="fas fa-plus"></i> Create Teacher Account</button>
+          </div>
+        </div>
+        <table id="staffTable">
+          <thead><tr><th>Teacher Name</th><th>Subject/Class</th><th>Login ID</th><th>Password</th><th>Action</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <!-- Tab: Student Records & Unlock -->
+      <div id="tab-student-mgmt" class="dash-view-block" style="display: none;">
+        <h3><i class="fas fa-user-graduate"></i> Student Records & Marksheet Unlock Control</h3>
+        <div style="background: #f8fafc; padding: 15px; margin: 15px 0; border-radius: 6px; border: 1px solid #e2e8f0;">
+          <h4>Register Student (Only Admin Can Add)</h4>
+          <div style="display: flex; gap: 10px; margin-top: 10px; flex-wrap: wrap;">
+            <input type="text" id="add_st_roll" placeholder="Roll No" style="width: 100px; padding: 8px;">
+            <input type="text" id="add_st_name" placeholder="Student Name" style="padding: 8px;">
+            <input type="text" id="add_st_father" placeholder="Father Name" style="padding: 8px;">
+            <select id="add_st_class" style="padding: 8px;">
+              <option value="Class 1">Class 1</option><option value="Class 2">Class 2</option><option value="Class 3">Class 3</option><option value="Class 4">Class 4</option><option value="Class 5">Class 5</option><option value="Class 6">Class 6</option><option value="Class 7">Class 7</option><option value="Class 8">Class 8</option><option value="Class 9">Class 9</option><option value="Class 10">Class 10</option><option value="Class 11">Class 11</option><option value="Class 12">Class 12</option>
+            </select>
+            <input type="text" id="add_st_addr" placeholder="Address" style="padding: 8px;">
+            <input type="text" id="add_st_pass" placeholder="Password" style="padding: 8px; width: 120px;">
+            <button class="btn-gold" onclick="adminAddStudent()"><i class="fas fa-plus"></i> Save Student</button>
+          </div>
+        </div>
+        <table id="studentsTable">
+          <thead><tr><th>Roll No</th><th>Student Name</th><th>Father Name</th><th>Class</th><th>Address</th><th>Login Pass</th><th>Marksheet Status</th><th>Action</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <!-- Tab: Media Manager -->
+      <div id="tab-media-mgmt" class="dash-view-block" style="display: none;">
+        <h3><i class="fas fa-photo-video"></i> Media Control (Change Photos & Add Videos)</h3>
+        <div style="background: #f8fafc; padding: 18px; border-radius: 8px; border: 1px solid #e2e8f0; margin-bottom: 20px;">
+          <h4 style="color: var(--primary); margin-bottom: 10px;"><i class="fas fa-plus-circle"></i> Add New Photo or Video</h4>
+          <div class="form-grid">
+            <div>
+              <label>Media Type</label>
+              <select id="media_type" onchange="toggleMediaInputType()">
+                <option value="photo_file">Upload Photo (from Computer/Mobile)</option>
+                <option value="photo_url">Photo URL / File Name</option>
+                <option value="video_youtube">YouTube Video Link</option>
+                <option value="video_mp4">Direct Video URL (.mp4)</option>
+              </select>
+            </div>
+            <div><label>Title / Caption</label><input type="text" id="media_title" placeholder="e.g. Campus Event"></div>
+            <div id="box_media_file"><label>Choose Photo File</label><input type="file" id="media_file_input" accept="image/*"></div>
+            <div id="box_media_url" style="display: none;"><label id="lbl_media_url">Media URL / Link</label><input type="text" id="media_url_input" placeholder="https://..."></div>
+          </div>
+          <div style="margin-top: 15px;"><button class="btn-gold" onclick="addNewMediaItem()"><i class="fas fa-upload"></i> Upload & Update Website</button></div>
+        </div>
+        <h4>Current Gallery Items</h4>
+        <table id="mediaTable">
+          <thead><tr><th>Type</th><th>Preview</th><th>Title</th><th>Action</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <!-- Tab: Session Manager -->
+      <div id="tab-session-mgmt" class="dash-view-block" style="display: none;">
+        <h3><i class="fas fa-calendar-alt"></i> Academic Session Manager</h3>
+        <div style="background: #f8fafc; padding: 20px; border-radius: 8px; border: 1px solid #e2e8f0; max-width: 500px;">
+          <div style="margin-bottom: 15px;">
+            <label style="font-size: 13px; font-weight: 700; display: block; margin-bottom: 5px;">Active Academic Session</label>
+            <input type="text" id="custom_session_input" style="width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 4px; font-size: 15px; font-weight: bold;">
+          </div>
+          <div style="display: flex; gap: 10px;">
+            <button class="btn-gold" onclick="saveAdminSession()"><i class="fas fa-save"></i> Save Session</button>
+            <button class="btn-gold" style="background: #0284c7; color: #fff;" onclick="resetAutoSession()"><i class="fas fa-sync"></i> Re-Calculate Auto</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab: Marks Entry -->
+      <div id="tab-marks-entry" class="dash-view-block" style="display: none;">
+        <h3><i class="fas fa-edit"></i> Marks Entry (FA1, FA2, SA1, FA3, FA4, SA2)</h3>
+        <div class="form-grid">
+          <div><label>Session *</label><input type="text" id="me_session" readonly style="background:#eef2f5;"></div>
+          <div><label>Exam Term *</label>
+            <select id="me_exam">
+              <option value="FA1">FA 1</option><option value="FA2">FA 2</option><option value="SA1">SA 1 (Half Yearly)</option><option value="FA3">FA 3</option><option value="FA4">FA 4</option><option value="SA2">SA 2 (Annual)</option>
+            </select>
+          </div>
+          <div><label>Class (1 to 12) *</label>
+            <select id="me_class">
+              <option value="">-- Select Class --</option>
+              <option value="Class 1">Class 1</option><option value="Class 2">Class 2</option><option value="Class 3">Class 3</option><option value="Class 4">Class 4</option><option value="Class 5">Class 5</option><option value="Class 6">Class 6</option><option value="Class 7">Class 7</option><option value="Class 8">Class 8</option><option value="Class 9">Class 9</option><option value="Class 10">Class 10</option><option value="Class 11">Class 11</option><option value="Class 12">Class 12</option>
+            </select>
+          </div>
+          <div><label>Roll Number *</label><input type="text" id="me_roll" placeholder="Enter Roll No" required></div>
+          <div><label>Student Name *</label><input type="text" id="me_name" placeholder="Enter Student Name" required></div>
+          <div><label>Father's Name *</label><input type="text" id="me_father" placeholder="Enter Father Name" required></div>
+        </div>
+        <h4 style="margin-top: 20px; color: var(--primary);"><i class="fas fa-book"></i> Enter Subject Marks</h4>
+        <div class="form-grid">
+          <div><label>Hindi</label><input type="number" id="m_hindi" placeholder="0 - 100"></div>
+          <div><label>English</label><input type="number" id="m_english" placeholder="0 - 100"></div>
+          <div><label>Mathematics</label><input type="number" id="m_math" placeholder="0 - 100"></div>
+          <div><label>Science / EVS</label><input type="number" id="m_science" placeholder="0 - 100"></div>
+          <div><label>Social Science</label><input type="number" id="m_social" placeholder="0 - 100"></div>
+          <div><label>Drawing / Sanskrit</label><input type="number" id="m_opt" placeholder="0 - 100"></div>
+        </div>
+        <div style="margin-top: 15px;"><button class="btn-gold" onclick="submitTeacherMarks()"><i class="fas fa-save"></i> Submit Marks Record</button></div>
+      </div>
+
+      <!-- Tab: Marksheet Generator -->
+      <div id="tab-marksheet-gen" class="dash-view-block" style="display: none;">
+        <h3><i class="fas fa-award"></i> 1-Click Official Marksheet Ready (Admin Only)</h3>
+        <div style="display: flex; gap: 10px; margin: 15px 0; flex-wrap: wrap;">
+          <input type="text" id="admin_ms_roll" placeholder="Enter Student Roll No" style="padding: 8px; width: 220px;">
+          <select id="admin_ms_exam" style="padding: 8px;">
+            <option value="SA2">SA 2 (Annual)</option><option value="SA1">SA 1 (Half Yearly)</option><option value="FA1">FA 1</option><option value="FA2">FA 2</option><option value="FA3">FA 3</option><option value="FA4">FA 4</option>
+          </select>
+          <button class="btn-gold" onclick="renderPrintableMarksheet()"><i class="fas fa-magic"></i> Generate Marksheet</button>
+        </div>
+
+        <div id="marksheet-view">
+          <div class="watermark-center"><img src="rbslogo.jpeg" alt="Watermark"></div>
+          <div class="marksheet-header">
+            <img src="rbslogo.jpeg" alt="Logo">
+            <div style="text-align: center; flex: 1; padding: 0 10px;">
+              <h2 style="font-size: 22px; color: #081d33; text-transform: uppercase;">Residential Rambax Singh Inter College</h2>
+              <p style="font-size: 12px; font-weight: 700;">BITHARA - SARAI ROAD, ALIGANJ (ETAH) U.P. - 207247</p>
+              <p style="font-size: 11px;">Recognized Class 1 to 12 | Affiliated to UP Board Prayagraj</p>
+              <h3 style="margin-top: 6px; font-size: 16px; text-decoration: underline;" id="out_exam_title">PROGRESS REPORT CARD</h3>
+            </div>
+            <div style="width: 80px; height: 80px; border: 1px dashed #999; display: flex; align-items: center; justify-content: center; font-size: 11px; text-align: center;">Photo</div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 13.5px; border-bottom: 1px solid #ccc; padding-bottom: 12px; margin-bottom: 15px;">
+            <div><strong>Student Name:</strong> <span id="out_name">--</span></div>
+            <div><strong>Roll Number:</strong> <span id="out_roll">--</span></div>
+            <div><strong>Father's Name:</strong> <span id="out_father">--</span></div>
+            <div><strong>Class:</strong> <span id="out_class">--</span></div>
+            <div style="grid-column: 1 / -1;"><strong>Address:</strong> <span id="out_address">--</span></div>
+          </div>
+
+          <table>
+            <thead><tr><th>Subject</th><th>Max Marks</th><th>Passing</th><th>Marks Obtained</th><th>Grade</th></tr></thead>
+            <tbody id="out_tbody"></tbody>
+            <tfoot>
+              <tr style="font-weight: bold; background: #fdfdfd;"><td>TOTAL</td><td>600</td><td>200</td><td id="out_grand_total">--</td><td id="out_result">--</td></tr>
+            </tfoot>
+          </table>
+
+          <div class="sigs">
+            <div class="sig-line">Class Teacher Signature</div>
+            <div class="sig-line">Exam Incharge Signature</div>
+            <div class="sig-line">
+              <span style="font-size: 11px; font-weight: normal; display: block; color: #555;">Shri Vishnu Kant</span>
+              Manager / Principal Signature
+            </div>
+          </div>
+
+          <div style="text-align: center; margin-top: 30px;">
+            <button class="btn-gold" onclick="window.print()"><i class="fas fa-print"></i> Print Marksheet</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab: Student View -->
+      <div id="tab-student-view" class="dash-view-block" style="display: none;">
+        <h3><i class="fas fa-user-check"></i> My Academic Record</h3>
+        <div id="studentLockNotice" style="display: none; background: #fee2e2; border-left: 4px solid #ef4444; padding: 18px; border-radius: 6px; margin: 15px 0;">
+          <h4 style="color: #b91c1c;"><i class="fas fa-lock"></i> Marksheet Is Locked By Admin</h4>
+          <p style="font-size: 13.5px; margin-top: 4px;">Aapki marksheet abhi college admin dwaara lock hai. Jaise hi Admin ise unlock karenge, aap marksheet dekh sakenge.</p>
+        </div>
+        <div id="studentProfileDetails" style="background: #f8fafc; padding: 20px; border-radius: 8px; margin-top: 15px; border: 1px solid #e2e8f0;"></div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- =========================================================
+       4D / 3D SUITCASE BOY ANIMATION & FIXED LOGIN MODAL
+  ========================================================= -->
+  <div class="modal-backdrop" id="loginBackdrop">
+    <!-- 4D Ambient Star Particles -->
+    <div class="ambient-particles"></div>
+
+    <!-- 3D Boy Stage with Suitcase -->
+    <div class="avatar-boy-stage" id="boyStage">
+      <div class="boy-character">
+        <div class="boy-head"><div class="boy-hair"></div></div>
+        <div class="boy-body">
+          <div class="boy-tie"></div>
+          <div class="boy-arm left"></div>
+          <div class="boy-arm right"></div>
+        </div>
+        <div class="boy-legs">
+          <div class="boy-leg left"></div>
+          <div class="boy-leg right"></div>
+        </div>
+      </div>
+      <div class="suitcase-3d" id="boySuitcase">
+        <div class="suitcase-handle"></div>
+      </div>
+    </div>
+
+    <!-- Holographic Energy Burst -->
+    <div class="hologram-burst" id="hologramBurst"></div>
+
+    <!-- 3D Login Box (Guaranteed Display) -->
+    <div class="modal-3d-card" id="modal3DCard">
+      <span class="close-btn" onclick="closeLoginModal()">&times;</span>
+
+      <div class="role-pills">
+        <div class="role-pill active" onclick="setRole('admin')"><i class="fas fa-user-shield"></i> Admin</div>
+        <div class="role-pill" onclick="setRole('staff')"><i class="fas fa-chalkboard-teacher"></i> Staff</div>
+        <div class="role-pill" onclick="setRole('student')"><i class="fas fa-user-graduate"></i> Student</div>
+      </div>
+
+      <div style="text-align: center; margin-bottom: 20px;">
+        <h3 id="modalHeading" style="color: var(--primary); font-size: 20px;">Admin Access Control</h3>
+        <p style="font-size: 12.5px; color: #64748b;">Rambax Singh Inter College Portal</p>
+      </div>
+
+      <form onsubmit="handlePortalAuth(event)" autocomplete="off">
+        <div style="margin-bottom: 16px;">
+          <label id="lblUser" style="font-size: 13px; font-weight: 700; display: block; margin-bottom: 5px;">Admin Login ID</label>
+          <input type="text" id="userInput" required autocomplete="off" placeholder="Enter ID" style="width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 14px;">
+        </div>
+
+        <div style="margin-bottom: 22px;">
+          <label style="font-size: 13px; font-weight: 700; display: block; margin-bottom: 5px;">Password</label>
+          <div class="pass-container">
+            <input type="password" id="passInput" required autocomplete="new-password" placeholder="Enter password" style="width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 14px;">
+            <i class="fas fa-eye eye-toggle" onclick="togglePassEye('passInput', this)"></i>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-gold" style="width: 100%; padding: 12px; font-size: 15px; border-radius: 6px;"><i class="fas fa-key"></i> Authenticate & Login</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <h4>Rambax Singh Inter College</h4>
+        <p>Bithara - Sarai Road, Aliganj, Etah - 207247</p>
+        <p style="margin-top: 10px;"><i class="fas fa-phone"></i> 6395052394</p>
+        <p><i class="fas fa-envelope"></i> rambaxsinghintercollege@gmail.com</p>
+      </div>
+      <div>
+        <h4>Administration</h4>
+        <p><strong>Director:</strong> Shri Avadhesh Singh</p>
+        <p><strong>Manager:</strong> Shri Vishnu Kant</p>
+        <p style="margin-top: 6px;">Affiliation: Madhyamik Shiksha Parishad UP Board</p>
+      </div>
+      <div>
+        <h4>Online Links</h4>
+        <p><a href="javascript:void(0)" onclick="trigger3DLoginCinematic()" style="color: var(--secondary); text-decoration: none;">Secure Portal Login</a></p>
+        <p><a href="#admission" style="color: #fff; text-decoration: none;">Admission Form</a></p>
+        <p><a href="#hostel" style="color: #fff; text-decoration: none;">Hostel Information</a></p>
+      </div>
+    </div>
+    <div class="footer-copy">
+      &copy; Residential Rambax Singh Inter College, Bithara, Aliganj, Etah (207247). All Rights Reserved.
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    let activeRole = 'admin';
+
+    // 1. FIXED & GUARANTEED 3D/4D SUITCASE BOY ANIMATION
+    function trigger3DLoginCinematic() {
+      const backdrop = document.getElementById('loginBackdrop');
+      const boyStage = document.getElementById('boyStage');
+      const suitcase = document.getElementById('boySuitcase');
+      const card = document.getElementById('modal3DCard');
+      const burst = document.getElementById('hologramBurst');
+
+      // Clear & Prepare
+      backdrop.classList.add('active');
+      card.style.display = 'none';
+      card.classList.remove('revealed');
+      burst.style.display = 'none';
+      suitcase.className = 'suitcase-3d';
+      boyStage.className = 'avatar-boy-stage';
+
+      // Step 1: Boy walks in
+      setTimeout(() => {
+        boyStage.classList.add('walk-in');
+      }, 50);
+
+      // Step 2: Suitcase placed on floor
+      setTimeout(() => {
+        suitcase.classList.add('placed');
+      }, 1500);
+
+      // Step 3: Suitcase opens & Login Box immediately pops up
+      setTimeout(() => {
+        suitcase.classList.add('opening');
+        burst.style.display = 'block';
+        card.style.display = 'block';
+        card.classList.add('revealed');
+      }, 2000);
+
+      // Step 4: Boy walks to the wall and disappears
+      setTimeout(() => {
+        boyStage.classList.remove('walk-in');
+        boyStage.classList.add('walk-out-wall');
+      }, 2500);
+
+      // Reset Inputs
+      document.getElementById('userInput').value = '';
+      document.getElementById('passInput').value = '';
+    }
+
+    function closeLoginModal() {
+      document.getElementById('loginBackdrop').classList.remove('active');
+      document.getElementById('modal3DCard').style.display = 'none';
+    }
+
+    // 2. Automatic Session Calculation
+    function getCalculatedSession() {
+      const saved = localStorage.getItem('rbs_active_session');
+      if (saved) return saved;
+
+      const now = new Date();
+      const year = now.getFullYear();
+      const month = now.getMonth() + 1;
+      if (month >= 4) {
+        return `${year}-${String(year + 1).slice(-2)}`;
+      } else {
+        return `${year - 1}-${String(year).slice(-2)}`;
+      }
+    }
+
+    function initSession() {
+      const sess = getCalculatedSession();
+      document.getElementById('liveSessionBadge').innerText = sess;
+      if (document.getElementById('custom_session_input')) {
+        document.getElementById('custom_session_input').value = sess;
+      }
+      if (document.getElementById('me_session')) {
+        document.getElementById('me_session').value = sess;
+      }
+    }
+
+    function saveAdminSession() {
+      const val = document.getElementById('custom_session_input').value.trim();
+      if (!val) return alert('Session value empty nahi ho sakti!');
+      localStorage.setItem('rbs_active_session', val);
+      initSession();
+      alert(`Academic Session badal kar ${val} kar diya gaya hai.`);
+    }
+
+    function resetAutoSession() {
+      localStorage.removeItem('rbs_active_session');
+      initSession();
+      alert('Session automatically system calendar ke anusar reset ho gaya.');
+    }
+
+    // 3. Media Gallery (Photos & Videos)
+    function initMediaGallery() {
+      if (!localStorage.getItem('rbs_media_items')) {
+        const defaultMedia = [
+          { type: 'photo', url: 'rbs8.jpeg', title: 'College Campus & Playground' },
+          { type: 'photo', url: 'rbs9.jpeg', title: 'Classroom Study Session' },
+          { type: 'photo', url: 'rbs7.jpeg', title: 'Republic Day Celebration' },
+          { type: 'photo', url: 'rbs6.jpeg', title: 'Cultural Stage Performance' },
+          { type: 'photo', url: 'rbs5.jpeg', title: 'Annual Award Ceremony' },
+          { type: 'photo', url: 'rbs3.jpeg', title: 'Teachers Day Celebration' }
+        ];
+        localStorage.setItem('rbs_media_items', JSON.stringify(defaultMedia));
+      }
+      renderPublicGallery();
+    }
+
+    function renderPublicGallery() {
+      const container = document.getElementById('publicMediaGallery');
+      if (!container) return;
+      const list = JSON.parse(localStorage.getItem('rbs_media_items') || '[]');
+      container.innerHTML = '';
+
+      list.forEach(item => {
+        let contentHtml = '';
+        if (item.type === 'video_yt') {
+          let embedUrl = item.url;
+          if (embedUrl.includes('watch?v=')) {
+            embedUrl = embedUrl.replace('watch?v=', 'embed/');
+          }
+          contentHtml = `<iframe src="${embedUrl}" allowfullscreen></iframe>`;
+        } else if (item.type === 'video_mp4') {
+          contentHtml = `<video src="${item.url}" controls></video>`;
+        } else {
+          contentHtml = `<img src="${item.url}" alt="${item.title}">`;
+        }
+
+        container.innerHTML += `
+          <div class="media-card">
+            ${contentHtml}
+            <div class="title">${item.title}</div>
+          </div>
+        `;
+      });
+    }
+
+    function toggleMediaInputType() {
+      const type = document.getElementById('media_type').value;
+      const boxFile = document.getElementById('box_media_file');
+      const boxUrl = document.getElementById('box_media_url');
+      const lblUrl = document.getElementById('lbl_media_url');
+
+      if (type === 'photo_file') {
+        boxFile.style.display = 'block';
+        boxUrl.style.display = 'none';
+      } else {
+        boxFile.style.display = 'none';
+        boxUrl.style.display = 'block';
+        if (type === 'video_youtube') {
+          lblUrl.innerText = 'YouTube Video Embed / Watch Link';
+        } else if (type === 'video_mp4') {
+          lblUrl.innerText = 'Direct MP4 Video Link (.mp4)';
+        } else {
+          lblUrl.innerText = 'Photo URL / Image Filename';
+        }
+      }
+    }
+
+    function addNewMediaItem() {
+      const type = document.getElementById('media_type').value;
+      const title = document.getElementById('media_title').value.trim() || 'College Activity';
+      const list = JSON.parse(localStorage.getItem('rbs_media_items') || '[]');
+
+      if (type === 'photo_file') {
+        const fileInput = document.getElementById('media_file_input');
+        if (!fileInput.files || fileInput.files.length === 0) {
+          return alert('Kripya photo file chunein!');
+        }
+        const file = fileInput.files[0];
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          list.push({ type: 'photo', url: e.target.result, title: title });
+          localStorage.setItem('rbs_media_items', JSON.stringify(list));
+          alert('Nayi photo safalta-purvak upload ho gayi!');
+          renderPublicGallery();
+          renderMediaAdminTable();
+          fileInput.value = '';
+          document.getElementById('media_title').value = '';
+        };
+        reader.readAsDataURL(file);
+      } else {
+        const url = document.getElementById('media_url_input').value.trim();
+        if (!url) return alert('Kripya valid link ya filename dalein!');
+
+        let finalType = 'photo';
+        if (type === 'video_youtube') finalType = 'video_yt';
+        if (type === 'video_mp4') finalType = 'video_mp4';
+
+        list.push({ type: finalType, url: url, title: title });
+        localStorage.setItem('rbs_media_items', JSON.stringify(list));
+        alert('Naya Media (Photo/Video) safalta-purvak add ho gaya!');
+        renderPublicGallery();
+        renderMediaAdminTable();
+        document.getElementById('media_url_input').value = '';
+        document.getElementById('media_title').value = '';
+      }
+    }
+
+    function renderMediaAdminTable() {
+      const tbody = document.querySelector('#mediaTable tbody');
+      if (!tbody) return;
+      const list = JSON.parse(localStorage.getItem('rbs_media_items') || '[]');
+      tbody.innerHTML = '';
+      list.forEach((item, idx) => {
+        let preview = '';
+        if (item.type === 'video_yt') {
+          preview = `<span style="color:#b91c1c; font-weight:bold;"><i class="fab fa-youtube"></i> YouTube Video</span>`;
+        } else if (item.type === 'video_mp4') {
+          preview = `<span style="color:#0284c7; font-weight:bold;"><i class="fas fa-video"></i> MP4 Video</span>`;
+        } else {
+          preview = `<img src="${item.url}" style="width: 50px; height: 40px; object-fit: cover; border-radius: 4px;">`;
+        }
+
+        tbody.innerHTML += `
+          <tr>
+            <td><strong>${item.type.toUpperCase()}</strong></td>
+            <td>${preview}</td>
+            <td>${item.title}</td>
+            <td><button onclick="deleteMediaItem(${idx})" style="color:red; cursor:pointer;">Hatae (Delete)</button></td>
+          </tr>
+        `;
+      });
+    }
+
+    function deleteMediaItem(idx) {
+      const list = JSON.parse(localStorage.getItem('rbs_media_items') || '[]');
+      list.splice(idx, 1);
+      localStorage.setItem('rbs_media_items', JSON.stringify(list));
+      renderPublicGallery();
+      renderMediaAdminTable();
+    }
+
+    // AI Voice Synthesis
+    function speakAssistant(message) {
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+        const utterance = new SpeechSynthesisUtterance(message);
+        utterance.rate = 0.95;
+        utterance.pitch = 1.05;
+        window.speechSynthesis.speak(utterance);
+      }
+    }
+
+    function toggleDrawerNav() {
+      document.getElementById('drawerNav').classList.toggle('open');
+    }
+
+    function togglePassEye(fieldId, icon) {
+      const field = document.getElementById(fieldId);
+      if (field.type === 'password') {
+        field.type = 'text';
+        icon.classList.remove('fa-eye');
+        icon.classList.add('fa-eye-slash');
+      } else {
+        field.type = 'password';
+        icon.classList.remove('fa-eye-slash');
+        icon.classList.add('fa-eye');
+      }
+    }
+
+    function setRole(role) {
+      activeRole = role;
+      document.querySelectorAll('.role-pill').forEach(p => p.classList.remove('active'));
+      event.target.classList.add('active');
+
+      const heading = document.getElementById('modalHeading');
+      const label = document.getElementById('lblUser');
+      const input = document.getElementById('userInput');
+      const pass = document.getElementById('passInput');
+
+      input.value = '';
+      pass.value = '';
+
+      if (role === 'admin') {
+        heading.innerText = 'Admin Access Control';
+        label.innerText = 'Admin Login ID';
+        input.placeholder = 'rambaxsinghintercollege@gmail.com';
+      } else if (role === 'staff') {
+        heading.innerText = 'Teacher & Staff Portal';
+        label.innerText = 'Teacher ID (Admin dwara prapt)';
+        input.placeholder = 'Enter Teacher ID';
+      } else {
+        heading.innerText = 'Student Progress Portal';
+        label.innerText = 'Student Roll Number';
+        input.placeholder = 'Enter Roll Number';
+      }
+    }
+
+    function handlePortalAuth(e) {
+      e.preventDefault();
+      const enteredId = document.getElementById('userInput').value.trim();
+      const enteredPass = document.getElementById('passInput').value.trim();
+
+      if (activeRole === 'admin') {
+        if (enteredId === 'rambaxsinghintercollege@gmail.com' && enteredPass === 'vishnukant@207247') {
+          speakAssistant("Welcome Mr. Vishnu, let's work together.");
+          openDashboardView('admin', 'Manager Vishnu Kant (Admin)');
+        } else {
+          alert('Amanay Admin Credentials! Kripya sahi id aur password dalein.');
+        }
+      } else if (activeRole === 'staff') {
+        const staffList = JSON.parse(localStorage.getItem('rbs_staff_clean') || '[]');
+        const teacher = staffList.find(t => t.id === enteredId && t.pass === enteredPass);
+        if (teacher) {
+          speakAssistant(`Welcome ${teacher.name} Ji, hope you have a great day teaching.`);
+          openDashboardView('staff', teacher.name);
+        } else {
+          alert('Amanay Teacher Login! Sirf wahi teacher login kar sakte hain jinki ID Admin ne add ki ho.');
+        }
+      } else if (activeRole === 'student') {
+        const studentList = JSON.parse(localStorage.getItem('rbs_students_clean') || '[]');
+        const student = studentList.find(s => s.roll === enteredId && s.pass === enteredPass);
+        if (student) {
+          speakAssistant(`Welcome to RBS College ${student.name}, I hope you are well.`);
+          openDashboardView('student', student);
+        } else {
+          alert('Amanay Student Login! Admin dwara registered Roll No aur Password dalein.');
+        }
+      }
+    }
+
+    function openDashboardView(role, userObj) {
+      closeLoginModal();
+      const dash = document.getElementById('mainDashboard');
+      dash.style.display = 'block';
+
+      const navBox = document.getElementById('dashNavTabs');
+      navBox.innerHTML = '';
+
+      if (role === 'admin') {
+        document.getElementById('dashTitle').innerText = 'Admin Supreme Control Panel';
+        document.getElementById('dashUser').innerText = userObj;
+        navBox.innerHTML = `
+          <button class="dash-btn active" onclick="switchTab('admissions')"><i class="fas fa-inbox"></i> Admissions</button>
+          <button class="dash-btn" onclick="switchTab('staff-mgmt')"><i class="fas fa-chalkboard-teacher"></i> Teacher Accounts</button>
+          <button class="dash-btn" onclick="switchTab('student-mgmt')"><i class="fas fa-users"></i> Students & Unlock</button>
+          <button class="dash-btn" onclick="switchTab('media-mgmt')"><i class="fas fa-photo-video"></i> Media (Photo/Video)</button>
+          <button class="dash-btn" onclick="switchTab('session-mgmt')"><i class="fas fa-calendar-alt"></i> Session Manager</button>
+          <button class="dash-btn" onclick="switchTab('marks-entry')"><i class="fas fa-edit"></i> Marks Entry</button>
+          <button class="dash-btn" onclick="switchTab('marksheet-gen')"><i class="fas fa-award"></i> 1-Click Marksheet</button>
+        `;
+        renderAdmissions();
+        renderStaff();
+        renderStudents();
+        renderMediaAdminTable();
+        initSession();
+        switchTab('admissions');
+      } else if (role === 'staff') {
+        document.getElementById('dashTitle').innerText = 'Teacher & Staff Portal';
+        document.getElementById('dashUser').innerText = userObj;
+        navBox.innerHTML = `
+          <button class="dash-btn active" onclick="switchTab('marks-entry')"><i class="fas fa-marker"></i> Student Marks Entry (FA & SA)</button>
+        `;
+        initSession();
+        switchTab('marks-entry');
+      } else if (role === 'student') {
+        document.getElementById('dashTitle').innerText = 'Student Academic Portal';
+        document.getElementById('dashUser').innerText = `${userObj.name} (Roll: ${userObj.roll})`;
+        navBox.innerHTML = `
+          <button class="dash-btn active" onclick="switchTab('student-view')"><i class="fas fa-user"></i> My Records</button>
+        `;
+        displayStudentProfile(userObj);
+        switchTab('student-view');
+      }
+
+      dash.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function logoutPortal() {
+      document.getElementById('mainDashboard').style.display = 'none';
+      alert('Aap successfully logout ho chuke hain.');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function switchTab(tabId) {
+      document.querySelectorAll('.dash-view-block').forEach(b => b.style.display = 'none');
+      document.querySelectorAll('.dash-btn').forEach(b => b.classList.remove('active'));
+      const activeBtn = Array.from(document.querySelectorAll('.dash-btn')).find(b => b.getAttribute('onclick').includes(tabId));
+      if (activeBtn) activeBtn.classList.add('active');
+      const target = document.getElementById('tab-' + tabId);
+      if (target) target.style.display = 'block';
+    }
+
+    function handleAdmissionSubmit(e) {
+      e.preventDefault();
+      const app = {
+        id: 'ADM' + Math.floor(100 + Math.random() * 900),
+        name: document.getElementById('adm_name').value.trim(),
+        father: document.getElementById('adm_father').value.trim(),
+        classVal: document.getElementById('adm_class').value,
+        phone: document.getElementById('adm_phone').value.trim(),
+        hostel: document.getElementById('adm_hostel').value,
+        address: document.getElementById('adm_addr').value.trim()
+      };
+
+      const list = JSON.parse(localStorage.getItem('rbs_admissions_clean') || '[]');
+      list.push(app);
+      localStorage.setItem('rbs_admissions_clean', JSON.stringify(list));
+
+      alert('Avedan jama ho gaya! Jankari Admin Portal me pahuch chuki hai.');
+      document.getElementById('admForm').reset();
+      renderAdmissions();
+    }
+
+    function renderAdmissions() {
+      const tbody = document.querySelector('#admTable tbody');
+      if (!tbody) return;
+      const list = JSON.parse(localStorage.getItem('rbs_admissions_clean') || '[]');
+      tbody.innerHTML = '';
+      list.forEach((item, idx) => {
+        tbody.innerHTML += `
+          <tr>
+            <td><strong>${item.id}</strong></td>
+            <td>${item.name}</td>
+            <td>${item.father}</td>
+            <td>${item.classVal}</td>
+            <td>${item.phone}</td>
+            <td><strong style="color:${item.hostel === 'Yes' ? 'green':'#64748b'}">${item.hostel}</strong></td>
+            <td>${item.address}</td>
+            <td><button onclick="deleteAdm(${idx})" style="color:red; cursor:pointer;">Delete</button></td>
+          </tr>
+        `;
+      });
+    }
+
+    function deleteAdm(idx) {
+      const list = JSON.parse(localStorage.getItem('rbs_admissions_clean') || '[]');
+      list.splice(idx, 1);
+      localStorage.setItem('rbs_admissions_clean', JSON.stringify(list));
+      renderAdmissions();
+    }
+
+    function adminAddStaff() {
+      const name = document.getElementById('add_staff_name').value.trim();
+      const subject = document.getElementById('add_staff_subject').value.trim();
+      const id = document.getElementById('add_staff_id').value.trim();
+      const pass = document.getElementById('add_staff_pass').value.trim();
+
+      if (!name || !id || !pass) return alert('Sabhi fields aavashyak hain!');
+
+      const list = JSON.parse(localStorage.getItem('rbs_staff_clean') || '[]');
+      list.push({ name, subject, id, pass });
+      localStorage.setItem('rbs_staff_clean', JSON.stringify(list));
+
+      alert(`Teacher (${name}) account successfully add ho gaya.`);
+      document.getElementById('add_staff_name').value = '';
+      document.getElementById('add_staff_subject').value = '';
+      document.getElementById('add_staff_id').value = '';
+      document.getElementById('add_staff_pass').value = '';
+      renderStaff();
+    }
+
+    function renderStaff() {
+      const tbody = document.querySelector('#staffTable tbody');
+      if (!tbody) return;
+      const list = JSON.parse(localStorage.getItem('rbs_staff_clean') || '[]');
+      tbody.innerHTML = '';
+      list.forEach((t, i) => {
+        tbody.innerHTML += `
+          <tr>
+            <td><strong>${t.name}</strong></td>
+            <td>${t.subject}</td>
+            <td>${t.id}</td>
+            <td><code>${t.pass}</code></td>
+            <td><button onclick="deleteStaff(${i})" style="color:red; cursor:pointer;">Remove</button></td>
+          </tr>
+        `;
+      });
+    }
+
+    function deleteStaff(i) {
+      const list = JSON.parse(localStorage.getItem('rbs_staff_clean') || '[]');
+      list.splice(i, 1);
+      localStorage.setItem('rbs_staff_clean', JSON.stringify(list));
+      renderStaff();
+    }
+
+    function adminAddStudent() {
+      const roll = document.getElementById('add_st_roll').value.trim();
+      const name = document.getElementById('add_st_name').value.trim();
+      const father = document.getElementById('add_st_father').value.trim();
+      const classVal = document.getElementById('add_st_class').value;
+      const address = document.getElementById('add_st_addr').value.trim();
+      const pass = document.getElementById('add_st_pass').value.trim() || 'student@123';
+
+      if (!roll || !name || !father) return alert('Roll No, Name aur Father Name zaroori hain!');
+
+      const list = JSON.parse(localStorage.getItem('rbs_students_clean') || '[]');
+      list.push({ roll, name, father, classVal, address, pass, marksheetUnlocked: false });
+      localStorage.setItem('rbs_students_clean', JSON.stringify(list));
+
+      alert(`Student (${name}) record create ho gaya.`);
+      document.getElementById('add_st_roll').value = '';
+      document.getElementById('add_st_name').value = '';
+      document.getElementById('add_st_father').value = '';
+      document.getElementById('add_st_addr').value = '';
+      document.getElementById('add_st_pass').value = '';
+      renderStudents();
+    }
+
+    function renderStudents() {
+      const tbody = document.querySelector('#studentsTable tbody');
+      if (!tbody) return;
+      const list = JSON.parse(localStorage.getItem('rbs_students_clean') || '[]');
+      tbody.innerHTML = '';
+      list.forEach((s, i) => {
+        const isUnlocked = s.marksheetUnlocked === true;
+        tbody.innerHTML += `
+          <tr>
+            <td><strong>${s.roll}</strong></td>
+            <td>${s.name}</td>
+            <td>${s.father}</td>
+            <td>${s.classVal}</td>
+            <td>${s.address}</td>
+            <td><code>${s.pass}</code></td>
+            <td>
+              <button onclick="toggleMarksheetLock(${i})" style="padding: 4px 8px; border-radius: 4px; font-weight: bold; cursor: pointer; background: ${isUnlocked ? '#10b981' : '#f59e0b'}; color: #fff; border: none;">
+                ${isUnlocked ? '<i class="fas fa-unlock"></i> Unlocked' : '<i class="fas fa-lock"></i> Locked'}
+              </button>
+            </td>
+            <td><button onclick="deleteStudent(${i})" style="color:red; cursor:pointer;">Delete</button></td>
+          </tr>
+        `;
+      });
+    }
+
+    function toggleMarksheetLock(i) {
+      const list = JSON.parse(localStorage.getItem('rbs_students_clean') || '[]');
+      list[i].marksheetUnlocked = !list[i].marksheetUnlocked;
+      localStorage.setItem('rbs_students_clean', JSON.stringify(list));
+      renderStudents();
+      alert(`Student (${list[i].name}) ki marksheet ab ${list[i].marksheetUnlocked ? 'UNLOCKED' : 'LOCKED'} hai.`);
+    }
+
+    function deleteStudent(i) {
+      const list = JSON.parse(localStorage.getItem('rbs_students_clean') || '[]');
+      list.splice(i, 1);
+      localStorage.setItem('rbs_students_clean', JSON.stringify(list));
+      renderStudents();
+    }
+
+    function submitTeacherMarks() {
+      const roll = document.getElementById('me_roll').value.trim();
+      const name = document.getElementById('me_name').value.trim();
+      const father = document.getElementById('me_father').value.trim();
+      const classVal = document.getElementById('me_class').value;
+      const exam = document.getElementById('me_exam').value;
+      const session = document.getElementById('me_session').value;
+
+      if (!roll || !name || !father || !classVal) {
+        return alert('Error: Teacher ko Student Name, Father Name, Class aur Roll No. sabhi bharna compulsory hai!');
+      }
+
+      const marksRecord = {
+        roll, name, father, classVal, exam, session,
+        hindi: Number(document.getElementById('m_hindi').value || 0),
+        english: Number(document.getElementById('m_english').value || 0),
+        math: Number(document.getElementById('m_math').value || 0),
+        science: Number(document.getElementById('m_science').value || 0),
+        social: Number(document.getElementById('m_social').value || 0),
+        optional: Number(document.getElementById('m_opt').value || 0)
+      };
+
+      localStorage.setItem(`marks_${roll}_${exam}`, JSON.stringify(marksRecord));
+      alert(`Marks safalta-purvak save ho gaye! (Student: ${name}, Roll: ${roll}, Exam: ${exam})`);
+
+      document.getElementById('m_hindi').value = '';
+      document.getElementById('m_english').value = '';
+      document.getElementById('m_math').value = '';
+      document.getElementById('m_science').value = '';
+      document.getElementById('m_social').value = '';
+      document.getElementById('m_opt').value = '';
+    }
+
+    function renderPrintableMarksheet() {
+      const roll = document.getElementById('admin_ms_roll').value.trim();
+      const exam = document.getElementById('admin_ms_exam').value;
+      const currentSession = getCalculatedSession();
+
+      if (!roll) return alert('Roll number dalein!');
+
+      const studentList = JSON.parse(localStorage.getItem('rbs_students_clean') || '[]');
+      const student = studentList.find(s => s.roll === roll);
+
+      const marksData = JSON.parse(localStorage.getItem(`marks_${roll}_${exam}`)) || {
+        hindi: 80, english: 75, math: 85, science: 78, social: 74, optional: 82
+      };
+
+      document.getElementById('out_exam_title').innerText = `${exam} PROGRESS REPORT CARD (${currentSession})`;
+      document.getElementById('out_name').innerText = student ? student.name : (marksData.name || 'Student');
+      document.getElementById('out_roll').innerText = roll;
+      document.getElementById('out_father').innerText = student ? student.father : (marksData.father || '--');
+      document.getElementById('out_class').innerText = student ? student.classVal : (marksData.classVal || '--');
+      document.getElementById('out_address').innerText = student ? student.address : 'Bithara, Aliganj, Etah';
+
+      const subjects = [
+        { name: 'Hindi', max: 100, pass: 33, obt: marksData.hindi },
+        { name: 'English', max: 100, pass: 33, obt: marksData.english },
+        { name: 'Mathematics', max: 100, pass: 33, obt: marksData.math },
+        { name: 'Science / EVS', max: 100, pass: 33, obt: marksData.science },
+        { name: 'Social Science', max: 100, pass: 33, obt: marksData.social },
+        { name: 'Drawing / Sanskrit', max: 100, pass: 33, obt: marksData.optional }
+      ];
+
+      const tbody = document.getElementById('out_tbody');
+      tbody.innerHTML = '';
+      let totalObt = 0;
+
+      subjects.forEach(sub => {
+        totalObt += sub.obt;
+        const grade = sub.obt >= 75 ? 'A (Distinction)' : (sub.obt >= 60 ? 'B (First)' : 'C (Second)');
+        tbody.innerHTML += `
+          <tr>
+            <td><strong>${sub.name}</strong></td>
+            <td>${sub.max}</td>
+            <td>${sub.pass}</td>
+            <td>${sub.obt}</td>
+            <td>${grade}</td>
+          </tr>
+        `;
+      });
+
+      const pct = ((totalObt / 600) * 100).toFixed(1);
+      document.getElementById('out_grand_total').innerText = totalObt;
+      document.getElementById('out_result').innerText = `${pct}% (PASSED)`;
+
+      const card = document.getElementById('marksheet-view');
+      card.style.display = 'block';
+      card.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function displayStudentProfile(student) {
+      const container = document.getElementById('studentProfileDetails');
+      const lockBox = document.getElementById('studentLockNotice');
+
+      if (!student.marksheetUnlocked) {
+        lockBox.style.display = 'block';
+        container.innerHTML = `
+          <h4 style="color: var(--primary); margin-bottom: 10px;">Student Information:</h4>
+          <p><strong>Name:</strong> ${student.name}</p>
+          <p><strong>Roll No:</strong> ${student.roll}</p>
+          <p><strong>Father's Name:</strong> ${student.father}</p>
+          <p><strong>Class:</strong> ${student.classVal}</p>
+          <p><strong>Address:</strong> ${student.address}</p>
+          <div style="margin-top: 15px; color: #ef4444; font-weight: bold;"><i class="fas fa-lock"></i> Marksheet Locked by Admin. Kripya college office se sampark karein.</div>
+        `;
+      } else {
+        lockBox.style.display = 'none';
+        container.innerHTML = `
+          <h4 style="color: #10b981; margin-bottom: 10px;"><i class="fas fa-unlock"></i> Marksheet Unlocked by Admin!</h4>
+          <p><strong>Name:</strong> ${student.name}</p>
+          <p><strong>Roll No:</strong> ${student.roll}</p>
+          <p><strong>Class:</strong> ${student.classVal}</p>
+          <div style="margin-top: 20px;">
+            <button class="btn-gold" onclick="studentViewMyMarksheet('${student.roll}')"><i class="fas fa-file-invoice"></i> View & Print My Marksheet</button>
+          </div>
+        `;
+      }
+    }
+
+    function studentViewMyMarksheet(roll) {
+      document.getElementById('admin_ms_roll').value = roll;
+      renderPrintableMarksheet();
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      initSession();
+      initMediaGallery();
+    });
+  </script>
+</body>
+</html>
