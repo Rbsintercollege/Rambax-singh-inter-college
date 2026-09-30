@@ -1028,12 +1028,12 @@
           </div>
         </div>
 
-        <!-- Manager Card -->
+        <!-- Manager Card (Updated with manager.jpeg) -->
         <div class="mgmt-card" data-aos="fade-up" data-aos-delay="200">
-          <img src="image_55551c.jpg" 
+          <img src="manager.jpeg" 
                class="mgmt-img" 
                alt="Mr. Vishnu Kant"
-               onerror="this.onerror=null; this.src='manager.jpg';">
+               onerror="this.onerror=null; this.src='image_55551c.jpg';">
           <div class="mgmt-body">
             <h3>Mr. Vishnu Kant</h3>
             <div class="role">प्रबंधक (Manager)</div>
@@ -1043,7 +1043,7 @@
           </div>
         </div>
 
-        <!-- Principal Card (Updated with principal.jpeg) -->
+        <!-- Principal Card -->
         <div class="mgmt-card" data-aos="fade-up" data-aos-delay="300">
           <img src="principal.jpeg" 
                class="mgmt-img" 
