@@ -5,29 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- =========================================================
-       गूगल सर्च कंसोल वेरिफिकेशन एवं एसईओ (SEO) मेटा टैग
+       GOOGLE SEARCH CONSOLE VERIFICATION & SEO META TAGS
   ========================================================= -->
   <meta name="google-site-verification" content="78a2tK-I-diBpBECvLtvj41eP3zxS2O0BCBENKQFmLA" />
-  <title>श्री रामबक्स सिंह आवासीय इण्टर कॉलेज - बिथरा, अलीगंज (एटा)</title>
-  <meta name="description" content="श्री रामबक्स सिंह आवासीय इण्टर कॉलेज, बिथरा - सराय रोड, अलीगंज, एटा (207247)। कक्षा 1 से 12 तक मान्यता प्राप्त, सर्वसुविधायुक्त हॉस्टल, स्मार्ट कक्षाएं एवं खेल मैदान। प्रबंधक: श्री विष्णु कांत, निदेशक: श्री अवधेश सिंह, प्रधानाचार्य: श्री महादेव शंकर। संपर्क: 6395052394, 9758639729।">
-  <meta name="keywords" content="श्री रामबक्स सिंह आवासीय इण्टर कॉलेज, रामबक्स सिंह कॉलेज बिथरा, RBS Inter College Aliganj, अलीगंज एटा कॉलेज, हॉस्टल स्कूल एटा, Vishnu Kant Manager, Avadhesh Singh Director, Mahadev Shankar Principal, 207247">
-  <meta name="author" content="श्री रामबक्स सिंह आवासीय इण्टर कॉलेज">
-  <meta name="robots" content="index, follow">
+  <title>Residential Rambax Singh Inter College - Bithara, Aliganj, Etah (U.P.)</title>
+  <meta name="description" content="Residential Rambax Singh Inter College, Bithara, Sarai Road, Aliganj, Etah (207247). Recognized for Class 1 to 12 with full hostel facility, smart classes, laboratories, and sports grounds. Manager: Mr. Vishnu Kant, Director: Mr. Avadhesh Singh, Principal: Mr. Mahadev Shankar. Contact: 6395052394, 9758639729.">
+  <meta name="keywords" content="Rambax Singh Inter College, RBS Inter College, Rambax Singh Inter College Bithara, Rambax Singh Inter College Aliganj, Rambax Singh Inter College Etah, RBS College Aliganj, School in Aliganj Etah, Best school in Aliganj, Hostel school in Etah, Residential School Etah, UP Board school Aliganj, Vishnu Kant Manager, Avadhesh Singh Director, Mahadev Shankar Principal, 207247">
+  <meta name="author" content="Residential Rambax Singh Inter College">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="geo.region" content="IN-UP">
-  <meta name="geo.placename" content="बिथरा, अलीगंज, एटा">
+  <meta name="geo.placename" content="Bithara, Aliganj, Etah">
+  <meta name="geo.position" content="27.5000;79.1800">
+  <meta name="ICBM" content="27.5000, 79.1800">
 
-  <!-- सोशल मीडिया शेयरिंग मेटा टैग -->
-  <meta property="og:title" content="श्री रामबक्स सिंह आवासीय इण्टर कॉलेज - बिथरा, अलीगंज (एटा)">
-  <meta property="og:description" content="कक्षा 1 से 12 तक उत्तम शिक्षा एवं सुरक्षित आवासीय हॉस्टल व्यवस्था। प्रवेश प्रारंभ।">
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Residential Rambax Singh Inter College - Bithara, Aliganj, Etah">
+  <meta property="og:description" content="Class 1 to 12 Recognized College with Hostel Facility. Admissions open for current session. Manager: Mr. Vishnu Kant.">
   <meta property="og:image" content="rbslogo.jpeg">
   <meta property="og:type" content="website">
+  <meta property="og:locale" content="hi_IN">
 
-  <!-- गूगल स्ट्रक्चर्ड डेटा (Schema JSON-LD) -->
+  <!-- Google Structured Data (JSON-LD Schema) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "EducationalOrganization",
-    "name": "श्री रामबक्स सिंह आवासीय इण्टर कॉलेज",
+    "name": "Residential Rambax Singh Inter College",
     "alternateName": "RBS Inter College",
     "url": "https://rambaxsinghintercollege.github.io/",
     "logo": "rbslogo.jpeg",
@@ -35,16 +38,34 @@
     "email": "rambaxsinghintercollege@gmail.com",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "बिथरा - सराय रोड",
-      "addressLocality": "अलीगंज",
-      "addressRegion": "उत्तर प्रदेश",
+      "streetAddress": "Bithara - Sarai Road",
+      "addressLocality": "Aliganj",
+      "addressRegion": "Uttar Pradesh",
       "postalCode": "207247",
       "addressCountry": "IN"
-    }
+    },
+    "description": "Recognized Inter College for Class 1 to 12 with modern residential hostel facilities in Aliganj, Etah.",
+    "founder": {
+      "@type": "Person",
+      "name": "Mr. Avadhesh Singh",
+      "jobTitle": "Director"
+    },
+    "employee": [
+      {
+        "@type": "Person",
+        "name": "Mr. Vishnu Kant",
+        "jobTitle": "Manager"
+      },
+      {
+        "@type": "Person",
+        "name": "Mr. Mahadev Shankar",
+        "jobTitle": "Principal"
+      }
+    ]
   }
   </script>
 
-  <!-- फॉन्ट और स्टाइल लाइब्रेरी -->
+  <!-- External Stylesheets: Icons, AOS Animations, Swiper Slider -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -74,7 +95,7 @@
       overflow-x: hidden;
     }
 
-    /* शीर्ष पट्टी (Top Ribbon) */
+    /* Top Strip */
     .top-ribbon {
       background: var(--primary-dark);
       color: #e2e8f0;
@@ -105,7 +126,7 @@
       letter-spacing: 0.5px;
     }
 
-    /* मुख्य हेडर */
+    /* Header */
     header {
       background: #ffffff;
       padding: 14px 5%;
@@ -142,7 +163,7 @@
       font-weight: 600;
     }
 
-    /* 3-लाइन मेनू आइकन */
+    /* 3-Line Menu Trigger */
     .menu-trigger {
       display: flex;
       flex-direction: column;
@@ -164,7 +185,7 @@
       background: var(--secondary);
     }
 
-    /* स्लाइडिंग ड्रॉअर नेविगेशन */
+    /* Drawer Navigation */
     .drawer-nav {
       position: fixed;
       top: 0;
@@ -210,7 +231,7 @@
       color: var(--secondary);
     }
 
-    /* डीपीएस द्वारका स्टाइल स्वच्छ पारदर्शी स्लाइडर */
+    /* Hero Slider */
     .hero-slider-wrap {
       position: relative;
       width: 100%;
@@ -284,7 +305,7 @@
       color: #000;
     }
 
-    /* सूचना पट्टी (Notice Ticker) */
+    /* Notice Ticker */
     .news-strip {
       background: var(--secondary-light);
       border-bottom: 1px solid #fceabb;
@@ -308,7 +329,7 @@
       color: var(--primary);
     }
 
-    /* मुख्य कंटेनर */
+    /* Container */
     .container {
       max-width: 1240px;
       margin: 50px auto;
@@ -326,7 +347,7 @@
       gap: 10px;
     }
 
-    /* प्रबंधन प्रोफाइल कार्ड्स (Director, Manager, Principal) */
+    /* Management Profiles (Director, Manager, Principal) */
     .mgmt-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -369,7 +390,7 @@
       margin-bottom: 12px;
     }
 
-    /* विद्यालय की मुख्य विशेषताएं */
+    /* Pillars */
     .pillars-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -404,7 +425,7 @@
       font-weight: 700;
     }
 
-    /* आवासीय छात्रावास (Hostel) */
+    /* Hostel */
     .hostel-feature {
       background: #fff;
       border-radius: 12px;
@@ -425,7 +446,7 @@
       box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     }
 
-    /* फोटो एवं वीडियो गैलरी */
+    /* Gallery */
     .gallery-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -456,7 +477,7 @@
       color: var(--primary);
     }
 
-    /* प्रवेश आवेदन पत्र */
+    /* Form */
     .form-card {
       background: #fff;
       padding: 35px;
@@ -486,9 +507,7 @@
       outline: none;
     }
 
-    /* =========================================================
-       3D / 4D एनीमेशन एवं लॉगिन मॉडल
-    ========================================================= */
+    /* 3D Suitcase Modal */
     .modal-backdrop {
       display: none;
       position: fixed;
@@ -740,7 +759,7 @@
       color: #64748b;
     }
 
-    /* एडमिन डैशबोर्ड पैनल */
+    /* Dashboard Panel */
     .dashboard-panel {
       display: none;
       background: #fff;
@@ -795,7 +814,7 @@
       color: #fff;
     }
 
-    /* अंकपत्र (Marksheet) प्रिंट लेआउट */
+    /* Marksheet Layout */
     #marksheet-view {
       display: none;
       background: #fff;
@@ -883,7 +902,7 @@
 </head>
 <body>
 
-  <!-- शीर्ष पट्टी (Top Ribbon) -->
+  <!-- Top Strip -->
   <div class="top-ribbon">
     <div>
       <span><i class="fas fa-map-marker-alt"></i> बिथरा - सराय रोड, अलीगंज, एटा - 207247 (उ.प्र.)</span>
@@ -896,7 +915,7 @@
     </div>
   </div>
 
-  <!-- मुख्य हेडर -->
+  <!-- Header -->
   <header>
     <div class="brand-wrap">
       <img src="rbslogo.jpeg" alt="RBS Logo" class="school-logo" onerror="this.onerror=null; this.src='rbslogo.jpg';">
@@ -913,7 +932,7 @@
     </div>
   </header>
 
-  <!-- स्लाइडिंग मेनू (Drawer Nav) -->
+  <!-- Drawer Nav -->
   <div class="drawer-nav" id="drawerNav">
     <div class="drawer-close" onclick="toggleDrawerNav()">&times;</div>
     <div style="margin-bottom: 25px;">
@@ -931,7 +950,7 @@
     </ul>
   </div>
 
-  <!-- ताजा सूचना पट्टी (Ticker) -->
+  <!-- Notice Strip -->
   <div class="news-strip">
     <div class="news-badge"><i class="fas fa-bullhorn"></i> आवश्यक सूचना</div>
     <div class="news-marquee">
@@ -941,7 +960,7 @@
     </div>
   </div>
 
-  <!-- डीपीएस द्वारका स्टाइल स्वच्छ पारदर्शी स्लाइडर -->
+  <!-- DPS Dwarka Style Transparent Slider -->
   <div class="hero-slider-wrap">
     <div class="dps-watermark-ribbon">
       श्री रामबक्स सिंह आवासीय इण्टर कॉलेज, बिथरा - अलीगंज (एटा)
@@ -965,10 +984,10 @@
     </div>
   </div>
 
-  <!-- मुख्य कंटेनर -->
+  <!-- Container -->
   <div class="container">
 
-    <!-- शैक्षणिक सुविधाएं -->
+    <!-- Campus Facilities -->
     <div id="facilities" data-aos="fade-up">
       <h2 class="section-heading"><i class="fas fa-award"></i> संस्था की प्रमुख विशेषताएं</h2>
       <div class="pillars-grid">
@@ -995,11 +1014,11 @@
       </div>
     </div>
 
-    <!-- विद्यालय प्रशासन (Leadership) -->
+    <!-- Leadership Section -->
     <div id="leadership" data-aos="fade-up">
       <h2 class="section-heading"><i class="fas fa-users-cog"></i> विद्यालय प्रशासन एवं नेतृत्व</h2>
       <div class="mgmt-grid">
-        <!-- निदेशक (Director) -->
+        <!-- Director Card -->
         <div class="mgmt-card" data-aos="fade-up" data-aos-delay="100">
           <img src="rbs4.jpeg" class="mgmt-img" alt="Mr. Avadhesh Singh">
           <div class="mgmt-body">
@@ -1009,7 +1028,7 @@
           </div>
         </div>
 
-        <!-- प्रबंधक (Manager) -->
+        <!-- Manager Card -->
         <div class="mgmt-card" data-aos="fade-up" data-aos-delay="200">
           <img src="image_55551c.jpg" 
                class="mgmt-img" 
@@ -1024,12 +1043,12 @@
           </div>
         </div>
 
-        <!-- प्रधानाचार्य (Principal) -->
+        <!-- Principal Card (Updated with principal.jpeg) -->
         <div class="mgmt-card" data-aos="fade-up" data-aos-delay="300">
-          <img src="principal.jpg" 
+          <img src="principal.jpeg" 
                class="mgmt-img" 
                alt="Mr. Mahadev Shankar"
-               onerror="this.onerror=null; this.src='rbs5.jpeg';">
+               onerror="this.onerror=null; this.src='principal.jpg';">
           <div class="mgmt-body">
             <h3>Mr. Mahadev Shankar</h3>
             <div class="role">प्रधानाचार्य (Principal)</div>
@@ -1040,7 +1059,7 @@
       </div>
     </div>
 
-    <!-- आवासीय छात्रावास -->
+    <!-- Hostel Box -->
     <div class="hostel-feature" id="hostel" data-aos="fade-up">
       <div>
         <h2 style="color: var(--primary); margin-bottom: 12px; font-size: 24px;"><i class="fas fa-hotel"></i> आवासीय सुविधा (Residential Hostel - कक्षा 1 से 12)</h2>
@@ -1057,13 +1076,13 @@
       </div>
     </div>
 
-    <!-- फोटो एवं वीडियो गैलरी -->
+    <!-- Photo & Video Gallery -->
     <div id="gallery" data-aos="fade-up">
       <h2 class="section-heading"><i class="fas fa-photo-video"></i> कॉलेज परिसर एवं सांस्कृतिक गतिविधियां</h2>
       <div class="gallery-grid" id="publicMediaGallery"></div>
     </div>
 
-    <!-- ऑनलाइन प्रवेश फॉर्म -->
+    <!-- Admission Form -->
     <div class="form-card" id="admission" data-aos="fade-up">
       <h2 style="color: var(--primary); margin-bottom: 6px;"><i class="fas fa-user-plus"></i> ऑनलाइन प्रवेश आवेदन पत्र (कक्षा 1 से 12)</h2>
       <p style="font-size: 13.5px; color: var(--text-muted);">फॉर्म जमा करते ही संपूर्ण विवरण सीधे विद्यालय के एडमिन पोर्टल में दर्ज हो जाएगा।</p>
@@ -1104,7 +1123,7 @@
       </form>
     </div>
 
-    <!-- सक्रिय प्रबंधन डैशबोर्ड (Admin, Staff, Student) -->
+    <!-- Active Management Dashboard -->
     <div class="dashboard-panel" id="mainDashboard">
       <div class="dash-top">
         <div>
@@ -1116,7 +1135,7 @@
 
       <div class="dash-navs" id="dashNavTabs"></div>
 
-      <!-- टैब: प्रवेश आवेदन (Admissions) -->
+      <!-- Tab: Admissions -->
       <div id="tab-admissions" class="dash-view-block">
         <h3><i class="fas fa-inbox"></i> प्राप्त ऑनलाइन प्रवेश आवेदन</h3>
         <table id="admTable">
@@ -1125,7 +1144,7 @@
         </table>
       </div>
 
-      <!-- टैब: शिक्षक एवं स्टाफ प्रबंधन -->
+      <!-- Tab: Staff Accounts -->
       <div id="tab-staff-mgmt" class="dash-view-block" style="display: none;">
         <h3><i class="fas fa-chalkboard-teacher"></i> शिक्षक / स्टाफ खाता नियंत्रण</h3>
         <div style="background: #f8fafc; padding: 18px; margin: 15px 0; border-radius: 8px; border: 1px solid #e2e8f0;">
@@ -1144,7 +1163,7 @@
         </table>
       </div>
 
-      <!-- टैब: छात्र रिकॉर्ड एवं अंकपत्र लॉक/अनलॉक -->
+      <!-- Tab: Student Records -->
       <div id="tab-student-mgmt" class="dash-view-block" style="display: none;">
         <h3><i class="fas fa-user-graduate"></i> छात्र रिकॉर्ड एवं अंकपत्र अनलॉक नियंत्रण</h3>
         <div style="background: #f8fafc; padding: 18px; margin: 15px 0; border-radius: 8px; border: 1px solid #e2e8f0;">
@@ -1167,7 +1186,7 @@
         </table>
       </div>
 
-      <!-- टैब: मीडिया प्रबंधक (Photos & Videos) -->
+      <!-- Tab: Media Manager -->
       <div id="tab-media-mgmt" class="dash-view-block" style="display: none;">
         <h3><i class="fas fa-photo-video"></i> वेबसाइट फोटो एवं वीडियो प्रबंधन</h3>
         <div style="background: #f8fafc; padding: 18px; border-radius: 8px; border: 1px solid #e2e8f0; margin-bottom: 20px;">
@@ -1195,7 +1214,7 @@
         </table>
       </div>
 
-      <!-- टैब: शैक्षणिक सत्र प्रबंधन (Session Manager) -->
+      <!-- Tab: Session Manager -->
       <div id="tab-session-mgmt" class="dash-view-block" style="display: none;">
         <h3><i class="fas fa-calendar-alt"></i> शैक्षणिक सत्र प्रबंधक</h3>
         <div style="background: #f8fafc; padding: 20px; border-radius: 8px; border: 1px solid #e2e8f0; max-width: 500px;">
@@ -1210,7 +1229,7 @@
         </div>
       </div>
 
-      <!-- टैब: अंक प्रविष्टि (Marks Entry - FA1 to SA2) -->
+      <!-- Tab: Marks Entry -->
       <div id="tab-marks-entry" class="dash-view-block" style="display: none;">
         <h3><i class="fas fa-edit"></i> परीक्षा अंक प्रविष्टि (FA1, FA2, SA1, FA3, FA4, SA2)</h3>
         <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 12px;">अध्यापक कृपया छात्र का नाम, पिता का नाम, कक्षा एवं अनुक्रमांक अनिवार्य रूप से भरें:</p>
@@ -1248,7 +1267,7 @@
         <div style="margin-top: 15px;"><button class="btn-gold" onclick="submitTeacherMarks()"><i class="fas fa-save"></i> परीक्षा अंक सुरक्षित करें</button></div>
       </div>
 
-      <!-- टैब: 1-क्लिक अंकपत्र जनरेटर (Admin Only) -->
+      <!-- Tab: Marksheet Generator -->
       <div id="tab-marksheet-gen" class="dash-view-block" style="display: none;">
         <h3><i class="fas fa-award"></i> 1-क्लिक आधिकारिक अंकपत्र तैयार करें (एडमिन नियंत्रण)</h3>
         <div style="display: flex; gap: 10px; margin: 15px 0; flex-wrap: wrap;">
@@ -1308,7 +1327,7 @@
         </div>
       </div>
 
-      <!-- टैब: छात्र स्वयं का रिकॉर्ड (Student View Only) -->
+      <!-- Tab: Student View -->
       <div id="tab-student-view" class="dash-view-block" style="display: none;">
         <h3><i class="fas fa-user-check"></i> मेरा शैक्षणिक रिकॉर्ड</h3>
         <div id="studentLockNotice" style="display: none; background: #fee2e2; border-left: 4px solid #ef4444; padding: 18px; border-radius: 6px; margin: 15px 0;">
@@ -1322,9 +1341,7 @@
 
   </div>
 
-  <!-- =========================================================
-       3D सूटकेस बालक एनीमेशन एवं लॉगिन मॉडल
-  ========================================================= -->
+  <!-- 3D Suitcase Modal -->
   <div class="modal-backdrop" id="loginBackdrop">
     <div class="ambient-particles"></div>
 
@@ -1381,7 +1398,7 @@
     </div>
   </div>
 
-  <!-- फुटर -->
+  <!-- Footer -->
   <footer>
     <div class="footer-grid">
       <div>
@@ -1409,7 +1426,7 @@
     </div>
   </footer>
 
-  <!-- जावास्क्रिप्ट लाइब्रेरी -->
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
