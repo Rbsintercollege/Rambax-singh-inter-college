@@ -5,32 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- =========================================================
-       GOOGLE SEARCH CONSOLE VERIFICATION & SEO META TAGS
+       गूगल सर्च कंसोल वेरिफिकेशन एवं एसईओ (SEO) मेटा टैग
   ========================================================= -->
   <meta name="google-site-verification" content="78a2tK-I-diBpBECvLtvj41eP3zxS2O0BCBENKQFmLA" />
-  <title>Residential Rambax Singh Inter College - Bithara, Aliganj, Etah (U.P.)</title>
-  <meta name="description" content="Residential Rambax Singh Inter College, Bithara, Sarai Road, Aliganj, Etah (207247). Recognized for Class 1 to 12 with full hostel facility, smart classes, laboratories, and sports grounds. Manager: Shri Vishnu Kant, Director: Shri Avadhesh Singh. Contact: 6395052394.">
-  <meta name="keywords" content="Rambax Singh Inter College, RBS Inter College, Rambax Singh Inter College Bithara, Rambax Singh Inter College Aliganj, Rambax Singh Inter College Etah, RBS College Aliganj, School in Aliganj Etah, Best school in Aliganj, Hostel school in Etah, Residential School Etah, UP Board school Aliganj, Vishnu Kant Manager, Avadhesh Singh Director, 207247">
-  <meta name="author" content="Residential Rambax Singh Inter College">
-  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <title>श्री रामबक्स सिंह आवासीय इण्टर कॉलेज - बिथरा, अलीगंज (एटा)</title>
+  <meta name="description" content="श्री रामबक्स सिंह आवासीय इण्टर कॉलेज, बिथरा - सराय रोड, अलीगंज, एटा (207247)। कक्षा 1 से 12 तक मान्यता प्राप्त, सर्वसुविधायुक्त हॉस्टल, स्मार्ट कक्षाएं एवं खेल मैदान। प्रबंधक: श्री विष्णु कांत, निदेशक: श्री अवधेश सिंह, प्रधानाचार्य: श्री महादेव शंकर। संपर्क: 6395052394, 9758639729।">
+  <meta name="keywords" content="श्री रामबक्स सिंह आवासीय इण्टर कॉलेज, रामबक्स सिंह कॉलेज बिथरा, RBS Inter College Aliganj, अलीगंज एटा कॉलेज, हॉस्टल स्कूल एटा, Vishnu Kant Manager, Avadhesh Singh Director, Mahadev Shankar Principal, 207247">
+  <meta name="author" content="श्री रामबक्स सिंह आवासीय इण्टर कॉलेज">
+  <meta name="robots" content="index, follow">
   <meta name="geo.region" content="IN-UP">
-  <meta name="geo.placename" content="Bithara, Aliganj, Etah">
-  <meta name="geo.position" content="27.5000;79.1800">
-  <meta name="ICBM" content="27.5000, 79.1800">
+  <meta name="geo.placename" content="बिथरा, अलीगंज, एटा">
 
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="Residential Rambax Singh Inter College - Bithara, Aliganj, Etah">
-  <meta property="og:description" content="Class 1 to 12 Recognized College with Hostel Facility. Admissions open for current session. Manager: Shri Vishnu Kant.">
+  <!-- सोशल मीडिया शेयरिंग मेटा टैग -->
+  <meta property="og:title" content="श्री रामबक्स सिंह आवासीय इण्टर कॉलेज - बिथरा, अलीगंज (एटा)">
+  <meta property="og:description" content="कक्षा 1 से 12 तक उत्तम शिक्षा एवं सुरक्षित आवासीय हॉस्टल व्यवस्था। प्रवेश प्रारंभ।">
   <meta property="og:image" content="rbslogo.jpeg">
   <meta property="og:type" content="website">
-  <meta property="og:locale" content="hi_IN">
 
-  <!-- Google Structured Data (JSON-LD Schema) -->
+  <!-- गूगल स्ट्रक्चर्ड डेटा (Schema JSON-LD) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "EducationalOrganization",
-    "name": "Residential Rambax Singh Inter College",
+    "name": "श्री रामबक्स सिंह आवासीय इण्टर कॉलेज",
     "alternateName": "RBS Inter College",
     "url": "https://rambaxsinghintercollege.github.io/",
     "logo": "rbslogo.jpeg",
@@ -38,27 +35,16 @@
     "email": "rambaxsinghintercollege@gmail.com",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Bithara - Sarai Road",
-      "addressLocality": "Aliganj",
-      "addressRegion": "Uttar Pradesh",
+      "streetAddress": "बिथरा - सराय रोड",
+      "addressLocality": "अलीगंज",
+      "addressRegion": "उत्तर प्रदेश",
       "postalCode": "207247",
       "addressCountry": "IN"
-    },
-    "description": "Recognized Inter College for Class 1 to 12 with modern residential hostel facilities in Aliganj, Etah.",
-    "founder": {
-      "@type": "Person",
-      "name": "Mr. Avadhesh Singh",
-      "jobTitle": "Director"
-    },
-    "employee": {
-      "@type": "Person",
-      "name": "Mr. Vishnu Kant",
-      "jobTitle": "Manager"
     }
   }
   </script>
 
-  <!-- External Stylesheets: Icons, AOS Animations, Swiper Slider -->
+  <!-- फॉन्ट और स्टाइल लाइब्रेरी -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -88,7 +74,7 @@
       overflow-x: hidden;
     }
 
-    /* Top Strip */
+    /* शीर्ष पट्टी (Top Ribbon) */
     .top-ribbon {
       background: var(--primary-dark);
       color: #e2e8f0;
@@ -117,10 +103,9 @@
       font-weight: 800;
       font-size: 11px;
       letter-spacing: 0.5px;
-      text-transform: uppercase;
     }
 
-    /* Main Header */
+    /* मुख्य हेडर */
     header {
       background: #ffffff;
       padding: 14px 5%;
@@ -146,9 +131,8 @@
       object-fit: cover;
     }
     .brand-details h1 {
-      font-size: 24px;
+      font-size: 23px;
       color: var(--primary);
-      text-transform: uppercase;
       font-weight: 800;
       letter-spacing: 0.5px;
     }
@@ -158,7 +142,7 @@
       font-weight: 600;
     }
 
-    /* 3-Line Hamburger */
+    /* 3-लाइन मेनू आइकन */
     .menu-trigger {
       display: flex;
       flex-direction: column;
@@ -180,7 +164,7 @@
       background: var(--secondary);
     }
 
-    /* Drawer Navigation */
+    /* स्लाइडिंग ड्रॉअर नेविगेशन */
     .drawer-nav {
       position: fixed;
       top: 0;
@@ -226,9 +210,7 @@
       color: var(--secondary);
     }
 
-    /* =========================================================
-       DPS DWARKA PURE TRANSPARENT & ULTRA-CLEAR SLIDER
-    ========================================================= */
+    /* डीपीएस द्वारका स्टाइल स्वच्छ पारदर्शी स्लाइडर */
     .hero-slider-wrap {
       position: relative;
       width: 100%;
@@ -247,7 +229,6 @@
       align-items: center;
       justify-content: center;
     }
-    /* Clear and crisp full-bleed photo */
     .slide-bg {
       position: absolute;
       top: 0;
@@ -258,28 +239,25 @@
       background-position: center;
       transform: scale(1);
       transition: transform 7s ease-out;
-      filter: none !important; /* Koi filter ya blur nahi */
     }
     .swiper-slide-active .slide-bg {
       transform: scale(1.08);
     }
 
-    /* DPS Dwarka Style Sleek Subtle Name Ribbon on Top of Photo (100% Transparent Center) */
     .dps-watermark-ribbon {
       position: absolute;
       top: 20px;
       left: 50%;
       transform: translateX(-50%);
       z-index: 10;
-      background: rgba(0, 0, 0, 0.45);
+      background: rgba(0, 0, 0, 0.48);
       backdrop-filter: blur(4px);
       padding: 8px 30px;
       border-radius: 30px;
-      border: 1px solid rgba(212, 175, 55, 0.5);
+      border: 1px solid rgba(212, 175, 55, 0.6);
       color: #fff;
       font-size: 16px;
-      font-style: italic;
-      letter-spacing: 1px;
+      letter-spacing: 0.5px;
       font-weight: 600;
       pointer-events: none;
       text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
@@ -306,7 +284,7 @@
       color: #000;
     }
 
-    /* Live Notice Ticker */
+    /* सूचना पट्टी (Notice Ticker) */
     .news-strip {
       background: var(--secondary-light);
       border-bottom: 1px solid #fceabb;
@@ -330,16 +308,15 @@
       color: var(--primary);
     }
 
-    /* Main Container */
+    /* मुख्य कंटेनर */
     .container {
       max-width: 1240px;
       margin: 50px auto;
       padding: 0 20px;
     }
     .section-heading {
-      font-size: 26px;
+      font-size: 25px;
       color: var(--primary);
-      text-transform: uppercase;
       font-weight: 800;
       margin-bottom: 30px;
       border-left: 6px solid var(--secondary);
@@ -349,11 +326,11 @@
       gap: 10px;
     }
 
-    /* Management Profiles */
+    /* प्रबंधन प्रोफाइल कार्ड्स (Director, Manager, Principal) */
     .mgmt-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
       margin-bottom: 50px;
     }
     .mgmt-card {
@@ -370,7 +347,7 @@
     }
     .mgmt-img {
       width: 100%;
-      height: 340px;
+      height: 330px;
       object-fit: cover;
       object-position: top;
       background: #f1f5f9;
@@ -387,12 +364,12 @@
     .mgmt-body .role {
       color: var(--secondary);
       font-weight: 700;
-      font-size: 13px;
+      font-size: 13.5px;
       text-transform: uppercase;
       margin-bottom: 12px;
     }
 
-    /* Campus Pillars */
+    /* विद्यालय की मुख्य विशेषताएं */
     .pillars-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -427,7 +404,7 @@
       font-weight: 700;
     }
 
-    /* Hostel Facility */
+    /* आवासीय छात्रावास (Hostel) */
     .hostel-feature {
       background: #fff;
       border-radius: 12px;
@@ -448,7 +425,7 @@
       box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     }
 
-    /* Gallery Media */
+    /* फोटो एवं वीडियो गैलरी */
     .gallery-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -479,7 +456,7 @@
       color: var(--primary);
     }
 
-    /* Admission Form */
+    /* प्रवेश आवेदन पत्र */
     .form-card {
       background: #fff;
       padding: 35px;
@@ -510,7 +487,7 @@
     }
 
     /* =========================================================
-       3D / 4D SUITCASE BOY ANIMATION & LOGIN MODAL
+       3D / 4D एनीमेशन एवं लॉगिन मॉडल
     ========================================================= */
     .modal-backdrop {
       display: none;
@@ -696,7 +673,6 @@
       100% { transform: scale(1.6); opacity: 0; }
     }
 
-    /* Modal Card */
     .modal-3d-card {
       display: none;
       background: linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(240, 249, 255, 0.94)) !important;
@@ -764,7 +740,7 @@
       color: #64748b;
     }
 
-    /* Dashboard Panel */
+    /* एडमिन डैशबोर्ड पैनल */
     .dashboard-panel {
       display: none;
       background: #fff;
@@ -819,7 +795,7 @@
       color: #fff;
     }
 
-    /* Printable Marksheet */
+    /* अंकपत्र (Marksheet) प्रिंट लेआउट */
     #marksheet-view {
       display: none;
       background: #fff;
@@ -907,88 +883,81 @@
 </head>
 <body>
 
-  <!-- Top Strip -->
+  <!-- शीर्ष पट्टी (Top Ribbon) -->
   <div class="top-ribbon">
     <div>
-      <span><i class="fas fa-map-marker-alt"></i> Bithara - Sarai Road, Aliganj, Etah - 207247 (U.P.)</span>
-      <span style="margin-left: 15px;"><i class="fas fa-phone"></i> Helpline: 6395052394[cite: 1]</span>
+      <span><i class="fas fa-map-marker-alt"></i> बिथरा - सराय रोड, अलीगंज, एटा - 207247 (उ.प्र.)</span>
+      <span style="margin-left: 15px;"><i class="fas fa-phone"></i> हेल्पलाइन: 6395052394[cite: 1] / 9758639729</span>
     </div>
     <div>
-      <span class="tag-hostel"><i class="fas fa-bed"></i> Residential / Hostel (Class 1 to 12)</span>
-      <span class="tag-hostel" style="background:#0284c7; color:#fff; margin-left: 8px;"><i class="fas fa-calendar-alt"></i> Session: <strong id="liveSessionBadge">2026-27</strong></span>
-      <a href="javascript:void(0)" onclick="trigger3DLoginCinematic()"><i class="fas fa-user-lock"></i> Portal Login</a>
+      <span class="tag-hostel"><i class="fas fa-bed"></i> आवासीय छात्रावास (कक्षा 1 से 12)</span>
+      <span class="tag-hostel" style="background:#0284c7; color:#fff; margin-left: 8px;"><i class="fas fa-calendar-alt"></i> सत्र: <strong id="liveSessionBadge">2026-27</strong></span>
+      <a href="javascript:void(0)" onclick="trigger3DLoginCinematic()"><i class="fas fa-user-lock"></i> पोर्टल लॉगिन</a>
     </div>
   </div>
 
-  <!-- Header -->
+  <!-- मुख्य हेडर -->
   <header>
     <div class="brand-wrap">
       <img src="rbslogo.jpeg" alt="RBS Logo" class="school-logo" onerror="this.onerror=null; this.src='rbslogo.jpg';">
       <div class="brand-details">
-        <h1>Rambax Singh Inter College</h1>
-        <p>श्री रामबक्स सिंह आवासीय इण्टर कॉलेज (कक्षा 1 से 12 तक) बिथरा, अलीगंज (एटा)</p>
+        <h1>श्री रामबक्स सिंह आवासीय इण्टर कॉलेज</h1>
+        <p>मान्यता प्राप्त - कक्षा 1 से 12 तक (माध्यमिक शिक्षा परिषद्, प्रयागराज) बिथरा, अलीगंज (एटा)</p>
       </div>
     </div>
     
-    <div class="menu-trigger" onclick="toggleDrawerNav()" title="Menu">
+    <div class="menu-trigger" onclick="toggleDrawerNav()" title="मेनू खोलें">
       <span></span>
       <span></span>
       <span></span>
     </div>
   </header>
 
-  <!-- Sliding Drawer Nav -->
+  <!-- स्लाइडिंग मेनू (Drawer Nav) -->
   <div class="drawer-nav" id="drawerNav">
     <div class="drawer-close" onclick="toggleDrawerNav()">&times;</div>
     <div style="margin-bottom: 25px;">
-      <h3 style="color: var(--secondary); text-transform: uppercase; font-size: 18px;">RBS College Menu</h3>
-      <p style="color: #94a3b8; font-size: 12px;">Class 1 to 12 & Residential Hostel</p>
+      <h3 style="color: var(--secondary); font-size: 19px;">मुख्य मेनू</h3>
+      <p style="color: #94a3b8; font-size: 12.5px;">कक्षा 1 से 12 एवं आवासीय छात्रावास</p>
     </div>
     <ul>
-      <li><a href="#" onclick="toggleDrawerNav()"><i class="fas fa-home"></i> Home</a></li>
-      <li><a href="#leadership" onclick="toggleDrawerNav()"><i class="fas fa-user-tie"></i> Prabandhan (Management)</a></li>
-      <li><a href="#facilities" onclick="toggleDrawerNav()"><i class="fas fa-school"></i> Campus Facilities</a></li>
-      <li><a href="#hostel" onclick="toggleDrawerNav()"><i class="fas fa-hotel"></i> Hostel Facility</a></li>
-      <li><a href="#gallery" onclick="toggleDrawerNav()"><i class="fas fa-photo-video"></i> Photos & Videos</a></li>
-      <li><a href="#admission" onclick="toggleDrawerNav()"><i class="fas fa-file-signature"></i> Online Admission</a></li>
-      <li><a href="javascript:void(0)" onclick="toggleDrawerNav(); trigger3DLoginCinematic();" style="color: var(--secondary);"><i class="fas fa-sign-in-alt"></i> Portal Login</a></li>
+      <li><a href="#" onclick="toggleDrawerNav()"><i class="fas fa-home"></i> मुख्य पृष्ठ (Home)</a></li>
+      <li><a href="#leadership" onclick="toggleDrawerNav()"><i class="fas fa-user-tie"></i> विद्यालय प्रशासन (Management)</a></li>
+      <li><a href="#facilities" onclick="toggleDrawerNav()"><i class="fas fa-school"></i> शैक्षणिक सुविधाएं</a></li>
+      <li><a href="#hostel" onclick="toggleDrawerNav()"><i class="fas fa-hotel"></i> छात्रावास व्यवस्था</a></li>
+      <li><a href="#gallery" onclick="toggleDrawerNav()"><i class="fas fa-photo-video"></i> फोटो एवं वीडियो गैलरी</a></li>
+      <li><a href="#admission" onclick="toggleDrawerNav()"><i class="fas fa-file-signature"></i> ऑनलाइन प्रवेश आवेदन</a></li>
+      <li><a href="javascript:void(0)" onclick="toggleDrawerNav(); trigger3DLoginCinematic();" style="color: var(--secondary);"><i class="fas fa-sign-in-alt"></i> ऑनलाइन पोर्टल लॉगिन</a></li>
     </ul>
   </div>
 
-  <!-- Live Notice Strip -->
+  <!-- ताजा सूचना पट्टी (Ticker) -->
   <div class="news-strip">
-    <div class="news-badge"><i class="fas fa-bullhorn"></i> Latest Notice</div>
+    <div class="news-badge"><i class="fas fa-bullhorn"></i> आवश्यक सूचना</div>
     <div class="news-marquee">
       <marquee scrollamount="6">
-        Naye shaikshik satra ke liye Kaksha 1 se 12 tak pravesh prarambh hain • Aavasiya Hostel suvidha uplabdh • Formative (FA) aur Summative (SA) assessments portal par darj ho rahe hain • Helpline: 6395052394[cite: 1].
+        नए शैक्षणिक सत्र के लिए कक्षा 1 से 12 तक प्रवेश प्रारंभ हैं • आवासीय छात्रावास (Hostel) सुविधा उपलब्ध • फॉर्मेटिव (FA) एवं समेटिव (SA) परीक्षा परिणाम पोर्टल पर उपलब्ध • संपर्क सूत्र: 6395052394[cite: 1], 9758639729.
       </marquee>
     </div>
   </div>
 
-  <!-- =========================================================
-       DPS DWARKA STYLE PURE TRANSPARENT & CLEAN SLIDER
-  ========================================================= -->
+  <!-- डीपीएस द्वारका स्टाइल स्वच्छ पारदर्शी स्लाइडर -->
   <div class="hero-slider-wrap">
-    <!-- DPS Dwarka Style Watermark Name Strip on Top -->
     <div class="dps-watermark-ribbon">
-      Residential Rambax Singh Inter College, Bithara, Aliganj
+      श्री रामबक्स सिंह आवासीय इण्टर कॉलेज, बिथरा - अलीगंज (एटा)
     </div>
 
     <div class="swiper heroSwiper">
       <div class="swiper-wrapper">
-        <!-- Slide 1: Campus Ground -->
         <div class="swiper-slide">
           <div class="slide-bg" style="background-image: url('rbs8.jpeg');"></div>
         </div>
-        <!-- Slide 2: Classroom -->
         <div class="swiper-slide">
           <div class="slide-bg" style="background-image: url('rbs9.jpeg');"></div>
         </div>
-        <!-- Slide 3: Function & Assembly -->
         <div class="swiper-slide">
           <div class="slide-bg" style="background-image: url('rbs7.jpeg');"></div>
         </div>
-        <!-- Slide 4: Cultural Stage -->
         <div class="swiper-slide">
           <div class="slide-bg" style="background-image: url('rbs6.jpeg');"></div>
         </div>
@@ -996,77 +965,91 @@
     </div>
   </div>
 
-  <!-- Container -->
+  <!-- मुख्य कंटेनर -->
   <div class="container">
 
-    <!-- Campus Facilities -->
+    <!-- शैक्षणिक सुविधाएं -->
     <div id="facilities" data-aos="fade-up">
-      <h2 class="section-heading"><i class="fas fa-award"></i> Sanstha Ki Mukhya Visheshatayein</h2>
+      <h2 class="section-heading"><i class="fas fa-award"></i> संस्था की प्रमुख विशेषताएं</h2>
       <div class="pillars-grid">
         <div class="pillar-box" data-aos="zoom-in" data-aos-delay="100">
           <i class="fas fa-laptop-code"></i>
-          <h4>Smart Classrooms</h4>
-          <p>Digital board aur aadhunik shikshan paddhati ke sath shaikshik gunvatta.</p>
+          <h4>स्मार्ट कक्षाएं (Smart Classes)</h4>
+          <p>डिजिटल बोर्ड और आधुनिक शिक्षण पद्धति के साथ गुणवत्तापूर्ण अध्यापन।</p>
         </div>
         <div class="pillar-box" data-aos="zoom-in" data-aos-delay="200">
           <i class="fas fa-flask"></i>
-          <h4>Science & Maths Labs</h4>
-          <p>Prayogik gyan ke liye suvyavasthit Physics, Chemistry, aur Biology Prayogshala.</p>
+          <h4>विज्ञान एवं गणित प्रयोगशाला</h4>
+          <p>प्रायोगिक ज्ञान हेतु सुसज्जित भौतिकी, रसायन एवं जीव विज्ञान प्रयोगशाला।</p>
         </div>
         <div class="pillar-box" data-aos="zoom-in" data-aos-delay="300">
           <i class="fas fa-bed"></i>
-          <h4>Residential Hostel</h4>
-          <p>Door-daraj ke chhatron ke liye campus me hi surakshit aavasiya suvidha.</p>
+          <h4>आवासीय छात्रावास (Hostel)</h4>
+          <p>सुरक्षित, अनुशासित एवं नियमित समय-सारिणी युक्त आवासीय व्यवस्था।</p>
         </div>
         <div class="pillar-box" data-aos="zoom-in" data-aos-delay="400">
           <i class="fas fa-running"></i>
-          <h4>Sports & Fitness</h4>
-          <p>Vishal khel maidan, football, cricket, volleyball aur yoga prashikshan.</p>
+          <h4>खेलकूद एवं सर्वांगीण विकास</h4>
+          <p>विशाल खेल मैदान, क्रिकेट, वॉलीबॉल, एथलेटिक्स एवं योग प्रशिक्षण।</p>
         </div>
       </div>
     </div>
 
-    <!-- Leadership Section -->
+    <!-- विद्यालय प्रशासन (Leadership) -->
     <div id="leadership" data-aos="fade-up">
-      <h2 class="section-heading"><i class="fas fa-users-cog"></i> Sanstha Ka Netratva (Administration)</h2>
+      <h2 class="section-heading"><i class="fas fa-users-cog"></i> विद्यालय प्रशासन एवं नेतृत्व</h2>
       <div class="mgmt-grid">
-        <!-- Director Card -->
-        <div class="mgmt-card" data-aos="fade-right">
-          <img src="rbs4.jpeg" class="mgmt-img" alt="Director Shri Avadhesh Singh">
+        <!-- निदेशक (Director) -->
+        <div class="mgmt-card" data-aos="fade-up" data-aos-delay="100">
+          <img src="rbs4.jpeg" class="mgmt-img" alt="Mr. Avadhesh Singh">
           <div class="mgmt-body">
-            <h3>Shri Avadhesh Singh</h3>
-            <div class="role">Director / Nideshak</div>
-            <p>Vidyalaya me uchch gunvatta, mulyaparak shiksha aur chhatron ke sarvangin margdarshan ke nirdeshak.</p>
+            <h3>Mr. Avadhesh Singh</h3>
+            <div class="role">निदेशक (Director)</div>
+            <p>संस्थान में उच्च शैक्षिक गुणवत्ता, मूल्यपरक शिक्षा एवं विद्यार्थियों के चरित्र निर्माण के मुख्य मार्गदर्शक।</p>
           </div>
         </div>
 
-        <!-- Manager Card with Safe Auto-Fallback -->
-        <div class="mgmt-card" data-aos="fade-left">
+        <!-- प्रबंधक (Manager) -->
+        <div class="mgmt-card" data-aos="fade-up" data-aos-delay="200">
           <img src="image_55551c.jpg" 
                class="mgmt-img" 
-               alt="Manager Shri Vishnu Kant"
+               alt="Mr. Vishnu Kant"
                onerror="this.onerror=null; this.src='manager.jpg';">
           <div class="mgmt-body">
-            <h3>Shri Vishnu Kant</h3>
-            <div class="role">Manager / Prabandhak</div>
+            <h3>Mr. Vishnu Kant</h3>
+            <div class="role">प्रबंधक (Manager)</div>
             <p><i class="fas fa-phone"></i> +91 6395052394[cite: 1]</p>
             <p><i class="fas fa-envelope"></i> rambaxsinghintercollege@gmail.com</p>
-            <p style="margin-top: 8px;">"Kaksha 1 se 12 tak ke har vidyarthi ko uchit anushasan, behtar shaikshik mahol aur hostel suvidha uplabdh karana hamari prathmikta hai."</p>
+            <p style="margin-top: 8px;">"कक्षा 1 से 12 तक के प्रत्येक छात्र को अनुशासित वातावरण एवं आधुनिक शिक्षा प्रदान करना हमारी सर्वोच्च प्राथमिकता है।"</p>
+          </div>
+        </div>
+
+        <!-- प्रधानाचार्य (Principal) -->
+        <div class="mgmt-card" data-aos="fade-up" data-aos-delay="300">
+          <img src="principal.jpg" 
+               class="mgmt-img" 
+               alt="Mr. Mahadev Shankar"
+               onerror="this.onerror=null; this.src='rbs5.jpeg';">
+          <div class="mgmt-body">
+            <h3>Mr. Mahadev Shankar</h3>
+            <div class="role">प्रधानाचार्य (Principal)</div>
+            <p><i class="fas fa-phone"></i> +91 9758639729</p>
+            <p style="margin-top: 8px;">"विद्यार्थियों के सर्वांगीण बौद्धिक एवं नैतिक विकास हेतु शिक्षकों का निरंतर मार्गदर्शन एवं अनुशासित अध्ययन।"</p>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Hostel Box -->
+    <!-- आवासीय छात्रावास -->
     <div class="hostel-feature" id="hostel" data-aos="fade-up">
       <div>
-        <h2 style="color: var(--primary); margin-bottom: 12px; font-size: 24px;"><i class="fas fa-hotel"></i> Aavasiya Suvidha (Residential Hostel)</h2>
-        <p style="margin-bottom: 12px; line-height: 1.8;">Door-daraj ke chhatron ke liye campus me hi surakshit v su-vyavasthit hostel uplabdh hai:</p>
+        <h2 style="color: var(--primary); margin-bottom: 12px; font-size: 24px;"><i class="fas fa-hotel"></i> आवासीय सुविधा (Residential Hostel - कक्षा 1 से 12)</h2>
+        <p style="margin-bottom: 12px; line-height: 1.8;">दूर-दराज के छात्रों के लिए कॉलेज परिसर में ही सुरक्षित एवं सर्वसुविधायुक्त छात्रावास की व्यवस्था है:</p>
         <ul style="margin-left: 20px; line-height: 2;">
-          <li>Shuddh v paushtik bhojan (Mess Suvidha)</li>
-          <li>Niyamit study schedule aur evening doubt classes</li>
-          <li>Class 1st se 12th ke chhatron ke liye anushasit vatavaran</li>
-          <li>CCTV v 24 ghante suraksha vyavastha</li>
+          <li>शुद्ध एवं पौष्टिक भोजन (मेस व्यवस्था)</li>
+          <li>नियमित अध्ययन समय-सारिणी एवं शाम को विशेष संशय निवारण कक्षाएं</li>
+          <li>अनुभवी अध्यापकों की देखरेख में अनुशासित दिनचर्या</li>
+          <li>सीसीटीवी एवं 24 घंटे सुरक्षा व्यवस्था</li>
         </ul>
       </div>
       <div>
@@ -1074,200 +1057,211 @@
       </div>
     </div>
 
-    <!-- Dynamic Media Gallery -->
+    <!-- फोटो एवं वीडियो गैलरी -->
     <div id="gallery" data-aos="fade-up">
-      <h2 class="section-heading"><i class="fas fa-photo-video"></i> Campus Photos & Videos (Admin Controlled)</h2>
+      <h2 class="section-heading"><i class="fas fa-photo-video"></i> कॉलेज परिसर एवं सांस्कृतिक गतिविधियां</h2>
       <div class="gallery-grid" id="publicMediaGallery"></div>
     </div>
 
-    <!-- Admission Section -->
+    <!-- ऑनलाइन प्रवेश फॉर्म -->
     <div class="form-card" id="admission" data-aos="fade-up">
-      <h2 style="color: var(--primary); margin-bottom: 6px;"><i class="fas fa-user-plus"></i> Online Pravesh Avedan (Class 1 to 12)</h2>
-      <p style="font-size: 13.5px; color: var(--text-muted);">Form submit karne par data seedhe Admin Portal me store ho jayega.</p>
+      <h2 style="color: var(--primary); margin-bottom: 6px;"><i class="fas fa-user-plus"></i> ऑनलाइन प्रवेश आवेदन पत्र (कक्षा 1 से 12)</h2>
+      <p style="font-size: 13.5px; color: var(--text-muted);">फॉर्म जमा करते ही संपूर्ण विवरण सीधे विद्यालय के एडमिन पोर्टल में दर्ज हो जाएगा।</p>
       
       <form onsubmit="handleAdmissionSubmit(event)" id="admForm">
         <div class="form-grid">
-          <div><label>Student Name *</label><input type="text" id="adm_name" required placeholder="Student Name"></div>
-          <div><label>Father's Name *</label><input type="text" id="adm_father" required placeholder="Father's Name"></div>
-          <div><label>Class for Admission *</label>
+          <div><label>विद्यार्थी का नाम (Student Name) *</label><input type="text" id="adm_name" required placeholder="पूरा नाम दर्ज करें"></div>
+          <div><label>पिता का नाम (Father's Name) *</label><input type="text" id="adm_father" required placeholder="पिता का नाम"></div>
+          <div><label>प्रवेश हेतु कक्षा (Class) *</label>
             <select id="adm_class" required>
-              <option value="">-- Choose Class --</option>
-              <option value="Class 1">Class 1</option>
-              <option value="Class 2">Class 2</option>
-              <option value="Class 3">Class 3</option>
-              <option value="Class 4">Class 4</option>
-              <option value="Class 5">Class 5</option>
-              <option value="Class 6">Class 6</option>
-              <option value="Class 7">Class 7</option>
-              <option value="Class 8">Class 8</option>
-              <option value="Class 9">Class 9</option>
-              <option value="Class 10">Class 10 (High School)</option>
-              <option value="Class 11">Class 11</option>
-              <option value="Class 12">Class 12 (Inter)</option>
+              <option value="">-- कक्षा चुनें --</option>
+              <option value="कक्षा 1">कक्षा 1</option>
+              <option value="कक्षा 2">कक्षा 2</option>
+              <option value="कक्षा 3">कक्षा 3</option>
+              <option value="कक्षा 4">कक्षा 4</option>
+              <option value="कक्षा 5">कक्षा 5</option>
+              <option value="कक्षा 6">कक्षा 6</option>
+              <option value="कक्षा 7">कक्षा 7</option>
+              <option value="कक्षा 8">कक्षा 8</option>
+              <option value="कक्षा 9">कक्षा 9</option>
+              <option value="कक्षा 10">कक्षा 10 (हाईस्कूल)</option>
+              <option value="कक्षा 11">कक्षा 11</option>
+              <option value="कक्षा 12">कक्षा 12 (इंटरमीडिएट)</option>
             </select>
           </div>
-          <div><label>Mobile Number *</label><input type="tel" id="adm_phone" required pattern="[0-9]{10}" placeholder="10-digit number"></div>
-          <div><label>Hostel Required? *</label>
+          <div><label>मोबाइल नंबर (Mobile No.) *</label><input type="tel" id="adm_phone" required pattern="[0-9]{10}" placeholder="10 अंकों का मोबाइल नंबर"></div>
+          <div><label>क्या छात्रावास (Hostel) चाहिए? *</label>
             <select id="adm_hostel" required>
-              <option value="No">No (Day Scholar)</option>
-              <option value="Yes">Yes (Hostel Required)</option>
+              <option value="नहीं">नहीं (Day Scholar)</option>
+              <option value="हाँ">हाँ (छात्रावास आवश्यक)</option>
             </select>
           </div>
-          <div style="grid-column: 1 / -1;"><label>Address *</label><textarea id="adm_addr" rows="2" required placeholder="Gram, Post, Tehsil, Jila"></textarea></div>
+          <div style="grid-column: 1 / -1;"><label>स्थायी पता (Address) *</label><textarea id="adm_addr" rows="2" required placeholder="ग्राम, पोस्ट, तहसील, जिला, पिन कोड"></textarea></div>
         </div>
         <div style="margin-top: 20px;">
-          <button type="submit" class="btn-gold"><i class="fas fa-paper-plane"></i> Form Submit Karein</button>
+          <button type="submit" class="btn-gold"><i class="fas fa-paper-plane"></i> आवेदन पत्र जमा करें</button>
         </div>
       </form>
     </div>
 
-    <!-- Active Management Dashboard -->
+    <!-- सक्रिय प्रबंधन डैशबोर्ड (Admin, Staff, Student) -->
     <div class="dashboard-panel" id="mainDashboard">
       <div class="dash-top">
         <div>
-          <h2 style="color: var(--primary);" id="dashTitle">Control Panel</h2>
-          <p style="font-size: 13px; color: var(--text-muted);">Active User: <strong id="dashUser"></strong></p>
+          <h2 style="color: var(--primary);" id="dashTitle">नियंत्रण कक्ष (Control Panel)</h2>
+          <p style="font-size: 13px; color: var(--text-muted);">लॉगिन उपयोगकर्ता: <strong id="dashUser"></strong></p>
         </div>
-        <button class="btn-gold" style="background: #ef4444; color: #fff;" onclick="logoutPortal()"><i class="fas fa-sign-out-alt"></i> Logout</button>
+        <button class="btn-gold" style="background: #ef4444; color: #fff;" onclick="logoutPortal()"><i class="fas fa-sign-out-alt"></i> लॉगआउट करें</button>
       </div>
 
       <div class="dash-navs" id="dashNavTabs"></div>
 
-      <!-- Tab: Admissions -->
+      <!-- टैब: प्रवेश आवेदन (Admissions) -->
       <div id="tab-admissions" class="dash-view-block">
-        <h3><i class="fas fa-inbox"></i> Online Admission Applications</h3>
+        <h3><i class="fas fa-inbox"></i> प्राप्त ऑनलाइन प्रवेश आवेदन</h3>
         <table id="admTable">
-          <thead><tr><th>ID</th><th>Student</th><th>Father</th><th>Class</th><th>Phone</th><th>Hostel</th><th>Address</th><th>Action</th></tr></thead>
+          <thead><tr><th>आईडी</th><th>छात्र का नाम</th><th>पिता का नाम</th><th>कक्षा</th><th>मोबाइल</th><th>हॉस्टल</th><th>पता</th><th>कार्यवाई</th></tr></thead>
           <tbody></tbody>
         </table>
       </div>
 
-      <!-- Tab: Staff Accounts -->
+      <!-- टैब: शिक्षक एवं स्टाफ प्रबंधन -->
       <div id="tab-staff-mgmt" class="dash-view-block" style="display: none;">
-        <h3><i class="fas fa-chalkboard-teacher"></i> Teacher / Staff Account Control</h3>
+        <h3><i class="fas fa-chalkboard-teacher"></i> शिक्षक / स्टाफ खाता नियंत्रण</h3>
         <div style="background: #f8fafc; padding: 18px; margin: 15px 0; border-radius: 8px; border: 1px solid #e2e8f0;">
-          <h4>Add New Teacher / Staff (Only Admin Can Add)</h4>
+          <h4>नया शिक्षक खाता जोड़ें (केवल एडमिन द्वारा)</h4>
           <div style="display: flex; gap: 10px; margin-top: 10px; flex-wrap: wrap;">
-            <input type="text" id="add_staff_name" placeholder="Teacher Name" style="padding: 8px;">
-            <input type="text" id="add_staff_subject" placeholder="Subject / Class" style="padding: 8px;">
-            <input type="text" id="add_staff_id" placeholder="Assign Login ID" style="padding: 8px;">
-            <input type="text" id="add_staff_pass" placeholder="Assign Password" style="padding: 8px;">
-            <button class="btn-gold" onclick="adminAddStaff()"><i class="fas fa-plus"></i> Create Teacher Account</button>
+            <input type="text" id="add_staff_name" placeholder="शिक्षक का नाम" style="padding: 8px;">
+            <input type="text" id="add_staff_subject" placeholder="विषय / कक्षा" style="padding: 8px;">
+            <input type="text" id="add_staff_id" placeholder="लॉगिन आईडी बनाएं" style="padding: 8px;">
+            <input type="text" id="add_staff_pass" placeholder="पासवर्ड बनाएं" style="padding: 8px;">
+            <button class="btn-gold" onclick="adminAddStaff()"><i class="fas fa-plus"></i> खाता बनाएं</button>
           </div>
         </div>
         <table id="staffTable">
-          <thead><tr><th>Teacher Name</th><th>Subject/Class</th><th>Login ID</th><th>Password</th><th>Action</th></tr></thead>
+          <thead><tr><th>शिक्षक का नाम</th><th>विषय/कक्षा</th><th>लॉगिन आईडी</th><th>पासवर्ड</th><th>कार्यवाई</th></tr></thead>
           <tbody></tbody>
         </table>
       </div>
 
-      <!-- Tab: Student Records & Unlock -->
+      <!-- टैब: छात्र रिकॉर्ड एवं अंकपत्र लॉक/अनलॉक -->
       <div id="tab-student-mgmt" class="dash-view-block" style="display: none;">
-        <h3><i class="fas fa-user-graduate"></i> Student Records & Marksheet Unlock Control</h3>
+        <h3><i class="fas fa-user-graduate"></i> छात्र रिकॉर्ड एवं अंकपत्र अनलॉक नियंत्रण</h3>
         <div style="background: #f8fafc; padding: 18px; margin: 15px 0; border-radius: 8px; border: 1px solid #e2e8f0;">
-          <h4>Register Student (Only Admin Can Add)</h4>
+          <h4>नया छात्र पंजीकृत करें</h4>
           <div style="display: flex; gap: 10px; margin-top: 10px; flex-wrap: wrap;">
-            <input type="text" id="add_st_roll" placeholder="Roll No" style="width: 100px; padding: 8px;">
-            <input type="text" id="add_st_name" placeholder="Student Name" style="padding: 8px;">
-            <input type="text" id="add_st_father" placeholder="Father Name" style="padding: 8px;">
+            <input type="text" id="add_st_roll" placeholder="अनुक्रमांक (Roll No)" style="width: 140px; padding: 8px;">
+            <input type="text" id="add_st_name" placeholder="छात्र का नाम" style="padding: 8px;">
+            <input type="text" id="add_st_father" placeholder="पिता का नाम" style="padding: 8px;">
             <select id="add_st_class" style="padding: 8px;">
-              <option value="Class 1">Class 1</option><option value="Class 2">Class 2</option><option value="Class 3">Class 3</option><option value="Class 4">Class 4</option><option value="Class 5">Class 5</option><option value="Class 6">Class 6</option><option value="Class 7">Class 7</option><option value="Class 8">Class 8</option><option value="Class 9">Class 9</option><option value="Class 10">Class 10</option><option value="Class 11">Class 11</option><option value="Class 12">Class 12</option>
+              <option value="कक्षा 1">कक्षा 1</option><option value="कक्षा 2">कक्षा 2</option><option value="कक्षा 3">कक्षा 3</option><option value="कक्षा 4">कक्षा 4</option><option value="कक्षा 5">कक्षा 5</option><option value="कक्षा 6">कक्षा 6</option><option value="कक्षा 7">कक्षा 7</option><option value="कक्षा 8">कक्षा 8</option><option value="कक्षा 9">कक्षा 9</option><option value="कक्षा 10">कक्षा 10</option><option value="कक्षा 11">कक्षा 11</option><option value="कक्षा 12">कक्षा 12</option>
             </select>
-            <input type="text" id="add_st_addr" placeholder="Address" style="padding: 8px;">
-            <input type="text" id="add_st_pass" placeholder="Password" style="padding: 8px; width: 120px;">
-            <button class="btn-gold" onclick="adminAddStudent()"><i class="fas fa-plus"></i> Save Student</button>
+            <input type="text" id="add_st_addr" placeholder="पता" style="padding: 8px;">
+            <input type="text" id="add_st_pass" placeholder="पासवर्ड" style="padding: 8px; width: 120px;">
+            <button class="btn-gold" onclick="adminAddStudent()"><i class="fas fa-plus"></i> छात्र जोड़ें</button>
           </div>
         </div>
         <table id="studentsTable">
-          <thead><tr><th>Roll No</th><th>Student Name</th><th>Father Name</th><th>Class</th><th>Address</th><th>Login Pass</th><th>Marksheet Status</th><th>Action</th></tr></thead>
+          <thead><tr><th>अनुक्रमांक</th><th>छात्र का नाम</th><th>पिता का नाम</th><th>कक्षा</th><th>पता</th><th>पासवर्ड</th><th>अंकपत्र स्थिति</th><th>कार्यवाई</th></tr></thead>
           <tbody></tbody>
         </table>
       </div>
 
-      <!-- Tab: Media Manager -->
+      <!-- टैब: मीडिया प्रबंधक (Photos & Videos) -->
       <div id="tab-media-mgmt" class="dash-view-block" style="display: none;">
-        <h3><i class="fas fa-photo-video"></i> Media Control (Change Photos & Add Videos)</h3>
+        <h3><i class="fas fa-photo-video"></i> वेबसाइट फोटो एवं वीडियो प्रबंधन</h3>
         <div style="background: #f8fafc; padding: 18px; border-radius: 8px; border: 1px solid #e2e8f0; margin-bottom: 20px;">
-          <h4 style="color: var(--primary); margin-bottom: 10px;"><i class="fas fa-plus-circle"></i> Add New Photo or Video</h4>
+          <h4 style="color: var(--primary); margin-bottom: 10px;"><i class="fas fa-plus-circle"></i> नई फोटो अथवा वीडियो अपलोड करें</h4>
           <div class="form-grid">
             <div>
-              <label>Media Type</label>
+              <label>मीडिया का प्रकार</label>
               <select id="media_type" onchange="toggleMediaInputType()">
-                <option value="photo_file">Upload Photo (from Computer/Mobile)</option>
-                <option value="photo_url">Photo URL / File Name</option>
-                <option value="video_youtube">YouTube Video Link</option>
-                <option value="video_mp4">Direct Video URL (.mp4)</option>
+                <option value="photo_file">कंप्यूटर/मोबाइल से फोटो अपलोड करें</option>
+                <option value="photo_url">फोटो लिंक / फाइल का नाम</option>
+                <option value="video_youtube">यूट्यूब वीडियो लिंक (YouTube Link)</option>
+                <option value="video_mp4">सीधा वीडियो लिंक (.mp4)</option>
               </select>
             </div>
-            <div><label>Title / Caption</label><input type="text" id="media_title" placeholder="e.g. Campus Event"></div>
-            <div id="box_media_file"><label>Choose Photo File</label><input type="file" id="media_file_input" accept="image/*"></div>
-            <div id="box_media_url" style="display: none;"><label id="lbl_media_url">Media URL / Link</label><input type="text" id="media_url_input" placeholder="https://..."></div>
+            <div><label>शीर्षक / विवरण (Caption)</label><input type="text" id="media_title" placeholder="उदा. विज्ञान प्रयोगशाला / वार्षिक उत्सव"></div>
+            <div id="box_media_file"><label>फोटो फाइल चुनें</label><input type="file" id="media_file_input" accept="image/*"></div>
+            <div id="box_media_url" style="display: none;"><label id="lbl_media_url">मीडिया लिंक</label><input type="text" id="media_url_input" placeholder="https://..."></div>
           </div>
-          <div style="margin-top: 15px;"><button class="btn-gold" onclick="addNewMediaItem()"><i class="fas fa-upload"></i> Upload & Update Website</button></div>
+          <div style="margin-top: 15px;"><button class="btn-gold" onclick="addNewMediaItem()"><i class="fas fa-upload"></i> वेबसाइट पर प्रकाशित करें</button></div>
         </div>
-        <h4>Current Gallery Items</h4>
+        <h4>वेबसाइट पर वर्तमान फोटो एवं वीडियो</h4>
         <table id="mediaTable">
-          <thead><tr><th>Type</th><th>Preview</th><th>Title</th><th>Action</th></tr></thead>
+          <thead><tr><th>प्रकार</th><th>झलक</th><th>शीर्षक</th><th>कार्यवाई</th></tr></thead>
           <tbody></tbody>
         </table>
       </div>
 
-      <!-- Tab: Session Manager -->
+      <!-- टैब: शैक्षणिक सत्र प्रबंधन (Session Manager) -->
       <div id="tab-session-mgmt" class="dash-view-block" style="display: none;">
-        <h3><i class="fas fa-calendar-alt"></i> Academic Session Manager</h3>
+        <h3><i class="fas fa-calendar-alt"></i> शैक्षणिक सत्र प्रबंधक</h3>
         <div style="background: #f8fafc; padding: 20px; border-radius: 8px; border: 1px solid #e2e8f0; max-width: 500px;">
           <div style="margin-bottom: 15px;">
-            <label style="font-size: 13px; font-weight: 700; display: block; margin-bottom: 5px;">Active Academic Session</label>
+            <label style="font-size: 13px; font-weight: 700; display: block; margin-bottom: 5px;">सक्रिय शैक्षणिक सत्र</label>
             <input type="text" id="custom_session_input" style="width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 4px; font-size: 15px; font-weight: bold;">
           </div>
           <div style="display: flex; gap: 10px;">
-            <button class="btn-gold" onclick="saveAdminSession()"><i class="fas fa-save"></i> Save Session</button>
-            <button class="btn-gold" style="background: #0284c7; color: #fff;" onclick="resetAutoSession()"><i class="fas fa-sync"></i> Re-Calculate Auto</button>
+            <button class="btn-gold" onclick="saveAdminSession()"><i class="fas fa-save"></i> सत्र सुरक्षित करें</button>
+            <button class="btn-gold" style="background: #0284c7; color: #fff;" onclick="resetAutoSession()"><i class="fas fa-sync"></i> स्वतः गणना पर सेट करें</button>
           </div>
         </div>
       </div>
 
-      <!-- Tab: Marks Entry -->
+      <!-- टैब: अंक प्रविष्टि (Marks Entry - FA1 to SA2) -->
       <div id="tab-marks-entry" class="dash-view-block" style="display: none;">
-        <h3><i class="fas fa-edit"></i> Marks Entry (FA1, FA2, SA1, FA3, FA4, SA2)</h3>
+        <h3><i class="fas fa-edit"></i> परीक्षा अंक प्रविष्टि (FA1, FA2, SA1, FA3, FA4, SA2)</h3>
+        <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 12px;">अध्यापक कृपया छात्र का नाम, पिता का नाम, कक्षा एवं अनुक्रमांक अनिवार्य रूप से भरें:</p>
         <div class="form-grid">
-          <div><label>Session *</label><input type="text" id="me_session" readonly style="background:#eef2f5;"></div>
-          <div><label>Exam Term *</label>
+          <div><label>सत्र *</label><input type="text" id="me_session" readonly style="background:#eef2f5;"></div>
+          <div><label>परीक्षा का प्रकार *</label>
             <select id="me_exam">
-              <option value="FA1">FA 1</option><option value="FA2">FA 2</option><option value="SA1">SA 1 (Half Yearly)</option><option value="FA3">FA 3</option><option value="FA4">FA 4</option><option value="SA2">SA 2 (Annual)</option>
+              <option value="FA1">FA 1 (प्रथम इकाई परीक्षा)</option>
+              <option value="FA2">FA 2 (द्वितीय इकाई परीक्षा)</option>
+              <option value="SA1">SA 1 (अर्धवार्षिक परीक्षा)</option>
+              <option value="FA3">FA 3 (तृतीय इकाई परीक्षा)</option>
+              <option value="FA4">FA 4 (चतुर्थ इकाई परीक्षा)</option>
+              <option value="SA2">SA 2 (वार्षिक परीक्षा)</option>
             </select>
           </div>
-          <div><label>Class (1 to 12) *</label>
+          <div><label>कक्षा (1 से 12) *</label>
             <select id="me_class">
-              <option value="">-- Select Class --</option>
-              <option value="Class 1">Class 1</option><option value="Class 2">Class 2</option><option value="Class 3">Class 3</option><option value="Class 4">Class 4</option><option value="Class 5">Class 5</option><option value="Class 6">Class 6</option><option value="Class 7">Class 7</option><option value="Class 8">Class 8</option><option value="Class 9">Class 9</option><option value="Class 10">Class 10</option><option value="Class 11">Class 11</option><option value="Class 12">Class 12</option>
+              <option value="">-- कक्षा चुनें --</option>
+              <option value="कक्षा 1">कक्षा 1</option><option value="कक्षा 2">कक्षा 2</option><option value="कक्षा 3">कक्षा 3</option><option value="कक्षा 4">कक्षा 4</option><option value="कक्षा 5">कक्षा 5</option><option value="कक्षा 6">कक्षा 6</option><option value="कक्षा 7">कक्षा 7</option><option value="कक्षा 8">कक्षा 8</option><option value="कक्षा 9">कक्षा 9</option><option value="कक्षा 10">कक्षा 10</option><option value="कक्षा 11">कक्षा 11</option><option value="कक्षा 12">कक्षा 12</option>
             </select>
           </div>
-          <div><label>Roll Number *</label><input type="text" id="me_roll" placeholder="Enter Roll No" required></div>
-          <div><label>Student Name *</label><input type="text" id="me_name" placeholder="Enter Student Name" required></div>
-          <div><label>Father's Name *</label><input type="text" id="me_father" placeholder="Enter Father Name" required></div>
+          <div><label>अनुक्रमांक (Roll No.) *</label><input type="text" id="me_roll" placeholder="अनुक्रमांक दर्ज करें" required></div>
+          <div><label>छात्र का नाम *</label><input type="text" id="me_name" placeholder="छात्र का नाम" required></div>
+          <div><label>पिता का नाम *</label><input type="text" id="me_father" placeholder="पिता का नाम" required></div>
         </div>
-        <h4 style="margin-top: 20px; color: var(--primary);"><i class="fas fa-book"></i> Enter Subject Marks</h4>
+        <h4 style="margin-top: 20px; color: var(--primary);"><i class="fas fa-book"></i> प्राप्तांक दर्ज करें (पूर्णांक: 100)</h4>
         <div class="form-grid">
-          <div><label>Hindi</label><input type="number" id="m_hindi" placeholder="0 - 100"></div>
-          <div><label>English</label><input type="number" id="m_english" placeholder="0 - 100"></div>
-          <div><label>Mathematics</label><input type="number" id="m_math" placeholder="0 - 100"></div>
-          <div><label>Science / EVS</label><input type="number" id="m_science" placeholder="0 - 100"></div>
-          <div><label>Social Science</label><input type="number" id="m_social" placeholder="0 - 100"></div>
-          <div><label>Drawing / Sanskrit</label><input type="number" id="m_opt" placeholder="0 - 100"></div>
+          <div><label>हिंदी (Hindi)</label><input type="number" id="m_hindi" placeholder="0 - 100"></div>
+          <div><label>अंग्रेजी (English)</label><input type="number" id="m_english" placeholder="0 - 100"></div>
+          <div><label>गणित (Mathematics)</label><input type="number" id="m_math" placeholder="0 - 100"></div>
+          <div><label>विज्ञान / पर्यावरण</label><input type="number" id="m_science" placeholder="0 - 100"></div>
+          <div><label>सामाजिक विज्ञान</label><input type="number" id="m_social" placeholder="0 - 100"></div>
+          <div><label>चित्रकला / संस्कृत</label><input type="number" id="m_opt" placeholder="0 - 100"></div>
         </div>
-        <div style="margin-top: 15px;"><button class="btn-gold" onclick="submitTeacherMarks()"><i class="fas fa-save"></i> Submit Marks Record</button></div>
+        <div style="margin-top: 15px;"><button class="btn-gold" onclick="submitTeacherMarks()"><i class="fas fa-save"></i> परीक्षा अंक सुरक्षित करें</button></div>
       </div>
 
-      <!-- Tab: Marksheet Generator -->
+      <!-- टैब: 1-क्लिक अंकपत्र जनरेटर (Admin Only) -->
       <div id="tab-marksheet-gen" class="dash-view-block" style="display: none;">
-        <h3><i class="fas fa-award"></i> 1-Click Official Marksheet Ready (Admin Only)</h3>
-        <div style="display: flex; gap: 10px; margin-no: 15px 0; flex-wrap: wrap;">
-          <input type="text" id="admin_ms_roll" placeholder="Enter Student Roll No" style="padding: 8px; width: 220px;">
+        <h3><i class="fas fa-award"></i> 1-क्लिक आधिकारिक अंकपत्र तैयार करें (एडमिन नियंत्रण)</h3>
+        <div style="display: flex; gap: 10px; margin: 15px 0; flex-wrap: wrap;">
+          <input type="text" id="admin_ms_roll" placeholder="छात्र का अनुक्रमांक दर्ज करें" style="padding: 8px; width: 220px;">
           <select id="admin_ms_exam" style="padding: 8px;">
-            <option value="SA2">SA 2 (Annual)</option><option value="SA1">SA 1 (Half Yearly)</option><option value="FA1">FA 1</option><option value="FA2">FA 2</option><option value="FA3">FA 3</option><option value="FA4">FA 4</option>
+            <option value="SA2">वार्षिक परीक्षा (SA 2)</option>
+            <option value="SA1">अर्धवार्षिक परीक्षा (SA 1)</option>
+            <option value="FA1">इकाई परीक्षा 1 (FA 1)</option>
+            <option value="FA2">इकाई परीक्षा 2 (FA 2)</option>
+            <option value="FA3">इकाई परीक्षा 3 (FA 3)</option>
+            <option value="FA4">इकाई परीक्षा 4 (FA 4)</option>
           </select>
-          <button class="btn-gold" onclick="renderPrintableMarksheet()"><i class="fas fa-magic"></i> Generate Marksheet</button>
+          <button class="btn-gold" onclick="renderPrintableMarksheet()"><i class="fas fa-magic"></i> अंकपत्र बनाएं</button>
         </div>
 
         <div id="marksheet-view">
@@ -1275,51 +1269,51 @@
           <div class="marksheet-header">
             <img src="rbslogo.jpeg" alt="Logo" onerror="this.onerror=null; this.src='rbslogo.jpg';">
             <div style="text-align: center; flex: 1; padding: 0 10px;">
-              <h2 style="font-size: 22px; color: #081d33; text-transform: uppercase;">Residential Rambax Singh Inter College</h2>
-              <p style="font-size: 12px; font-weight: 700;">BITHARA - SARAI ROAD, ALIGANJ (ETAH) U.P. - 207247</p>
-              <p style="font-size: 11px;">Recognized Class 1 to 12 | Affiliated to UP Board Prayagraj</p>
-              <h3 style="margin-top: 6px; font-size: 16px; text-decoration: underline;" id="out_exam_title">PROGRESS REPORT CARD</h3>
+              <h2 style="font-size: 21px; color: #081d33;">श्री रामबक्स सिंह आवासीय इण्टर कॉलेज</h2>
+              <p style="font-size: 12px; font-weight: 700;">बिथरा - सराय रोड, अलीगंज (एटा) उ.प्र. - 207247</p>
+              <p style="font-size: 11px;">कक्षा 1 से 12 तक मान्यता प्राप्त | माध्यमिक शिक्षा परिषद्, प्रयागराज</p>
+              <h3 style="margin-top: 6px; font-size: 16px; text-decoration: underline;" id="out_exam_title">प्रगति पत्रक (PROGRESS REPORT CARD)</h3>
             </div>
-            <div style="width: 80px; height: 80px; border: 1px dashed #999; display: flex; align-items: center; justify-content: center; font-size: 11px; text-align: center;">Photo</div>
+            <div style="width: 80px; height: 80px; border: 1px dashed #999; display: flex; align-items: center; justify-content: center; font-size: 11px; text-align: center;">फोटो</div>
           </div>
 
           <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 13.5px; border-bottom: 1px solid #ccc; padding-bottom: 12px; margin-bottom: 15px;">
-            <div><strong>Student Name:</strong> <span id="out_name">--</span></div>
-            <div><strong>Roll Number:</strong> <span id="out_roll">--</span></div>
-            <div><strong>Father's Name:</strong> <span id="out_father">--</span></div>
-            <div><strong>Class:</strong> <span id="out_class">--</span></div>
-            <div style="grid-column: 1 / -1;"><strong>Address:</strong> <span id="out_address">--</span></div>
+            <div><strong>विद्यार्थी का नाम:</strong> <span id="out_name">--</span></div>
+            <div><strong>अनुक्रमांक (Roll No):</strong> <span id="out_roll">--</span></div>
+            <div><strong>पिता का नाम:</strong> <span id="out_father">--</span></div>
+            <div><strong>कक्षा:</strong> <span id="out_class">--</span></div>
+            <div style="grid-column: 1 / -1;"><strong>स्थायी पता:</strong> <span id="out_address">--</span></div>
           </div>
 
           <table>
-            <thead><tr><th>Subject</th><th>Max Marks</th><th>Passing</th><th>Marks Obtained</th><th>Grade</th></tr></thead>
+            <thead><tr><th>विषय</th><th>पूर्णांक</th><th>उत्तीर्णांक</th><th>प्राप्तांक</th><th>श्रेणी / ग्रेड</th></tr></thead>
             <tbody id="out_tbody"></tbody>
             <tfoot>
-              <tr style="font-weight: bold; background: #fdfdfd;"><td>TOTAL</td><td>600</td><td>200</td><td id="out_grand_total">--</td><td id="out_result">--</td></tr>
+              <tr style="font-weight: bold; background: #fdfdfd;"><td>कुल योग (TOTAL)</td><td>600</td><td>200</td><td id="out_grand_total">--</td><td id="out_result">--</td></tr>
             </tfoot>
           </table>
 
           <div class="sigs">
-            <div class="sig-line">Class Teacher Signature</div>
-            <div class="sig-line">Exam Incharge Signature</div>
+            <div class="sig-line">कक्षाध्यापक के हस्ताक्षर</div>
+            <div class="sig-line">परीक्षा प्रभारी के हस्ताक्षर</div>
             <div class="sig-line">
-              <span style="font-size: 11px; font-weight: normal; display: block; color: #555;">Shri Vishnu Kant</span>
-              Manager / Principal Signature
+              <span style="font-size: 11px; font-weight: normal; display: block; color: #555;">Mr. Vishnu Kant / Mr. Mahadev Shankar</span>
+              प्रबंधक / प्रधानाचार्य हस्ताक्षर
             </div>
           </div>
 
           <div style="text-align: center; margin-top: 30px;">
-            <button class="btn-gold" onclick="window.print()"><i class="fas fa-print"></i> Print Marksheet</button>
+            <button class="btn-gold" onclick="window.print()"><i class="fas fa-print"></i> अंकपत्र प्रिंट करें</button>
           </div>
         </div>
       </div>
 
-      <!-- Tab: Student View -->
+      <!-- टैब: छात्र स्वयं का रिकॉर्ड (Student View Only) -->
       <div id="tab-student-view" class="dash-view-block" style="display: none;">
-        <h3><i class="fas fa-user-check"></i> My Academic Record</h3>
+        <h3><i class="fas fa-user-check"></i> मेरा शैक्षणिक रिकॉर्ड</h3>
         <div id="studentLockNotice" style="display: none; background: #fee2e2; border-left: 4px solid #ef4444; padding: 18px; border-radius: 6px; margin: 15px 0;">
-          <h4 style="color: #b91c1c;"><i class="fas fa-lock"></i> Marksheet Is Locked By Admin</h4>
-          <p style="font-size: 13.5px; margin-top: 4px;">Aapki marksheet abhi college admin dwaara lock hai. Jaise hi Admin ise unlock karenge, aap marksheet dekh sakenge.</p>
+          <h4 style="color: #b91c1c;"><i class="fas fa-lock"></i> अंकपत्र वर्तमान में लॉक है</h4>
+          <p style="font-size: 13.5px; margin-top: 4px;">आपका परीक्षा परिणाम/अंकपत्र अभी विद्यालय प्रशासन द्वारा लॉक है। एडमिन द्वारा अनलॉक किए जाने पर आप इसे यहाँ देख व डाउनलोड कर सकेंगे।</p>
         </div>
         <div id="studentProfileDetails" style="background: #f8fafc; padding: 20px; border-radius: 8px; margin-top: 15px; border: 1px solid #e2e8f0;"></div>
       </div>
@@ -1329,7 +1323,7 @@
   </div>
 
   <!-- =========================================================
-       3D SUITCASE BOY ANIMATION & MODAL
+       3D सूटकेस बालक एनीमेशन एवं लॉगिन मॉडल
   ========================================================= -->
   <div class="modal-backdrop" id="loginBackdrop">
     <div class="ambient-particles"></div>
@@ -1358,63 +1352,64 @@
       <span class="close-btn" onclick="closeLoginModal()">&times;</span>
 
       <div class="role-pills">
-        <div class="role-pill active" onclick="setRole('admin')"><i class="fas fa-user-shield"></i> Admin</div>
-        <div class="role-pill" onclick="setRole('staff')"><i class="fas fa-chalkboard-teacher"></i> Staff</div>
-        <div class="role-pill" onclick="setRole('student')"><i class="fas fa-user-graduate"></i> Student</div>
+        <div class="role-pill active" onclick="setRole('admin')"><i class="fas fa-user-shield"></i> एडमिन</div>
+        <div class="role-pill" onclick="setRole('staff')"><i class="fas fa-chalkboard-teacher"></i> शिक्षक/स्टाफ</div>
+        <div class="role-pill" onclick="setRole('student')"><i class="fas fa-user-graduate"></i> विद्यार्थी</div>
       </div>
 
       <div style="text-align: center; margin-bottom: 20px;">
-        <h3 id="modalHeading" style="color: var(--primary); font-size: 20px;">Admin Access Control</h3>
-        <p style="font-size: 12.5px; color: #64748b;">Rambax Singh Inter College Portal</p>
+        <h3 id="modalHeading" style="color: var(--primary); font-size: 20px;">एडमिन पोर्टल लॉगिन</h3>
+        <p style="font-size: 12.5px; color: #64748b;">श्री रामबक्स सिंह आवासीय इण्टर कॉलेज</p>
       </div>
 
       <form onsubmit="handlePortalAuth(event)" autocomplete="off">
         <div style="margin-bottom: 16px;">
-          <label id="lblUser" style="font-size: 13px; font-weight: 700; display: block; margin-bottom: 5px;">Admin Login ID</label>
-          <input type="text" id="userInput" required autocomplete="off" placeholder="Enter ID" style="width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 14px;">
+          <label id="lblUser" style="font-size: 13px; font-weight: 700; display: block; margin-bottom: 5px;">एडमिन लॉगिन आईडी</label>
+          <input type="text" id="userInput" required autocomplete="off" placeholder="आईडी दर्ज करें" style="width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 14px;">
         </div>
 
         <div style="margin-bottom: 22px;">
-          <label style="font-size: 13px; font-weight: 700; display: block; margin-bottom: 5px;">Password</label>
+          <label style="font-size: 13px; font-weight: 700; display: block; margin-bottom: 5px;">पासवर्ड</label>
           <div class="pass-container">
-            <input type="password" id="passInput" required autocomplete="new-password" placeholder="Enter password" style="width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 14px;">
+            <input type="password" id="passInput" required autocomplete="new-password" placeholder="पासवर्ड दर्ज करें" style="width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 14px;">
             <i class="fas fa-eye eye-toggle" onclick="togglePassEye('passInput', this)"></i>
           </div>
         </div>
 
-        <button type="submit" class="btn-gold" style="width: 100%; padding: 12px; font-size: 15px; border-radius: 6px;"><i class="fas fa-key"></i> Authenticate & Login</button>
+        <button type="submit" class="btn-gold" style="width: 100%; padding: 12px; font-size: 15px; border-radius: 6px;"><i class="fas fa-key"></i> लॉगिन करें</button>
       </form>
     </div>
   </div>
 
-  <!-- Footer -->
+  <!-- फुटर -->
   <footer>
     <div class="footer-grid">
       <div>
-        <h4>Rambax Singh Inter College</h4>
-        <p>Bithara - Sarai Road, Aliganj, Etah - 207247</p>
-        <p style="margin-top: 10px;"><i class="fas fa-phone"></i> 6395052394[cite: 1]</p>
+        <h4>श्री रामबक्स सिंह आवासीय इण्टर कॉलेज</h4>
+        <p>बिथरा - सराय रोड, अलीगंज, एटा - 207247 (उ.प्र.)</p>
+        <p style="margin-top: 10px;"><i class="fas fa-phone"></i> 6395052394[cite: 1] / 9758639729</p>
         <p><i class="fas fa-envelope"></i> rambaxsinghintercollege@gmail.com</p>
       </div>
       <div>
-        <h4>Administration</h4>
-        <p><strong>Director:</strong> Shri Avadhesh Singh</p>
-        <p><strong>Manager:</strong> Shri Vishnu Kant</p>
-        <p style="margin-top: 6px;">Affiliation: Madhyamik Shiksha Parishad UP Board</p>
+        <h4>विद्यालय प्रशासन</h4>
+        <p><strong>निदेशक:</strong> Mr. Avadhesh Singh</p>
+        <p><strong>प्रबंधक:</strong> Mr. Vishnu Kant</p>
+        <p><strong>प्रधानाचार्य:</strong> Mr. Mahadev Shankar</p>
+        <p style="margin-top: 6px;">संबद्धता: माध्यमिक शिक्षा परिषद्, प्रयागराज (उ.प्र.)</p>
       </div>
       <div>
-        <h4>Online Portals</h4>
-        <p><a href="javascript:void(0)" onclick="trigger3DLoginCinematic()" style="color: var(--secondary); text-decoration: none;">Secure Portal Login</a></p>
-        <p><a href="#admission" style="color: #fff; text-decoration: none;">Admission Form</a></p>
-        <p><a href="#hostel" style="color: #fff; text-decoration: none;">Hostel Information</a></p>
+        <h4>त्वरित लिंक्स</h4>
+        <p><a href="javascript:void(0)" onclick="trigger3DLoginCinematic()" style="color: var(--secondary); text-decoration: none;">सुरक्षित पोर्टल लॉगिन</a></p>
+        <p><a href="#admission" style="color: #fff; text-decoration: none;">ऑनलाइन प्रवेश आवेदन</a></p>
+        <p><a href="#hostel" style="color: #fff; text-decoration: none;">छात्रावास जानकारी</a></p>
       </div>
     </div>
     <div class="footer-copy">
-      &copy; Residential Rambax Singh Inter College, Bithara, Aliganj, Etah (207247). All Rights Reserved.
+      &copy; सर्वाधिकार सुरक्षित - श्री रामबक्स सिंह आवासीय इण्टर कॉलेज, बिथरा, अलीगंज (एटा) - 207247
     </div>
   </footer>
 
-  <!-- Scripts -->
+  <!-- जावास्क्रिप्ट लाइब्रेरी -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
@@ -1495,27 +1490,27 @@
 
     function saveAdminSession() {
       const val = document.getElementById('custom_session_input').value.trim();
-      if (!val) return alert('Session value empty nahi ho sakti!');
+      if (!val) return alert('सत्र खाली नहीं हो सकता!');
       localStorage.setItem('rbs_active_session', val);
       initSession();
-      alert(`Academic Session badal kar ${val} kar diya gaya hai.`);
+      alert(`शैक्षणिक सत्र बदलकर ${val} कर दिया गया है।`);
     }
 
     function resetAutoSession() {
       localStorage.removeItem('rbs_active_session');
       initSession();
-      alert('Session automatically system calendar ke anusar reset ho gaya.');
+      alert('सत्र स्वचालित रूप से रीसेट कर दिया गया है।');
     }
 
     function initMediaGallery() {
       if (!localStorage.getItem('rbs_media_items')) {
         const defaultMedia = [
-          { type: 'photo', url: 'rbs8.jpeg', title: 'College Campus & Playground' },
-          { type: 'photo', url: 'rbs9.jpeg', title: 'Classroom Study Session' },
-          { type: 'photo', url: 'rbs7.jpeg', title: 'Republic Day Celebration' },
-          { type: 'photo', url: 'rbs6.jpeg', title: 'Cultural Stage Performance' },
-          { type: 'photo', url: 'rbs5.jpeg', title: 'Annual Award Ceremony' },
-          { type: 'photo', url: 'rbs3.jpeg', title: 'Teachers Day Celebration' }
+          { type: 'photo', url: 'rbs8.jpeg', title: 'कॉलेज परिसर एवं विशाल खेल मैदान' },
+          { type: 'photo', url: 'rbs9.jpeg', title: 'अध्यापन एवं स्मार्ट कक्षाएं' },
+          { type: 'photo', url: 'rbs7.jpeg', title: 'गणतंत्र दिवस एवं प्रभात सभा' },
+          { type: 'photo', url: 'rbs6.jpeg', title: 'सांस्कृतिक मंच एवं कार्यक्रम' },
+          { type: 'photo', url: 'rbs5.jpeg', title: 'वार्षिक पुरस्कार वितरण समारोह' },
+          { type: 'photo', url: 'rbs3.jpeg', title: 'शिक्षक दिवस समारोह' }
         ];
         localStorage.setItem('rbs_media_items', JSON.stringify(defaultMedia));
       }
@@ -1564,31 +1559,31 @@
         boxFile.style.display = 'none';
         boxUrl.style.display = 'block';
         if (type === 'video_youtube') {
-          lblUrl.innerText = 'YouTube Video Embed / Watch Link';
+          lblUrl.innerText = 'यूट्यूब वीडियो लिंक (YouTube Link)';
         } else if (type === 'video_mp4') {
-          lblUrl.innerText = 'Direct MP4 Video Link (.mp4)';
+          lblUrl.innerText = 'सीधा MP4 वीडियो लिंक (.mp4)';
         } else {
-          lblUrl.innerText = 'Photo URL / Image Filename';
+          lblUrl.innerText = 'फोटो लिंक / फाइल का नाम';
         }
       }
     }
 
     function addNewMediaItem() {
       const type = document.getElementById('media_type').value;
-      const title = document.getElementById('media_title').value.trim() || 'College Activity';
+      const title = document.getElementById('media_title').value.trim() || 'कॉलेज गतिविधि';
       const list = JSON.parse(localStorage.getItem('rbs_media_items') || '[]');
 
       if (type === 'photo_file') {
         const fileInput = document.getElementById('media_file_input');
         if (!fileInput.files || fileInput.files.length === 0) {
-          return alert('Kripya photo file chunein!');
+          return alert('कृपया फोटो फाइल चुनें!');
         }
         const file = fileInput.files[0];
         const reader = new FileReader();
         reader.onload = function(e) {
           list.push({ type: 'photo', url: e.target.result, title: title });
           localStorage.setItem('rbs_media_items', JSON.stringify(list));
-          alert('Nayi photo safalta-purvak upload ho gayi!');
+          alert('नई फोटो सफलतापूर्वक अपलोड हो गई!');
           renderPublicGallery();
           renderMediaAdminTable();
           fileInput.value = '';
@@ -1597,7 +1592,7 @@
         reader.readAsDataURL(file);
       } else {
         const url = document.getElementById('media_url_input').value.trim();
-        if (!url) return alert('Kripya valid link ya filename dalein!');
+        if (!url) return alert('कृपया वैध लिंक दर्ज करें!');
 
         let finalType = 'photo';
         if (type === 'video_youtube') finalType = 'video_yt';
@@ -1605,7 +1600,7 @@
 
         list.push({ type: finalType, url: url, title: title });
         localStorage.setItem('rbs_media_items', JSON.stringify(list));
-        alert('Naya Media (Photo/Video) safalta-purvak add ho gaya!');
+        alert('नई मीडिया सामग्री सफलतापूर्वक जुड़ गई!');
         renderPublicGallery();
         renderMediaAdminTable();
         document.getElementById('media_url_input').value = '';
@@ -1621,9 +1616,9 @@
       list.forEach((item, idx) => {
         let preview = '';
         if (item.type === 'video_yt') {
-          preview = `<span style="color:#b91c1c; font-weight:bold;"><i class="fab fa-youtube"></i> YouTube Video</span>`;
+          preview = `<span style="color:#b91c1c; font-weight:bold;"><i class="fab fa-youtube"></i> यूट्यूब वीडियो</span>`;
         } else if (item.type === 'video_mp4') {
-          preview = `<span style="color:#0284c7; font-weight:bold;"><i class="fas fa-video"></i> MP4 Video</span>`;
+          preview = `<span style="color:#0284c7; font-weight:bold;"><i class="fas fa-video"></i> MP4 वीडियो</span>`;
         } else {
           preview = `<img src="${item.url}" style="width: 50px; height: 40px; object-fit: cover; border-radius: 4px;">`;
         }
@@ -1633,7 +1628,7 @@
             <td><strong>${item.type.toUpperCase()}</strong></td>
             <td>${preview}</td>
             <td>${item.title}</td>
-            <td><button onclick="deleteMediaItem(${idx})" style="color:red; cursor:pointer;">Hatae (Delete)</button></td>
+            <td><button onclick="deleteMediaItem(${idx})" style="color:red; cursor:pointer;">हटाएं</button></td>
           </tr>
         `;
       });
@@ -1688,17 +1683,17 @@
       pass.value = '';
 
       if (role === 'admin') {
-        heading.innerText = 'Admin Access Control';
-        label.innerText = 'Admin Login ID';
+        heading.innerText = 'एडमिन पोर्टल लॉगिन';
+        label.innerText = 'एडमिन लॉगिन आईडी';
         input.placeholder = 'rambaxsinghintercollege@gmail.com';
       } else if (role === 'staff') {
-        heading.innerText = 'Teacher & Staff Portal';
-        label.innerText = 'Teacher ID (Admin dwara prapt)';
-        input.placeholder = 'Enter Teacher ID';
+        heading.innerText = 'शिक्षक एवं स्टाफ पोर्टल';
+        label.innerText = 'शिक्षक आईडी (एडमिन द्वारा प्रदत्त)';
+        input.placeholder = 'आईडी दर्ज करें';
       } else {
-        heading.innerText = 'Student Progress Portal';
-        label.innerText = 'Student Roll Number';
-        input.placeholder = 'Enter Roll Number';
+        heading.innerText = 'विद्यार्थी परीक्षा परिणाम पोर्टल';
+        label.innerText = 'छात्र अनुक्रमांक (Roll Number)';
+        input.placeholder = 'अनुक्रमांक दर्ज करें';
       }
     }
 
@@ -1710,9 +1705,9 @@
       if (activeRole === 'admin') {
         if (enteredId === 'rambaxsinghintercollege@gmail.com' && enteredPass === 'vishnukant@207247') {
           speakAssistant("Welcome Mr. Vishnu, let's work together.");
-          openDashboardView('admin', 'Manager Vishnu Kant (Admin)');
+          openDashboardView('admin', 'Mr. Vishnu Kant (प्रबंधक / एडमिन)');
         } else {
-          alert('Amanay Admin Credentials! Kripya sahi id aur password dalein.');
+          alert('अमान्य एडमिन क्रेडेंशियल्स! कृपया सही आईडी एवं पासवर्ड दर्ज करें।');
         }
       } else if (activeRole === 'staff') {
         const staffList = JSON.parse(localStorage.getItem('rbs_staff_clean') || '[]');
@@ -1721,7 +1716,7 @@
           speakAssistant(`Welcome ${teacher.name} Ji, hope you have a great day teaching.`);
           openDashboardView('staff', teacher.name);
         } else {
-          alert('Amanay Teacher Login! Sirf wahi teacher login kar sakte hain jinki ID Admin ne add ki ho.');
+          alert('अमान्य शिक्षक लॉगिन! केवल एडमिन द्वारा पंजीकृत शिक्षक ही लॉगिन कर सकते हैं।');
         }
       } else if (activeRole === 'student') {
         const studentList = JSON.parse(localStorage.getItem('rbs_students_clean') || '[]');
@@ -1730,7 +1725,7 @@
           speakAssistant(`Welcome to RBS College ${student.name}, I hope you are well.`);
           openDashboardView('student', student);
         } else {
-          alert('Amanay Student Login! Admin dwara registered Roll No aur Password dalein.');
+          alert('अमान्य छात्र विवरण! एडमिन द्वारा पंजीकृत अनुक्रमांक एवं पासवर्ड दर्ज करें।');
         }
       }
     }
@@ -1744,16 +1739,16 @@
       navBox.innerHTML = '';
 
       if (role === 'admin') {
-        document.getElementById('dashTitle').innerText = 'Admin Supreme Control Panel';
+        document.getElementById('dashTitle').innerText = 'एडमिन सर्वोच्च नियंत्रण कक्ष';
         document.getElementById('dashUser').innerText = userObj;
         navBox.innerHTML = `
-          <button class="dash-btn active" onclick="switchTab('admissions')"><i class="fas fa-inbox"></i> Admissions</button>
-          <button class="dash-btn" onclick="switchTab('staff-mgmt')"><i class="fas fa-chalkboard-teacher"></i> Teacher Accounts</button>
-          <button class="dash-btn" onclick="switchTab('student-mgmt')"><i class="fas fa-users"></i> Students & Unlock</button>
-          <button class="dash-btn" onclick="switchTab('media-mgmt')"><i class="fas fa-photo-video"></i> Media (Photo/Video)</button>
-          <button class="dash-btn" onclick="switchTab('session-mgmt')"><i class="fas fa-calendar-alt"></i> Session Manager</button>
-          <button class="dash-btn" onclick="switchTab('marks-entry')"><i class="fas fa-edit"></i> Marks Entry</button>
-          <button class="dash-btn" onclick="switchTab('marksheet-gen')"><i class="fas fa-award"></i> 1-Click Marksheet</button>
+          <button class="dash-btn active" onclick="switchTab('admissions')"><i class="fas fa-inbox"></i> प्रवेश आवेदन</button>
+          <button class="dash-btn" onclick="switchTab('staff-mgmt')"><i class="fas fa-chalkboard-teacher"></i> शिक्षक खाते</button>
+          <button class="dash-btn" onclick="switchTab('student-mgmt')"><i class="fas fa-users"></i> छात्र व अंकपत्र अनलॉक</button>
+          <button class="dash-btn" onclick="switchTab('media-mgmt')"><i class="fas fa-photo-video"></i> फोटो/वीडियो गैलरी</button>
+          <button class="dash-btn" onclick="switchTab('session-mgmt')"><i class="fas fa-calendar-alt"></i> सत्र प्रबंधक</button>
+          <button class="dash-btn" onclick="switchTab('marks-entry')"><i class="fas fa-edit"></i> अंक प्रविष्टि</button>
+          <button class="dash-btn" onclick="switchTab('marksheet-gen')"><i class="fas fa-award"></i> 1-क्लिक अंकपत्र</button>
         `;
         renderAdmissions();
         renderStaff();
@@ -1762,18 +1757,18 @@
         initSession();
         switchTab('admissions');
       } else if (role === 'staff') {
-        document.getElementById('dashTitle').innerText = 'Teacher & Staff Portal';
+        document.getElementById('dashTitle').innerText = 'शिक्षक एवं स्टाफ पोर्टल';
         document.getElementById('dashUser').innerText = userObj;
         navBox.innerHTML = `
-          <button class="dash-btn active" onclick="switchTab('marks-entry')"><i class="fas fa-marker"></i> Student Marks Entry (FA & SA)</button>
+          <button class="dash-btn active" onclick="switchTab('marks-entry')"><i class="fas fa-marker"></i> छात्र परीक्षा अंक प्रविष्टि (FA एवं SA)</button>
         `;
         initSession();
         switchTab('marks-entry');
       } else if (role === 'student') {
-        document.getElementById('dashTitle').innerText = 'Student Academic Portal';
-        document.getElementById('dashUser').innerText = `${userObj.name} (Roll: ${userObj.roll})`;
+        document.getElementById('dashTitle').innerText = 'छात्र शैक्षणिक पोर्टल';
+        document.getElementById('dashUser').innerText = `${userObj.name} (अनुक्रमांक: ${userObj.roll})`;
         navBox.innerHTML = `
-          <button class="dash-btn active" onclick="switchTab('student-view')"><i class="fas fa-user"></i> My Records</button>
+          <button class="dash-btn active" onclick="switchTab('student-view')"><i class="fas fa-user"></i> मेरा विवरण</button>
         `;
         displayStudentProfile(userObj);
         switchTab('student-view');
@@ -1784,7 +1779,7 @@
 
     function logoutPortal() {
       document.getElementById('mainDashboard').style.display = 'none';
-      alert('Aap successfully logout ho chuke hain.');
+      alert('आप सफलतापूर्वक लॉगआउट हो चुके हैं।');
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
@@ -1800,7 +1795,7 @@
     function handleAdmissionSubmit(e) {
       e.preventDefault();
       const app = {
-        id: 'ADM' + Math.floor(100 + Math.random() * 900),
+        id: 'RBS' + Math.floor(100 + Math.random() * 900),
         name: document.getElementById('adm_name').value.trim(),
         father: document.getElementById('adm_father').value.trim(),
         classVal: document.getElementById('adm_class').value,
@@ -1813,7 +1808,7 @@
       list.push(app);
       localStorage.setItem('rbs_admissions_clean', JSON.stringify(list));
 
-      alert('Avedan jama ho gaya! Jankari Admin Portal me pahuch chuki hai.');
+      alert('आवेदन सफलतापूर्वक जमा हो गया है! विवरण एडमिन पोर्टल में भेज दिया गया है।');
       document.getElementById('admForm').reset();
       renderAdmissions();
     }
@@ -1831,9 +1826,9 @@
             <td>${item.father}</td>
             <td>${item.classVal}</td>
             <td>${item.phone}</td>
-            <td><strong style="color:${item.hostel === 'Yes' ? 'green':'#64748b'}">${item.hostel}</strong></td>
+            <td><strong style="color:${item.hostel === 'हाँ' ? 'green':'#64748b'}">${item.hostel}</strong></td>
             <td>${item.address}</td>
-            <td><button onclick="deleteAdm(${idx})" style="color:red; cursor:pointer;">Delete</button></td>
+            <td><button onclick="deleteAdm(${idx})" style="color:red; cursor:pointer;">हटाएं</button></td>
           </tr>
         `;
       });
@@ -1852,13 +1847,13 @@
       const id = document.getElementById('add_staff_id').value.trim();
       const pass = document.getElementById('add_staff_pass').value.trim();
 
-      if (!name || !id || !pass) return alert('Sabhi fields aavashyak hain!');
+      if (!name || !id || !pass) return alert('सभी विवरण भरना आवश्यक है!');
 
       const list = JSON.parse(localStorage.getItem('rbs_staff_clean') || '[]');
       list.push({ name, subject, id, pass });
       localStorage.setItem('rbs_staff_clean', JSON.stringify(list));
 
-      alert(`Teacher (${name}) account successfully add ho gaya.`);
+      alert(`शिक्षक (${name}) का खाता सफलतापूर्वक जुड़ गया।`);
       document.getElementById('add_staff_name').value = '';
       document.getElementById('add_staff_subject').value = '';
       document.getElementById('add_staff_id').value = '';
@@ -1878,7 +1873,7 @@
             <td>${t.subject}</td>
             <td>${t.id}</td>
             <td><code>${t.pass}</code></td>
-            <td><button onclick="deleteStaff(${i})" style="color:red; cursor:pointer;">Remove</button></td>
+            <td><button onclick="deleteStaff(${i})" style="color:red; cursor:pointer;">हटाएं</button></td>
           </tr>
         `;
       });
@@ -1899,13 +1894,13 @@
       const address = document.getElementById('add_st_addr').value.trim();
       const pass = document.getElementById('add_st_pass').value.trim() || 'student@123';
 
-      if (!roll || !name || !father) return alert('Roll No, Name aur Father Name zaroori hain!');
+      if (!roll || !name || !father) return alert('अनुक्रमांक, नाम एवं पिता का नाम आवश्यक है!');
 
       const list = JSON.parse(localStorage.getItem('rbs_students_clean') || '[]');
       list.push({ roll, name, father, classVal, address, pass, marksheetUnlocked: false });
       localStorage.setItem('rbs_students_clean', JSON.stringify(list));
 
-      alert(`Student (${name}) record create ho gaya.`);
+      alert(`विद्यार्थी (${name}) का रिकॉर्ड सुरक्षित हो गया।`);
       document.getElementById('add_st_roll').value = '';
       document.getElementById('add_st_name').value = '';
       document.getElementById('add_st_father').value = '';
@@ -1931,10 +1926,10 @@
             <td><code>${s.pass}</code></td>
             <td>
               <button onclick="toggleMarksheetLock(${i})" style="padding: 4px 8px; border-radius: 4px; font-weight: bold; cursor: pointer; background: ${isUnlocked ? '#10b981' : '#f59e0b'}; color: #fff; border: none;">
-                ${isUnlocked ? '<i class="fas fa-unlock"></i> Unlocked' : '<i class="fas fa-lock"></i> Locked'}
+                ${isUnlocked ? '<i class="fas fa-unlock"></i> खुला है (Unlocked)' : '<i class="fas fa-lock"></i> बंद है (Locked)'}
               </button>
             </td>
-            <td><button onclick="deleteStudent(${i})" style="color:red; cursor:pointer;">Delete</button></td>
+            <td><button onclick="deleteStudent(${i})" style="color:red; cursor:pointer;">हटाएं</button></td>
           </tr>
         `;
       });
@@ -1945,7 +1940,7 @@
       list[i].marksheetUnlocked = !list[i].marksheetUnlocked;
       localStorage.setItem('rbs_students_clean', JSON.stringify(list));
       renderStudents();
-      alert(`Student (${list[i].name}) ki marksheet ab ${list[i].marksheetUnlocked ? 'UNLOCKED' : 'LOCKED'} hai.`);
+      alert(`छात्र (${list[i].name}) का अंकपत्र अब ${list[i].marksheetUnlocked ? 'अनलॉक (UNLOCKED)' : 'लॉक (LOCKED)'} है।`);
     }
 
     function deleteStudent(i) {
@@ -1964,7 +1959,7 @@
       const session = document.getElementById('me_session').value;
 
       if (!roll || !name || !father || !classVal) {
-        return alert('Error: Teacher ko Student Name, Father Name, Class aur Roll No. sabhi bharna compulsory hai!');
+        return alert('त्रुटि: छात्र का नाम, पिता का नाम, कक्षा और अनुक्रमांक सभी भरना अनिवार्य है!');
       }
 
       const marksRecord = {
@@ -1978,7 +1973,7 @@
       };
 
       localStorage.setItem(`marks_${roll}_${exam}`, JSON.stringify(marksRecord));
-      alert(`Marks safalta-purvak save ho gaye! (Student: ${name}, Roll: ${roll}, Exam: ${exam})`);
+      alert(`प्राप्तांक सफलतापूर्वक सुरक्षित हो गए! (विद्यार्थी: ${name}, अनुक्रमांक: ${roll}, परीक्षा: ${exam})`);
 
       document.getElementById('m_hindi').value = '';
       document.getElementById('m_english').value = '';
@@ -1993,7 +1988,7 @@
       const exam = document.getElementById('admin_ms_exam').value;
       const currentSession = getCalculatedSession();
 
-      if (!roll) return alert('Roll number dalein!');
+      if (!roll) return alert('कृपया अनुक्रमांक दर्ज करें!');
 
       const studentList = JSON.parse(localStorage.getItem('rbs_students_clean') || '[]');
       const student = studentList.find(s => s.roll === roll);
@@ -2002,20 +1997,20 @@
         hindi: 80, english: 75, math: 85, science: 78, social: 74, optional: 82
       };
 
-      document.getElementById('out_exam_title').innerText = `${exam} PROGRESS REPORT CARD (${currentSession})`;
-      document.getElementById('out_name').innerText = student ? student.name : (marksData.name || 'Student');
+      document.getElementById('out_exam_title').innerText = `${exam} प्रगति पत्रक (${currentSession})`;
+      document.getElementById('out_name').innerText = student ? student.name : (marksData.name || 'विद्यार्थी');
       document.getElementById('out_roll').innerText = roll;
       document.getElementById('out_father').innerText = student ? student.father : (marksData.father || '--');
       document.getElementById('out_class').innerText = student ? student.classVal : (marksData.classVal || '--');
-      document.getElementById('out_address').innerText = student ? student.address : 'Bithara, Aliganj, Etah';
+      document.getElementById('out_address').innerText = student ? student.address : 'बिथरा, अलीगंज, एटा';
 
       const subjects = [
-        { name: 'Hindi', max: 100, pass: 33, obt: marksData.hindi },
-        { name: 'English', max: 100, pass: 33, obt: marksData.english },
-        { name: 'Mathematics', max: 100, pass: 33, obt: marksData.math },
-        { name: 'Science / EVS', max: 100, pass: 33, obt: marksData.science },
-        { name: 'Social Science', max: 100, pass: 33, obt: marksData.social },
-        { name: 'Drawing / Sanskrit', max: 100, pass: 33, obt: marksData.optional }
+        { name: 'हिंदी (Hindi)', max: 100, pass: 33, obt: marksData.hindi },
+        { name: 'अंग्रेजी (English)', max: 100, pass: 33, obt: marksData.english },
+        { name: 'गणित (Mathematics)', max: 100, pass: 33, obt: marksData.math },
+        { name: 'विज्ञान / पर्यावरण', max: 100, pass: 33, obt: marksData.science },
+        { name: 'सामाजिक विज्ञान', max: 100, pass: 33, obt: marksData.social },
+        { name: 'चित्रकला / संस्कृत', max: 100, pass: 33, obt: marksData.optional }
       ];
 
       const tbody = document.getElementById('out_tbody');
@@ -2024,7 +2019,7 @@
 
       subjects.forEach(sub => {
         totalObt += sub.obt;
-        const grade = sub.obt >= 75 ? 'A (Distinction)' : (sub.obt >= 60 ? 'B (First)' : 'C (Second)');
+        const grade = sub.obt >= 75 ? 'विशिष्ट योग्यता (Distinction)' : (sub.obt >= 60 ? 'प्रथम श्रेणी (First)' : 'द्वितीय श्रेणी (Second)');
         tbody.innerHTML += `
           <tr>
             <td><strong>${sub.name}</strong></td>
@@ -2038,7 +2033,7 @@
 
       const pct = ((totalObt / 600) * 100).toFixed(1);
       document.getElementById('out_grand_total').innerText = totalObt;
-      document.getElementById('out_result').innerText = `${pct}% (PASSED)`;
+      document.getElementById('out_result').innerText = `${pct}% (उत्तीर्ण - PASSED)`;
 
       const card = document.getElementById('marksheet-view');
       card.style.display = 'block';
@@ -2052,23 +2047,23 @@
       if (!student.marksheetUnlocked) {
         lockBox.style.display = 'block';
         container.innerHTML = `
-          <h4 style="color: var(--primary); margin-bottom: 10px;">Student Information:</h4>
-          <p><strong>Name:</strong> ${student.name}</p>
-          <p><strong>Roll No:</strong> ${student.roll}</p>
-          <p><strong>Father's Name:</strong> ${student.father}</p>
-          <p><strong>Class:</strong> ${student.classVal}</p>
-          <p><strong>Address:</strong> ${student.address}</p>
-          <div style="margin-top: 15px; color: #ef4444; font-weight: bold;"><i class="fas fa-lock"></i> Marksheet Locked by Admin. Kripya college office se sampark karein.</div>
+          <h4 style="color: var(--primary); margin-bottom: 10px;">विद्यार्थी विवरण:</h4>
+          <p><strong>नाम:</strong> ${student.name}</p>
+          <p><strong>अनुक्रमांक:</strong> ${student.roll}</p>
+          <p><strong>पिता का नाम:</strong> ${student.father}</p>
+          <p><strong>कक्षा:</strong> ${student.classVal}</p>
+          <p><strong>पता:</strong> ${student.address}</p>
+          <div style="margin-top: 15px; color: #ef4444; font-weight: bold;"><i class="fas fa-lock"></i> अंकपत्र वर्तमान में लॉक है। कृपया विद्यालय कार्यालय से संपर्क करें।</div>
         `;
       } else {
         lockBox.style.display = 'none';
         container.innerHTML = `
-          <h4 style="color: #10b981; margin-bottom: 10px;"><i class="fas fa-unlock"></i> Marksheet Unlocked by Admin!</h4>
-          <p><strong>Name:</strong> ${student.name}</p>
-          <p><strong>Roll No:</strong> ${student.roll}</p>
-          <p><strong>Class:</strong> ${student.classVal}</p>
+          <h4 style="color: #10b981; margin-bottom: 10px;"><i class="fas fa-unlock"></i> अंकपत्र अनलॉक कर दिया गया है!</h4>
+          <p><strong>नाम:</strong> ${student.name}</p>
+          <p><strong>अनुक्रमांक:</strong> ${student.roll}</p>
+          <p><strong>कक्षा:</strong> ${student.classVal}</p>
           <div style="margin-top: 20px;">
-            <button class="btn-gold" onclick="studentViewMyMarksheet('${student.roll}')"><i class="fas fa-file-invoice"></i> View & Print My Marksheet</button>
+            <button class="btn-gold" onclick="studentViewMyMarksheet('${student.roll}')"><i class="fas fa-file-invoice"></i> अपना अंकपत्र देखें एवं प्रिंट करें</button>
           </div>
         `;
       }
